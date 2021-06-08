@@ -10,6 +10,7 @@
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{hyperref}
+\usepackage{tabularx}
 \title{Communicating Multi-UAV System for cooperative SLAM-based Exploration}
 
 \usepackage{pagenote}
@@ -371,5 +372,104 @@ This bipartite factor graph is composed of:
               \item The measurement likelihood models $\mathbf{F}_{ij}(\mathbf{m}_j,\mathbf{p}_i,\mathbf{z}_{ij})=p(\mathbf{m}_j|\mathbf{p}_j,\mathbf{z}_{ij})$ between the pose $\mathbf{p}_i$ and the landmark $\mathbf{m}_j$ given the visual measurement $\mathbf{z}_{ij}$.
           \end{itemize}
 \end{itemize}
-
+\subsubsection{Incremental Smoothing and Mapping 2 (iSAM2)}
+To resolve the factor graph and estimate the poses, the iSAM2 approach [Kaess et al., 2012] is used. The estimation problem is based on three graphical models (See Figure \ref{fig:2.12}):
+\begin{itemize}
+    \item Explicit factor graph.
+    \item Implicit chordal Bayes net.
+    \item Bayes tree.
+\end{itemize}
+Therefore, the iSAM2 algorithm can incrementally obtain an estimate of unknown variables (such as UAV poses and landmarks) given a set of non linear factors (such as odometry) to ﬁnally construct the UAV’s map.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{assets/2_12.png}
+    \caption{iSAM2 graphical models.}
+    \label{fig:2.12}
+\end{figure}
+When a new factor is taken into account, the aﬀected part of the Bayes Tree is isolated. From it, data are formulated as a factor graph and an associated Jacobian matrix. Then, the factor graph is transformed into a chordal Bayes net and a square root information matrix using a speciﬁc variable order elimination. The last one eliminated is called the root. Finally, based on the clique structure in the chordal Bayes net, a Bayes tree is formed with the square root information matrix. Based on these models, the incremental resolution and update of the iSAM2 are resumed in ﬁve important steps presented in Figure \ref{fig:2.13}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{assets/2_13.png}
+    \caption{The iSAM2 steps.}
+    \label{fig:2.13}
+\end{figure}
+Taking into account the available new factors, variables are initialized and added to the variable nodes. Thereafter, the process performs a ﬂuid relinearization for marked variables in order to track the validity of the linearization point for each variable when needed. These marked variables are chosen according to a threshold between its current estimate and the linearization point. Then, the Bayes tree is partially updated starting from the cliques involved by the marked variables and the variables aﬀected by new factors, up to the top of the tree. Using the obtained new Bayes tree, an update of the current estimate is performed.
+\subsection{Results and discussions}
+The SLAM algorithm was implement with the Georgia Tech Smoothing And Mapping toolbox\footnote{Source: \url{https://borg.cc.gatech.edu/index.html}} (GTSAM) using the factor graph implementation. The experimental code is written in MATLAB\footnote{Source: \url{https://fr.mathworks.com/}} and includes MEX functions\footnote{Source: \url{https://fr.mathworks.com/help/matlab/matlab_external/introducing-mex-files.html}} of the c++ library. Tests were performed on a 2.50GHz i5 Linux machine. To validate the SLAM algorithm, the measurements were simulated with raw data from the Kitti vision data-set Geiger et al., 2013. These data contain IMU measurements used for dead reckoning, and images used for the visual features. To compute the inter frame visual odometry, the libviso2 library\footnote{Source: \url{http://www.cvlibs.net/software/libviso/}} is used. Hence, given the set of non linear factors including IMU and visual odometry measurements, the iSAM2 estimates and optimizes poses and landmarks.\\\\
+To see the improvement performed with the proposed approach, the estimated trajectory from iSAM2 is compared to those from IMU, libviso2 and GPS, in Figure \ref{fig:2.14}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{assets/2_14.png}
+    \caption{Trajectory results (2D projection) using IMU, libviso2, iSAM2 and GPS.}
+    \label{fig:2.14}
+\end{figure}
+The GPS trajectory is obtained using Eq.\ref{eq:2.7}:
+\begin{equation}\label{eq:2.7}
+    \begin{split}
+        x=R*\cos(latitude)*\cos(longtitude), \\
+        y=R*\cos(latitude)*\sin(longtitude), \\
+        z=R*\sin(latitude),
+    \end{split}
+\end{equation}
+with $R$ the radius of the earth.\\\\
+Results show that combining the IMU and the libviso2 trajectory using the iSAM2 helps to improve the poses estimation, and to reduce the IMU drift compared to the ground truth. Consequently, by obtaining a graph to exchange data instead of images, the data size is considerably reduced. Indeed, theoretically, sending images require about 1.843 Mbps (assuming that an image is encoded in 24 bits); whereas sending poses and landmarks needs about 0.323 Mbps (assuming that an IEEE standard encodes reals under 32 bits). Hence, thanks to the graph-based SLAM, we manage to reduce data size by about 5 times.
+\section{RGB-D SLAM}
+The RGB-D SLAM uses an RGB-D camera as a visual sensor to sense the environment.This sensor avoids the scale estimation problem thanks to the depth information.
+\subsection{RGB-D sensor}
+The RGB-D camera is composed of a digital camera for colored images $\mathbf{C}-t$ , and another device for the depth image $\mathbf{D}_t$ . The colored image $\mathbf{C}_t$ is a 3D matrix encoded in the RGB space where each color represents a dimension with a number of raws and columns corresponding to the image resolution (See section 1.3.1 on monocular sensor). The depth image $\mathbf{D}_t$ is a 2D matrix where $\mathbf{D}_t(u,v)$ is the depth of the pixel of column $u$ and row $v$. The depth measurements can be computed by diﬀerent technologies (e.g. camera, infrared) where the RGB-D sensor can be classiﬁed as follows:
+\begin{itemize}
+    \item \textit{Active}: It is composed of a camera and a projector. The projector emits known patterns that are compared with the camera to get the correspondences. The depth is computed from these correspondences and the known transformation between the camera and the projector.
+    \item \textit{Passive}: It represents stereo sensors composed of two RGB cameras. The depth is computed by knowing the transformation between them.
+\end{itemize}
+\textbf{RGB-D sensor Comparison}\\
+Diﬀerent types of RGB-D camera exist. One of the most famous is the kinect\footnote{Source: \url{https://msdn.microsoft.com/en-us/library/hh438998.aspx}} camera (See Figure \ref{fig:2.15a}). Other relatively new technologies are available such as DUO MLX\footnote{Source: \url{https://duo3d.com/product/duo-minilx-lv1}} (See Figure \ref{fig:2.15b}), ZED\footnote{Source: \url{https://www.stereolabs.com/zed/specs/}} stereo (See Figure \ref{fig:2.15c}), and Intel RealSense ZR300\footnote{Source: \url{https://software.intel.com/en-us/realsense/zr300}} (See Figure \ref{fig:2.15d}).
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/2_15_a.png}
+        \caption{{Kinect camera.}}
+        \label{fig:2.15a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/2_15_b.png}
+        \caption{{DUO MLX camera.}}
+        \label{fig:2.15b}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/2_15_c.png}
+        \caption{{ZED camera}}
+        \label{fig:2.15c}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/2_15_d.png}
+        \caption{{ZR300 camera.}}
+        \label{fig:2.15d}
+    \end{subfigure}
+    \caption{Examples of RGB-D sensors.}
+    \label{fig:2.15}
+\end{figure}
+A brief comparison is summarized in Table \ref{tab:2.1}. The ZED camera have the higher resolution and range compared to DUO and Kinect. However, this camera requires a powerful processor to work properly. DUO MLX is a lightweight camera with a good resolution, small dimensions but a small range and a relatively high price. The ZR300 has a small size and a good resolution but it is more expensive than the kinect. Despite its bigger dimension and weight, the kinect is the cheaper and the easiest to use. Taking into account the UAVs’ mission requirements and purpose, we make the choice to use the kinect. Yet, the SLAM algorithm is not restricted to a deﬁned type of a RGB-D sensor.
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \caption{RGB-D sensors comparison}
+    \label{tab:2.1}
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{|l|l|l|l|l|}
+            \hline
+            \textbf{Characteristic}                 & \textbf{kinect xbox 360}       & \textbf{\begin{tabular}[c]{@{}l@{}}DUO MLX \\ (integrated IMU)\end{tabular}} & \textbf{ZED}                   & \textbf{ZR300}                 \\ \hline
+            \textbf{\begin{tabular}[c]{@{}l@{}}Output\\  Resolution\end{tabular}} & \begin{tabular}[c]{@{}l@{}}640 x 480 x 24 \\ bpp 4:3 RGB\\ @30fps\\ 640 x 480 x 16\\ bpp 4:3 YUV\\ @15fps\end{tabular} & \begin{tabular}[c]{@{}l@{}}752 x 480 \\ @56fps\end{tabular}          & \begin{tabular}[c]{@{}l@{}}2x (1920 x 1080)\\  @30fps\end{tabular} & \begin{tabular}[c]{@{}l@{}}2 x VGA \\ @60fps\end{tabular} \\ \hline
+            \textbf{\begin{tabular}[c]{@{}l@{}}Depth Range\\ (m)\end{tabular}} & 0.8 to 4.0                     & 0.23 to 2.5                             & 1 to 15                        & 0.4 to 2.8                     \\ \hline
+            \textbf{\begin{tabular}[c]{@{}l@{}}Baseline\\ (mm)\end{tabular}} & 75                             & 30                                      & 120                            & 20                             \\ \hline
+            \textbf{\begin{tabular}[c]{@{}l@{}}Dimensions \\ (mm)\end{tabular}} & 279 x 50,8 x 25                & 52 x 24 x 13                            & 175 x 30 x 33                  & \begin{tabular}[c]{@{}l@{}}9.5 x 101.56 \\ x 3.8\end{tabular} \\ \hline
+            \textbf{\begin{tabular}[c]{@{}l@{}}Weight \\ (grams)\end{tabular}} & 750                            & 12.5                                    & 159                            & -                              \\ \hline
+            \textbf{\begin{tabular}[c]{@{}l@{}}System \\ requirements\end{tabular}} & \begin{tabular}[c]{@{}l@{}}1.9 GHz CPU \\ 4GB RAM\end{tabular} & \begin{tabular}[c]{@{}l@{}}Modern \\ Processor\\ Intel i5/i7,\\ AMD or ARM\\ Minumum \\ 4GB RAM\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Dual-core \\ 2.4GHz or\\ faster processor\\ Minumum \\ 4GB RAM\\ Nvidia GPU \\ with compute\\ capability \textgreater 3.0\end{tabular} & \begin{tabular}[c]{@{}l@{}}Intel Joule \\ compute \\ module with\\ Ubuntu 16.04\end{tabular} \\ \hline
+            \textbf{price (\$)}                     & 33                             & 595                                     & 449                            & 129                            \\ \hline
+        \end{tabular}%
+    }
+\end{table}
 \end{document}
