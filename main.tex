@@ -397,4 +397,342 @@ Figure \ref{fig:3.14} shows the evolution of the respective projected 2D local g
 The target is chosen from the candidate frontier points that deﬁne the edges of an environment not previously explored. These candidates are selected from the ﬁnal frontier points of each UAV in the ﬂeet (See Figure \ref{fig:3.15}). During the exploration mission, the local map size increases, which leads to an increasing number of local frontier points. At the beginning of the exploration, the number of candidate frontier points increases, but as soon as the exploration evolves in time, their number decreases. At the end of the mission, when all the environment is explored, no candidate frontier points should be left.
 \subsubsection{UAV's trajectories during the mission}
 Figure \ref{fig:3.16} shows the explored map with the trajectories using one, two and three UAVs. The UAVs try to explore the full environment while avoiding already explored areas. In a cooperative way, each UAV is in charge of visiting an area by reaching a target that belongs to a non-explored environment. These targets are assigned by the \textit{Leader} which, even if the initial poses of the UAVs are relatively close, eﬀectively spreads them into unknown areas. The global map is composed of the superposition of all UAVs’ local maps.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.3\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_13_a.png}
+        \caption{{$3\%$ rate $(5s).$}}
+        \label{fig:3.13a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_13_b.png}
+        \caption{{$20\%$ rate $(28s).$}}
+        \label{fig:3.13b}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_13_c.png}
+        \caption{{$31\%$ rate $(50s).$}}
+        \label{fig:3.13c}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_13_d.png}
+        \caption{{$40\%$ rate $(69s).$}}
+        \label{fig:3.13d}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_13_e.png}
+        \caption{{$50\%$ rate $(75s).$}}
+        \label{fig:3.13e}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_13_f.png}
+        \caption{{$60\%$ rate $(83s).$}}
+        \label{fig:3.13f}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_13_g.png}
+        \caption{{$70\%$ rate $(98s).$}}
+        \label{fig:3.13g}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_13_h.png}
+        \caption{{$81\%$ rate $(127s).$}}
+        \label{fig:3.13h}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_13_i.png}
+        \caption{{$90\%$ rate $(133s).$}}
+        \label{fig:3.13i}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_13_j.png}
+        \caption{{$99\%$ rate $(202s).$}}
+        \label{fig:3.13j}
+    \end{subfigure}
+    \caption{Ratio of explored space during time for one UAV.}
+    \label{fig:3.13}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{assets/3_14.png}
+    \caption{Coordinated exploration using two robots. Columns 1, 2 and 3 show the evolution of the local map of the UAV$_1$, the UAV$_2$ and the global map over time, respectively.}
+    \label{fig:3.14}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_15_a.png}
+        \caption{{One UAV.}}
+        \label{fig:3.15a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_15_b.png}
+        \caption{{Two cooperative UAVs.}}
+        \label{fig:3.15b}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_15_c.png}
+        \caption{{Three cooperative UAVs}}
+        \label{fig:3.15c}
+    \end{subfigure}
+    \caption{The evolution of candidate and final frontier points numbers during cooperative exploration.}
+    \label{fig:3.15}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_16_a.png}
+        \caption{{One UAV.}}
+        \label{fig:3.16a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_16_b.png}
+        \caption{{Two cooperative UAVs.}}
+        \label{fig:3.16b}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_16_c.png}
+        \caption{{Three cooperative UAVs}}
+        \label{fig:3.16c}
+    \end{subfigure}
+    \caption{Projected 2D map in a coordinated exploration with a team of one, two and three UAVs. Green, blue and red markers and arrows define, respectively, the initial position and the trajectory of UAV1, UAV2 and UAV3.}
+    \label{fig:3.16}
+\end{figure}
+\subsubsection{Goal assignment evaluation: Distribution of the robots in the environment}
+The goal assignment process is performed according to the algorithm described in Section 3.6. Nevertheless, after assigning a target to the ﬁrst robot in the list, the same target or another one close to it may be assigned to the second robot in the list. To overcome these issues, the information gains of the remaining candidate targets are scheduled. This allows to discard an already assigned target and keep a certain distance between the new target and the previous one assigned.\\\\
+Suppose that a target is assigned to the ﬁrst robot in the cluster list. Figure \ref{fig:3.17} shows the goal selected for the second robot when a sequential assignment is performed:
+\begin{itemize}
+    \item Without further frontier points processing (See Figure \ref{fig:3.17b}). Consequently, the same target is assigned to two diﬀerent robots.
+    \item While removing the assigned target from the remaining candidate frontier points (See Figure \ref{fig:3.17c}). Consequently, the second target is relatively close to the ﬁrst one assigned.
+    \item While scheduling the information gain after each target assignment (See Figure \ref{fig:3.17d}). Consequently, the assigned targets are spaced out into the environment. The information gain is scheduled following Eq. \ref{eq:3.5}. The information gain value increases with distance to the candidate target $\mathbf{t}_g$.
+\end{itemize}
+The goal assignment process may sometimes be not optimal since it depends on the robots’ order in the list. For example, suppose that robots UAV$_i$ and UAV$_j$ have the same best target assignment t k such that it oﬀers the maximum utility over candidate frontier points where Eq.\ref{eq:3.6} and Eq. \ref{eq:3.7} are veriﬁed.
+\begin{equation}\label{eq:3.6}
+    \mathbf{t}_k=argmax_{t_m}\mathbf{U}(UAV_i,\mathbf{t}_m)
+\end{equation}
+with $\mathbf{t}_m \in \mathcal{G}$.
+\begin{equation}\label{eq:3.7}
+    \mathbf{t}_k=argmax_{t_n}\mathbf{U}(UAV_j, \mathbf{t}_n)
+\end{equation}
+with $\mathbf{t}_n \in \mathcal{G}$.\\
+UAV$_i$ have another candidate frontier point $\mathbf{t}_l$ with:
+\begin{equation}\label{eq:3.8}
+    \mathbf{\mathit{U}}(UAV_i, \mathbf{t}_k) > \mathbf{\mathit{U}}(UAV_i,\mathbf{t}_l) > \mathbf{\mathit{U}}(UAV_j, \mathbf{t}_k)
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.6\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_17_a.png}
+        \caption{{Candidate targets.}}
+        \label{fig:3.17a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.6\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_17_b.png}
+        \caption{{Case 1.}}
+        \label{fig:3.17b}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.6\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_17_c.png}
+        \caption{{Case 2.}}
+        \label{fig:3.17c}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.6\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_17_c.png}
+        \caption{{Case 3.}}
+        \label{fig:3.17d}
+    \end{subfigure}
+    \caption{Goal assignment: After assigning a target to UAV$_1$ , a target is assigned in a sequential manner to UAV$_2$ . (a) represents the candidate frontier points with their respective information gain. (b), (c), and (d) represent, respectively, the targets assignment when: No further process is performed for the remaining candidate targets; UAV$_1$ ’s target is removed from the remaining candidate targets and; the information gain of the remained candidate targets are scheduled.}
+    \label{fig:3.17}
+\end{figure}
+So the optimal solution would be to assign $\mathbf{t}_l$ to UAV$_i$ and $\mathbf{t}_k$ to UAV$_j$ . But, if UAV$_i$ is the ﬁrst in the list, $\mathbf{t}_k$ is assigned to it and another candidate frontier point with less utility than $\mathbf{t}_k$, is assigned to UAV$_j$. Thus, the solution with sequential goal assignment is not always optimal.\\\\
+To overcome this problem, all the numbers of possible combination $\frac{n_g!}{n_g!(n_g-n_c)!}$ with $n_g$ the number of candidate targets and $n_c$ the number of robots, need to be considered. This increases considerably the computation time by increasing the number of robots. Therefore, in the proposed algorithm, sequential assignment is favored over computing all possible permutations.
+\subsubsection{Explored space rate evaluation}
+This evaluation aims at quantifying the amount of explored spaces during the mission. Figure \ref{fig:3.18} shows the explored space rate performed by each UAV in the ﬂeet. The more UAVs in the environment, the less the exploration rate demanded by each one. A robot has no need to continue exploring an area if it has already been explored by another one. Thus, the mission time is considerably reduced.
+\subsubsection{Overlap rate evaluation}
+The use of an eﬀective goal assignment process should limit the generated overlap. In Figure \ref{fig:3.19}, the time evolution of overlap is evaluated using two cooperative robots. The overlap undergoes a signiﬁcant increase at the end of the exploration to reach $33\%$. This is explained by the closeness of the local maps at the end of the mission to precisely ﬁll the global grid map.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/3_19.png}
+    \caption{Explored and overlapped area rate using two cooperative UAVs.}
+    \label{fig:3.19}
+\end{figure}
+\subsubsection{Traveled distance evaluation}
+To eﬀectively evaluate the exploration strategy performance in terms of distance traveled by each UAV, diﬀerent runs with one, two and three UAVs have been conducted where explored area rate reaches almost $99\%$. Figure \ref{fig:3.20} shows the distance traveled by each UAV in the ﬂeet during the mission.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_18_a.png}
+        \caption{{One UAV.}}
+        \label{fig:3.18a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_18_b.png}
+        \caption{{Two cooperative UAVs.}}
+        \label{fig:3.18b}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_18_c.png}
+        \caption{{Three cooperative UAVs}}
+        \label{fig:3.18c}
+    \end{subfigure}
+    \caption{Explored space rate with one, two and three UAVs.}
+    \label{fig:3.18}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_20_a.png}
+        \caption{{One UAV.}}
+        \label{fig:3.20a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_20_b.png}
+        \caption{{Two cooperative UAVs.}}
+        \label{fig:3.20b}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/3_20_c.png}
+        \caption{{Three cooperative UAVs}}
+        \label{fig:3.20c}
+    \end{subfigure}
+    \caption{Traveled distance by each UAV with one, two and three cooperative UAVs.}
+    \label{fig:3.20}
+\end{figure}
+The distances traveled by each UAV using one, two and three UAVs in the ﬂeet are compared in Figure \ref{fig:3.21}. This distance decreases with the number of UAVs. The average distance traveled by each UAV is reduced by $55\%$ for 2 UAVs and by $62\%$ for 3 UAVs. The error of the traveled distance is slightly reduced from one to two and three UAVs.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/3_21.png}
+    \caption{Traveled distance evaluation.}
+    \label{fig:3.21}
+\end{figure}
+\subsubsection{Exploration time evaluation}
+For the exploration time evaluation, diﬀerent runs have been performed using 1, 2 and 3 UAVs. Figure \ref{fig:3.22} shows that the average of exploration time decreases when the number of robots in the ﬂeet increases. The computed error decreases as well. The time is reduced by $25\%$ for 2 UAVs and by $30\%$ for 3 UAVs. The exploration time and distance are not divided by 2 or 3 when multiplying by 2 or 3 the number of robots, respectively. During these simulations, the robots’ initial positions are: $(1,0,0)$ for one UAV; $(1,0,0)$ and $(1,-3,0)$ for two UAVs; and $(1,1,0)$, $(1,-1,0)$ and $(1,-3,0)$ for three UAVs.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/3_22.png}
+    \caption{Average exploration time.}
+    \label{fig:3.22}
+\end{figure}
+The results presented in Section 4.2 were evaluated without a relative localization. So, for a more challenging realistic scenario, runs with relative localization algorithm have been performed to evaluate system performances using SLAM.
+\subsection{Exploration mission using relative localization algorithm}
+Toward a more realistic scenario, the ORB-SLAM2 approach (introduced in Section 5 of Chapter 2) has been implemented to perform relative localization (See Figure \ref{fig:3.23}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{assets/3_23.png}
+    \caption{Two UAVs navigation using ORB-SLAM2. Rviz image (left) shows, for each UAV, the constructed 2D occupancy grid map, its estimated trajectory and the corresponding ground truth. The point cloud (middle) represent the sparse reconstruction of the environment made by each UAV. And, the green markers (right) represent the features computed by each UAV to perform localization.}
+    \label{fig:3.23}
+\end{figure}
+Each robot performs SLAM where it constructs its map in its local reference frame $^WF_i$ , and estimates its relative pose $\mathbf{p}_i$ within it. Then, the ﬂeet performs cooperative explo- ration using some speciﬁc information exchanged among UAVs. But, these information have to be in a common reference frame. Therefore, information such as the pose $\mathbf{p}_i$ and the frontier points $\mathbf{f}_{i,j}$ are necessarily transformed into the global reference frame $^0W$ before being exchanged. Hence, the \textit{leader} makes all the needed computation and sends back to the \textit{explorers} the targets in $^0W$. When a robot receives its assigned goal, it transforms it into $^WF_i$ to plan a path to it.\\\\
+To perform a transformation from local reference $^WF_i$ to global one $^0W$, the robot has to know – at least – its initial pose w.r.t. $^0W$. As explained in Section 5.2 of Chapter 1, the global reference frame of the environment is initialized such that it coincides with the local reference frame of the ﬁrst group-\textit{leader} in the ﬂeet which is UAV$_1$ in the considered example of Equation \ref{eq:3.9}.
+\begin{equation}\label{eq:3.9}
+    ^0W\equiv ^WF_1,
+\end{equation}
+Then, by detecting this robot using tags mounted on it, the other robots are able to estimate their respective transform to it $^{F_j}\begin{bmatrix}\mathbf{R} & \mathbf{t}\end{bmatrix}_{F_1}, j \in [2..n_c]$. For simulation evaluations, the information of transform – computed while detecting the tag – are assumed to be known. Figure \ref{fig:3.24} shows the exploration rate evolution during the exploration mission while using ORB-SLAM2 as the relative localization approach. The mission time using ORB-SLAM2 is reduced by $43\%$ for 2 UAVs instead of 1 UAV.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/3_24.png}
+    \caption{Explored area rate evolution during exploration mission with one and two UAVs while performing ORB-SLAM2 by each UAV.}
+    \label{fig:3.24}
+\end{figure}
+The exploration time when using a relative localization (See Figure \ref{fig:3.24}) is relatively important compared to the exploration without SLAM (See Figure \ref{fig:3.18}) since the velocity has been considerably reduced.
+\section{Conclusion}
+In this chapter, we presented a state of the art of multi-robot exploration mission including the strategy used to assign a robot to a target and an utility function adopted to estimate the interest of reaching it. Then, we introduced an exploration strategy based on the group-\textit{leader} decision making. The robot-to-target assignment is performed using a novel utility function. This function makes a trade-oﬀ between fast exploration and getting a detailed grid map, and also takes into account the distance of each robot in the group from the unexplored set of targets. Also, we propose to schedule the information gain in order to eﬃciently spread the UAVs into the environment. Moreover, the strategy adopted exchanges the frontier points instead of a whole copy of the local map.\\\\
+Results show that the proposed cooperative exploration strategy minimizes the global exploration time by $25\%$ for 2 UAVs and by $30\%$ for 3 UAVs, while minimizing the average traveled distance by each UAV by $55\%$ for 2 UAVs and by $62\%$ for 3 UAVs. Furthermore, the strategy was evaluated using a relative localization algorithm where the exploration time was reduced by $43\%$ for 2 UAVs instead of 1 UAV.
+%------------------CHAPTER 4------------------------------------------------%
+\chapter{Inter-robot communication}
+\section{Introduction}
+A critical subject in multi-robot systems is the communication among robots. This feature is used for coordination and to share speciﬁc information. A ﬂeet can be deployed in several missions within relatively diﬃcult and hostile areas. But, these environments may have no pre-existing network infrastructure, in addition to non ideal communication links.\\\\
+This chapter highlights one of the most challenging points in MRS, which is the inter- robot communication. This problem can be addressed from diﬀerent perspectives; but, we have chosen to study two sub-problems, which are: network typology, and network topology and strategy for MRS robustness.
+\section{Network classification}
+The network is used to link between diﬀerent entities and to establish possible communi- cation between them. Several network types exist and can be classiﬁed in diﬀerent ways.
+\subsection{Infrastructure versus infrastructureless mode}
+To manage network infrastructure, the existed modes can be classiﬁed into two major categories [Äřlker Bekmezci et al., 2013, Hayat et al., 2015]. The ﬁrst kind is the infrastructure mode, which can be called Access Point (AP) mode, and the second kind is
+the infrastructureless mode named Ad Hoc mode (See Figure \ref{fig:4.1}). In the AP mode, the UAV-to-UAV communication is realized through the infrastructure (AP, routers, etc.), unlike the Ad Hoc mode in which nodes communicate directly with each other. The Ad Hoc mode is also called peer to peer mode. The Ad Hoc network can grow into another peer to peer mode called mesh network by enabling multi-hop capability. Indeed, the Ad- Hoc networks do not have any inherent capability for multi-hop. Nodes communicate with each other when they are within one another’s communication range. Whereas, in mesh networks, nodes are able to communicate directly or through one or more intermediate nodes.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/4_1.png}
+    \caption{Infrastructure (left) and infrastructureless (right) mode.}
+    \label{fig:4.1}
+\end{figure}
+\begin{table}[H]
+    \centering
+    \caption{Infrastructure versus Infrastructureless mode.}
+    \label{tab:4.1}
+    \begin{tabular}{|l|p{4.5cm}|p{4.5cm}|}\hline
+                               & \textbf{Infrastructure mode}      & \textbf{Infrastructureless mode}
+        \\\hline
+        \textbf{Advantages}    & Reliability of communication      & Direct connection to each other,
+        easy to set up, robust to node fail-
+        ure, allow expansion and modiﬁca-
+        tion in network topology.                                                                     \\\hline
+        \textbf{Disadvantages} & Expensive, complicated hardware,
+        range restriction.     & Redundancy in network connection,
+        diﬃcult maintenance.                                                                          \\\hline
+        \textbf{Standard}      & 802.11                            & 802.11, 802.15, 802.16           \\\hline
+    \end{tabular}
+\end{table}
+Originally, robots have to perform their tasks in environments without network infras- tructure. In fact, they exchange information when they act as routers and as APs. So, the MRS system can be seen as a mobile Ad Hoc network in a communication point of view.
+\subsection{Ad Hoc network classification}
+Ad Hoc Network is the commonly used network to manage multi-robot communication. With this network, each robot can move freely and forward packets to and from each other depending on the mode of distribution of data [Bouachir, 2014]. This network is characterized by sophisticated quality of service in which routing protocol determines the optimal path of the information taking into account the frequent change of the topology. Added to that, it is cheaper to realize this kind of network instead of others (satellite, cellular, etc.).\\\\
+The Ad Hoc network can be classiﬁed into three main categories which are Mobile Ah doc NETwork (MANET), Vehicular Ah doc NETwork (VANET), and Flying Ad hoc NETworks (FANET). For multi-UAV system, generally, the FANET model is adopted. Table \ref{tab:4.2} details each category’s characteristics [Äřlker Bekmezci et al., 2013, Maistrenko et al., 2016] and also analyses our model’s expectations.
+\begin{table}[H]
+    \centering
+    \caption{Comparison between MANET, VANET, FANET and our model’s network expectation.}
+    \label{tab:4.2}
+    \begin{tabular}{|p{2.8cm}|p{1.5cm}|p{1.5cm}|p{1.8cm}|p{1.8cm}|}\hline
+        \textbf{Characteristics}                                     & \textbf{MANET}                                    & \textbf{VANET}                 & \textbf{FANET}                                                       & \textbf{Our model expectation}
+        \\\hline
+        \textbf{Mobility}                                            & Men in certain terrain                            & Vehicle in highway             & Plane in 3D plan                                                     & 3D                             \\\hline
+        \textbf{Mobility degree}                                     & $+$                                               & $+$                            & $++$                                                                 & $++$                           \\\hline
+        \textbf{Mobility model}                                      & Random way points with random direction and speed & Highly predictable in roads    & Not predetermined (random UAV movement model, pheromone based model) & Predictable                    \\\hline
+        \textbf{Topology changes}                                    & $+$                                               & $+$                            & $++$                                                                 & $++$                           \\\hline
+        \textbf{Distance between nodes}                              & $+$                                               & $+$                            & $++$                                                                 & $+$                            \\\hline
+        \textbf{Node density}                                        & $++$                                              & $++$                           & $+$                                                                  & $+$                            \\\hline
+        \textbf{Radio propagation model}                             & Rare presence of line of sight                    & Rare presence of line of sight & Frequent presence of line of sight                                   & Always presence of line sight  \\\hline
+        \textbf{Power consumption and life time computational power} & $+$                                               & $+$                            & $++$                                                                 & $++$                           \\\hline
+        \textbf{Standard}                                            & IEEE 802.11, 802.15, 802.15.4, 802.16 and 802.20  & IEEE 802.11p                   & IEEE 802.11                                                          & ?                              \\\hline
+    \end{tabular}
+\end{table}
+The comparison shows that FANET is the closest network to our model’s expectations. Hence, among the available standards for this kind of network, IEEE 802.11b and IEEE 802.11g provide high data rates and are typically used for multi-robot systems.
+\subsection{Network topology classification}
+The network topology defines the starting points, the endpoints and the paths of the information in the network. Given target points, the topology defines all possible paths to reach them.\\\\
+From a software point of view, the network an be mainly classified in three topology (See Figure \ref{fig:4.2}\footnote{Source: From user 1983 on Wikipedia. Licensed CC BY-SA}):
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/4_2.png}
+    \caption{Centralized (left), decentralized (middle) and distributed (right) networks.}
+    \label{fig:4.2}
+\end{figure}
+\begin{itemize}
+    \item Centralized network: It is the most used topology [Morgenthaler et al., 2012], [Froster et al., 2013b]. All nodes - also called stations - are connected to each other via a centralized hub. That is when a node needs to send an information to another one, the data necessarily pass through the central node to be routed to its destination. If the central node is out of service or unreachable, no data can be transmitted which makes this topology vulnerable to node failure.
+    \item Decentralized network: This topology is considered as a set of centralized networks connected together [Fox et al., 2003], [Brand et al., 2014]. One central hub is employed for every little group of nodes to send and receive the information. If a hub fails, nodes which are direactly relied to it become inaccessible.
+    \item Distributed network: This topology contains nodes that are connected to each others. Unlike the centralized topology, several paths are possible to reach one destination. Also, nodes are not affected by one node's failure. This allows to increase the survivability and to decrease the vulnerability of the network. The distributed topology is attractive to ensure reliable network [Cunningham et al., 2010]. Nevertheless, it is quite difficult to reach and to realize in reality, and the simulation are not fully distributed [Waharte et al., 2009], [Cameron and Trigoni, 2009], [Scherer et al., 2015]. This is because all processing and decision making have to be on-board the robot whichs requires an important memory and a heavy computation.
+\end{itemize}
+\section{Network typology}
+The typology of the network represents its type and, accordingly, the characteristics introduced.
+\subsection{Related work}
+MRS communication is a critical problem to tackle in the robotics community. In the last decade, the great progress in wireless technologies and MRS has created a growing interest for inter-robot communication. Hence, diﬀerent methods have been proposed.\\\\
+To face disaster scenarios such as ﬁre in an industrial warehouse, authors in [Witkowski et al., 2008] propose to use Wireless LAN, Bluetooth and ZigBee to form an Ad- Hoc network. Some robots of the ﬂeet form the network infrastructure to support communication.\\\\
+Authors in [Morgenthaler et al., 2012] use two network standards to build a multi-UAV system. A IEEE 802.11s wireless mesh network is build using UAVs carrying mesh nodes directly connected to the ﬂight electronics. Each of these mesh nodes acts as an AP in order to form an IEEE 802.11g.\\\\
+A methodology that proﬁles the wireless links for Linux-based networked aerial vehicles is presented in [Kuschnig et al., 2012]. The approach includes two options to collect link quality information and to monitor the 802.11 wireless interface.\\\\
+An evaluation of the standard 802.11a used between an UAV and an AP is performed in [Kuschnig et al., 2012]. Results show that the Received Signal Strength (RSS) for the downlink decreases with the distance to the AP but remains at an acceptable level as well as the throughput.\\\\
+Knowing that the visible light spectrum is much wider than the Radio Frequency spectrum, it seems interesting to uptake Visible Light Communication (VLC) based on Light Emitting Diodes (LEDs). IEEE has developed the 802.15.7 standard for short range communication using visible light. Authors in [Wang et al., 2014] introduce a bidirectional communication using Open VLC. This solution hardware needs a Beagle Bone Black (BBB) board and a font transceiver that employs a single LED to both transmit and receive. The solution is implemented on Linux driver that communicates directly with the LED front-end and the Linux networking stack. The main idea to reuse the same LED for both Transmitting (TX mode) and Receiving Light signal (RX mode) is that when a node is transmitting data, the other node can expect the LOW symbol of the bit 0 and makes use of this time to switch his mode from RX to TX and transmit data.\\\\
+The Zigbee – based on IEEE 802.15.4 – is a protocol of high level which is particularly useful for short communication range and low consumption. Several UAVs’ application use this network [Asadpour et al., 2014]. Communication can be made under three frequency bands depending on the chipset type: 868MHz for a bit rate of 20 kbps, 915MHz for 40 kbps and 2.4GHz for 250 kbps.\\\\
+Authors in [Vidal et al., 2015] adopt diﬀerent sized groups composed of tactical UAVs and UAVs moving in delimited geographical areas. Virtualization techniques are used to adapt the upgrade of any function, which allows the ﬂexibility in heterogeneous services.\\\\
+In a search and rescue mission, for example, authors in [Scherer et al., 2015] propose to do real-time streaming between UAVs over a large distance. The mission is divided into ﬁve principle phases: The pre-planning to deﬁne the best paths in the search area allowing to reduce the time of the mission then searching by just following the predeﬁned way- points; the detection of the target and sending the new plans to the others, followed by the repositioning by setting a multi hop link to evaluate the situation by the base station and ﬁnally, the streaming of the video.\\\\
+The multi-UAV, moving in a three dimensional space, need sophisticated transmission systems to ensure ﬂexibility. In [Scherer et al., 2015], an omni-directional isotropic antenna is ﬁxed on the base station and on all the deployed heterogeneous UAVs. For data exchange, the standard IEEE 802.11s mesh technology is used.\\\\
+Authors in [Hayat et al., 2015] present a performances comparison between the stan- dard IEEE 802.11n and the IEEE 802.11ac in a multi hop network. Both networks were experimented in indoor and outdoor environment, and in two mode, the access point mode (AP)/infrastructure mode and the mesh mode regarding throughput and fairness. In indoor experiments, for an infrastructure mode, the 802.11ac shows improved performances in both TCP and UDP throughput, and packet loss for UDP traﬃc. In outdoor experiments, for infrastructure mode, the throughput of 802.11n is three time higher than that of 802.11a however, the link quality drops more steeply. For mesh mode, 802.11n achieves higher throughput at close range but drops faster as soon as date rate gets higher and the range longer. The recorded throughput for mesh network is lower than infrastructure mode due to the longer inter-packet transmission times.\\\\
+To face issues of maintenance connectivity, collision avoidance, robustness to failure and area coverage improvement, authors in [Ghedini et al., 2018] propose a novel model that provides more eﬃcient network topologies.\\\\
+In [Harms et al., 2018], a new communication layer is proposed to deal with networks that requires a high bandwidth. For that, some mechanism are used to buﬀer messages, to compress data or to react to unexpected situations.\\\\
+Table \ref{tab:4.3} lists some standards used in multi-robot systems. For each standard, we detail the concerned layer in the OSI model, its characteristics, the resulting performances, and the hardware and software used for experiments.
 \end{document}
