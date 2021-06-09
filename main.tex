@@ -11,10 +11,12 @@
 \usepackage{algorithmic}
 \usepackage{hyperref}
 \usepackage{tabularx}
+\usepackage{diagbox}
+\usepackage{slashbox}
 \title{Communicating Multi-UAV System for cooperative SLAM-based Exploration}
 
 \usepackage{pagenote}
-\setcounter{chapter}{1}
+\setcounter{chapter}{2}
 
 %% End notes to be printed as sections at the
 %% end of each chapter.
@@ -40,436 +42,359 @@
 \makepagenote
 
 \begin{document}
-\chapter{Simultaneous Localization And Mapping}
-\section{Pose Estimation}
-In this chapter, we focus on the use of an embedded visual sensor for pose estimation. These sensors\footnote{The used visual sensors are supposed to be calibrated.}, mounted on-board moving robots, are used to gather information to map the environment and to estimate the robot’s trajectory. To this end, VO and SLAM methods are dominant.
-\subsection{Visual Odometry}
-\subsubsection{Overview}
-The visual odometry process consists in incrementally estimating the pose of a vehicle by examining the changes that motion induces on the images taken from its on-board rigidly attached camera [Scaramuzza and Fraundorfer, 2011]. VO is a 3D motion estimation (translation + rotation) computed from sequential optical sensors data such as images (See Figure 2.1).
-\begin{figure}
-    \centering
-    \begin{subfigure}[h]{0.9\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{assets/2_1_a.png}
-        \caption{{Consecutive images correspondences.}}
-        \label{fig:subfigure1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[h]{0.8\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{assets/2_1_b.png}
-        \caption{{Consecutive images motion estimation.}}
-        \label{fig:subfigure2}
-    \end{subfigure}
-    \caption{The VO working principle. Images from [Schöps et al., 2014].}
-\end{figure}
-
-Assuming static scenes, two consecutive images at time \textit{k} and \textit{k-1} are related by a rigid body transformation $\mathbf{T_\textit{k}}$ in Eq.\ref{eq:2.1}
-\begin{equation} \label{eq:2.1}
-    \mathbf{T_\textit{k}} = \begin{bmatrix}
-        \mathbf{R_\textit{k,k-1}} & \mathbf{t_\textit{k,k-1}} \\
-        \mathbf{O_\text{1x3}}     & 1                         \\
-    \end{bmatrix}
-\end{equation}
-
-Where $\mathbf{T_\mathit{k}} \in \mathbb{R_\text{4x4}}$ in the relative transformation, $\mathbf{R_\mathit{k,k-1}}\in\mathbb{R_\text{3x3}}$ is the rotation made on each axis from the previous pose to the next one, and $\mathbf{t_\mathit{k,k-1}}\in\mathbb{R_\text{3x1}}$ is the translation on the three axes. Figure \ref{fig:2.2} shows an illustration of VO problem formulation where the following sets an be introduced:
-
-\begin{itemize}
-    \item $\mathcal{T_\textit{0:n}}=\{\mathbf{T_1},\mathbf{T_2},...,\mathbf{T_\textit{n}}\}$: The set of camera motions.
-    \item $\mathcal{C_\textit{0:n}}=\{\mathbf{C_0},\mathbf{C_1},...,\mathbf{C_\textit{n}}\}$: The set of camera poses w.r.t the initial coordinate frame.
-\end{itemize}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\linewidth]{assets/2_2.png}
-    \caption{Illustration of the visual odometry problem. Case of a stereo camera (At time \textit{k}, two boxes representing two image frames are available). Image from Scaramuzza and Fraundorfer, 2011.}
-    \label{fig:2.2}
-\end{figure}
-The VO consists in estimating the transformation $\mathcal{T_\textit{0:n}}$. Then, to recover the camera trajectory $\mathcal{C_\textit{0:n}}$. the computed $\mathcal{T_\textit{0:n}}$ is concatenated using Eq.\ref{eq:2.2} where, the initial camera pose $\mathbf{C_0}$ is arbitrary set.
-\begin{equation} \label{eq:2.2}
-    \mathbf{C_\textit{n}}=\mathbf{C_\textit{n-1}}\mathbf{T_\textit{n}}
-\end{equation}
-VO estimation requires assumptions such as:
-\begin{itemize}
-    \item The environment has to be sufficiently illuminated and structured.
-    \item The scene has to be mostly static.
-    \item The consecutive frames need sufficient overlap among them.
-\end{itemize}
-\subsubsection{Related work}
-VO can be computed by two approaches classified into: Sparse visual odometry Engel et al., 2016  (where only a part of the image data is used) and dense visual odometry Kerl et al., 2013b (where all the available image data are used). According to Schops et al., 2014, the existing VO methods (also SLAM methods) can be classified into Feature-based method and Direct method (See Figure \ref{fig:2.3}).
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\linewidth]{assets/2_3.png}
-    \caption{Feature-based versus direct methods. Image from [Schops et al., 2014]}
-    \label{fig:2.3}
-\end{figure}\\
-The feature-based methods abstract images to features and discard all the order information. The main pipeline of these methods are:
-\begin{itemize}
-    \item To acquire the image sequences.
-    \item To detect/extract the features using approaches such as Scale-Invariant Feature Transform (SIFT) or Speed Up Robust Features (SURF).
-    \item To match/track the features using techniques such as RANdom SAmple Consensus (RANSAC)
-    \item To estimate the relative motion between the features (2D/2D, 3D/3D, 3D/2D)
-    \item To optimize the estimated transformation.
-\end{itemize}
-These steps may slightly differ depending on the adopted method. For example, the bundle adjustment-based approach is a commonly used feature-based method where the main steps [Sibley et al., 2010, Shade and Newman, 2011] are:
-\begin{itemize}
-    \item Image processing: To remove the distortion in lens and to filter the images to allow faster matching of features.
-    \item Image alignment: To make an initial estimate of a 3D rotation using a gradient descent method-based on image intensity.
-    \item Feature match in time: To project the 3D features into the left and the right images and match them using a sum-absolute-difference error metric.
-    \item Initialize new features: To track about 100 to 150 features and to ensure a spatial distribution using a quad-tree.
-\end{itemize}
-Results, presented in [Shade and Newman, 2011], have shown that these estimations are robust even under diﬃcult conditions. They are mostly adapted for large scale environments.\\ \\
-The direct methods [Schöps et al., 2014] perform tracking directly on the image intensity
-(instead of extracting and matching features). This allows to achieve a higher accuracy
-and robustness, especially in indoor environments where only few features are available.
-But, this method requires a powerful Graphic Processing Unit (GPU) to run in real time.\\\\
-According to [Fang and Scherer, 2014, Fang and Zhang, 2015], the VO for RGB-D sensor
-can be classiﬁed within three categories:
-\begin{itemize}
-    \item The image-based category [Huang et al., 2011, Kerl et al., 2013b, Endres et al., 2014, Li et al., 2015] that uses RGB-D and depth data. It is mostly adapted when there is a good gray image value or visual features.
-    \item The depth-based category [Wang et al., 2017] that uses point cloud and is commonly used in featureless or dark environment.
-    \item The hybrid category [Zhang et al., 2014] that uses point cloud and RGB-D.
-\end{itemize}
-The Fovis presented in [Huang et al., 2011], is a feature-based VO method that provides consistent motion estimation but needs to work at high frequencies for a correct estimation.\\\\
-The Dense VO method (DVO), introduced in [Steinbrücker et al., 2011], estimates dense
-VO directly from the RGB-D frame by minimizing the diﬀerence between the previous
-image and the back-projected current RGB-D image. This approach is optimized in [Kerl
-        et al., 2013b] by a probabilistic derivation and the possibility of prior integration of the
-motion and the sensor noise. It has been extended by adding weight to each pixel and by incorporating a motion prior. Actually, this method is based on the photo-consistency
-assumption that assumes that if a point is observed by two cameras, it has the same
-brightness in both images.\\\\
-Authors in [Zhang et al., 2014] propose the Depth Enhanced Monocular Odometry method
-(DEMO) to enhance VO from monocular images by the assistance of depth information
-even if it is sparsely or locally unavailable. According to [Fang and Scherer, 2014, Zhang
-        et al., 2014, Fang and Zhang, 2015], DVO is adapted for environment with relatively dark
-illumination and DEMO [Zhang et al., 2014] for areas with no suﬃcient depth information.\\\\
-A Fast Semi-Direct Monocular Visual Odometry called SVO is proposed in [Forster et al.,
-        2014]. The algorithm operates directly on pixel intensities. The 3D points are estimated
-using probabilistic mapping method that allows to reduce the outliers (false matching
-points) and get more reliable points. Results show that the proposed method is robust,
-and faster than current state-of-the-art methods.\\\\
-In some works, authors use Structure From Motion (SFM) term as a synonym of VO.
-Actually, VO is a particular case of SFM [Scaramuzza and Fraundorfer, 2011]. In fact,
-SFM is a more general process that treats both 3D problem of camera pose estimation and
-structure from images set that can even be unordered. They are generally reﬁned with an
-oﬀ-line optimization known as bundle adjustment. The SFM’s computation time grows
-when the image number grows too. Compared to the SFM, VO focuses on 3D sequential
-pose estimation in real time. In VO, the trajectory estimation optimization is optional.
-\subsection{Simultaneous Localization And Mapping (SLAM)}
-\subsubsection{Overview}
-The SLAM problem is one of the most important topics in the robotic community. It
-consists in answering simultaneously two important questions: Where is the robot? And
-what does the world looks like? Let’s consider a robot with a visual sensor mounted on
-it. It is moving in an a priori unknown environment and is collecting information about
-relative observations of landmarks. Figure \ref{fig:2.4} shows the evolution of the robot poses
-and landmarks during a short time of navigation [Durrant-Whyte and Bailey, 2006]. The
-following sets are then introduced:
-\begin{itemize}
-    \item $\mathcal{P_\textit{0:k}}=\{\mathbf{p_0},\mathbf{p_1},...,\mathbf{p_\textit{k}}\}$ represents the set of poses of robot. Each pose includes the position and the orientation of the robot.
-    \item $\mathcal{U_\textit{0:k}}=\{\mathbf{u_1},\mathbf{u_2},...,\mathbf{u_\textit{k}}\}$ represents the set of control vectors used to drive the robot from state $\textit{l}-1$ to state $\textit{l}$ at time $\textit{l}$ with $\textit{l} \in [1..\textit{k}]$
-    \item $\mathcal{M_\textit{0:k}}=\{\mathbf{m_1},\mathbf{m_2},...,\mathbf{m_\textit{k}}\}$ represents the set of vectors that defines the states of landmarks. These locations are considered as time invariant.
-    \item $\mathcal{Z_\textit{0:k,i}}=\{\mathbf{z_\textit{1,i}},\mathbf{u_\textit{2,i}},...,\mathbf{u_\textit{k,i}}\}$ represents the set of observations of the landmark $\textit{i}$ made at times $[0..\textit{k}]$
-\end{itemize}
+\chapter{Coordinated exploration}
+\section{Introduction}
+The exploration and mapping of large areas is an active ﬁeld of research in aerial robotics. It consists in constructing a 3D model representation of the workspace as robots progress within it. Recently, the key subject in the exploration problem is the cooperative deployment of ﬂeet of robots that promise enhanced performances compared to single robot exploration.\\\\
+In this chapter, we address the problem of cooperative exploration strategies with no a- priori knowledge of the environment. We will try to answer the question: Where should each robot move next?
+\section{Related work}
+Recently, several works have proposed solutions for exploration using multi-robot teams to reduce the mission time and to increase the scalability [Bautin et al., 2012, Jensen and Gini, 2013, Yan et al., 2014]. Hence, the challenge is to have an eﬃcient cooperation among the agents in the ﬂeet while maintaining communication [Rooker and Birk, 2007]. For that, existing approaches can be centralized, that is, one robot in the ﬂeet is responsible for assigning targets [Burgard et al., 2000]. In [Schmuck, 2017], a central server with increased computational resources is adopted to receive, treat, optimize and send back information to other robots. Other works, such as [Yuan et al., 2010, Sheng et al., 2006], use distributed approaches where each robot chooses its own target. Another trend is to switch from individual to cooperative exploration behavior when robots are not able to converge to a local minimum at a satisfying rate [Wu and Zhang, 2012]. In [Konolige et al., 2003], authors propose to consider four possibilities taking into account robots’ interactions in order to construct a distributed map. The situations involved are: no interaction (robots are not within each others’ communication range), hypothesis generation (there is an interaction between the robots but they do not know their respective location), hypothesis veriﬁcation (there is an interaction between the robots and they propose an hypothesis about their location), and coordinated exploration (there is an interaction between robots and they do share their maps).
+\subsection{Robot-to-target assignment}
+The mapping algorithm is performed while a robot attempts to reach a target. So, for an eﬀective environment mapping, the target should be chosen carefully. There is a wide variety of goal assignment strategies to aﬀect one robot to a target. The majority of them are centralized and use a cost function to compute the utility of reaching a target.\\\\
+In the greedy assignment [Yamauchi, 1998], each robot chooses a target depending on its cost function without coordinating with other robots. Hence, one target can be visited by diﬀerent robots. To solve this issue, already chosen targets can be discarded before being considered for assignment by others using Broadcast of Local Eligibility (BLE) [Werger and Matarić, 2000] also called Iterative Assignment. But, this method does not necessarily produce the optimal solution since it depends on the order of robots.\\\\
+The K-means method [Solanas and Garcia, 2004] consists in dividing the environment to explore into regions of the same number of robots, then, assigning one robot to the closest region where it will choose a target from the frontiers depending on a cost function.\\\\
+The Hungarian method [Pal et al., 2011] proposed by [Kuhn, 1955], solves the worker- task assignment written in the form of $n \times n$ matrix $C$ where $c_{i,j}$ is the cost of the task $j$ assigned to the worker $i$. The optimal assignment is found with time complexity $O(n^3)$. This algorithm requires that the number of workers is equal to the number of tasks which cannot be guaranteed. Else, imaginary robots or targets can be added to satisfy the assumption, and skipped later in the selection.\\\\
+Authors in [Nanjanath and Gini, 2006] present an auction-based method to assign tasks to a group of robots. The distribution of tasks is accomplished by means of a ﬁrst-price reverse auction which means that the auctioneer is the buyer. One task is auctioned one at a time by priority. Then, the auctioneer selects the best bid and assigns the task to the corresponding bidder. The algorithm is well adapted to dynamic environments, where unexpected obstacles might prevent a robot from reaching its target.\\\\
+In [Zhao et al., 1996, Leigh et al., 2007], a genetic algorithm is used to optimally assign robot to tasks. It is an NP-hard problem since it is considered as a generalized two- dimensional multi-type bin packing problem.\\\\
+Authors in [Faigl et al., 2012] present a new approach called Multiple Traveling Salesman Problem (MTSP) for robot-to-target assignment in multi-robot exploration problem. It consists in clustering an environment, determining the cost of TSP distance for each pair of robot cluster, assigning goals from non empty cluster, and ﬁnally ﬁxing goals for empty clusters. This approach was compared with greedy, iterative and Hungarian method. The MTSP presents competitive results regarding the total computational requirements and the increasing number of robots.\\\\
+In [Kulich et al., 2015], a comparison of some assignment strategy used for multi- robot system is done. The compared strategies include Hungarian method, Greedy, BLE method and K-means clustering. Results show that Hungarian method outperforms other approaches in majority of cases. Unlike the Hungarian method, the iterative assignment can be implemented in a distributed environment. Also the Hungarian methods are computationally heavy compared with the simple greedy algorithm which is preferred in applicable scenario.
+\subsection{Utility function}
+Most of the robot-to-target assignments are based on an utility function that deﬁnes the beneﬁts that a robot have to reach this target, taking into account the mission’s aim [Burgard et al., 2000]. The work proposed in [Benavides et al., 2016] presents a new utility function that takes into account the traveling cost to the target and the connectivity utility. This allows a trade oﬀ between minimizing the amount of exploration time and the connectivity. To speed up velocity, authors in [Cieslewski et al., 2017] propose a rapid frontier selection technique to select goals from the robot’s ﬁeld of view. This approach minimizes the overall mission time by minimizing the change in velocity of the robot. Nonetheless, this approach increases the total path length traveled. In [Heng et al., 2015], maximizing the reconstructed model is favored over the mission time. Furthermore, the proposed approach solves simultaneously exploration and coverage problems in order to maximize the completeness of the reconstructed model. Whereas in [Simmons et al., 2000], the aim is the maximization of the utility of targets that minimizes the potential for overlap in information gain amongst members of the ﬂeet. The utility of reaching a target depends basically on the aim of the mission while taking into account some additional constraints such as time, completeness of the map, limited sensor and communication range, or number of robots.
+\section{Proposed exploration strategy}
+\subsection{Overview}
+In a Multi-UAV system, the exploration strategy needs to be cooperative to maximize the eﬃciency. The main objective proposed here, is to cooperatively choose speciﬁc regions to be simultaneously explored using a frontier-based approach. Commonly, this is done by selecting candidate targets and assigning them to each robot in an optimized manner. Figure \ref{fig:3.1} shows the proposed pipeline exploration process performed by each UAV.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{assets/2_4.png}
-    \caption{SLAM problem formulation.}
-    \label{fig:2.4}
+    \includegraphics[scale=0.6]{assets/3_1.png}
+    \caption{Proposed exploration process pipeline.}
+    \label{fig:3.1}
 \end{figure}
-The formulation of a probabilistic SLAM can be written in a probabilistic form as expressed in Eq.\ref{eq:2.3}. This probability distribution has to be computed at each time k, knowing the observed landmarks, the control vectors, and the initial robot pose.
-\begin{equation} \label{eq:2.3}
-    P(\mathbf{p_\mathit{k}},\mathbf{m} \vert \mathcal{Z_\text{0:\textit{k}}},\mathcal{U_\text{0:\textit{k}}},\mathbf{p_0})
-\end{equation}
-Generally, the SLAM problem is resolved through a recursive solution that requires a motion model and an observation model. By far, the most commonly used approaches for these model representations are:
-\begin{itemize}
-    \item The Extended Kalman Filter (EKF) for an EKF-SLAM solution.
-    \item The Rao-Blackwellised particle ﬁlter for a Fast-SLAM solution.
-\end{itemize}
-Some other solutions, explained in the next section, are proposed to attempt to solve the SLAM problem [Cadena et al., 2016].
-\subsubsection{Related work}
-The VO’s main objective is to ensure a local consistency while SLAM aims at a global consistency of the map [Renaudeau et al., 2018] and the trajectory [Mur-Artal and Tardós, 2017a]. Indeed, SLAM is used to obtain a global and consistent estimate of the robot path based on loop closure. It allows the algorithm to apply a global optimization to reduce drift on both the trajectory and the map. Whereas, VO aims at estimating the trajectory pose after pose, and applying optimization after a certain number of poses called windowed optimization. The choice between using VO and Visual SLAM is based on a trade-oﬀ between performance and consistency, and simplicity of implementation.\\\\
-The Parallel Tracking and Mapping (PTAM) proposed in [Klein and Murray, 2007] is a monocular SLAM based on a parallel framework that includes a tracker and a mapper, in order to increase the responsiveness and robustness of the whole system. The tracker enables fast camera localization in real time; whereas keyframe based mapper builds the global map. Authors in [Ta et al., 2013] modiﬁed PTAM – originally designed for augmented reality – making it more suitable for robot navigation. Instead of using a motion model, odometry and visual measurements are fused into the framework to deal with the lack of visual features and the lack of motion in the environment. In addition, a loop closer mechanism is performed.\\\\
-Authors in [Cunningham et al., 2010] use an extending Smoothing And Mapping (SAM) approach consisting on a graphical model approach that introduces the Constrained Factor Graph (CFG). A Decentralized Data Fusion-SAM (DDF-SAM), that satisﬁes the DDF requirements while taking into account the beneﬁts of naive approach, is proposed. The framework is composed of three modules:
-\begin{itemize}
-    \item The Local Optimizer Module performs the SLAM for one robot in its local environment and produces its local map and condensed local graph.
-    \item The Communication Module shares the previous condensed local graph so that each robot maintains its local graph and a cache of neighboring robots’ condensed graphs.
-    \item The Neighborhood Optimizer Module merges the condensed graphs to obtain a neighborhood graph that can be used to build the map.
-\end{itemize}
-By applying loop closing process along with DVO method, authors in [Kerl et al., 2013a] propose a SLAM method that applies a global optimization to reduce drift on both the trajectory and the map. Yet, many implementation issues of this SLAM method rise due to versions incompatibility.\\\\
-Authors in [Forster et al., 2013a] propose a distributed monocular SLAM for a multi- robot system. To determine each robot’s individual motion, measurements from an on- board camera and Inertial Measurement Unit (IMU) are combined together. Speciﬁc data such as image coordinates, descriptors as features of selected keyframes, and relative pose estimation are streamed to a ground station – called Collaborative Structure From Motion (CSFM) – where a map for each robot is created and merged if there is an overlap among them.\\\\
-A software architecture is proposed in [Brand et al., 2014] to perform a distributed SLAM. The on-board stereo-vision based mapping system proves its eﬀectiveness in indoor, unstructured outdoor as well as mixed environment.\\\\
-A novel direct and feature-less Large-Scale Direct monocular SLAM (LSD-SLAM) method is proposed in [Engel et al., 2014]. It performs an accurate pose estimation using direct image alignment along with ﬁltering-based estimation of semi-dense depth maps. A 3D reconstruction of the environment is represented as a pose graph where keyframes are vertices.\\\\
-The OKVIS SLAM [Leutenegger et al., 2015] proposes a non-linear optimization approach that tightly fuses visual measurements along with readings from an IMU. This allows to signiﬁcant advantages in quality of performance and computational complexity.\\\\
-A novel tightly coupled visual-inertial SLAM system is proposed in [Mur-Artal and Tardós, 2017b]. This system is able to be applied to monocular as well as stereo and RGB-D sensors. It performs loop closing to attempt a zero-drift localization in already mapped areas.\\\\
-Authors in [Mur-Artal and Tardós, 2017a] propose a lightweight RGB-D feature-based SLAM method called ORB-SLAM2. It is adapted for monocular (depth triangulated from diﬀerent view), stereo and RGB-D sensors. Using the TUM RGB-D data-set [Sturm et al., 2012], in most cases, ORB-SLAM2 performs better than Elastic-Fusion [Whelan et al., 2016], kintinuous [Whelan et al., 2015], DVO SLAM [Kerl et al., 2013a] and RGB- D SLAM [Endres et al., 2014] in terms of Root Mean Square Error (RMSE) translation error.\\\\
-A new open framework for research in Visual Inertial (VI) mapping and localization – called Maplab – is proposed in [Schneider et al., 2018]. It contains a RObust Visual Inertial Odometry (ROVIO) with Localization Integration (ROVIOLI) and an oﬀ-line Maplab-console. ROVIOLI, composed of an on-line Visual-Inertial Odometry (VIO) and a localization front-end [Bloesch et al., 2017], is used for pose estimation and visual-inertial map building. The Maplab-console is used to apply algorithms on map in an oﬀ-line batch fashion such as map alignment and merging, VI optimization, loop closure detection, etc. Using EuRoC data-sets for comparison, ROVIOLI outperforms ORB-SLAM2 which itself outperforms in its tern ROVIO in terms of position and orientation RMSE. Nonetheless, ROVIOLI requires a global shutter camera and an IMU to work. It also does not make any use of depth information which makes it not optimal when using a RGB-D camera.\\\\
-\section{Metric map representation}
-The map reﬂects the environment by representing its model using either topological or metric method. A topological map is a graph data structure composed of vertices that represent the locations in the map, and edges to show the connection/link between them. Whereas, a metric map is a geometric representation of the environment. Figure \ref{fig:2.5} shows an example of diﬀerent map-structure representations.
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}[H]{0.4\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{assets/2_5_a.png}
-        \caption{{}}
-        \label{fig:2.5a}
-    \end{subfigure}
-    \begin{subfigure}[H]{0.4\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{assets/2_5_b.png}
-        \caption{{}}
-        \label{fig:2.5b}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[H]{0.4\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{assets/2_5_c.png}
-        \caption{{}}
-        \label{fig:2.5c}
-    \end{subfigure}
-    \begin{subfigure}[H]{0.4\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{assets/2_5_d.png}
-        \caption{{}}
-        \label{fig:2.5d}
-    \end{subfigure}
-    \caption{Examples of a map represented in diﬀerent structures. (a) Point cloud map. (b) Elevation map. (c) Multi-level surface map. (d) Occupancy grid map based on an octree. Image from [Hornung et al., 2013].}
-    \label{fig:2.5}
-\end{figure}
-\subsubsection{Point cloud representation}
-The point cloud is one of the simplest metric map representation of the environment (see Figure \ref{fig:2.5a}). The points gathered from a range sensor are transformed into a global coordinate frame. But, this representation is not adapted for dynamic environment and does not cope with sensor noise.
-\subsubsection{Occupancy grid representation}
-The occupancy grid map is a discretization of the environment in regularly sized 2D squares – called cells – or 3D cubic volumes – called voxels – (See Figure \ref{fig:2.5d}). The occupancy grid map is based on a hierarchical data structure – called Octree – which represents a 3D space that is recursively subdivided until attending a minimum voxel size – called resolution –(See Figure \ref{fig:2.6}). By increasing the resolution, the map becomes less coarser.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth]{assets/2_6.png}
-    \caption{Examples of an occupancy grid map with resolutions of $0.08m$, $0.64m$, and $1.28m$, respectively. Image from [Hornung et al., 2013].}
-    \label{fig:2.6}
-\end{figure}
-The occupancy grid representation introduces several advantages [Hornung et al., 2013] such as:
-\begin{itemize}
-    \item Arbitrary environment representation without prior assumptions.
-    \item Fast data access.
-    \item Flexibility in extending and combining diﬀerent maps with diﬀerent resolutions.
-    \item Updatability in adding new informations or sensor readings.
-    \item Compact memory storage.
-    \item Obstacle distinction for safe robot navigation.
-\end{itemize}
-Using the sensor measurements, the cells of the 2D (or the voxels of the 3D) occupancy grid map are labeled as unknown, free or occupied as shown in Figure \ref{fig:2.7}.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth]{assets/2_7.png}
-    \caption{2D occupancy grid example.}
-    \label{fig:2.7}
-\end{figure}
-\paragraph{Occupancy grid matching}
-We propose and implement a simple map matching process in order to evaluate and illustrate the global map during the mission. Suppose that we have two maps M 1 and M 2 (See Figure \ref{fig:2.8}) with the following assumptions:
-\begin{itemize}
-    \item Belonging to the same global frame.
-    \item Having the same resolution.
-\end{itemize}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth]{assets/2_8.png}
-    \caption{Map matching of $\mathbf{M_1}$ and $\mathbf{M_2}$.}
-    \label{fig:2.8}
-\end{figure}
-Each map is composed of:
-\begin{itemize}
-    \item \textit{Header}: It contains the sequence ID that is consecutively increasing, the stamp that deﬁnes the seconds and nanoseconds, and the frame this data is associated with.
-    \item \textit{Meta data}: It contains the time load map, which is the time at which the map hasd been loaded, the map resolution ($\mathbf{M}_i.resolution$) that deﬁnes the metric size of the cells, the map width ($\mathbf{M}_i.width$) and height ($\mathbf{M}_i.heigth$) in number of cells, and the origin of the map ($\mathbf{M}_i.origin$).
-    \item \textit{Data}: It contains the probability of occupancy of the cells in a row-major order.
-\end{itemize}
-Algorithm \ref{eq:2.1} describes the pipeline to match M 1 and M 2 where the steps can be summarized as follows:
-\begin{itemize}
-    \item Step 1 to 5: The meta data of the fused map are deﬁned.
-    \item Steps 6 to 7: Each cell in the fused map ($grid(\mathbf{M}_g)$) is initialized to $\mathbf{l}_u$ (cell labeled as $U N K N O W N $).
-    \item Each unknown cell of the grid ($grid(\mathbf{M}_g)=\mathbf{l}_u$) is filled in using the value of either $grid(\mathbf{M}_1)$ or $grid(\mathbf{M}_2)$.
-    \item Return the fused map $\mathbf{M}_g$
-\end{itemize}
+Each UAV selects the frontier points of its constructed local map during the SLAM step. Then, it computes the corresponding information gain of these points. If the UAV’s role is an \textit{explorer}, it would passively wait until receiving instructions; else, if it acts as a \textit{leader}, it would process the collected frontier points, and would assign a target to each robot in the group. Given a target, UAVs will plan a speciﬁc path to reach it.\\\\
+During these steps, the map structure evolves from a projected 2D grid map obtained from the localization and mapping module, through frontier points during the frontier selection process, then candidate targets during the frontier processing step, to a ﬁnal set of selected targets to reach. The evolution of the map structure is illustrated in Figure \ref{fig:3.2}. Algorithm \ref{alg:3.1} describes the main steps performed during the exploration.
 \begin{algorithm}
-    \caption{Map matching.}
-    \hspace*{\algorithmicindent} \textbf{Input:} Maps $\mathbf{M}_i$ with $i \in n_c$ \\
-    \hspace*{\algorithmicindent} \textbf{Output:} Fused map $\mathbf{M}_g$
+    \caption{Exploration strategy for coordinated Multi-UAV}
+    \label{alg:3.1}
     \begin{algorithmic}[1]
-        \STATE $\mathbf{M}_g.origin=argmin_{i \in n_c}(\mathbf{M}_i.origin);$
-        \STATE $\delta(\mathbf{M}_i).x=\frac{(\mathbf{M}_g.origin.x-\mathbf{M}_i.origin.x)}{\mathbf{M}_i.resolution};$
-        \STATE $\delta(\mathbf{M}_i).y=\frac{(\mathbf{M}_g.origin.y-\mathbf{M}_i.origin.y)}{\mathbf{M}_i.resolution};$
-        \STATE $\mathbf{M}_g.width=argmax_{i \in n_c}(\mathbf{M}_i.width + \delta(\mathbf{M}_i).x);$
-        \STATE $\mathbf{M}_g.height=argmax_{i \in n_c}(\mathbf{M}_i.height + \delta(\mathbf{M}_i).x);$
-        \FOR {all grids in $\mathbf{M}_g$}
-        \STATE $grid(\mathbf{M}_g)=\mathbf{l}_u$
-        \FOR {$i=0;i<n_c;i++$}
-        \FOR {$j=0;j<\mathbf{M}_i.width;j++$}
-        \FOR {$k=0;k<\mathbf{M}_i.length;k++$}
-        \IF {$grid(\mathbf{M}_i)\left[ j+k*\mathbf{M}_i.width \right]!=\mathbf{l}_u$}
-        \STATE $grid(\mathbf{M}_g)\left[ (j-\delta(\mathbf{M}_i).x)+(k+\delta(\mathbf{M}_i).y)*\mathbf{M}_g.width \right]=grid\left[ j+k*\mathbf{M}_i.width \right]$
-        \ENDIF
-        \ENDFOR
-        \ENDFOR
-        \ENDFOR
-        \ENDFOR
-        \RETURN $\mathbf{M}_g.$
+        \STATE From cell $\mathbf{l}_l \in \mathcal{L}$, select frontier points $\mathbf{f}_{i,j} \in \mathcal{F}$ and compute their respective information gain $\mathit{\mathbf{I}}(\mathbf{f}_{i,j})$.
+        \STATE Process frontier points $\mathbf{f}_{i,j}$ to get candidate goals $\mathbf{t}_k \in \mathcal{G}$ (See Algorithm \ref{alg:3.2})
+        \STATE Assign UAV$_i$ with target $k$ (See Algorithm \ref{alg:3.2}).
+        \STATE Send targets to the corresponding robots.
     \end{algorithmic}
 \end{algorithm}
-The proposed algorithm is a basic map matching approach used to merge two maps. It can be adapted to merge more than two maps at a time. This algorithm deals only with simple rectangular shape maps (This can be improved in our future work.).
-\section{Monocular SLAM}
-\subsection{Monocular sensor}
-Monocular sensors are those where the only sensing device is a single camera. This sensor provides a set of images taken at discrete times k = [0..n] (See Eq.\ref{eq:2.4}).
-\begin{equation} \label{eq:2.4}
-    I_{0:n}=\{I_0,\dots,I_n\}
-\end{equation}
-Each image $I_k$ is a set of pixels – also called color components – that are stored in a $h \times w \times 3 $ matrix where the height $h$ and width $w$ of the image correspond to the matrix’s number of rows and columns, respectively (See Figure \ref{fig:2.9}). The element of $(u, v)$ index in the matrix represents the pixels’ RGB value.
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.6]{assets/2_9.png}
-    \caption{{Image\protect\footnotemark ~pixels representation}}
-    \label{fig:2.9}
+    \includegraphics[scale=0.4]{assets/3_2.png}
+    \caption{Map structure evolution during the exploration process: From 2D cells $\mathcal{L}$ to 2D frontier cells $\mathcal{F}$ to candidate frontier cells/points $\mathcal{G}$ (candidate targets) to 2D target cells/points $\mathcal{T}$.}
+    \label{fig:3.2}
 \end{figure}
-\footnotetext{{This image was taken in Kauai Island, Hawaii.}}
-\subsection{Visual SLAM}
-Monocular sensors do not provide neither depth measurements (RGB-D camera example) nor two images of the same scene at the same time (stereo camera example) to compute these depth measurements. This leads to the inherent problem of scale ambiguity which consists in computing the scale factor. Despite the great progress in problems related to monocular SLAM, the main challenge is still the metric scale estimation. The scale\footnote{Source:\url{https://www.kudan.eu/kudan-news/scale-simultaneous-localisation-mapping/}} deﬁnes the relationship between sizes of the world and the created map. As a single camera cannot compute the scale factor, another sensor is added to be able to measure metrics from the environment. In the literature [Forster et al., 2015, Concha et al., 2016, Mur-Artal and Tardós, 2017b, Spaenlehauer et al., 2017], this additional sensor is mostly chosen to be an IMU due to its light weight, small size, and easiness to be mounted on an UAV.\\\\
-An architecture for visual inertial SLAM system is proposed in Figure \ref{fig:2.10}. It uses a monocular camera and an IMU as sensors. Similarly to the PTAM approach [Klein and Murray, 2007], two threads are used: A tracker for a fast response to changes in the environment and a mapper to build a high quality map of the environment. The only diﬀerence is that the proposed approach uses odometry measurements instead of a motion model.
+\subsection{Frontier points selection}
+The frontier selection process is used to deﬁne the frontiers of regions bounded by obstacles or unknown spaces (See Figure \ref{fig:3.3}).
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.6]{assets/2_10.png}
-    \caption{Visual inertial SLAM outline. $\mathbf{I}_t$ represent the images input sets from the camera. $\alpha_t$ and $\omega_t$ are, respectively, the acceleration and angular measurements from the IMU sensor. $\mathbf{p}_c$ and $\mathbf{p}_IMU$ are the estimated states from the camera and the IMU sensors, respectively. $\mathcal{F}$ is the generated 2D factor graph.}
+    \includegraphics[scale=0.4]{assets/3_3.png}
+    \caption{Frontier cells/points selection of a 2D occupancy grid map.}
+    \label{fig:3.3}
 \end{figure}
-The monocular visual odometry is computed by detecting and tracking features of images coming from an extrinsic camera sensor. Additional inertial odometry is computed using the acceleration ($\alpha_t$) and the angular velocities ($\omega_t$) measurements from an intrinsic IMU sensor. Both are then fused in the mapper thread where a factor graph is created. An optimized pose estimation is then generated from this graph. For the map creation, a sparse nonlinear incremental optimization approach – called iSAM2 – [Kaess et al., 2012] is used. It allows to provide updated pose estimations when new measurements are available. \\\\
-The proposed architecture allows not only to overcome the scale ambiguity but also to reduce the accumulated drift from the estimated trajectory.
-\subsubsection{Problem formulation}
-The proposed system is a graph-based SLAM problem that can be formulated in a factor graph. The graph is a factorization of a function $\mathbf{F}(\theta)$ described in Eq.\ref{eq:2.5}.
-\begin{equation} \label{eq:2.5}
-    \mathbf{F}(\theta)=\prod_i\mathbf{F}(\theta_i),
-\end{equation}
-with $\theta_i$ is a variable node $i$.\\\\
-The purpose is to find the variable $\theta^*$ that maximizes the function $\mathbf{F}(\theta)$:
-\begin{equation}\label{eq:2.6}
-    \theta^*=argmax_\theta\mathbf{F}(\theta)
-\end{equation}
-The factor graph, presented in Figure \ref{fig:2.11} is composed of:
+The frontier cells $\mathbf{f}_{i,j} \in \mathcal{F}$ are selected from the set of cells $\mathcal{L}(\mathcal{F}\subset \mathcal{L})$ such that they are either:
 \begin{itemize}
-    \item $\mathcal{P}_{0:n}=\{\mathbf{p}_0,\mathbf{p}_1,\dots,\mathbf{p}_n\}$: The set of unknown poses.
-    \item $\mathcal{M}_{0:m}=\{\mathbf{m}_0,\mathbf{m}_1,\dots,\mathbf{m}_m\}$: The set of landmarks.
-    \item $\mathcal{Z}_{i=cste,j=0:m}=\{\mathbf{z}_{i0},\mathbf{z}_{i1},\dots,\mathbf{z}_{im}\}$: The set of visual measurements.
-    \item $\mathcal{B}_{0:n-1}=\{\mathbf{b}_0,\mathbf{b}_1,\dots,\mathbf{b}_{n-1}\}$: The set of odometry measurements. $\mathbf{b}_i$ is the odometry between the pose $\mathbf{p}_i$ and $\mathbf{p}_{i+1}$.
+    \item Free $\mathbf{l}_f$ and adjacent to unknown.
+    \item Labeled as occupied $\mathbf{l}_o$ . The Occupied cells $\mathbf{l}_o$ are considered as frontier cells to be able to perform frontier processing in the next step. They could not be chosen as target and will be discarded later.
 \end{itemize}
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.4]{assets/2_11.png}
-    \caption{Factor graph for monocular SLAM. $\mathbf{F}_0(\mathbf{p}_0)$ and $\mathbf{m}_i$ are the variable nodes. $\mathbf{F}(0)$ is the prior density factor. $\mathbf{F}_{ij}(\mathbf{m}_j,\mathbf{p}_i,\mathbf{z}_{ij})$ is the odometry factor between the pose $\mathbf{p}_i$ and $\mathbf{F}_{ij}(\mathbf{m}_j,\mathbf{p}_i,\mathbf{z}_{ij})$ is the measurement likelihood model between the pose $\mathbf{p}_i$ and its landmark $\mathbf{m}_i$ .}
-    \label{fig:2.11}
-\end{figure}
-This bipartite factor graph is composed of:
-\begin{itemize}
-    \item Variable node:
-          \begin{itemize}
-              \item Camera pose $\mathbf{p}_i$.
-              \item Landmarks $\mathbf{m}_j$.
-          \end{itemize}
-    \item Factor nodes:
-          \begin{itemize}
-              \item Prior densities on the variable nodes $\mathbf{F}_0(\mathbf{p}_0)=p(\mathbf{p}_0)$.
-              \item The motion models between two camera poses $\mathbf{F}_i(\mathbf{p}_{i+1},\mathbf{p}_i,\mathbf{b}_i)=p(\mathbf{p}_{i+1}|\mathbf{p}_i,\mathbf{b}_i)$ given the odometry measurement $\mathbf{b}_i$.
-              \item The measurement likelihood models $\mathbf{F}_{ij}(\mathbf{m}_j,\mathbf{p}_i,\mathbf{z}_{ij})=p(\mathbf{m}_j|\mathbf{p}_j,\mathbf{z}_{ij})$ between the pose $\mathbf{p}_i$ and the landmark $\mathbf{m}_j$ given the visual measurement $\mathbf{z}_{ij}$.
-          \end{itemize}
-\end{itemize}
-\subsubsection{Incremental Smoothing and Mapping 2 (iSAM2)}
-To resolve the factor graph and estimate the poses, the iSAM2 approach [Kaess et al., 2012] is used. The estimation problem is based on three graphical models (See Figure \ref{fig:2.12}):
-\begin{itemize}
-    \item Explicit factor graph.
-    \item Implicit chordal Bayes net.
-    \item Bayes tree.
-\end{itemize}
-Therefore, the iSAM2 algorithm can incrementally obtain an estimate of unknown variables (such as UAV poses and landmarks) given a set of non linear factors (such as odometry) to ﬁnally construct the UAV’s map.
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.7]{assets/2_12.png}
-    \caption{iSAM2 graphical models.}
-    \label{fig:2.12}
-\end{figure}
-When a new factor is taken into account, the aﬀected part of the Bayes Tree is isolated. From it, data are formulated as a factor graph and an associated Jacobian matrix. Then, the factor graph is transformed into a chordal Bayes net and a square root information matrix using a speciﬁc variable order elimination. The last one eliminated is called the root. Finally, based on the clique structure in the chordal Bayes net, a Bayes tree is formed with the square root information matrix. Based on these models, the incremental resolution and update of the iSAM2 are resumed in ﬁve important steps presented in Figure \ref{fig:2.13}.
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.6]{assets/2_13.png}
-    \caption{The iSAM2 steps.}
-    \label{fig:2.13}
-\end{figure}
-Taking into account the available new factors, variables are initialized and added to the variable nodes. Thereafter, the process performs a ﬂuid relinearization for marked variables in order to track the validity of the linearization point for each variable when needed. These marked variables are chosen according to a threshold between its current estimate and the linearization point. Then, the Bayes tree is partially updated starting from the cliques involved by the marked variables and the variables aﬀected by new factors, up to the top of the tree. Using the obtained new Bayes tree, an update of the current estimate is performed.
-\subsection{Results and discussions}
-The SLAM algorithm was implement with the Georgia Tech Smoothing And Mapping toolbox\footnote{Source: \url{https://borg.cc.gatech.edu/index.html}} (GTSAM) using the factor graph implementation. The experimental code is written in MATLAB\footnote{Source: \url{https://fr.mathworks.com/}} and includes MEX functions\footnote{Source: \url{https://fr.mathworks.com/help/matlab/matlab_external/introducing-mex-files.html}} of the c++ library. Tests were performed on a 2.50GHz i5 Linux machine. To validate the SLAM algorithm, the measurements were simulated with raw data from the Kitti vision data-set Geiger et al., 2013. These data contain IMU measurements used for dead reckoning, and images used for the visual features. To compute the inter frame visual odometry, the libviso2 library\footnote{Source: \url{http://www.cvlibs.net/software/libviso/}} is used. Hence, given the set of non linear factors including IMU and visual odometry measurements, the iSAM2 estimates and optimizes poses and landmarks.\\\\
-To see the improvement performed with the proposed approach, the estimated trajectory from iSAM2 is compared to those from IMU, libviso2 and GPS, in Figure \ref{fig:2.14}.
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.5]{assets/2_14.png}
-    \caption{Trajectory results (2D projection) using IMU, libviso2, iSAM2 and GPS.}
-    \label{fig:2.14}
-\end{figure}
-The GPS trajectory is obtained using Eq.\ref{eq:2.7}:
-\begin{equation}\label{eq:2.7}
-    \begin{split}
-        x=R*\cos(latitude)*\cos(longtitude), \\
-        y=R*\cos(latitude)*\sin(longtitude), \\
-        z=R*\sin(latitude),
-    \end{split}
+In Figure \ref{fig:3.2}, the frontier cells are: $\mathbf{l}_f(2,1)$,$\mathbf{l}_f(2,2)$ , $\mathbf{l}_f(2,3)$, and $\mathbf{l}_f(3,3)$. Thus, for a cluster $\mathcal{C}$ containing UAV$_i$ , the frontiers are:
+\begin{equation} \label{eq:3.1}
+    \mathcal{F}=\{\mathbf{f}_{i,1}(2,1),\mathbf{f}_{i,2}(2,2),\mathbf{f}_{i,3}(2,3),\mathbf{f}_{i,4}(3,3)\}
 \end{equation}
-with $R$ the radius of the earth.\\\\
-Results show that combining the IMU and the libviso2 trajectory using the iSAM2 helps to improve the poses estimation, and to reduce the IMU drift compared to the ground truth. Consequently, by obtaining a graph to exchange data instead of images, the data size is considerably reduced. Indeed, theoretically, sending images require about 1.843 Mbps (assuming that an image is encoded in 24 bits); whereas sending poses and landmarks needs about 0.323 Mbps (assuming that an IEEE standard encodes reals under 32 bits). Hence, thanks to the graph-based SLAM, we manage to reduce data size by about 5 times.
-\section{RGB-D SLAM}
-The RGB-D SLAM uses an RGB-D camera as a visual sensor to sense the environment.This sensor avoids the scale estimation problem thanks to the depth information.
-\subsection{RGB-D sensor}
-The RGB-D camera is composed of a digital camera for colored images $\mathbf{C}-t$ , and another device for the depth image $\mathbf{D}_t$ . The colored image $\mathbf{C}_t$ is a 3D matrix encoded in the RGB space where each color represents a dimension with a number of raws and columns corresponding to the image resolution (See section 1.3.1 on monocular sensor). The depth image $\mathbf{D}_t$ is a 2D matrix where $\mathbf{D}_t(u,v)$ is the depth of the pixel of column $u$ and row $v$. The depth measurements can be computed by diﬀerent technologies (e.g. camera, infrared) where the RGB-D sensor can be classiﬁed as follows:
-\begin{itemize}
-    \item \textit{Active}: It is composed of a camera and a projector. The projector emits known patterns that are compared with the camera to get the correspondences. The depth is computed from these correspondences and the known transformation between the camera and the projector.
-    \item \textit{Passive}: It represents stereo sensors composed of two RGB cameras. The depth is computed by knowing the transformation between them.
-\end{itemize}
-\textbf{RGB-D sensor Comparison}\\
-Diﬀerent types of RGB-D camera exist. One of the most famous is the kinect\footnote{Source: \url{https://msdn.microsoft.com/en-us/library/hh438998.aspx}} camera (See Figure \ref{fig:2.15a}). Other relatively new technologies are available such as DUO MLX\footnote{Source: \url{https://duo3d.com/product/duo-minilx-lv1}} (See Figure \ref{fig:2.15b}), ZED\footnote{Source: \url{https://www.stereolabs.com/zed/specs/}} stereo (See Figure \ref{fig:2.15c}), and Intel RealSense ZR300\footnote{Source: \url{https://software.intel.com/en-us/realsense/zr300}} (See Figure \ref{fig:2.15d}).
+\subsection{Information gain computation}
+In frontier-based exploration approaches, only cells adjacent to unknown ones may be deﬁned as candidate frontier points and are likely to be chosen as targets. Thereby, the information gain is associated to each of them in order to estimate the utility of reaching each frontier. This corresponding information gain can be deﬁned in diﬀerent manners depending on the mission purpose. Authors in [Burgard et al., 2005] propose to use a probability function to reduce an assigned constant value taking into account the relative distance to the UAV’s pose. This strategy is general and does not take into account the updated explored cells. The approach proposed in [Heng et al., 2015] aﬀects, to the information gain, the number of unknown and not occluded cells in the view frustum of the target. This method depends on the real estimate of information gained when visiting the considered pose. However, it requires more computation.\\\\
+In the proposed strategy, the information gain is allocated so that it deﬁnes the amount of unknown cells surrounding the target (See Figure \ref{fig:3.4}). It is a non-metric value that counts the number of cells labeled as unknown l u from the 48 cells around the frontier point.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/3_4.png}
+    \caption{The information gain computation of a frontier point x (in red). The hatched cells represent the 48 surrounding cells of the frontier point \textbf{x}. The information gain of \textbf{x} is: $\mathbf{I}(x)=25$.}
+    \label{fig:3.4}
+\end{figure}
+\subsection{Frontier points processing}
+All frontier points $\mathbf{f}_{i,j} \in \mathcal{F}$ of UAV$_i$ in the cluster $\mathcal{C}$ with $i \in [1..n_c]$, are collected. Points in $\mathcal{F}$ are then processed using Algorithm \ref{alg:3.2} to get candidate frontier points considered as candidate targets $\mathbf{t}_k \in \mathcal{G}$ with $k \in [1..n_g]$ (See Figure \ref{fig:3.2})
+\begin{algorithm}[H]
+    \caption{Frontier processing algorithm.}
+    \label{alg:3.2}
+    \hspace*{\algorithmicindent} \textbf{Input:} Frontier points $\mathbf{f}_{i,j} \in \mathcal{F}$ of UAV$_i$ with $i \in [1..n_c]$. \\
+    \hspace*{\algorithmicindent} \textbf{Output:} Candidate targets $\mathcal{G}$
+    \begin{algorithmic}[1]
+        \STATE $p_u=\cup_{i=1}^{n_c}\mathbf{f}_{i,j}$.
+        \STATE $p_i=\cap_{i=1}^{n_c}\mathbf{f}_{i,j}$.
+        \STATE $\mathcal{G}=p_u\setminus p_i$.
+        \STATE Delete the obstacle frontier points $\mathbf{f}_{i,j}(x,y)=\mathbf{l}_o(x,y)$ from $\mathcal{G}$.
+        \RETURN $\mathcal{G}$.
+    \end{algorithmic}
+\end{algorithm}
+Figure \ref{fig:3.5} shows an example of frontier processing with two UAVs’ map to get the candidate targets. The obstacle frontier points $\mathbf{f}_{i,j}(x,y)=\mathbf{l}_o(x,y)$ – labeled as occupied – are only kept to compute the intersection of frontier points. Only the free frontier cells $\mathbf{l}_f$ can be considered as candidate target.\\\\
+When using local frontier points instead of local maps, the frontier process replaces the map matching process where the aim is to clear overlapping areas. Hence, in the frontier processing step, the frontier points that belong to overlapping areas are cleared. Therefore, using frontier points allows important memory saving. To compute the frontier points that belong to the overlapped areas (Steps 1, 2 and 3 in Algorithm \ref{alg:3.2}), we propose two approaches with convex shapes and concave shapes assumptions.
+\subsubsection{First approach: Convex shape map}
+In this approach, map shapes are considered convex, which simpliﬁes the intersection computation in Algorithm \ref{alg:3.3}. Figure \ref{fig:3.6} shows two examples of applying frontier processing algorithm while assuming convex shapes with two and three UAVs’ map.\\\\
+This algorithm is relatively easy to apply, but results show that it does not perform well. The convex assumption leads to some false overlapped frontier points. Consequently, some unknown areas will not be visited since their corresponding points are removed and, thus, will not be assigned as a target.
+\subsubsection{Second approach: Concave shape map}
+In the second approach, we make the assumption of concave shapes for the UAVs’ map to compute their intersection in Algorithm \ref{alg:3.4}. Figure \ref{fig:3.7} shows two examples of applying frontier processing algorithm while assuming convex shapes with two and three UAVs’ map.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.6\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_5_a.png}
+        \caption{{Frontiers $\mathbf{f}_{1,j}$ of UAV$_1$}}
+        \label{fig:3.5a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.6\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_5_b.png}
+        \caption{{Frontiers $\mathbf{f}_{2,j}$ of UAV$_2$}}
+        \label{fig:3.5b}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.6\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/3_5_c.png}
+        \caption{{Candidate targets $\mathcal{G}$}}
+        \label{fig:3.5c}
+    \end{subfigure}
+    \caption{Frontier points processing example: (a) and (b) represent the frontier points of UAV$_1$ and UAV$_2$, respectively. (c) represent the candidate targets. The process consists in removing frontier points that belong to overlapped areas, and those that are adjacent to obstacles.}
+    \label{fig:3.5}
+\end{figure}
+\begin{algorithm}[H]
+    \caption{Intersection computation algorithm with convex shapes assumption.}
+    \label{alg:3.3}
+    \hspace*{\algorithmicindent} \textbf{Input:} $Vect1, Vect2$ \\
+    \hspace*{\algorithmicindent} \textbf{Output:} $Vect\_Final$
+    \begin{algorithmic}[1]
+        \FOR {$i \in Vect1$}
+        \STATE $inf = 0, sup = 0$
+        \FOR{ $j \in Vect2$}
+        \IF {$Vect1(i).x < Vect2(i).x$}
+        \STATE $inf++$;
+        \ELSE
+        \STATE $sup++$;
+        \ENDIF
+        \ENDFOR
+        \IF {$inf>0$ and $sup>0$}
+        \STATE $Vect\_inter.push\_back(Vect1(i))$
+        \ENDIF
+        \ENDFOR
+        \FOR{$i \in Vect\_inter$}
+        \STATE $inf=0,sup=0$;
+        \FOR{$j \in Vect2$}
+        \IF {$|Vect\_inter(i).x-Vect2(i).x| <0.5$}
+        \STATE $inf++$;
+        \ELSE
+        \STATE $sup++$;
+        \ENDIF
+        \ENDFOR
+        \IF {$inf>0$ and $sup>0$}
+        \STATE $Vect\_Final.push\_back(Vect\_inter(i))$
+        \ENDIF
+        \ENDFOR
+    \end{algorithmic}
+\end{algorithm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/3_6.png}
+    \caption{Frontier points processing wile assuming two convex map shapes in the ﬁrst line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (ﬁnal shape).}
+    \label{fig:3.6}
+\end{figure}
+\begin{algorithm}[H]
+    \caption{Intersection computation algorithm with convex shapes assumption.}
+    \label{alg:3.4}
+    \hspace*{\algorithmicindent} \textbf{Input:} $Vect1, Vect2$ \\
+    \hspace*{\algorithmicindent} \textbf{Output:} $Vect\_Final$
+    \begin{algorithmic}[1]
+        \FOR {$i \in Vect1$}
+        \STATE $inf = 0, sup = 0$
+        \FOR{ $j \in Vect2$}
+        \IF {$Vect1(i).x < Vect2(i).x -0.5$}
+        \STATE $inf++$;
+        \ELSIF {$Vect1(i).x>Vect2(i).x+0.5$}
+        \STATE $sup++$;
+        \ELSE
+        \STATE $eq++$;
+        \ENDIF
+        \ENDFOR
+        \IF {$inf>0$ and $sup>0$ or $eq>0$}
+        \STATE $Vect\_inter.push\_back(Vect1(i))$
+        \ENDIF
+        \ENDFOR
+        \FOR{$i \in Vect\_inter$}
+        \STATE $inf=0,sup=0, eq=0$;
+        \FOR{$j \in Vect2$}
+        \IF {$|Vect\_inter(i).y-Vect2(i).y| <0.5$}
+        \IF {$Vect\_inter(i).x<Vect2(i).x-0.5$}
+        \STATE $inf++$;
+        \ELSIF {$Vect1(i).x>Vect2(i).x+0.5$}
+        \STATE $sup++$;
+        \ELSE
+        \STATE $eq++$;
+        \ENDIF
+        \ENDIF
+        \ENDFOR
+        \IF {($inf>0$ and $sup>0$) or $eq>0$}
+        \STATE $Vect\_Final.push\_back(Vect\_inter(i))$
+        \ENDIF
+        \ENDFOR
+    \end{algorithmic}
+\end{algorithm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/3_7.png}
+    \caption{Frontier points processing wile assuming two concave map shapes in the ﬁrst line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (ﬁnal shape).}
+    \label{fig:3.7}
+\end{figure}
+Results show that only the frontier points within overlapping areas are removed. Even if some ambiguous frontier points are located within/inside the global shape – which can be confusing –, they are not deleted. This algorithm, assuming concave shapes, performs better than the previous one that assumes convex shapes. Hence, for the frontier processing, the shape of local maps are assumed concave.
+\subsubsection{Utility function}
+The proposed utility function in Eq. \ref{eq:3.2} aims to simultaneously increase the explored area rate and to reduce the distance of each UAV to its corresponding target. The function also considers the average of distances between each robot in the group and this target in order to maximize distances among robots.
+\begin{equation}
+    \mathbf{U}(UAV_i,t_j)=\mathbf{I}(t_j)exp(-\lambda.(dmin(\mathbf{P}_i,\mathbf{t}_j)+\frac{n_c-1}{d_{tot}})),
+\end{equation}
+where UAV i is the considered robot, $\mathbf{t}_j \in \mathcal{G}$ and $\mathbf{I}(\mathbf{t}_j)$ are respectively the candidate target and its corresponding information gain, $\lambda \in [0,1]$ is a trade-oﬀ parameter, $n_c$ is the number of UAVs in the cluster $\mathcal{C}$, and $d_{tot} = \sum_{k=1, k\neq i}^{n_c}(dmin(\mathbf{P}_k),\mathbf{t}_j) $ is the sum of the minimum distance from UAV$_k$'s pose $\mathbf{P}_k$ to the candidate target $j$. The proposed utility function is inspired from [Heng et al., 2015] and it has been presented in our works [Mahdoui et al., 2017, Mahdoui et al., 2018]. This function performs a trade-oﬀ between rapid exploration and a precise ﬁlling the map using a tuning parameter $\lambda$. From Figure \ref{fig:3.8}, we can notice that the larger $\lambda$, the less important the distance $d_{tot}$. Thus, a precise ﬁlling is favored over rapid exploration and vice versa.\\\\
+Regarding the Multi-UAV case, the utility function is based on the average of neighbors distances. As shown in Figure \ref{fig:3.8}, with an information gain of $\mathbf{I}(\mathbf{t}_j)=25$ and three UAVs in the cluster $(n_c=3)$; an increasing distance of UAV to the target will reduce the utility function. Whereas, the larger the average distance from other UAVs w.r.t. to the target, the more the utility. So the function tends to choose the closest target to the considered UAV; but at the same time, the farthest one from the others.\\\\
+In the case of a single UAV, the utility function (See Eq. \ref{fig:3.3}) tends to choose the closest target with the maximum of information gain:
+\begin{equation}
+    \mathbf{U}(UAV_i,\mathbf{t}_j)=\mathbf{I}(\mathbf{t}_j)exp(-\lambda.(dmin(\mathbf{P}_j,\mathbf{t}_j))),
+\end{equation}
+The parameter $d_{tot} = \sum_{k=1, k\neq i}^{n_c}(dmin(\mathbf{P}_k,\mathbf{t}_j)) $ represents the sum of the minimum distance between the target $\mathbf{t}_j$ and the neighbors’ poses $\mathbf{P}_k$ with $k \in [1..n_c]\setminus i$. So, if $\mathbf{t}_j$ has neighboring UAVs that are too far, the utility function will increase, so t j is more likely to be chosen.\\\\
+The aim in the utility function is to maximize $d_{tot}$ . We distinguish two cases where $d_{tot}$ can be too close to zero or equal to it:
 \begin{figure}[H]
     \centering
     \begin{subfigure}[H]{0.4\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{assets/2_15_a.png}
-        \caption{{Kinect camera.}}
-        \label{fig:2.15a}
+        \includegraphics[width=\linewidth]{assets/3_8_a.png}
+        \caption{{$\lambda=0.2$}}
+        \label{fig:3.8a}
     \end{subfigure}
     \begin{subfigure}[H]{0.4\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{assets/2_15_b.png}
-        \caption{{DUO MLX camera.}}
-        \label{fig:2.15b}
+        \includegraphics[width=\linewidth]{assets/3_8_b.png}
+        \caption{{$\lambda=0.4$}}
+        \label{fig:3.8b}
     \end{subfigure}
     \begin{subfigure}[H]{0.4\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{assets/2_15_c.png}
-        \caption{{ZED camera}}
-        \label{fig:2.15c}
+        \includegraphics[width=\linewidth]{assets/3_8_c.png}
+        \caption{{$\lambda=0.6$}}
+        \label{fig:3.8c}
     \end{subfigure}
     \begin{subfigure}[H]{0.4\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{assets/2_15_d.png}
-        \caption{{ZR300 camera.}}
-        \label{fig:2.15d}
+        \includegraphics[width=\linewidth]{assets/3_8_d.png}
+        \caption{{$\lambda=0.8$}}
+        \label{fig:3.8d}
     \end{subfigure}
-    \caption{Examples of RGB-D sensors.}
-    \label{fig:2.15}
+    \caption{{Utility function behavior: $\mathbf{I}(t_j)=25, n_c=3, d_{tot} = \sum_{k=1, k\neq i}^{n_c}(dmin(\mathbf{P}_k,\mathbf{t}_j))$. The average distance of other UAVs $d_{tot}$ has a minimum value different from zero since $n_c$ is different from zero too.}}
+    \label{fig:3.8}
 \end{figure}
-A brief comparison is summarized in Table \ref{tab:2.1}. The ZED camera have the higher resolution and range compared to DUO and Kinect. However, this camera requires a powerful processor to work properly. DUO MLX is a lightweight camera with a good resolution, small dimensions but a small range and a relatively high price. The ZR300 has a small size and a good resolution but it is more expensive than the kinect. Despite its bigger dimension and weight, the kinect is the cheaper and the easiest to use. Taking into account the UAVs’ mission requirements and purpose, we make the choice to use the kinect. Yet, the SLAM algorithm is not restricted to a deﬁned type of a RGB-D sensor.
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
+\begin{itemize}
+    \item There are no neighbors. In this case, there is one UAV in the ﬂeet: $n_c=1$. The utility function in Eq. \ref{eq:3.3} is used.
+    \item The candidate target $\mathbf{t}_j$ and the neighbors’ poses $\mathbf{P}_k$ with $k \in [1..n_c]\setminus i$ are almost confused (too close to each others). In this case $\mathbf{t}_j$ is less likely to be chosen.
+\end{itemize}
+Yet, this parameter $d_{tot}$ could have a high value when:
+\begin{itemize}
+    \item There is one UAV too far from $\mathbf{t}_j$.
+    \item There are several UAVs with relatively short distance from $\mathbf{t}_j$.
+\end{itemize}
+So, in order to avoid these ambiguous situations, the average of $d_{tot}$ is considered by using $\frac{n_c}{d_{tot}}$.
+\subsection{Goal assignment process}
+In order to make appropriate UAV-to-target assignment, the utility of reaching each candidate frontier is considered. The goal assignment process is described in Algo. \ref{alg:3.5}.\\\\
+For each UAV$_i$ , the utilities of reaching all the candidate targets are computed. The target $\mathbf{t}_g$ that maximizes the utility is computed and, the assignment $\theta(UAV_i,\mathbf{t}_g)$ is performed. Then, the remaining candidate targets $\mathcal{G}\setminus \mathcal{T}$ are scheduled in order to avoid to select a target too close to $\mathbf{t}_g$ , in the next iteration. Also, $\mathbf{t}_g$ is removed from $\mathcal{G}$ to prevent from assigning the same target to diﬀerent robots. This assignment process is performed for the available UAVs in $\mathcal{C}$ in a sequential manner until getting all assigned targets $\mathbf{t}_g \in \mathcal{T}$ with $g \in [1..n_t]$ (See Figure \ref{fig:3.2})
+\begin{algorithm}[H]
+    \caption{Goal assignment algorithm.}
+    \label{alg:3.5}
+    \hspace*{\algorithmicindent} \textbf{Input:} {Candidate targets $\mathbf{t}_k \in \mathcal{G}, k \in [1..n_g]$ and their respective information gain $\mathbf{U}(\mathbf{t}_k)$, poses $\mathbf{P}_i$ of all robots in the considered cluster $\mathcal{C}$.}\\
+    \hspace*{\algorithmicindent} \textbf{Output:} {$\theta(UAV_i,\mathbf{t}_g)$ assignment of UAV$_i$ with target $g$.}
+    \begin{algorithmic}[1]
+        \STATE $\mathcal{T}=\theta$
+        \WHILE{no goal for UAV$_i$}
+        \STATE Compute its corresponding utility of reaching each remaining candidate goal $\mathbf{U}(UAV_i,\mathbf{t}_k)$ with $\mathbf{t}_k \in \mathcal{G}\setminus \mathcal{T}$.
+        \STATE $t_g=argmax_{t_k \in \mathcal{G}\setminus \mathcal{T}}(\mathbf{U}(UAV_i,\mathbf{t}_k))$.
+        \STATE Schedule the information gain of the remaining candidates $\mathbf{t}_k \in \mathcal{G} \setminus \mathcal{T}$.
+        \STATE $\mathcal{T}=\mathcal{T}\cup t_g$.
+        \ENDWHILE
+        \RETURN $\theta(UAV_i, \mathbf{t}_g)$ assignment.
+    \end{algorithmic}
+\end{algorithm}
+\subsubsection{Stop condition}
+The goal selection process is realized by each cluster/group-\textit{leader} (if $n>n-c$ ) or the Fleet- \textit{leader} (if $n=n_c$). This assignment aims to, cooperatively, distribute the robots in the environment to explore simultaneously diﬀerent unknown regions. As long as candidate frontier points are still available, the \textit{leader} continues to assign targets to \textit{explorers} and they attempt to reach their assigned goals. When the \textit{leader} notices that no candidate targets are left, that means that all the environment has been explored successfully and the mission is accomplished. Thus, it has to send back to the \textit{explorers} an acknowledgment to prevent them assuming a communication loss.
+\subsubsection{Loop rate}
+The target assignment process is performed at each loop. The frequency of assigning targets impacts the duration and the eﬃciency of the mission. In a distributed approach, as soon as the UAV reaches its current target, it selects a new one without consulting the others. In a centralized approach, the ﬁrst UAV to reach its current target has to wait until the others reach their respective targets. This can be a problem as soon as one of them fails or leaves the mission. Another possibility is to begin to assign targets once one UAV reaches its target. But this may generate incomplete tasks. In the proposed strategy, the frequency of assignment or loop rate $r$ is predeﬁned depending on the average of time to reach a target (See Eq. \ref{eq:3.4}).
+\begin{equation} \label{eq:3.4}
+    r \in [\frac{s}{v_{i,max}},\frac{s}{v_{i,min}}]
+\end{equation}
+where $s$ is the maximum sensor range and $v_i$ is the UAV's velocity.
+\subsubsection{Scheduling the information gain}
+The information gain of each remaining candidate target $\mathbf{I}(\mathbf{t}_k)_{t-1}$ at time $t-1$ with $\mathbf{t}_k \in \mathcal{G} \setminus \{t_g\}$, that belongs to the threshold range $[r_{min} , r_{max} ]$, is scheduled at time $t$ depending on its distance w.r.t. the target $t_g$ , using Eq. \ref{eq:3.5}. Figure \ref{fig:3.9} represents an example of the function shape used to schedule the information gain. The example shows a Gaussian function with an amplitude that corresponds to the information gain maximum value; a center that corresponds to the target position $(\mathbf{t}_g(x), \mathbf{t}_g(y))$; and $\sigma_x$ and $\sigma_y$ that spread the blob in $x$ and $y$ axis, respectively.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{assets/3_9.png}
+    \caption{Example of the shape function to schedule the information gain($\mathbf{I}(\mathbf{t}_k)_{t-1}=29,(\mathbf{t}_g(x),\mathbf{t}_g(y))=(1.25,-0.275), \sigma_x=\sigma_y=3$).}
+    \label{fig:3.9}
+\end{figure}
+\begin{equation}\label{eq:3.5}
+    \mathbf{I}(\mathbf{t}_k)_t=\mathbf{I}(\mathbf{t}_k)_{t-1}(1-exp(-(\frac{(\mathbf{t}_k(x)-\mathbf{t}_g(x))^2}{2.\sigma_x^2}+\frac{(\mathbf{t}_k(y)-\mathbf{t}_g(y))^2}{2.\sigma_y^2}))),
+\end{equation}
+where $\mathbf{t}_k(x)$ and $\mathbf{t}_k(y)$ are the remaining candidate target coordinates; $\mathbf{t}_g(x)$ and $\mathbf{t}_g(y)$ are the target coordinates; and $\sigma_x$ and $\sigma_y$ are the spreads of the blob. The smaller the distance of the frontier point $\mathbf{t}_k$ w.r.t. the target $\mathbf{t}_g$, the smaller the information gain. When reducing the information gain, the candidate targets are less likely to be chosen and thus, robots ensure a certain distance among their future targets.
+\subsection{Path planning and control}
+As explained in Section 5.2 of Chapter 1, UAVs are assumed to navigate in a simpliﬁed 2D environment with a ﬁxed $z$ value. Block \textbf{6} in Figure 1.6 is responsible for planning a path to the selected target and attempting to reach it. These tasks are ensured by the \textit{move} base\footnote{Source: \url{http://wiki.ros.org/move_base}} package.\\\\
+For the navigation task, each UAV maintains a local and a global planner along with a local and a global costmap, respectively. The costmap is a 2D cell grid $\mathcal{L}$ with additional inﬂation that consists in propagating cost values out from occupied cells and decreasing them with distance. The global costmap has the size of the UAV’s map whereas, the local costmap has a ﬁxed size moving window. Given a starting point – the current pose – and an endpoint – the assigned target – in the global costmap, the global planner produces a plan using a navigation function computed with Dijkstra algorithm [Dijkstra, 1959]. It consists in following the adjacent free cells until reaching the goal. Then taking into account the local costmap, the local planner generates velocity commands for the UAV’s mobile base. A recovery rotational behavior is also performed when needed in order to clear the robot’s ﬁeld of view.\\\\
+The target assigned by the \textit{leader} is ensured to belong to an unknown area using the exploration strategy. The trajectory planning process is performed locally on each robot. And since the UAVs do not exchange their local maps nor fuse them, they are likely to revisit already explored areas while following the planned path. To minimize these overlapped regions during navigation, a priority is given to frontier points $\mathbf{f}_{i,j}$ to be a target for UAV$_i$ over UAV$_k$ with $k \neq i$. This helps the UAV to maintain the same direction during exploration. The \textit{move} base package is a 2D navigation stack. However, to avoid drifting on the $z$ axis, a control command is added to keep a static $z$ altitude (See Figure \ref{fig:3.10}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/3_10.png}
+    \caption{From 2D (left) to 3D (right) navigation stack. The \textit{navigation} z is a ROS process developed to provide a control command on the z axis.}
+    \label{fig:3.10}
+\end{figure}
+\section{Result and discussions}
+Simulations have been performed to evaluate the proposed exploration strategy. Additional tests while using relative localization have been done to measure the system performances. The simulations are performed using Robot Operating System (ROS) running on a 2.60GHz i7 Linux machine. For the quad-rotor simulation, the AR-drone model\footnote{Source: \url{http://wiki.ros.org/ardrone_autonomy}} equipped with an RGB-D camera in a forward-looking conﬁguration, is used. A bounded unknown environment is generated using \textit{Gazebo} simulator. The number of robots used for evaluation is limited to three, however, the proposed system architecture is not constrained to a ﬁxed number of robots.
+\subsection{Parameters tuning}
+For an eﬀective evaluation of the exploration strategy, we run some tests to set the most adequate parameters conﬁguration.
+\subsubsection{Trade-off parameter $\lambda$}
+The utility function (See Eq. \ref{eq:3.2}) used in the exploration strategy can be tuned, using a trade oﬀ parameter $\lambda$, between fast exploration and ﬁlling in details the map.\\\\
+Figure \ref{fig:3.11} shows diﬀerent runs while varying this parameter. By increasing $\lambda$, the information gained when reaching the goal is favored over the distance and thus, the cost to it, and vice versa. So, when $\lambda$ is small, the traveled distance is small and so the exploration time. Though, some times during the mission, high values of $\lambda$ are noticed to reach higher exploration rate than smaller ones.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{assets/3_11.png}
+    \caption{The impact of varying the trade off parameter $\lambda$ over exploration itme.}
+    \label{fig:3.11}
+\end{figure}
+\subsubsection{Loop rate $r$}
+The frequency or loop rate $r$ of target assignment may also aﬀect exploration time performance. The values of $r$ vary to take into account the robot velocity $\mathbf{v}_i$ and the sensor’s maximum range $s$. The impact of varying the loop rate is evaluated in Figure \ref{fig:3.12}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{assets/3_12.png}
+    \caption{Exploration time while varying the loop rate $r$.}
+    \label{fig:3.12}
+\end{figure}
+Given a robot velocity $\mathbf{v}_i=\{0.1,0.3\}m.s^{-1}$ and a maximum sensor range $s=4m$, the loop rate variates in $r \in [10,40]$. This parameter should not be too small to allow the robot to reach its target; nor too big to prevent long waiting times for the next goal assignment.
+\subsubsection{Common parameters}
+Depending on results in Figure \ref{fig:3.11} and Figure \ref{fig:3.12}, respectively, $\lambda$ is set to $0.2$ and $r$ to $20s$ in order to maximize the explored area rate while minimizing the mission time. The simulation parameters are summarized in Table \ref{tab:3.1}.
 \begin{table}[H]
-    \caption{RGB-D sensors comparison}
-    \label{tab:2.1}
-    \resizebox{\textwidth}{!}{%
-        \begin{tabular}{|l|l|l|l|l|}
-            \hline
-            \textbf{Characteristic}                 & \textbf{kinect xbox 360}       & \textbf{\begin{tabular}[c]{@{}l@{}}DUO MLX \\ (integrated IMU)\end{tabular}} & \textbf{ZED}                   & \textbf{ZR300}                 \\ \hline
-            \textbf{\begin{tabular}[c]{@{}l@{}}Output\\  Resolution\end{tabular}} & \begin{tabular}[c]{@{}l@{}}640 x 480 x 24 \\ bpp 4:3 RGB\\ @30fps\\ 640 x 480 x 16\\ bpp 4:3 YUV\\ @15fps\end{tabular} & \begin{tabular}[c]{@{}l@{}}752 x 480 \\ @56fps\end{tabular}          & \begin{tabular}[c]{@{}l@{}}2x (1920 x 1080)\\  @30fps\end{tabular} & \begin{tabular}[c]{@{}l@{}}2 x VGA \\ @60fps\end{tabular} \\ \hline
-            \textbf{\begin{tabular}[c]{@{}l@{}}Depth Range\\ (m)\end{tabular}} & 0.8 to 4.0                     & 0.23 to 2.5                             & 1 to 15                        & 0.4 to 2.8                     \\ \hline
-            \textbf{\begin{tabular}[c]{@{}l@{}}Baseline\\ (mm)\end{tabular}} & 75                             & 30                                      & 120                            & 20                             \\ \hline
-            \textbf{\begin{tabular}[c]{@{}l@{}}Dimensions \\ (mm)\end{tabular}} & 279 x 50,8 x 25                & 52 x 24 x 13                            & 175 x 30 x 33                  & \begin{tabular}[c]{@{}l@{}}9.5 x 101.56 \\ x 3.8\end{tabular} \\ \hline
-            \textbf{\begin{tabular}[c]{@{}l@{}}Weight \\ (grams)\end{tabular}} & 750                            & 12.5                                    & 159                            & -                              \\ \hline
-            \textbf{\begin{tabular}[c]{@{}l@{}}System \\ requirements\end{tabular}} & \begin{tabular}[c]{@{}l@{}}1.9 GHz CPU \\ 4GB RAM\end{tabular} & \begin{tabular}[c]{@{}l@{}}Modern \\ Processor\\ Intel i5/i7,\\ AMD or ARM\\ Minumum \\ 4GB RAM\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Dual-core \\ 2.4GHz or\\ faster processor\\ Minumum \\ 4GB RAM\\ Nvidia GPU \\ with compute\\ capability \textgreater 3.0\end{tabular} & \begin{tabular}[c]{@{}l@{}}Intel Joule \\ compute \\ module with\\ Ubuntu 16.04\end{tabular} \\ \hline
-            \textbf{price (\$)}                     & 33                             & 595                                     & 449                            & 129                            \\ \hline
-        \end{tabular}%
-    }
+    \centering
+    \caption{Common parameters.}
+    \label{tab:3.1}
+    \begin{tabular}{|l|l|}\hline
+        \makebox[5em]{\textbf{Parameter}}                  & \makebox[5em]{\textbf{Value}}
+        \\\hline
+        RGB-D horizental FoV                               & $\pi/ 3$                      \\\hline
+        Trade-off parameter $\lambda$                      & 0.2                           \\\hline
+        RGB-D maximum range $s (m)$                        & 4                             \\\hline
+        Min distance among frontiers $d (m)$               & 0.3                           \\\hline
+        Occupancy grid resolution $(m)$                    & 0.05                          \\\hline
+        Range to schedule the $\lg[\sigma_x,\sigma_y] (m)$ & $[3,3]$                       \\\hline
+        Loop rate $l (s)$                                  & 20                            \\\hline
+        Enviroment dimension $(m^2)$                       & $8 \times 8$                  \\\hline
+        Linear velocity $v_i (m.s^{-1})$                   & $[0.1,0.3]$                   \\\hline
+        Angular velocity $w_i (rad.s^{-1})$                & $[0.1,0.3]$                   \\\hline
+    \end{tabular}
 \end{table}
+\subsection{Exploration strategy performances}
+The proposed exploration strategy has been evaluated in terms of distribution of the robots in the environment, overlap rate, exploration time, and total traveled distance by each robot.
+\subsubsection{Maps evolution during the mission}
+While reaching their respective assigned goals, each robot is in charge of creating a detailed grid map of the visited area in order to get a global map of the environment. Figure \ref{fig:3.13} illustrates the growth of the reconstructed 3D occupancy grid map at diﬀerent times during the mission. Note that to reach $99\%$ of coverage, a lot of time is spent.\\\\
+Figure \ref{fig:3.14} shows the evolution of the respective projected 2D local grid map of two robots during a cooperative exploration mission. The global projected 2D grid map is also created and represented for evaluation (the occupancy grid matching process introduced in Algorithm 2.1 in Chapter 2 is used). The robots’ initial positions are $(1,0,0)$ for UAV$_1$ and $(1,-3,0)$ for UAV$_2$. Despite a relatively close initial position, the proposed strategy eﬀectively spreads the robots so that UAV$_1$ is in charge of the left side of the environment and UAV$_2$ of the right one.
+\subsubsection{Frontier points evolution during the mission}
+The target is chosen from the candidate frontier points that deﬁne the edges of an environment not previously explored. These candidates are selected from the ﬁnal frontier points of each UAV in the ﬂeet (See Figure \ref{fig:3.15}). During the exploration mission, the local map size increases, which leads to an increasing number of local frontier points. At the beginning of the exploration, the number of candidate frontier points increases, but as soon as the exploration evolves in time, their number decreases. At the end of the mission, when all the environment is explored, no candidate frontier points should be left.
+\subsubsection{UAV's trajectories during the mission}
+Figure \ref{fig:3.16} shows the explored map with the trajectories using one, two and three UAVs. The UAVs try to explore the full environment while avoiding already explored areas. In a cooperative way, each UAV is in charge of visiting an area by reaching a target that belongs to a non-explored environment. These targets are assigned by the \textit{Leader} which, even if the initial poses of the UAVs are relatively close, eﬀectively spreads them into unknown areas. The global map is composed of the superposition of all UAVs’ local maps.
 \end{document}
