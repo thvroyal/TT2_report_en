@@ -1,20 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
-[0] Config.pm:307> INFO - Logfile is 'vietnamese.blg'
-[67] biber:322> INFO - === T6 Thg 6 11, 2021, 20:21:57
-[80] Biber.pm:415> INFO - Reading 'vietnamese.bcf'
-[140] Biber.pm:943> INFO - Found 57 citekeys in bib section 0
-[152] Biber.pm:4256> INFO - Processing section 0
-[152] Utils.pm:75> INFO - Globbing data source 'mybib.bib'
-[152] Utils.pm:91> INFO - Globbed data source 'mybib.bib' to mybib.bib
-[163] Biber.pm:4455> INFO - Looking for bibtex format file 'mybib.bib' for section 0
-[167] bibtex.pm:1653> INFO - LaTeX decoding ...
-[231] bibtex.pm:1471> INFO - Found BibTeX data source 'mybib.bib'
-[559] Utils.pm:293> WARN - I didn't find a database entry for 'kuschnig2012profiling.' (section 0)
-[560] Utils.pm:293> WARN - I didn't find a database entry for 'dirac' (section 0)
-[620] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[620] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[620] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[620] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[669] bbl.pm:652> INFO - Writing 'vietnamese.bbl' with encoding 'UTF-8'
-[720] bbl.pm:755> INFO - Output to vietnamese.bbl
-[720] Biber.pm:128> INFO - WARNINGS: 2
+[1] Config.pm:307> INFO - Logfile is 'vietnamese.blg'
+[219] biber:322> INFO - === T7 Thg 6 12, 2021, 00:58:41
+[250] Biber.pm:415> INFO - Reading 'vietnamese.bcf'
+[436] Biber.pm:943> INFO - Found 56 citekeys in bib section 0
+[486] Biber.pm:4256> INFO - Processing section 0
+[490] Utils.pm:75> INFO - Globbing data source 'mybib.bib'
+[491] Utils.pm:91> INFO - Globbed data source 'mybib.bib' to mybib.bib
+[517] Biber.pm:4455> INFO - Looking for bibtex format file 'mybib.bib' for section 0
+[521] bibtex.pm:1653> INFO - LaTeX decoding ...
+[719] bibtex.pm:1471> INFO - Found BibTeX data source 'mybib.bib'
+[1751] Utils.pm:293> WARN - I didn't find a database entry for 'kuschnig2012profiling.' (section 0)
+[1951] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1951] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1951] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1951] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[2129] bbl.pm:652> INFO - Writing 'vietnamese.bbl' with encoding 'UTF-8'
+[2211] bbl.pm:755> INFO - Output to vietnamese.bbl
+[2212] Biber.pm:128> INFO - WARNINGS: 1

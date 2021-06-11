@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.3)  11 JUN 2021 20:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.3)  12 JUN 2021 00:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,13 +858,6 @@ Package biblatex Info: ... file 'vietnamese.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                dirac
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
 (biblatex)                kuschnig2012profiling.
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -966,7 +959,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--108
  []
 
 [10] [11]
-<assets/3_1.png, id=435, 426.59375pt x 605.26125pt>
+<assets/3_1.png, id=434, 426.59375pt x 605.26125pt>
 File: assets/3_1.png Graphic file (type png)
 <use assets/3_1.png>
 Package pdftex.def Info: assets/3_1.png  used on input line 115.
@@ -976,7 +969,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 122.
-<assets/3_2.png, id=446, 722.7pt x 372.39125pt>
+<assets/3_2.png, id=445, 722.7pt x 372.39125pt>
 File: assets/3_2.png Graphic file (type png)
 <use assets/3_2.png>
 Package pdftex.def Info: assets/3_2.png  used on input line 133.
@@ -990,7 +983,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--136
 Underfull \vbox (badness 1014) has occurred while \output is active []
 
  [13 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_1.png>]
-<assets/3_3.png, id=454, 696.6025pt x 340.27126pt>
+<assets/3_3.png, id=453, 696.6025pt x 340.27126pt>
 File: assets/3_3.png Graphic file (type png)
 <use assets/3_3.png>
 Package pdftex.def Info: assets/3_3.png  used on input line 141.
@@ -1004,7 +997,7 @@ Overfull \hbox (3.69347pt too wide) in paragraph at lines 138--144
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_2.png>]
-<assets/3_4.png, id=471, 461.725pt x 399.4925pt>
+<assets/3_4.png, id=470, 461.725pt x 399.4925pt>
 File: assets/3_4.png Graphic file (type png)
 <use assets/3_4.png>
 Package pdftex.def Info: assets/3_4.png  used on input line 159.
@@ -1024,17 +1017,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
-<assets/3_5_a.png, id=499, 439.6425pt x 294.09875pt>
+<assets/3_5_a.png, id=498, 439.6425pt x 294.09875pt>
 File: assets/3_5_a.png Graphic file (type png)
 <use assets/3_5_a.png>
 Package pdftex.def Info: assets/3_5_a.png  used on input line 189.
 (pdftex.def)             Requested size: 216.0022pt x 144.49109pt.
-<assets/3_5_b.png, id=500, 432.61626pt x 289.08pt>
+<assets/3_5_b.png, id=499, 432.61626pt x 289.08pt>
 File: assets/3_5_b.png Graphic file (type png)
 <use assets/3_5_b.png>
 Package pdftex.def Info: assets/3_5_b.png  used on input line 195.
 (pdftex.def)             Requested size: 216.0022pt x 144.33673pt.
-<assets/3_5_c.png, id=501, 431.6125pt x 298.11375pt>
+<assets/3_5_c.png, id=500, 431.6125pt x 298.11375pt>
 File: assets/3_5_c.png Graphic file (type png)
 <use assets/3_5_c.png>
 Package pdftex.def Info: assets/3_5_c.png  used on input line 201.
@@ -1046,7 +1039,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (17.1586pt too high) has occurred while \output is active []
 
  [18 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_5_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_5_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_5_c.png>]
-<assets/3_6.png, id=519, 873.2625pt x 706.64pt>
+<assets/3_6.png, id=518, 873.2625pt x 706.64pt>
 File: assets/3_6.png Graphic file (type png)
 <use assets/3_6.png>
 Package pdftex.def Info: assets/3_6.png  used on input line 244.
@@ -1055,7 +1048,7 @@ Package pdftex.def Info: assets/3_6.png  used on input line 244.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-<assets/3_7.png, id=551, 846.16125pt x 694.595pt>
+<assets/3_7.png, id=550, 846.16125pt x 694.595pt>
 File: assets/3_7.png Graphic file (type png)
 <use assets/3_7.png>
 Package pdftex.def Info: assets/3_7.png  used on input line 290.
@@ -1080,22 +1073,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--303
 
  []
 
-<assets/3_8_a.png, id=606, 387.4475pt x 211.79124pt>
+<assets/3_8_a.png, id=605, 387.4475pt x 211.79124pt>
 File: assets/3_8_a.png Graphic file (type png)
 <use assets/3_8_a.png>
 Package pdftex.def Info: assets/3_8_a.png  used on input line 312.
 (pdftex.def)             Requested size: 143.9978pt x 78.71378pt.
-<assets/3_8_b.png, id=607, 387.4475pt x 213.79875pt>
+<assets/3_8_b.png, id=606, 387.4475pt x 213.79875pt>
 File: assets/3_8_b.png Graphic file (type png)
 <use assets/3_8_b.png>
 Package pdftex.def Info: assets/3_8_b.png  used on input line 318.
 (pdftex.def)             Requested size: 143.9978pt x 79.45988pt.
-<assets/3_8_c.png, id=608, 402.50375pt x 209.78375pt>
+<assets/3_8_c.png, id=607, 402.50375pt x 209.78375pt>
 File: assets/3_8_c.png Graphic file (type png)
 <use assets/3_8_c.png>
 Package pdftex.def Info: assets/3_8_c.png  used on input line 324.
 (pdftex.def)             Requested size: 143.9978pt x 75.05153pt.
-<assets/3_8_d.png, id=609, 389.455pt x 210.7875pt>
+<assets/3_8_d.png, id=608, 389.455pt x 210.7875pt>
 File: assets/3_8_d.png Graphic file (type png)
 <use assets/3_8_d.png>
 Package pdftex.def Info: assets/3_8_d.png  used on input line 330.
@@ -1131,7 +1124,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 348--365
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-<assets/3_9.png, id=646, 583.17876pt x 303.1325pt>
+<assets/3_9.png, id=645, 583.17876pt x 303.1325pt>
 File: assets/3_9.png Graphic file (type png)
 <use assets/3_9.png>
 Package pdftex.def Info: assets/3_9.png  used on input line 378.
@@ -1144,7 +1137,7 @@ LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 38
  (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<assets/3_10.png, id=659, 713.66624pt x 299.1175pt>
+<assets/3_10.png, id=658, 713.66624pt x 299.1175pt>
 File: assets/3_10.png Graphic file (type png)
 <use assets/3_10.png>
 Package pdftex.def Info: assets/3_10.png  used on input line 392.
@@ -1163,7 +1156,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--395
 
 LaTeX Warning: Reference `eq:3.2' on page 29 undefined on input line 401.
 
-<assets/3_11.png, id=678, 637.38126pt x 310.15875pt>
+<assets/3_11.png, id=677, 637.38126pt x 310.15875pt>
 File: assets/3_11.png Graphic file (type png)
 <use assets/3_11.png>
 Package pdftex.def Info: assets/3_11.png  used on input line 405.
@@ -1173,7 +1166,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--408
 
  []
 
-<assets/3_12.png, id=680, 643.40375pt x 312.16624pt>
+<assets/3_12.png, id=679, 643.40375pt x 312.16624pt>
 File: assets/3_12.png Graphic file (type png)
 <use assets/3_12.png>
 Package pdftex.def Info: assets/3_12.png  used on input line 413.
@@ -1190,57 +1183,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 442--444
 Underfull \vbox (badness 5908) has occurred while \output is active []
 
  [31]
-<assets/3_13_a.png, id=708, 309.155pt x 265.99374pt>
+<assets/3_13_a.png, id=707, 309.155pt x 265.99374pt>
 File: assets/3_13_a.png Graphic file (type png)
 <use assets/3_13_a.png>
 Package pdftex.def Info: assets/3_13_a.png  used on input line 452.
 (pdftex.def)             Requested size: 108.0011pt x 92.92467pt.
-<assets/3_13_b.png, id=709, 332.24126pt x 305.14pt>
+<assets/3_13_b.png, id=708, 332.24126pt x 305.14pt>
 File: assets/3_13_b.png Graphic file (type png)
 <use assets/3_13_b.png>
 Package pdftex.def Info: assets/3_13_b.png  used on input line 458.
 (pdftex.def)             Requested size: 108.0011pt x 99.1926pt.
-<assets/3_13_c.png, id=710, 304.13625pt x 275.0275pt>
+<assets/3_13_c.png, id=709, 304.13625pt x 275.0275pt>
 File: assets/3_13_c.png Graphic file (type png)
 <use assets/3_13_c.png>
 Package pdftex.def Info: assets/3_13_c.png  used on input line 464.
 (pdftex.def)             Requested size: 108.0011pt x 97.66272pt.
-<assets/3_13_d.png, id=711, 309.155pt x 285.065pt>
+<assets/3_13_d.png, id=710, 309.155pt x 285.065pt>
 File: assets/3_13_d.png Graphic file (type png)
 <use assets/3_13_d.png>
 Package pdftex.def Info: assets/3_13_d.png  used on input line 470.
 (pdftex.def)             Requested size: 108.0011pt x 99.5872pt.
-<assets/3_13_e.png, id=712, 327.2225pt x 288.07625pt>
+<assets/3_13_e.png, id=711, 327.2225pt x 288.07625pt>
 File: assets/3_13_e.png Graphic file (type png)
 <use assets/3_13_e.png>
 Package pdftex.def Info: assets/3_13_e.png  used on input line 476.
 (pdftex.def)             Requested size: 108.0011pt x 95.07863pt.
-<assets/3_13_f.png, id=713, 314.17375pt x 273.02pt>
+<assets/3_13_f.png, id=712, 314.17375pt x 273.02pt>
 File: assets/3_13_f.png Graphic file (type png)
 <use assets/3_13_f.png>
 Package pdftex.def Info: assets/3_13_f.png  used on input line 482.
 (pdftex.def)             Requested size: 108.0011pt x 93.85039pt.
-<assets/3_13_g.png, id=714, 327.2225pt x 286.06876pt>
+<assets/3_13_g.png, id=713, 327.2225pt x 286.06876pt>
 File: assets/3_13_g.png Graphic file (type png)
 <use assets/3_13_g.png>
 Package pdftex.def Info: assets/3_13_g.png  used on input line 488.
 (pdftex.def)             Requested size: 108.0011pt x 94.41608pt.
-<assets/3_13_h.png, id=715, 359.3425pt x 272.01625pt>
+<assets/3_13_h.png, id=714, 359.3425pt x 272.01625pt>
 File: assets/3_13_h.png Graphic file (type png)
 <use assets/3_13_h.png>
 Package pdftex.def Info: assets/3_13_h.png  used on input line 494.
 (pdftex.def)             Requested size: 108.0011pt x 81.75491pt.
-<assets/3_13_i.png, id=716, 334.24875pt x 286.06876pt>
+<assets/3_13_i.png, id=715, 334.24875pt x 286.06876pt>
 File: assets/3_13_i.png Graphic file (type png)
 <use assets/3_13_i.png>
 Package pdftex.def Info: assets/3_13_i.png  used on input line 500.
 (pdftex.def)             Requested size: 108.0011pt x 92.43434pt.
-<assets/3_13_j.png, id=717, 353.32pt x 281.05pt>
+<assets/3_13_j.png, id=716, 353.32pt x 281.05pt>
 File: assets/3_13_j.png Graphic file (type png)
 <use assets/3_13_j.png>
 Package pdftex.def Info: assets/3_13_j.png  used on input line 505.
 (pdftex.def)             Requested size: 108.0011pt x 85.91095pt.
-<assets/3_14.png, id=718, 599.23875pt x 890.32625pt>
+<assets/3_14.png, id=717, 599.23875pt x 890.32625pt>
 File: assets/3_14.png Graphic file (type png)
 <use assets/3_14.png>
 Package pdftex.def Info: assets/3_14.png  used on input line 514.
@@ -1249,17 +1242,17 @@ Package pdftex.def Info: assets/3_14.png  used on input line 514.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
-<assets/3_15_a.png, id=726, 928.46875pt x 463.7325pt>
+<assets/3_15_a.png, id=725, 928.46875pt x 463.7325pt>
 File: assets/3_15_a.png Graphic file (type png)
 <use assets/3_15_a.png>
 Package pdftex.def Info: assets/3_15_a.png  used on input line 521.
 (pdftex.def)             Requested size: 251.9989pt x 125.86043pt.
-<assets/3_15_b.png, id=727, 912.40875pt x 435.6275pt>
+<assets/3_15_b.png, id=726, 912.40875pt x 435.6275pt>
 File: assets/3_15_b.png Graphic file (type png)
 <use assets/3_15_b.png>
 Package pdftex.def Info: assets/3_15_b.png  used on input line 526.
 (pdftex.def)             Requested size: 251.9989pt x 120.31308pt.
-<assets/3_15_c.png, id=728, 912.40875pt x 437.635pt>
+<assets/3_15_c.png, id=727, 912.40875pt x 437.635pt>
 File: assets/3_15_c.png Graphic file (type png)
 <use assets/3_15_c.png>
 Package pdftex.def Info: assets/3_15_c.png  used on input line 531.
@@ -1268,17 +1261,17 @@ Package pdftex.def Info: assets/3_15_c.png  used on input line 531.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_c.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_d.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_e.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_f.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_g.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_h.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_i.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_j.png>]
-<assets/3_16_a.png, id=743, 630.355pt x 570.13pt>
+<assets/3_16_a.png, id=742, 630.355pt x 570.13pt>
 File: assets/3_16_a.png Graphic file (type png)
 <use assets/3_16_a.png>
 Package pdftex.def Info: assets/3_16_a.png  used on input line 541.
 (pdftex.def)             Requested size: 180.0pt x 162.80191pt.
-<assets/3_16_b.png, id=744, 623.32875pt x 577.15625pt>
+<assets/3_16_b.png, id=743, 623.32875pt x 577.15625pt>
 File: assets/3_16_b.png Graphic file (type png)
 <use assets/3_16_b.png>
 Package pdftex.def Info: assets/3_16_b.png  used on input line 546.
 (pdftex.def)             Requested size: 180.0pt x 166.66649pt.
-<assets/3_16_c.png, id=745, 624.3325pt x 615.29875pt>
+<assets/3_16_c.png, id=744, 624.3325pt x 615.29875pt>
 File: assets/3_16_c.png Graphic file (type png)
 <use assets/3_16_c.png>
 Package pdftex.def Info: assets/3_16_c.png  used on input line 551.
@@ -1297,17 +1290,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 559--561
 
  []
 
-<assets/3_17_a.png, id=772, 721.69624pt x 306.14375pt>
+<assets/3_17_a.png, id=771, 721.69624pt x 306.14375pt>
 File: assets/3_17_a.png Graphic file (type png)
 <use assets/3_17_a.png>
 Package pdftex.def Info: assets/3_17_a.png  used on input line 583.
 (pdftex.def)             Requested size: 216.0022pt x 91.62894pt.
-<assets/3_17_b.png, id=773, 659.46375pt x 320.19624pt>
+<assets/3_17_b.png, id=772, 659.46375pt x 320.19624pt>
 File: assets/3_17_b.png Graphic file (type png)
 <use assets/3_17_b.png>
 Package pdftex.def Info: assets/3_17_b.png  used on input line 588.
 (pdftex.def)             Requested size: 216.0022pt x 104.87846pt.
-<assets/3_17_c.png, id=774, 645.41125pt x 322.20375pt>
+<assets/3_17_c.png, id=773, 645.41125pt x 322.20375pt>
 File: assets/3_17_c.png Graphic file (type png)
 <use assets/3_17_c.png>
 Package pdftex.def Info: assets/3_17_c.png  used on input line 593.
@@ -1329,38 +1322,38 @@ Overfull \hbox (1.3361pt too wide) in paragraph at lines 605--607
 \T5/cmr/m/n/10.95 To over-come this prob-lem, all the num-bers of pos-si-ble com-bi-na-tion $[]$
  []
 
-<assets/3_19.png, id=794, 752.8125pt x 361.35pt>
+<assets/3_19.png, id=793, 752.8125pt x 361.35pt>
 File: assets/3_19.png Graphic file (type png)
 <use assets/3_19.png>
 Package pdftex.def Info: assets/3_19.png  used on input line 613.
 (pdftex.def)             Requested size: 301.11966pt x 144.53743pt.
-<assets/3_18_a.png, id=796, 810.02625pt x 376.40625pt>
+<assets/3_18_a.png, id=795, 810.02625pt x 376.40625pt>
 File: assets/3_18_a.png Graphic file (type png)
 <use assets/3_18_a.png>
 Package pdftex.def Info: assets/3_18_a.png  used on input line 622.
 (pdftex.def)             Requested size: 251.9989pt x 117.09825pt.
-<assets/3_18_b.png, id=797, 779.91376pt x 365.365pt>
+<assets/3_18_b.png, id=796, 779.91376pt x 365.365pt>
 File: assets/3_18_b.png Graphic file (type png)
 <use assets/3_18_b.png>
 Package pdftex.def Info: assets/3_18_b.png  used on input line 627.
 (pdftex.def)             Requested size: 251.9989pt x 118.0509pt.
-<assets/3_18_c.png, id=798, 778.91pt x 366.36874pt>
+<assets/3_18_c.png, id=797, 778.91pt x 366.36874pt>
 File: assets/3_18_c.png Graphic file (type png)
 <use assets/3_18_c.png>
 Package pdftex.def Info: assets/3_18_c.png  used on input line 632.
 (pdftex.def)             Requested size: 251.9989pt x 118.52617pt.
 [39 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_19.png>]
-<assets/3_20_a.png, id=806, 769.87625pt x 392.46625pt>
+<assets/3_20_a.png, id=805, 769.87625pt x 392.46625pt>
 File: assets/3_20_a.png Graphic file (type png)
 <use assets/3_20_a.png>
 Package pdftex.def Info: assets/3_20_a.png  used on input line 642.
 (pdftex.def)             Requested size: 251.9989pt x 128.46027pt.
-<assets/3_20_b.png, id=807, 750.805pt x 360.34625pt>
+<assets/3_20_b.png, id=806, 750.805pt x 360.34625pt>
 File: assets/3_20_b.png Graphic file (type png)
 <use assets/3_20_b.png>
 Package pdftex.def Info: assets/3_20_b.png  used on input line 647.
 (pdftex.def)             Requested size: 251.9989pt x 120.94354pt.
-<assets/3_20_c.png, id=808, 771.88374pt x 333.245pt>
+<assets/3_20_c.png, id=807, 771.88374pt x 333.245pt>
 File: assets/3_20_c.png Graphic file (type png)
 <use assets/3_20_c.png>
 Package pdftex.def Info: assets/3_20_c.png  used on input line 652.
@@ -1369,7 +1362,7 @@ Package pdftex.def Info: assets/3_20_c.png  used on input line 652.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_c.png>]
-<assets/3_21.png, id=818, 776.9025pt x 370.38374pt>
+<assets/3_21.png, id=817, 776.9025pt x 370.38374pt>
 File: assets/3_21.png Graphic file (type png)
 <use assets/3_21.png>
 Package pdftex.def Info: assets/3_21.png  used on input line 662.
@@ -1378,13 +1371,13 @@ Package pdftex.def Info: assets/3_21.png  used on input line 662.
 Underfull \vbox (badness 3547) has occurred while \output is active []
 
  [41 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_c.png>]
-<assets/3_22.png, id=827, 762.85pt x 361.35pt>
+<assets/3_22.png, id=826, 762.85pt x 361.35pt>
 File: assets/3_22.png Graphic file (type png)
 <use assets/3_22.png>
 Package pdftex.def Info: assets/3_22.png  used on input line 670.
 (pdftex.def)             Requested size: 305.1346pt x 144.53743pt.
  [42 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_21.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_22.png>]
-<assets/3_23.png, id=836, 1049.9225pt x 308.15125pt>
+<assets/3_23.png, id=835, 1049.9225pt x 308.15125pt>
 File: assets/3_23.png Graphic file (type png)
 <use assets/3_23.png>
 Package pdftex.def Info: assets/3_23.png  used on input line 679.
@@ -1395,7 +1388,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 683--685
  []
 
 [43 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_23.png>]
-<assets/3_24.png, id=845, 780.9175pt x 373.395pt>
+<assets/3_24.png, id=844, 780.9175pt x 373.395pt>
 File: assets/3_24.png Graphic file (type png)
 <use assets/3_24.png>
 Package pdftex.def Info: assets/3_24.png  used on input line 691.
@@ -1563,7 +1556,7 @@ Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 708.
 
-<assets/4_1.png, id=862, 792.9625pt x 313.17pt>
+<assets/4_1.png, id=861, 792.9625pt x 313.17pt>
 File: assets/4_1.png Graphic file (type png)
 <use assets/4_1.png>
 Package pdftex.def Info: assets/4_1.png  used on input line 712.
@@ -1935,7 +1928,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 751.
 
-<assets/4_2.png, id=892, 781.92125pt x 188.705pt>
+<assets/4_2.png, id=891, 781.92125pt x 188.705pt>
 File: assets/4_2.png Graphic file (type png)
 <use assets/4_2.png>
 Package pdftex.def Info: assets/4_2.png  used on input line 756.
@@ -1949,6 +1942,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 752--759
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [50 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_2.png>]
+
+Package hyperref Warning: Composite letter `\textacute+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 765.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 765.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 765.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 767.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 767.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Overfull \hbox (50.32004pt too wide) in paragraph at lines 768--782
+\T5/cmr/m/n/10.95 ti»n bay ^^_÷ñc nèi m¤ng düa tr¶n Linux ^^_÷ñc tr¼nh b y trong [[]]
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 768--782
 
  []
@@ -1994,36 +2031,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 768--782
  []
 
 
-Overfull \hbox (6.43391pt too wide) in paragraph at lines 768--782
-\T5/cmr/m/n/10.95 trans-mis-sion sys-tems to en-sure flex-i-bil-ity. In [[]39[]], an omni-directional isotropic
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 768--782
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
-
- []
-
-[51]
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [52] [53]
-Overfull \hbox (1.92722pt too wide) in paragraph at lines 788--788
-[]|\T5/cmr/bx/n/10.95 Standard| 
+ [51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [52]
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [53]
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
+[]|\T5/cmr/bx/n/10.95 Ti¶u
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 788--789
+[]|\T5/cmr/bx/n/10.95 Ph¦n
  []
 
 
@@ -2057,8 +2088,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 790--790
  []
 
 
-Overfull \hbox (3.18184pt too wide) in paragraph at lines 790--790
-[]|\T5/cmr/m/n/10.95 Network
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+[]|\T5/cmr/m/n/10.95 Lîp
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 Net-
  []
 
 
@@ -2117,27 +2153,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 791--791
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 791--791
-[]|\T5/cmr/m/n/10.95 PHY
+[]|\T5/cmr/m/n/10.95 Lîp
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 791--791
-\T5/cmr/m/n/10.95 and
+\T5/cmr/m/n/10.95 PHY
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 791--791
-\T5/cmr/m/n/10.95 MAC
+\T5/cmr/m/n/10.95 v 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 791--791
-\T5/cmr/m/n/10.95 in both mode
+\T5/cmr/m/n/10.95 (AP v  l÷îi),
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 791--791
-\T5/cmr/m/n/10.95 ac-cept-able de-
+\T5/cmr/m/n/10.95 mùc ^^_ë cæng
  []
 
 
@@ -2237,22 +2273,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 792--792
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 792--792
-[]|\T5/cmr/m/n/10.95 PHY
+[]|\T5/cmr/m/n/10.95 Lîp
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 792--792
-\T5/cmr/m/n/10.95 and
+\T5/cmr/m/n/10.95 PHY
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 792--792
-\T5/cmr/m/n/10.95 MAC
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 792--792
-[]|\T5/cmr/m/n/10.95 Do not sup-port
+\T5/cmr/m/n/10.95 v 
  []
 
 
@@ -2362,42 +2393,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 800--800
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 800--800
-[]|\T5/cmr/m/n/10.95 PHY
+[]|\T5/cmr/m/n/10.95 Lîp
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 and
+\T5/cmr/m/n/10.95 PHY
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 MAC
+\T5/cmr/m/n/10.95 v 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 800--800
-[]|\T5/cmr/m/n/10.95 RSS and
+[]|\T5/cmr/m/n/10.95 RSS v  thæng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 through-put
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 de-creases with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 the dis-tance
- []
-
-
-Underfull \hbox (badness 2564) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 but still at an
+Underfull \hbox (badness 1178) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 l÷ñng gi£m d¦n
  []
 
 
@@ -2547,42 +2563,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 801--801
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 801--801
-[]|\T5/cmr/m/n/10.95 PHY
+[]|\T5/cmr/m/n/10.95 Lîp
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 and
+\T5/cmr/m/n/10.95 PHY
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 MAC
+\T5/cmr/m/n/10.95 v 
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 l¥u v  chi ph½
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 ^^_ành tuy¸n cao
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 801--801
-[]|\T5/cmr/m/n/10.95 Long con-ver-
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 gence time and
+\T5/cmr/m/n/10.95 (vîi giao thùc
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 high rout-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 over-head (with
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 col for Net-work
+\T5/cmr/m/n/10.95 BAT-MAN cho
  []
 
 
@@ -2630,7 +2641,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 801--801
 \T5/cmr/m/n/10.95 802.11n +
  []
 
-[55
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [55
 
 
 ]
@@ -2674,78 +2688,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 809--809
  []
 
 
-Overfull \hbox (1.05319pt too wide) in paragraph at lines 809--809
-[]|\T5/cmr/m/n/10.95 network
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 ing UAVs reach
- []
-
-
-Underfull \hbox (badness 7344) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 higher through-
- []
-
-
-Underfull \hbox (badness 2103) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 put than UAVs
- []
-
-
-Underfull \hbox (badness 6094) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 in the ground.
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+[]|\T5/cmr/m/n/10.95 Lîp
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 These re-sults
+\T5/cmr/m/n/10.95 Net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 are per-formed
+Underfull \hbox (badness 3009) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 nh£y, c¡c UAV
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 based po-si-tion
+Underfull \hbox (badness 1609) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 ^^_¤t ^^_÷ñc thæng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 mode which
+Underfull \hbox (badness 5008) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 UAV tr¶n m°t
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 are lower than
+Underfull \hbox (badness 5741) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 n y ^^_÷ñc thüc
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 those with the
+Underfull \hbox (badness 5417) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 so vîi ch¸ ^^_ë
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 sig-nal strength
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 po-si-tion-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 mode. These
- []
-
-
-Underfull \hbox (badness 6094) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 higher than in
+Underfull \hbox (badness 2529) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 m n tr¼nh di¹n
  []
 
 
@@ -2890,27 +2869,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 810--810
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 810--810
-[]|\T5/cmr/m/n/10.95 PHY
+[]|\T5/cmr/m/n/10.95 Lîp
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 and
+\T5/cmr/m/n/10.95 PHY
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 MAC
+\T5/cmr/m/n/10.95 v 
  []
 
 
-Underfull \hbox (badness 4429) in paragraph at lines 810--810
-[]|\T5/cmr/m/n/10.95 Throughput de-
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+[]|\T5/cmr/m/n/10.95 Thæng l÷ñng
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 in-crease of the
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 gi£m khi sè
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 l÷ñng nót t«ng
  []
 
 
@@ -2971,57 +2955,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 818--818
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 818--818
-[]|\T5/cmr/m/n/10.95 PHY
+[]|\T5/cmr/m/n/10.95 Lîp
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 and
+\T5/cmr/m/n/10.95 PHY
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 MAC
+\T5/cmr/m/n/10.95 v 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-[]|\T5/cmr/m/n/10.95 Bidirectional
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 trans-mis-sion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 match-ing fil-ter-
- []
-
-
-Underfull \hbox (badness 3514) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 ing and tim-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 er-ror re-cov-ery
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 can in-crease
- []
-
-
-Underfull \hbox (badness 3884) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 the com-mu-ni-ca-
- []
-
-
-Underfull \hbox (badness 4048) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 tion range and
+Underfull \hbox (badness 2057) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 k¸t hñp låc v 
  []
 
 
@@ -3069,13 +3018,34 @@ Underfull \hbox (badness 1418) in paragraph at lines 818--818
 []|\T5/cmr/m/n/10.95 Linux Ker-
  []
 
-[57
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [57
 
 
 ]
-Overfull \hbox (5.46408pt too wide) in paragraph at lines 826--827
-[]\T5/cmr/m/n/10.95 Topology changes: Nodes move in the en-vi-ron-ment and gen-er-ate changes
- []
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 822.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 822.
+
+
+Package hyperref Warning: Composite letter `\textacute+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 822.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 822.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 822.
 
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
@@ -3083,7 +3053,33 @@ Overfull \vbox (0.4298pt too high) has occurred while \output is active []
  [58
 
 ]
-<assets/4_3.png, id=974, 731.73375pt x 391.4625pt>
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 841.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 841.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 841.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 841.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 841.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 841.
+
+<assets/4_3.png, id=973, 731.73375pt x 391.4625pt>
 File: assets/4_3.png Graphic file (type png)
 <use assets/4_3.png>
 Package pdftex.def Info: assets/4_3.png  used on input line 845.
@@ -3091,37 +3087,73 @@ Package pdftex.def Info: assets/4_3.png  used on input line 845.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [59]
-<assets/4_4.png, id=984, 723.70375pt x 404.51125pt>
+<assets/4_4.png, id=983, 723.70375pt x 404.51125pt>
 File: assets/4_4.png Graphic file (type png)
 <use assets/4_4.png>
 Package pdftex.def Info: assets/4_4.png  used on input line 852.
 (pdftex.def)             Requested size: 289.47636pt x 161.80162pt.
 
-Overfull \hbox (1.35196pt too wide) in paragraph at lines 857--858
-\T5/cmr/m/n/10.95 The topol-ogy of the net-work de-fines the ge-o-met-ric prop-er-ties of nodes (robots
- []
+
+Package hyperref Warning: Composite letter `\textacute+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 856.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 856.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 856.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 856.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 856.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 856.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 856.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 856.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 856.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 856.
 
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [60 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_3.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 859--866
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 859--866
-
- []
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 858.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 859--866
-
- []
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 858.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 859--866
@@ -3139,19 +3171,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 859--866
  []
 
 
-Overfull \hbox (19.50674pt too wide) has occurred while \output is active
-\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 61
+Underfull \hbox (badness 10000) in paragraph at lines 859--866
+
  []
 
-[61]
-<assets/4_5.png, id=1019, 482.80376pt x 436.63126pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--866
+
+ []
+
+
+Overfull \hbox (43.60117pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 61
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [61]
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 866.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 866.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 866.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 866.
+
+
+Package hyperref Warning: Composite letter `\texttilde+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\texttilde' on input line 866.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 866.
+
+<assets/4_5.png, id=1016, 482.80376pt x 436.63126pt>
 File: assets/4_5.png Graphic file (type png)
 <use assets/4_5.png>
 Package pdftex.def Info: assets/4_5.png  used on input line 872.
 (pdftex.def)             Requested size: 241.40129pt x 218.3151pt.
-
-Underfull \vbox (badness 1117) has occurred while \output is active []
-
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
@@ -3161,48 +3234,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 880--882
  []
 
 
-Overfull \hbox (19.50674pt too wide) has occurred while \output is active
-\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 63
+Overfull \hbox (43.60117pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 63
  []
 
-[63 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_5.png>]
-<assets/4_6.png, id=1035, 724.7075pt x 472.76625pt>
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [63 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_5.png>]
+<assets/4_6.png, id=1034, 724.7075pt x 472.76625pt>
 File: assets/4_6.png Graphic file (type png)
 <use assets/4_6.png>
 Package pdftex.def Info: assets/4_6.png  used on input line 886.
 (pdftex.def)             Requested size: 289.87787pt x 189.10315pt.
-<assets/4_7_a.png, id=1037, 698.61pt x 332.24126pt>
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 891.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 891.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 891.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 891.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 891.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 891.
+
+<assets/4_7_a.png, id=1036, 698.61pt x 332.24126pt>
 File: assets/4_7_a.png Graphic file (type png)
 <use assets/4_7_a.png>
 Package pdftex.def Info: assets/4_7_a.png  used on input line 896.
 (pdftex.def)             Requested size: 251.9989pt x 119.84502pt.
-File: assets/4_7_a.png Graphic file (type png)
-<use assets/4_7_a.png>
-Package pdftex.def Info: assets/4_7_a.png  used on input line 901.
-(pdftex.def)             Requested size: 251.9989pt x 119.84502pt.
+<assets/4_7_b.png, id=1037, 694.595pt x 332.24126pt>
+File: assets/4_7_b.png Graphic file (type png)
+<use assets/4_7_b.png>
+Package pdftex.def Info: assets/4_7_b.png  used on input line 901.
+(pdftex.def)             Requested size: 251.9989pt x 120.53955pt.
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [64 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_6.png>]
-Overfull \hbox (1.63014pt too wide) in paragraph at lines 911--912
-\T5/cmr/m/n/10.95 multi-UAV on dif-fer-ent ma-chines, one ROS mas-ter/core can be adopted
+Overfull \hbox (43.60117pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 65
  []
 
 
-Overfull \hbox (19.50674pt too wide) has occurred while \output is active
-\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 65
- []
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
-[65 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_7_a.png>]
-<assets/4_8_a.png, id=1052, 425.59pt x 273.02pt>
+ [65 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_7_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_7_b.png>]
+<assets/4_8_a.png, id=1053, 425.59pt x 273.02pt>
 File: assets/4_8_a.png Graphic file (type png)
 <use assets/4_8_a.png>
 Package pdftex.def Info: assets/4_8_a.png  used on input line 919.
 (pdftex.def)             Requested size: 143.9978pt x 92.37564pt.
-File: assets/4_8_a.png Graphic file (type png)
-<use assets/4_8_a.png>
-Package pdftex.def Info: assets/4_8_a.png  used on input line 924.
-(pdftex.def)             Requested size: 143.9978pt x 92.37564pt.
+<assets/4_8_b.png, id=1054, 488.82625pt x 272.01625pt>
+File: assets/4_8_b.png Graphic file (type png)
+<use assets/4_8_b.png>
+Package pdftex.def Info: assets/4_8_b.png  used on input line 924.
+(pdftex.def)             Requested size: 143.9978pt x 80.13202pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 914--930
 
@@ -3216,13 +3319,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 931--933
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [66 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_8_a.png>]
-<assets/4_9_a.png, id=1073, 687.56876pt x 321.2pt>
+ [66 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_8_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_8_b.png>]
+<assets/4_9_a.png, id=1076, 687.56876pt x 321.2pt>
 File: assets/4_9_a.png Graphic file (type png)
 <use assets/4_9_a.png>
 Package pdftex.def Info: assets/4_9_a.png  used on input line 938.
 (pdftex.def)             Requested size: 288.0011pt x 134.54039pt.
-<assets/4_9_b.png, id=1074, 677.53125pt x 330.23375pt>
+<assets/4_9_b.png, id=1077, 677.53125pt x 330.23375pt>
 File: assets/4_9_b.png Graphic file (type png)
 <use assets/4_9_b.png>
 Package pdftex.def Info: assets/4_9_b.png  used on input line 943.
@@ -3231,15 +3334,15 @@ Package pdftex.def Info: assets/4_9_b.png  used on input line 943.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (19.50674pt too wide) has occurred while \output is active
-\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 67
+Overfull \hbox (43.60117pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 67
  []
 
-[67]
 
-LaTeX Warning: Reference `4.10' on page 68 undefined on input line 952.
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
-<assets/4_10.png, id=1089, 765.86125pt x 278.03876pt>
+ [67]
+<assets/4_10.png, id=1093, 765.86125pt x 278.03876pt>
 File: assets/4_10.png Graphic file (type png)
 <use assets/4_10.png>
 Package pdftex.def Info: assets/4_10.png  used on input line 955.
@@ -3521,17 +3624,20 @@ Overfull \hbox (39.58334pt too wide) in paragraph at lines 971--980
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (19.50674pt too wide) has occurred while \output is active
-\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 69
+Overfull \hbox (43.60117pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 69
  []
 
-[69 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_10.png>]
-<assets/4_11_a.png, id=1106, 704.6325pt x 309.155pt>
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [69 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_10.png>]
+<assets/4_11_a.png, id=1110, 704.6325pt x 309.155pt>
 File: assets/4_11_a.png Graphic file (type png)
 <use assets/4_11_a.png>
 Package pdftex.def Info: assets/4_11_a.png  used on input line 988.
 (pdftex.def)             Requested size: 288.0011pt x 126.35811pt.
-<assets/4_11_b.png, id=1107, 671.50874pt x 303.1325pt>
+<assets/4_11_b.png, id=1111, 671.50874pt x 303.1325pt>
 File: assets/4_11_b.png Graphic file (type png)
 <use assets/4_11_b.png>
 Package pdftex.def Info: assets/4_11_b.png  used on input line 993.
@@ -3545,47 +3651,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 982--999
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [70]
-<assets/4_12_a.png, id=1115, 317.185pt x 240.9pt>
+<assets/4_12_a.png, id=1119, 317.185pt x 240.9pt>
 File: assets/4_12_a.png Graphic file (type png)
 <use assets/4_12_a.png>
 Package pdftex.def Info: assets/4_12_a.png  used on input line 1006.
 (pdftex.def)             Requested size: 108.0011pt x 82.02621pt.
-<assets/4_12_b.png, id=1116, 311.1625pt x 233.87375pt>
+<assets/4_12_b.png, id=1120, 311.1625pt x 233.87375pt>
 File: assets/4_12_b.png Graphic file (type png)
 <use assets/4_12_b.png>
 Package pdftex.def Info: assets/4_12_b.png  used on input line 1011.
 (pdftex.def)             Requested size: 108.0011pt x 81.17542pt.
-<assets/4_12_c.png, id=1117, 314.17375pt x 237.88875pt>
+<assets/4_12_c.png, id=1121, 314.17375pt x 237.88875pt>
 File: assets/4_12_c.png Graphic file (type png)
 <use assets/4_12_c.png>
 Package pdftex.def Info: assets/4_12_c.png  used on input line 1016.
 (pdftex.def)             Requested size: 108.0011pt x 81.77405pt.
-<assets/4_12_d.png, id=1118, 310.15875pt x 235.88126pt>
+<assets/4_12_d.png, id=1122, 310.15875pt x 235.88126pt>
 File: assets/4_12_d.png Graphic file (type png)
 <use assets/4_12_d.png>
 Package pdftex.def Info: assets/4_12_d.png  used on input line 1021.
 (pdftex.def)             Requested size: 108.0011pt x 82.13496pt.
-<assets/4_12_e.png, id=1119, 306.14375pt x 230.8625pt>
+<assets/4_12_e.png, id=1123, 306.14375pt x 230.8625pt>
 File: assets/4_12_e.png Graphic file (type png)
 <use assets/4_12_e.png>
 Package pdftex.def Info: assets/4_12_e.png  used on input line 1026.
 (pdftex.def)             Requested size: 108.0011pt x 81.44067pt.
-<assets/4_12_f.png, id=1120, 307.1475pt x 234.8775pt>
+<assets/4_12_f.png, id=1124, 307.1475pt x 234.8775pt>
 File: assets/4_12_f.png Graphic file (type png)
 <use assets/4_12_f.png>
 Package pdftex.def Info: assets/4_12_f.png  used on input line 1031.
 (pdftex.def)             Requested size: 108.0011pt x 82.58824pt.
-<assets/4_12_g.png, id=1121, 310.15875pt x 233.87375pt>
+<assets/4_12_g.png, id=1125, 310.15875pt x 233.87375pt>
 File: assets/4_12_g.png Graphic file (type png)
 <use assets/4_12_g.png>
 Package pdftex.def Info: assets/4_12_g.png  used on input line 1036.
 (pdftex.def)             Requested size: 108.0011pt x 81.43593pt.
-<assets/4_12_h.png, id=1122, 309.155pt x 234.8775pt>
+<assets/4_12_h.png, id=1126, 309.155pt x 234.8775pt>
 File: assets/4_12_h.png Graphic file (type png)
 <use assets/4_12_h.png>
 Package pdftex.def Info: assets/4_12_h.png  used on input line 1041.
 (pdftex.def)             Requested size: 108.0011pt x 82.05424pt.
-<assets/4_12_i.png, id=1123, 307.1475pt x 231.86626pt>
+<assets/4_12_i.png, id=1127, 307.1475pt x 231.86626pt>
 File: assets/4_12_i.png Graphic file (type png)
 <use assets/4_12_i.png>
 Package pdftex.def Info: assets/4_12_i.png  used on input line 1046.
@@ -3596,14 +3702,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1001--1052
  []
 
 
-Underfull \vbox (badness 6978) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (19.50674pt too wide) has occurred while \output is active
-\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 71
+Overfull \hbox (43.60117pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 71
  []
 
-[71 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_b.png>]
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [71 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_b.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1054--1057
 
  []
@@ -3620,18 +3729,18 @@ Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1065.
+(hyperref)                removing `\textdotbelow' on input line 1066.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1065.
+(hyperref)                removing `\ecircumflex' on input line 1066.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 1065.
+(hyperref)                removing `\h' on input line 1066.
 
 
-Overfull \hbox (9.33643pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (9.33643pt too wide) in paragraph at lines 1066--1066
 \T5/cmr/m/n/10.95 com-mu-ni-ca-tion pour mini-drones civils''. PhD the-sis. Uni-ver-sit² Toulouse
  []
 
@@ -3641,7 +3750,7 @@ Overfull \hbox (9.33643pt too wide) in paragraph at lines 1065--1065
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [76]
-Overfull \hbox (4.78606pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (4.78606pt too wide) in paragraph at lines 1066--1066
 \T5/cmr/m/n/10.95 layer with qos ca-pa-bil-i-ties for a multi-robot sys-tem''. In: \T5/cmr/m/it/10.95 Iberian Robotics
  []
 
@@ -3649,7 +3758,7 @@ Overfull \hbox (4.78606pt too wide) in paragraph at lines 1065--1065
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [77]
-Overfull \hbox (9.58379pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (9.58379pt too wide) in paragraph at lines 1066--1066
 \T5/cmr/m/it/10.95 2018 13th An-nual Con-fer-ence on Sys-tem of Sys-tems En-gi-neer-ing (SoSE)\T5/cmr/m/n/10.95 .
  []
 
@@ -3657,17 +3766,17 @@ Overfull \hbox (9.58379pt too wide) in paragraph at lines 1065--1065
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [78]
-Overfull \hbox (4.96356pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (4.96356pt too wide) in paragraph at lines 1066--1066
 \T5/cmr/m/n/10.95 plo-ration''. In: \T5/cmr/m/it/10.95 Robotics and Au-tonomous Sys-tems \T5/cmr/m/n/10.95 54.12 (2006), pp. 945^^U
  []
 
 
-Overfull \hbox (40.4074pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (40.4074pt too wide) in paragraph at lines 1066--1066
 \T5/cmr/m/n/10.95 for multi-robot sys-tems in dis-as-ter sce-nar-ios''. In: \T5/cmr/m/it/10.95 Pro-ceed-ings of IARP/EURON
  []
 
 
-Overfull \hbox (0.7591pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (0.7591pt too wide) in paragraph at lines 1066--1066
 \T5/cmr/m/it/10.95 work-shop on robotics for risky in-ter-ven-tions and en-vi-ron-men-tal surveil-
  []
 
@@ -3675,17 +3784,17 @@ Overfull \hbox (0.7591pt too wide) in paragraph at lines 1065--1065
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [79]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1066.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1067.
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [80]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1066.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1067.
  (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1066.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1066.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1067.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1067.
 Package rerunfilecheck Info: File `vietnamese.out' has not changed.
-(rerunfilecheck)             Checksum: DCAEB88F1847DF3A3398754E79E8483C;2535.
+(rerunfilecheck)             Checksum: DF3E4FB8AD60612A852C9C75D2BA5ED5;2580.
 
 
 LaTeX Warning: There were undefined references.
@@ -3693,21 +3802,21 @@ LaTeX Warning: There were undefined references.
 Package logreq Info: Writing requests to 'vietnamese.run.xml'.
 \openout1 = `vietnamese.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1066.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1067.
  ) 
 Here is how much of TeX's memory you used:
- 17876 strings out of 481239
- 306140 string characters out of 5920378
- 1159345 words of memory out of 5000000
- 32405 multiletter control sequences out of 15000+600000
+ 17890 strings out of 481239
+ 306395 string characters out of 5920378
+ 1160584 words of memory out of 5000000
+ 32417 multiletter control sequences out of 15000+600000
  567952 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,11n,62p,1737b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,11n,62p,1736b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on /home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.pdf (80 pages, 5651415 bytes).
+Output written on /home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.pdf (80 pages, 6120549 bytes).
 PDF statistics:
- 1339 PDF objects out of 1440 (max. 8388607)
+ 1343 PDF objects out of 1440 (max. 8388607)
  1078 compressed objects within 11 object streams
  344 named destinations out of 1000 (max. 500000)
- 636 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 646 words of extra memory for PDF output out of 10000 (max. 10000000)
 

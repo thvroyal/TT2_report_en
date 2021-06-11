@@ -82,41 +82,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}Phân loại cấu trúc liên kết mạng}{50}{subsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Network typology}{51}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Cấu trúc mạng}{51}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Related work}{51}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Công việc liên quan}{51}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Network standards and protocols}{58}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Các tiêu chuẩn và giao thức mạng}{58}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{BATMAN protocol definition}{59}{section*.54}%
+\contentsline {paragraph}{Định nghĩa giao thức BATMAN}{59}{section*.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Result and discussion}{59}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}Kết quả và thảo luận}{59}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Network topology and strategy for MRS robustness}{61}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Cấu trúc liên kết và chiến lược mạng cho MRS robustness}{61}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Related work}{61}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Công việc liên quan}{61}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Inter-robot communication approach}{62}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}Phương pháp giao tiếp giữa các robot}{62}{subsection.2.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Multi-UAV interaction and data exchange}{62}{section*.57}%
+\contentsline {subsubsection}{Tương tác đa UAV và trao đổi dữ liệu}{62}{section*.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Exploration strategy to face communication loss}{63}{section*.59}%
+\contentsline {subsubsection}{Chiến lược exploration để đối mặt với mất giao tiếp}{63}{section*.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Particular case}{63}{section*.60}%
+\contentsline {paragraph}{Trường hợp đặc biệt}{63}{section*.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Data exchange strategy discussion}{64}{section*.61}%
+\contentsline {subsubsection}{Thảo luận chiến lược trao đổi dữ liệu}{64}{section*.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}Results and discussion}{65}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.3}Kết quả và thảo luận}{65}{subsection.2.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Network setting: From one to multiple machines}{65}{section*.64}%
+\contentsline {subsubsection}{Cài đặt mạng: Từ một đến nhiều máy}{65}{section*.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Exchanged data size evaluation}{67}{section*.66}%
+\contentsline {subsubsection}{Sự đánh giá kích thước dữ liệu được trao đổi}{67}{section*.66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Exchanged data average time evaluation}{68}{section*.68}%
+\contentsline {subsubsection}{Đánh giá thời gian trung bình của dữ liệu được trao đổi}{68}{section*.68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Network interruption evaluation}{70}{section*.71}%
+\contentsline {subsubsection}{Đánh giá gián đoạn mạng}{70}{section*.71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Global map evaluation}{71}{section*.73}%
+\contentsline {subsubsection}{Đánh giá bản đồ toàn cầu}{71}{section*.73}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Conclusion}{72}{section.2.5}%
 \defcounter {refsection}{0}\relax 

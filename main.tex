@@ -900,7 +900,7 @@ As UAVs are equipped with IEEE 802.11b,g wireless card, we set up an infrastruct
         \label{fig:4.7a}
     \end{subfigure}
     \begin{subfigure}[H]{0.7\linewidth}
-        \includegraphics[width=\linewidth]{assets/4_7_a.png}
+        \includegraphics[width=\linewidth]{assets/4_7_b.png}
         \caption{{Three UAVs (Laptops).}}
         \label{fig:4.7b}
     \end{subfigure}
@@ -923,7 +923,7 @@ When running a single ROS core for multiple UAVs, a reliable network is needed, 
         \label{fig:4.8a}
     \end{subfigure}
     \begin{subfigure}[H]{0.4\linewidth}
-        \includegraphics[width=\linewidth]{assets/4_8_a.png}
+        \includegraphics[width=\linewidth]{assets/4_8_b.png}
         \caption{{Multiple ROS cores for multiple machines.}}
         \label{fig:4.8b}
     \end{subfigure}
@@ -1055,7 +1055,7 @@ Figure \ref{fig:4.12} illustrates the growth of the reconstructed global 2D occu
 \section{Conclusion}
 In this chapter, we addressed two subproblems of the MRS network. The first one deals with the network typology that is the characteristics that should be ensured by the network; whereas, the second one points out to the geographic distribution of nodes in the network, called topology. We also propose to face critical situations.\\\\
 The typology of the proposed network is based on adopting a mesh network along with BATMAN protocol. Results of broadcasting data performed in testbed with heterogeneous nodes including three laptops and one AR-Drone show that BATMAN mesh network protocol improves the throughput by 1.5 times compared to basic Ad Hoc network.\\\\
-In a limited communication range, the topology of the network varies during the mission. Consequently, the UAVs’ behaviors are adapted by always updating their roles to leader or \textit{explorer} during the mission. Even with an \textit{explorer} role, the UAV is able to continue its mission if the network experiences some issues. Furthermore, we propose to exchange the frontier points of the local map instead of the whole copy of it, which allows to reduce the shared data volume, and consequently memory consumption. The results of the testbed performed with three UAVs, show that the proposed communication module is able to cope with network limitations. They also show that the proposed strategy uses 10 times less data than a strategy that makes the robots exchange the whole local map.\cite{dirac}
+In a limited communication range, the topology of the network varies during the mission. Consequently, the UAVs’ behaviors are adapted by always updating their roles to leader or \textit{explorer} during the mission. Even with an \textit{explorer} role, the UAV is able to continue its mission if the network experiences some issues. Furthermore, we propose to exchange the frontier points of the local map instead of the whole copy of it, which allows to reduce the shared data volume, and consequently memory consumption. The results of the testbed performed with three UAVs, show that the proposed communication module is able to cope with network limitations. They also show that the proposed strategy uses 10 times less data than a strategy that makes the robots exchange the whole local map.
 \newpage
 \thispagestyle{plain}
 \addcontentsline{toc}{chapter}{Conclusion}

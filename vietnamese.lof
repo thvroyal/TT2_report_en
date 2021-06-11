@@ -12,9 +12,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Frontier points processing example: (a) and (b) represent the frontier points of UAV$_1$ and UAV$_2$, respectively. (c) represent the candidate targets. The process consists in removing frontier points that belong to overlapped areas, and those that are adjacent to obstacles.\relax }}{18}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Frontier points processing wile assuming two convex map shapes in the ﬁrst line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (ﬁnal shape).\relax }}{20}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Frontier points processing wile assuming two convex map shapes in the first line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (final shape).\relax }}{20}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Frontier points processing wile assuming two concave map shapes in the ﬁrst line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (ﬁnal shape).\relax }}{22}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Frontier points processing wile assuming two concave map shapes in the first line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (final shape).\relax }}{22}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.8}{\ignorespaces {Utility function behavior: $\mathbf {I}(t_j)=25, n_c=3, d_{tot} = \DOTSB \sum@ \slimits@ _{k=1, k\neq i}^{n_c}(dmin(\mathbf {P}_k,\mathbf {t}_j))$. The average distance of other UAVs $d_{tot}$ has a minimum value different from zero since $n_c$ is different from zero too.}\relax }}{24}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
@@ -56,22 +56,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Mạng tập trung (trái), phi tập trung (giữa) và mạng phân tán (phải).\relax }}{50}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Mesh network illustration between three laptops and one drone.\relax }}{60}{figure.caption.55}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Mạng lưới minh họa giữa ba máy tính xách tay và một máy bay không người lái.\relax }}{60}{figure.caption.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Broadcast testbed throughput result in Ad Hoc and BATMAN mesh network protocol.\relax }}{60}{figure.caption.56}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Phát sóng thông lượng được phát sóng trong giao thức mạng Ad Hoc và BATMAN.\relax }}{60}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Data ﬂow between two robots. The FP and GA stand, respectively, for frontier processing and goal assignment.\relax }}{63}{figure.caption.58}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Luồng dữ liệu giữa hai robot. FP và GA đứng tương ứng, để xử lý biên giới và phân công mục tiêu.\relax }}{63}{figure.caption.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Role evolution in limited communication range.\relax }}{64}{figure.caption.62}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Sự tiến hóa vai trò trong phạm vi giao tiếp hạn chế.\relax }}{64}{figure.caption.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Ad Hoc network illustration during exploration mission.\relax }}{65}{figure.caption.63}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Minh họa mạng Ad Hoc trong nhiệm vụ thăm dò.\relax }}{65}{figure.caption.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces {Two ROS conﬁgurations in multiple machines case. Image from \cite {andre2014coordinated}.}\relax }}{66}{figure.caption.65}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces {Hai cấu hình ROS trong trường hợp nhiều máy. Ảnh từ \cite {andre2014coordinated}.}\relax }}{66}{figure.caption.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces {Data size when UAVs exchange a whole copy of their local grid map versus frontier points of it.}\relax }}{68}{figure.caption.67}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces {Kích thước dữ liệu khi UAV trao đổi toàn bộ bản sao lưới cục bộ của họ so với các điểm biên giới của nó.}\relax }}{68}{figure.caption.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Network topology evolution during a loop with three cooperative UAVs.\relax }}{69}{figure.caption.69}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Tiến hóa cấu trúc liên kết mạng trong một vòng lặp với ba UAV hợp tác.\relax }}{69}{figure.caption.69}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces {Two cooperative robots exploration along with network connectivity.}\relax }}{71}{figure.caption.72}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces {Hai robot hợp tác thăm dò cùng với kết nối mạng.}\relax }}{71}{figure.caption.72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces {Global reconstructed 2D occupancy grid map during exploration mission with two cooperative UAVs.}\relax }}{72}{figure.caption.74}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces {Bản đồ lưới chiếm dụng 2D toàn cầu trong nhiệm vụ thăm dò với hai UAV hợp tác.}\relax }}{72}{figure.caption.74}%
