@@ -1,0 +1,3713 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.3)  11 JUN 2021 20:24
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.tex
+(/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+) (/usr/share/texlive/texmf-dist/tex/latex/vntex/vietnam.sty
+Package: vietnam 2009/07/12 v1.3 support for Vietnamese
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+ (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5enc.def
+File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
+Now handling font encoding T5 ...
+... processing UTF-8 mapping file for font encoding T5
+ (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5enc.dfu
+File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+01A0 (decimal 416)
+   defining Unicode char U+01A1 (decimal 417)
+   defining Unicode char U+01AF (decimal 431)
+   defining Unicode char U+01B0 (decimal 432)
+   defining Unicode char U+1EA0 (decimal 7840)
+   defining Unicode char U+1EA1 (decimal 7841)
+   defining Unicode char U+1EA2 (decimal 7842)
+   defining Unicode char U+1EA3 (decimal 7843)
+   defining Unicode char U+1EA4 (decimal 7844)
+   defining Unicode char U+1EA5 (decimal 7845)
+   defining Unicode char U+1EA6 (decimal 7846)
+   defining Unicode char U+1EA7 (decimal 7847)
+   defining Unicode char U+1EA8 (decimal 7848)
+   defining Unicode char U+1EA9 (decimal 7849)
+   defining Unicode char U+1EAA (decimal 7850)
+   defining Unicode char U+1EAB (decimal 7851)
+   defining Unicode char U+1EAC (decimal 7852)
+   defining Unicode char U+1EAD (decimal 7853)
+   defining Unicode char U+1EAE (decimal 7854)
+   defining Unicode char U+1EAF (decimal 7855)
+   defining Unicode char U+1EB0 (decimal 7856)
+   defining Unicode char U+1EB1 (decimal 7857)
+   defining Unicode char U+1EB2 (decimal 7858)
+   defining Unicode char U+1EB3 (decimal 7859)
+   defining Unicode char U+1EB4 (decimal 7860)
+   defining Unicode char U+1EB5 (decimal 7861)
+   defining Unicode char U+1EB6 (decimal 7862)
+   defining Unicode char U+1EB7 (decimal 7863)
+   defining Unicode char U+1EB8 (decimal 7864)
+   defining Unicode char U+1EB9 (decimal 7865)
+   defining Unicode char U+1EBA (decimal 7866)
+   defining Unicode char U+1EBB (decimal 7867)
+   defining Unicode char U+1EBC (decimal 7868)
+   defining Unicode char U+1EBD (decimal 7869)
+   defining Unicode char U+1EBE (decimal 7870)
+   defining Unicode char U+1EBF (decimal 7871)
+   defining Unicode char U+1EC0 (decimal 7872)
+   defining Unicode char U+1EC1 (decimal 7873)
+   defining Unicode char U+1EC2 (decimal 7874)
+   defining Unicode char U+1EC3 (decimal 7875)
+   defining Unicode char U+1EC4 (decimal 7876)
+   defining Unicode char U+1EC5 (decimal 7877)
+   defining Unicode char U+1EC6 (decimal 7878)
+   defining Unicode char U+1EC7 (decimal 7879)
+   defining Unicode char U+1EC8 (decimal 7880)
+   defining Unicode char U+1EC9 (decimal 7881)
+   defining Unicode char U+1ECA (decimal 7882)
+   defining Unicode char U+1ECB (decimal 7883)
+   defining Unicode char U+1ECC (decimal 7884)
+   defining Unicode char U+1ECD (decimal 7885)
+   defining Unicode char U+1ECE (decimal 7886)
+   defining Unicode char U+1ECF (decimal 7887)
+   defining Unicode char U+1ED0 (decimal 7888)
+   defining Unicode char U+1ED1 (decimal 7889)
+   defining Unicode char U+1ED2 (decimal 7890)
+   defining Unicode char U+1ED3 (decimal 7891)
+   defining Unicode char U+1ED4 (decimal 7892)
+   defining Unicode char U+1ED5 (decimal 7893)
+   defining Unicode char U+1ED6 (decimal 7894)
+   defining Unicode char U+1ED7 (decimal 7895)
+   defining Unicode char U+1ED8 (decimal 7896)
+   defining Unicode char U+1ED9 (decimal 7897)
+   defining Unicode char U+1EDA (decimal 7898)
+   defining Unicode char U+1EDB (decimal 7899)
+   defining Unicode char U+1EDC (decimal 7900)
+   defining Unicode char U+1EDD (decimal 7901)
+   defining Unicode char U+1EDE (decimal 7902)
+   defining Unicode char U+1EDF (decimal 7903)
+   defining Unicode char U+1EE0 (decimal 7904)
+   defining Unicode char U+1EE1 (decimal 7905)
+   defining Unicode char U+1EE2 (decimal 7906)
+   defining Unicode char U+1EE3 (decimal 7907)
+   defining Unicode char U+1EE4 (decimal 7908)
+   defining Unicode char U+1EE5 (decimal 7909)
+   defining Unicode char U+1EE6 (decimal 7910)
+   defining Unicode char U+1EE7 (decimal 7911)
+   defining Unicode char U+1EE8 (decimal 7912)
+   defining Unicode char U+1EE9 (decimal 7913)
+   defining Unicode char U+1EEA (decimal 7914)
+   defining Unicode char U+1EEB (decimal 7915)
+   defining Unicode char U+1EEC (decimal 7916)
+   defining Unicode char U+1EED (decimal 7917)
+   defining Unicode char U+1EEE (decimal 7918)
+   defining Unicode char U+1EEF (decimal 7919)
+   defining Unicode char U+1EF0 (decimal 7920)
+   defining Unicode char U+1EF1 (decimal 7921)
+   defining Unicode char U+1EF2 (decimal 7922)
+   defining Unicode char U+1EF3 (decimal 7923)
+   defining Unicode char U+1EF4 (decimal 7924)
+   defining Unicode char U+1EF5 (decimal 7925)
+   defining Unicode char U+1EF6 (decimal 7926)
+   defining Unicode char U+1EF7 (decimal 7927)
+   defining Unicode char U+1EF8 (decimal 7928)
+   defining Unicode char U+1EF9 (decimal 7929)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+))
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 112.
+ (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
+File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)) (/usr/share/texlive/texmf-dist/tex/latex/vntex/vncaps.tex
+File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
+)) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\captionmargin=\dimen135
+\captionmargin@=\dimen136
+\captionwidth=\dimen137
+\caption@tempdima=\dimen138
+\caption@indent=\dimen139
+\caption@parindent=\dimen140
+\caption@hangindent=\dimen141
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count176
+\c@continuedfloat=\count177
+)
+\c@subfigure=\count178
+\c@subtable=\count179
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+) (/usr/share/texlive/texmf-dist/tex/latex/kantlipsum/kantlipsum.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count180
+\l__pdf_internal_box=\box45
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count181
+\g__xparse_grabber_int=\count182
+\l__xparse_m_args_int=\count183
+\l__xparse_v_nesting_int=\count184
+)
+Package: kantlipsum 2019/07/23 v0.8 Generate text in Kantian style
+\l__kgl_start_int=\count185
+\l__kgl_end_int=\count186
+
+Package kantlipsum Info: The package provides paragraphs 1 to 164. Values
+(kantlipsum)             outside this range will be ignored.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen144
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count187
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count188
+\leftroot@=\count189
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count190
+\DOTSCASE@=\count191
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box46
+\strutbox@=\box47
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count192
+\c@MaxMatrixCols=\count193
+\dotsspace@=\muskip16
+\c@parentequation=\count194
+\dspbrk@lvl=\count195
+\tag@help=\toks19
+\row@=\count196
+\column@=\count197
+\maxfields@=\count198
+\andhelp@=\toks20
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count199
+\float@exts=\toks23
+\float@box=\box48
+\@float@everytoks=\toks24
+\@floatcapt=\box49
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+\@float@every@algorithm=\toks25
+\c@algorithm=\count266
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count267
+\c@ALC@line=\count268
+\c@ALC@rem=\count269
+\c@ALC@depth=\count270
+\ALC@tlm=\skip52
+\algorithmicindent=\skip53
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+) (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen153
+\Hy@linkcounter=\count271
+\Hy@pagecounter=\count272
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count273
+\pdfmajorversion=\count274
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count275
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen154
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count276
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+ (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count277
+\c@Item=\count278
+\c@Hfootnote=\count279
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count280
+\c@bookmark@seq@number=\count281
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip54
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen157
+\ar@mcellbox=\box50
+\extrarowheight=\dimen158
+\NC@list=\toks26
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box51
+)
+\TX@col@width=\dimen159
+\TX@old@table=\dimen160
+\TX@old@col=\dimen161
+\TX@target=\dimen162
+\TX@delta=\dimen163
+\TX@cols=\count282
+\TX@ftn=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+ (/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2019/08/20 v0.3c Improved picture commands (HjG,RN,JT)
+ (/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+ (/usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks28
+\@arclen=\dimen164
+\@arcrad=\dimen165
+\@tempdimd=\dimen166
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count283
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count284
+\FP@xia=\count285
+\FP@xib=\count286
+\FP@xfa=\count287
+\FP@xfb=\count288
+\FP@rega=\count289
+\FP@regb=\count290
+\FP@regs=\count291
+\FP@times=\count292
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count293
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count294
+\calc@Bcount=\count295
+\calc@Adimen=\dimen167
+\calc@Bdimen=\dimen168
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count296
+\calc@Cskip=\skip59
+)
+\diagbox@boxa=\box52
+\diagbox@boxb=\box53
+\diagbox@boxm=\box54
+\diagbox@wd=\dimen169
+\diagbox@ht=\dimen170
+\diagbox@insepl=\dimen171
+\diagbox@insepr=\dimen172
+\diagbox@outsepl=\dimen173
+\diagbox@outsepr=\dimen174
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip60
+\multirow@cntb=\count297
+\multirow@dima=\skip61
+\bigstrutjot=\dimen175
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip62
+\LTright=\skip63
+\LTpre=\skip64
+\LTpost=\skip65
+\LTchunksize=\count298
+\LTcapwidth=\dimen176
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@cols=\count299
+\LT@rows=\count300
+\c@LT@tables=\count301
+\c@LT@chunks=\count302
+\LT@p@ftn=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+ (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count303
+) (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count304
+ (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count305
+\c@listtotal=\count306
+\c@listcount=\count307
+\c@liststart=\count308
+\c@liststop=\count309
+\c@citecount=\count310
+\c@citetotal=\count311
+\c@multicitecount=\count312
+\c@multicitetotal=\count313
+\c@instcount=\count314
+\c@maxnames=\count315
+\c@minnames=\count316
+\c@maxitems=\count317
+\c@minitems=\count318
+\c@citecounter=\count319
+\c@maxcitecounter=\count320
+\c@savedcitecounter=\count321
+\c@uniquelist=\count322
+\c@uniquename=\count323
+\c@refsection=\count324
+\c@refsegment=\count325
+\c@maxextratitle=\count326
+\c@maxextratitleyear=\count327
+\c@maxextraname=\count328
+\c@maxextradate=\count329
+\c@maxextraalpha=\count330
+\c@abbrvpenalty=\count331
+\c@highnamepenalty=\count332
+\c@lownamepenalty=\count333
+\c@maxparens=\count334
+\c@parenlevel=\count335
+\blx@tempcnta=\count336
+\blx@tempcntb=\count337
+\blx@tempcntc=\count338
+\blx@maxsection=\count339
+\blx@maxsegment@0=\count340
+\blx@notetype=\count341
+\blx@parenlevel@text=\count342
+\blx@parenlevel@foot=\count343
+\blx@sectionciteorder@0=\count344
+\blx@entrysetcounter=\count345
+\labelnumberwidth=\skip66
+\labelalphawidth=\skip67
+\biblabelsep=\skip68
+\bibitemsep=\skip69
+\bibnamesep=\skip70
+\bibinitsep=\skip71
+\bibparsep=\skip72
+\bibhang=\skip73
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language85
+\c@mincomprange=\count346
+\c@maxcomprange=\count347
+\c@mincompwidth=\count348
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count349
+\c@savedafterword=\count350
+\c@annotator=\count351
+\c@savedannotator=\count352
+\c@author=\count353
+\c@savedauthor=\count354
+\c@bookauthor=\count355
+\c@savedbookauthor=\count356
+\c@commentator=\count357
+\c@savedcommentator=\count358
+\c@editor=\count359
+\c@savededitor=\count360
+\c@editora=\count361
+\c@savededitora=\count362
+\c@editorb=\count363
+\c@savededitorb=\count364
+\c@editorc=\count365
+\c@savededitorc=\count366
+\c@foreword=\count367
+\c@savedforeword=\count368
+\c@holder=\count369
+\c@savedholder=\count370
+\c@introduction=\count371
+\c@savedintroduction=\count372
+\c@namea=\count373
+\c@savednamea=\count374
+\c@nameb=\count375
+\c@savednameb=\count376
+\c@namec=\count377
+\c@savednamec=\count378
+\c@translator=\count379
+\c@savedtranslator=\count380
+\c@shortauthor=\count381
+\c@savedshortauthor=\count382
+\c@shorteditor=\count383
+\c@savedshorteditor=\count384
+\c@labelname=\count385
+\c@savedlabelname=\count386
+\c@institution=\count387
+\c@savedinstitution=\count388
+\c@lista=\count389
+\c@savedlista=\count390
+\c@listb=\count391
+\c@savedlistb=\count392
+\c@listc=\count393
+\c@savedlistc=\count394
+\c@listd=\count395
+\c@savedlistd=\count396
+\c@liste=\count397
+\c@savedliste=\count398
+\c@listf=\count399
+\c@savedlistf=\count400
+\c@location=\count401
+\c@savedlocation=\count402
+\c@organization=\count403
+\c@savedorganization=\count404
+\c@origlocation=\count405
+\c@savedoriglocation=\count406
+\c@origpublisher=\count407
+\c@savedorigpublisher=\count408
+\c@publisher=\count409
+\c@savedpublisher=\count410
+\c@language=\count411
+\c@savedlanguage=\count412
+\c@origlanguage=\count413
+\c@savedoriglanguage=\count414
+\c@pageref=\count415
+\c@savedpageref=\count416
+\shorthandwidth=\skip74
+\shortjournalwidth=\skip75
+\shortserieswidth=\skip76
+\shorttitlewidth=\skip77
+\shortauthorwidth=\skip78
+\shorteditorwidth=\skip79
+\locallabelnumberwidth=\skip80
+\locallabelalphawidth=\skip81
+\localshorthandwidth=\skip82
+\localshortjournalwidth=\skip83
+\localshortserieswidth=\skip84
+\localshorttitlewidth=\skip85
+\localshortauthorwidth=\skip86
+\localshorteditorwidth=\skip87
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count417
+\c@textcitetotal=\count418
+\c@textcitemaxnames=\count419
+\c@biburlbigbreakpenalty=\count420
+\c@biburlbreakpenalty=\count421
+\c@biburlnumpenalty=\count422
+\c@biburlucpenalty=\count423
+\c@biburllcpenalty=\count424
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count425
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count426
+\c@bbx:relatedtotal=\count427
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)) (/usr/share/texlive/texmf-dist/tex/latex/pagenote/pagenote.sty
+Package: pagenote 2009/09/03 v1.1a page/end notes
+ (/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+)
+\c@pagenote=\count428
+\c@pnotesavechap=\count429
+)
+\@notefile=\write4
+\openout4 = `vietnamese.ent'.
+
+
+Writing note file vietnamese.ent
+\@quotelevel=\count430
+\@quotereset=\count431
+(/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.aux)
+\openout1 = `vietnamese.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count432
+\scratchdimen=\dimen177
+\scratchbox=\box59
+\nofMPsegments=\count433
+\nofMParguments=\count434
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count435
+\MPscratchDim=\dimen178
+\MPnumerator=\count436
+\makeMPintoPDFobject=\count437
+\everyMPtoPDFconversion=\toks31
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring OFF on input line 50.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count438
+)
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
+ (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.out) (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.out)
+\@outlinefile=\write5
+\openout5 = `vietnamese.out'.
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `vietnamese.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'vietnamese.bbl' found.
+ (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                dirac
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                kuschnig2012profiling.
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 50.
+Package biblatex Info: Reference segment=0 on input line 50.
+<assets/logo.png, id=143, 289.08pt x 426.393pt>
+File: assets/logo.png Graphic file (type png)
+<use assets/logo.png>
+Package pdftex.def Info: assets/logo.png  used on input line 59.
+(pdftex.def)             Requested size: 86.72466pt x 127.91888pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/logo.png>] (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.toc [2
+
+])
+\tf@toc=\write6
+\openout6 = `vietnamese.toc'.
+
+ [3] (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.lof
+Overfull \hbox (11.93007pt too wide) in paragraph at lines 7--7
+ \T5/cmr/m/n/10.95 2D cells $\OMS/cmsy/m/n/10.95 L$ \T5/cmr/m/n/10.95 to 2D fron-tier cells $\OMS/cmsy/m/n/10.95 F$ \T5/cmr/m/n/10.95 to can-di-date fron-tier cells/points 
+ []
+
+
+Overfull \hbox (67.99602pt too wide) in paragraph at lines 19--19
+ [][] [][]\T5/cmr/m/n/10.95 Utility func-tion be-hav-ior: $\OT1/cmr/bx/n/10.95 I\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]\OT1/cmr/m/n/10.95 ) = 25\OML/cmm/m/it/10.95 ; n[] \OT1/cmr/m/n/10.95 = 3\OML/cmm/m/it/10.95 ; d[] \OT1/cmr/m/n/10.95 = [][](\OML/cmm/m/it/10.95 dmin\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 P[]\OML/cmm/m/it/10.95 ; \OT1/cmr/bx/n/10.95 t[]\OT1/cmr/m/n/10.95 ))$\T5/cmr/m/n/10.95 . 
+ []
+
+[4
+
+]
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [5])
+\tf@lof=\write7
+\openout7 = `vietnamese.lof'.
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [6] (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.lot)
+\tf@lot=\write8
+\openout8 = `vietnamese.lot'.
+
+ [7
+
+] [8]
+Ch\uhorn \ohorn ng 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+
+ []
+
+[9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 100--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--108
+
+ []
+
+[10] [11]
+<assets/3_1.png, id=435, 426.59375pt x 605.26125pt>
+File: assets/3_1.png Graphic file (type png)
+<use assets/3_1.png>
+Package pdftex.def Info: assets/3_1.png  used on input line 115.
+(pdftex.def)             Requested size: 255.95822pt x 363.15953pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 122.
+<assets/3_2.png, id=446, 722.7pt x 372.39125pt>
+File: assets/3_2.png Graphic file (type png)
+<use assets/3_2.png>
+Package pdftex.def Info: assets/3_2.png  used on input line 133.
+(pdftex.def)             Requested size: 289.07487pt x 148.95386pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--136
+
+ []
+
+
+Underfull \vbox (badness 1014) has occurred while \output is active []
+
+ [13 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_1.png>]
+<assets/3_3.png, id=454, 696.6025pt x 340.27126pt>
+File: assets/3_3.png Graphic file (type png)
+<use assets/3_3.png>
+Package pdftex.def Info: assets/3_3.png  used on input line 141.
+(pdftex.def)             Requested size: 278.63606pt x 136.10608pt.
+
+Overfull \hbox (3.69347pt too wide) in paragraph at lines 138--144
+\T5/cmr/m/n/10.95 The fron-tier se-lec-tion pro-cess is used to de-fine the fron-tiers of re-gions bounded
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_2.png>]
+<assets/3_4.png, id=471, 461.725pt x 399.4925pt>
+File: assets/3_4.png Graphic file (type png)
+<use assets/3_4.png>
+Package pdftex.def Info: assets/3_4.png  used on input line 159.
+(pdftex.def)             Requested size: 184.68672pt x 159.79416pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--162
+
+ []
+
+[15 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+[16 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
+
+ []
+
+<assets/3_5_a.png, id=499, 439.6425pt x 294.09875pt>
+File: assets/3_5_a.png Graphic file (type png)
+<use assets/3_5_a.png>
+Package pdftex.def Info: assets/3_5_a.png  used on input line 189.
+(pdftex.def)             Requested size: 216.0022pt x 144.49109pt.
+<assets/3_5_b.png, id=500, 432.61626pt x 289.08pt>
+File: assets/3_5_b.png Graphic file (type png)
+<use assets/3_5_b.png>
+Package pdftex.def Info: assets/3_5_b.png  used on input line 195.
+(pdftex.def)             Requested size: 216.0022pt x 144.33673pt.
+<assets/3_5_c.png, id=501, 431.6125pt x 298.11375pt>
+File: assets/3_5_c.png Graphic file (type png)
+<use assets/3_5_c.png>
+Package pdftex.def Info: assets/3_5_c.png  used on input line 201.
+(pdftex.def)             Requested size: 216.0022pt x 149.18842pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Overfull \vbox (17.1586pt too high) has occurred while \output is active []
+
+ [18 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_5_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_5_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_5_c.png>]
+<assets/3_6.png, id=519, 873.2625pt x 706.64pt>
+File: assets/3_6.png Graphic file (type png)
+<use assets/3_6.png>
+Package pdftex.def Info: assets/3_6.png  used on input line 244.
+(pdftex.def)             Requested size: 349.29881pt x 282.65099pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+<assets/3_7.png, id=551, 846.16125pt x 694.595pt>
+File: assets/3_7.png Graphic file (type png)
+<use assets/3_7.png>
+Package pdftex.def Info: assets/3_7.png  used on input line 290.
+(pdftex.def)             Requested size: 338.45851pt x 277.83307pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_6.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+
+LaTeX Warning: Reference `eq:3.2' on page 22 undefined on input line 296.
+
+[22 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_7.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 299--303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--303
+
+ []
+
+<assets/3_8_a.png, id=606, 387.4475pt x 211.79124pt>
+File: assets/3_8_a.png Graphic file (type png)
+<use assets/3_8_a.png>
+Package pdftex.def Info: assets/3_8_a.png  used on input line 312.
+(pdftex.def)             Requested size: 143.9978pt x 78.71378pt.
+<assets/3_8_b.png, id=607, 387.4475pt x 213.79875pt>
+File: assets/3_8_b.png Graphic file (type png)
+<use assets/3_8_b.png>
+Package pdftex.def Info: assets/3_8_b.png  used on input line 318.
+(pdftex.def)             Requested size: 143.9978pt x 79.45988pt.
+<assets/3_8_c.png, id=608, 402.50375pt x 209.78375pt>
+File: assets/3_8_c.png Graphic file (type png)
+<use assets/3_8_c.png>
+Package pdftex.def Info: assets/3_8_c.png  used on input line 324.
+(pdftex.def)             Requested size: 143.9978pt x 75.05153pt.
+<assets/3_8_d.png, id=609, 389.455pt x 210.7875pt>
+File: assets/3_8_d.png Graphic file (type png)
+<use assets/3_8_d.png>
+Package pdftex.def Info: assets/3_8_d.png  used on input line 330.
+(pdftex.def)             Requested size: 143.9978pt x 77.93547pt.
+
+Underfull \hbox (badness 2469) in paragraph at lines 334--334
+[]\T5/cmr/m/n/10.95 H¼nh 1.8: |Util-ity func-tion be-hav-ior: $\OT1/cmr/bx/n/10.95 I\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]\OT1/cmr/m/n/10.95 ) = 25\OML/cmm/m/it/10.95 ; n[] \OT1/cmr/m/n/10.95 = 3\OML/cmm/m/it/10.95 ; d[] \OT1/cmr/m/n/10.95 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--336
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+
+LaTeX Warning: Reference `eq:3.3' on page 24 undefined on input line 338.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--355
+|  \T5/cmr/bx/n/10.95 Out-put: $\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 UAV[]; \OT1/cmr/bx/n/10.95 t[]\OT1/cmr/m/n/10.95 )$ \T5/cmr/m/n/10.95 as-sign-ment of UAV$[]$ with tar-get
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--365
+
+ []
+
+[24 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_c.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_d.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+<assets/3_9.png, id=646, 583.17876pt x 303.1325pt>
+File: assets/3_9.png Graphic file (type png)
+<use assets/3_9.png>
+Package pdftex.def Info: assets/3_9.png  used on input line 378.
+(pdftex.def)             Requested size: 349.90996pt x 181.8809pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 387.
+ (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+<assets/3_10.png, id=659, 713.66624pt x 299.1175pt>
+File: assets/3_10.png Graphic file (type png)
+<use assets/3_10.png>
+Package pdftex.def Info: assets/3_10.png  used on input line 392.
+(pdftex.def)             Requested size: 285.46143pt x 119.64487pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--395
+
+ []
+
+[27 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_9.png>] [28 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_10.png>]
+
+LaTeX Warning: Reference `eq:3.2' on page 29 undefined on input line 401.
+
+<assets/3_11.png, id=678, 637.38126pt x 310.15875pt>
+File: assets/3_11.png Graphic file (type png)
+<use assets/3_11.png>
+Package pdftex.def Info: assets/3_11.png  used on input line 405.
+(pdftex.def)             Requested size: 318.68985pt x 155.079pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--408
+
+ []
+
+<assets/3_12.png, id=680, 643.40375pt x 312.16624pt>
+File: assets/3_12.png Graphic file (type png)
+<use assets/3_12.png>
+Package pdftex.def Info: assets/3_12.png  used on input line 413.
+(pdftex.def)             Requested size: 321.70108pt x 156.08273pt.
+[29 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_11.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_12.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 442--444
+
+ []
+
+
+Underfull \vbox (badness 5908) has occurred while \output is active []
+
+ [31]
+<assets/3_13_a.png, id=708, 309.155pt x 265.99374pt>
+File: assets/3_13_a.png Graphic file (type png)
+<use assets/3_13_a.png>
+Package pdftex.def Info: assets/3_13_a.png  used on input line 452.
+(pdftex.def)             Requested size: 108.0011pt x 92.92467pt.
+<assets/3_13_b.png, id=709, 332.24126pt x 305.14pt>
+File: assets/3_13_b.png Graphic file (type png)
+<use assets/3_13_b.png>
+Package pdftex.def Info: assets/3_13_b.png  used on input line 458.
+(pdftex.def)             Requested size: 108.0011pt x 99.1926pt.
+<assets/3_13_c.png, id=710, 304.13625pt x 275.0275pt>
+File: assets/3_13_c.png Graphic file (type png)
+<use assets/3_13_c.png>
+Package pdftex.def Info: assets/3_13_c.png  used on input line 464.
+(pdftex.def)             Requested size: 108.0011pt x 97.66272pt.
+<assets/3_13_d.png, id=711, 309.155pt x 285.065pt>
+File: assets/3_13_d.png Graphic file (type png)
+<use assets/3_13_d.png>
+Package pdftex.def Info: assets/3_13_d.png  used on input line 470.
+(pdftex.def)             Requested size: 108.0011pt x 99.5872pt.
+<assets/3_13_e.png, id=712, 327.2225pt x 288.07625pt>
+File: assets/3_13_e.png Graphic file (type png)
+<use assets/3_13_e.png>
+Package pdftex.def Info: assets/3_13_e.png  used on input line 476.
+(pdftex.def)             Requested size: 108.0011pt x 95.07863pt.
+<assets/3_13_f.png, id=713, 314.17375pt x 273.02pt>
+File: assets/3_13_f.png Graphic file (type png)
+<use assets/3_13_f.png>
+Package pdftex.def Info: assets/3_13_f.png  used on input line 482.
+(pdftex.def)             Requested size: 108.0011pt x 93.85039pt.
+<assets/3_13_g.png, id=714, 327.2225pt x 286.06876pt>
+File: assets/3_13_g.png Graphic file (type png)
+<use assets/3_13_g.png>
+Package pdftex.def Info: assets/3_13_g.png  used on input line 488.
+(pdftex.def)             Requested size: 108.0011pt x 94.41608pt.
+<assets/3_13_h.png, id=715, 359.3425pt x 272.01625pt>
+File: assets/3_13_h.png Graphic file (type png)
+<use assets/3_13_h.png>
+Package pdftex.def Info: assets/3_13_h.png  used on input line 494.
+(pdftex.def)             Requested size: 108.0011pt x 81.75491pt.
+<assets/3_13_i.png, id=716, 334.24875pt x 286.06876pt>
+File: assets/3_13_i.png Graphic file (type png)
+<use assets/3_13_i.png>
+Package pdftex.def Info: assets/3_13_i.png  used on input line 500.
+(pdftex.def)             Requested size: 108.0011pt x 92.43434pt.
+<assets/3_13_j.png, id=717, 353.32pt x 281.05pt>
+File: assets/3_13_j.png Graphic file (type png)
+<use assets/3_13_j.png>
+Package pdftex.def Info: assets/3_13_j.png  used on input line 505.
+(pdftex.def)             Requested size: 108.0011pt x 85.91095pt.
+<assets/3_14.png, id=718, 599.23875pt x 890.32625pt>
+File: assets/3_14.png Graphic file (type png)
+<use assets/3_14.png>
+Package pdftex.def Info: assets/3_14.png  used on input line 514.
+(pdftex.def)             Requested size: 299.61864pt x 445.16203pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+<assets/3_15_a.png, id=726, 928.46875pt x 463.7325pt>
+File: assets/3_15_a.png Graphic file (type png)
+<use assets/3_15_a.png>
+Package pdftex.def Info: assets/3_15_a.png  used on input line 521.
+(pdftex.def)             Requested size: 251.9989pt x 125.86043pt.
+<assets/3_15_b.png, id=727, 912.40875pt x 435.6275pt>
+File: assets/3_15_b.png Graphic file (type png)
+<use assets/3_15_b.png>
+Package pdftex.def Info: assets/3_15_b.png  used on input line 526.
+(pdftex.def)             Requested size: 251.9989pt x 120.31308pt.
+<assets/3_15_c.png, id=728, 912.40875pt x 437.635pt>
+File: assets/3_15_c.png Graphic file (type png)
+<use assets/3_15_c.png>
+Package pdftex.def Info: assets/3_15_c.png  used on input line 531.
+(pdftex.def)             Requested size: 251.9989pt x 120.86752pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_c.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_d.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_e.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_f.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_g.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_h.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_i.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_j.png>]
+<assets/3_16_a.png, id=743, 630.355pt x 570.13pt>
+File: assets/3_16_a.png Graphic file (type png)
+<use assets/3_16_a.png>
+Package pdftex.def Info: assets/3_16_a.png  used on input line 541.
+(pdftex.def)             Requested size: 180.0pt x 162.80191pt.
+<assets/3_16_b.png, id=744, 623.32875pt x 577.15625pt>
+File: assets/3_16_b.png Graphic file (type png)
+<use assets/3_16_b.png>
+Package pdftex.def Info: assets/3_16_b.png  used on input line 546.
+(pdftex.def)             Requested size: 180.0pt x 166.66649pt.
+<assets/3_16_c.png, id=745, 624.3325pt x 615.29875pt>
+File: assets/3_16_c.png Graphic file (type png)
+<use assets/3_16_c.png>
+Package pdftex.def Info: assets/3_16_c.png  used on input line 551.
+(pdftex.def)             Requested size: 180.0pt x 177.38992pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_14.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_15_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_15_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_15_c.png>]
+Overfull \vbox (86.00069pt too high) has occurred while \output is active []
+
+ [36 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_16_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_16_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_16_c.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 559--561
+
+ []
+
+<assets/3_17_a.png, id=772, 721.69624pt x 306.14375pt>
+File: assets/3_17_a.png Graphic file (type png)
+<use assets/3_17_a.png>
+Package pdftex.def Info: assets/3_17_a.png  used on input line 583.
+(pdftex.def)             Requested size: 216.0022pt x 91.62894pt.
+<assets/3_17_b.png, id=773, 659.46375pt x 320.19624pt>
+File: assets/3_17_b.png Graphic file (type png)
+<use assets/3_17_b.png>
+Package pdftex.def Info: assets/3_17_b.png  used on input line 588.
+(pdftex.def)             Requested size: 216.0022pt x 104.87846pt.
+<assets/3_17_c.png, id=774, 645.41125pt x 322.20375pt>
+File: assets/3_17_c.png Graphic file (type png)
+<use assets/3_17_c.png>
+Package pdftex.def Info: assets/3_17_c.png  used on input line 593.
+(pdftex.def)             Requested size: 216.0022pt x 107.83199pt.
+File: assets/3_17_c.png Graphic file (type png)
+<use assets/3_17_c.png>
+Package pdftex.def Info: assets/3_17_c.png  used on input line 598.
+(pdftex.def)             Requested size: 216.0022pt x 107.83199pt.
+[37]
+Overfull \vbox (51.11375pt too high) has occurred while \output is active []
+
+ [38 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_17_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_17_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_17_c.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 605--607
+
+ []
+
+
+Overfull \hbox (1.3361pt too wide) in paragraph at lines 605--607
+\T5/cmr/m/n/10.95 To over-come this prob-lem, all the num-bers of pos-si-ble com-bi-na-tion $[]$
+ []
+
+<assets/3_19.png, id=794, 752.8125pt x 361.35pt>
+File: assets/3_19.png Graphic file (type png)
+<use assets/3_19.png>
+Package pdftex.def Info: assets/3_19.png  used on input line 613.
+(pdftex.def)             Requested size: 301.11966pt x 144.53743pt.
+<assets/3_18_a.png, id=796, 810.02625pt x 376.40625pt>
+File: assets/3_18_a.png Graphic file (type png)
+<use assets/3_18_a.png>
+Package pdftex.def Info: assets/3_18_a.png  used on input line 622.
+(pdftex.def)             Requested size: 251.9989pt x 117.09825pt.
+<assets/3_18_b.png, id=797, 779.91376pt x 365.365pt>
+File: assets/3_18_b.png Graphic file (type png)
+<use assets/3_18_b.png>
+Package pdftex.def Info: assets/3_18_b.png  used on input line 627.
+(pdftex.def)             Requested size: 251.9989pt x 118.0509pt.
+<assets/3_18_c.png, id=798, 778.91pt x 366.36874pt>
+File: assets/3_18_c.png Graphic file (type png)
+<use assets/3_18_c.png>
+Package pdftex.def Info: assets/3_18_c.png  used on input line 632.
+(pdftex.def)             Requested size: 251.9989pt x 118.52617pt.
+[39 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_19.png>]
+<assets/3_20_a.png, id=806, 769.87625pt x 392.46625pt>
+File: assets/3_20_a.png Graphic file (type png)
+<use assets/3_20_a.png>
+Package pdftex.def Info: assets/3_20_a.png  used on input line 642.
+(pdftex.def)             Requested size: 251.9989pt x 128.46027pt.
+<assets/3_20_b.png, id=807, 750.805pt x 360.34625pt>
+File: assets/3_20_b.png Graphic file (type png)
+<use assets/3_20_b.png>
+Package pdftex.def Info: assets/3_20_b.png  used on input line 647.
+(pdftex.def)             Requested size: 251.9989pt x 120.94354pt.
+<assets/3_20_c.png, id=808, 771.88374pt x 333.245pt>
+File: assets/3_20_c.png Graphic file (type png)
+<use assets/3_20_c.png>
+Package pdftex.def Info: assets/3_20_c.png  used on input line 652.
+(pdftex.def)             Requested size: 251.9989pt x 108.79149pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_c.png>]
+<assets/3_21.png, id=818, 776.9025pt x 370.38374pt>
+File: assets/3_21.png Graphic file (type png)
+<use assets/3_21.png>
+Package pdftex.def Info: assets/3_21.png  used on input line 662.
+(pdftex.def)             Requested size: 310.7555pt x 148.15086pt.
+
+Underfull \vbox (badness 3547) has occurred while \output is active []
+
+ [41 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_c.png>]
+<assets/3_22.png, id=827, 762.85pt x 361.35pt>
+File: assets/3_22.png Graphic file (type png)
+<use assets/3_22.png>
+Package pdftex.def Info: assets/3_22.png  used on input line 670.
+(pdftex.def)             Requested size: 305.1346pt x 144.53743pt.
+ [42 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_21.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_22.png>]
+<assets/3_23.png, id=836, 1049.9225pt x 308.15125pt>
+File: assets/3_23.png Graphic file (type png)
+<use assets/3_23.png>
+Package pdftex.def Info: assets/3_23.png  used on input line 679.
+(pdftex.def)             Requested size: 314.97917pt x 92.44608pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--685
+
+ []
+
+[43 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_23.png>]
+<assets/3_24.png, id=845, 780.9175pt x 373.395pt>
+File: assets/3_24.png Graphic file (type png)
+<use assets/3_24.png>
+Package pdftex.def Info: assets/3_24.png  used on input line 691.
+(pdftex.def)             Requested size: 312.36147pt x 149.35535pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--700
+
+ []
+
+[44 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_24.png>] [45]
+Ch\uhorn \ohorn ng 2.
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 700.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 700.
+
+
+Package hyperref Warning: Composite letter `\texttilde+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\texttilde' on input line 700.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 700.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 701.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 701.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 701.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 701.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--705
+
+ []
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 705.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 705.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 708.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ocircumflex' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 708.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 708.
+
+
+Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 708.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 708.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 708.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ocircumflex' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 708.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 708.
+
+
+Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 708.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 708.
+
+<assets/4_1.png, id=862, 792.9625pt x 313.17pt>
+File: assets/4_1.png Graphic file (type png)
+<use assets/4_1.png>
+Package pdftex.def Info: assets/4_1.png  used on input line 712.
+(pdftex.def)             Requested size: 317.17938pt x 125.26576pt.
+[46
+
+]
+Overfull \hbox (0.70425pt too wide) in paragraph at lines 720--727
+ [][] 
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [47 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_1.png>]
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 729.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 729.
+
+
+Overfull \hbox (5.67152pt too wide) in paragraph at lines 737--737
+[]|\T5/cmr/bx/n/10.95 MANET| 
+ []
+
+
+Overfull \hbox (1.83995pt too wide) in paragraph at lines 737--737
+[]|\T5/cmr/bx/n/10.95 VANET| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
+\T5/cmr/bx/n/10.95 m¤ng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
+\T5/cmr/bx/n/10.95 cõa
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 739--739
+[]|\T5/cmr/m/n/10.95 Ng÷íi ð
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
+\T5/cmr/m/n/10.95 mët sè
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
+\T5/cmr/m/n/10.95 nh§t
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
+[]|\T5/cmr/m/n/10.95 Ph÷ìng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
+\T5/cmr/m/n/10.95 ti»n ð
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
+[]|\T5/cmr/m/n/10.95 M¡y bay
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
+\T5/cmr/m/n/10.95 trong k¸
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
+[]|\T5/cmr/bx/n/10.95 Mùc ^^_ë di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+[]|\T5/cmr/bx/n/10.95 Ch¸ ^^_ë di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+[]|\T5/cmr/m/n/10.95 ^^^iºm
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 c¡ch
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 ng¨u
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 nhi¶n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 vîi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 h÷îng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 v  tèc
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 ^^_ë ng¨u
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+[]|\T5/cmr/m/n/10.95 Câ kh£
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 n«ng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+[]|\T5/cmr/m/n/10.95 Khæng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 ^^_÷ñc x¡c
+ []
+
+
+Underfull \hbox (badness 6725) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 (mæ h¼nh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 chuyºn
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 nhi¶n cõa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 UAV,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 mæ h¼nh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 düa tr¶n
+ []
+
+
+Overfull \hbox (5.3764pt too wide) in paragraph at lines 741--741
+\T5/cmr/m/n/10.95 pheromone)| 
+ []
+
+
+Underfull \hbox (badness 7759) in paragraph at lines 743--743
+[]|\T5/cmr/bx/n/10.95 Kho£ng c¡ch
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+[]|\T5/cmr/bx/n/10.95 Mæ h¼nh
+ []
+
+
+Underfull \hbox (badness 5161) in paragraph at lines 745--745
+[]|\T5/cmr/m/n/10.95 Sü hi»n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 di»n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 hi¸m
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 hoi cõa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 ^^_÷íng
+ []
+
+
+Underfull \hbox (badness 5161) in paragraph at lines 745--745
+[]|\T5/cmr/m/n/10.95 Sü hi»n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 di»n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 hi¸m
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 hoi cõa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 ^^_÷íng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+[]|\T5/cmr/m/n/10.95 Sü hi»n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 di»n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 th÷íng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 ^^_÷íng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+[]|\T5/cmr/m/n/10.95 Luæn câ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 m°t cõa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
+\T5/cmr/m/n/10.95 ^^_÷íng
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 746--746
+\T5/cmr/bx/n/10.95 thö v  cæng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
+\T5/cmr/m/n/10.95 802.11,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
+\T5/cmr/m/n/10.95 802.15,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
+\T5/cmr/m/n/10.95 802.15.4,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
+\T5/cmr/m/n/10.95 802.16
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
+\T5/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--749
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [48]
+Overfull \vbox (103.28525pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [49]
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 751.
+
+
+Package hyperref Warning: Composite letter `\textacute+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 751.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 751.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 751.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 751.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 751.
+
+<assets/4_2.png, id=892, 781.92125pt x 188.705pt>
+File: assets/4_2.png Graphic file (type png)
+<use assets/4_2.png>
+Package pdftex.def Info: assets/4_2.png  used on input line 756.
+(pdftex.def)             Requested size: 312.76295pt x 75.48065pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--759
+
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [50 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Overfull \hbox (6.43391pt too wide) in paragraph at lines 768--782
+\T5/cmr/m/n/10.95 trans-mis-sion sys-tems to en-sure flex-i-bil-ity. In [[]39[]], an omni-directional isotropic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--782
+
+ []
+
+[51]
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [52] [53]
+Overfull \hbox (1.92722pt too wide) in paragraph at lines 788--788
+[]|\T5/cmr/bx/n/10.95 Standard| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+[]|\T5/cmr/m/n/10.95 [Scherer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 et al.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 802.11s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 mesh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 tech-nol-
+ []
+
+
+Overfull \hbox (3.18184pt too wide) in paragraph at lines 790--790
+[]|\T5/cmr/m/n/10.95 Network
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+[]|\T5/cmr/m/n/10.95 Range: 100m,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 com-mu-ni-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 de-lay: 5ms,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 Through-put:
+ []
+
+
+Overfull \hbox (3.67859pt too wide) in paragraph at lines 790--790
+[]|\T5/cmr/m/n/10.95 Heterogeneous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+[]|\T5/cmr/m/n/10.95 Middleware
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 Robot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 Op-er-at-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+\T5/cmr/m/n/10.95 Sys-tem
+ []
+
+
+Overfull \vbox (13.60002pt too high) detected at line 791
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+[]|\T5/cmr/m/n/10.95 PHY
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 MAC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 in both mode
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 ac-cept-able de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+[]|\T5/cmr/m/n/10.95 Outdoor +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 mesh mode
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 + sin-gle hop;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 Range: 500m;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 TCP through-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 put: 35Mbit/s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 (50m); FB:
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 791--791
+[]|\T5/cmr/m/n/10.95 Two Pel-i-can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 UAVs +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 lap-top BS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 + Com-pex
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 WLE300NX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 802.11abgn
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 mini PCIe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+[]|\T5/cmr/m/n/10.95 Ubuntu
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 Linux Ker-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 nel 3.2.
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 791--791
+\T5/cmr/m/n/10.95 with ath9k
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+[]|\T5/cmr/m/n/10.95 PHY
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 MAC
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 792--792
+[]|\T5/cmr/m/n/10.95 Do not sup-port
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+[]|\T5/cmr/m/n/10.95 Outdoor +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 mesh mode
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 + sin-gle hop;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 Range: 500m;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 TCP through-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 put: 10Mbit/s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 (50m); FB:
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 792--792
+[]|\T5/cmr/m/n/10.95 Two Pel-i-can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 UAVs +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 lap-top BS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 + Com-pex
+ []
+
+
+Overfull \hbox (1.15468pt too wide) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 WLE900N518
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 802.11ac
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 5Ghz miniP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+[]|\T5/cmr/m/n/10.95 Ubuntu
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 Linux Ker-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T5/cmr/m/n/10.95 nel 3.2.
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [54
+
+]
+Overfull \hbox (4.51588pt too wide) in paragraph at lines 800--800
+[]|\T5/cmr/m/n/10.95 [Kuschnig
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 et al.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+[]|\T5/cmr/m/n/10.95 PHY
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 MAC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+[]|\T5/cmr/m/n/10.95 RSS and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 through-put
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 de-creases with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 the dis-tance
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 but still at an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+[]|\T5/cmr/m/n/10.95 Outdoor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 over com-pus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 150m*150m;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 Range: 10m;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 Through-put:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 and 27Mbit/s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 (prac); FB:
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 800--800
+[]|\T5/cmr/m/n/10.95 AP: Net-gear
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 WNDR3700
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 + Atheros
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 AR9280
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 based wire-
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 less cards +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 UAV with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 In-tel Atom
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 Pro-ces-sor +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 Spark-LAN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 WPEA110N
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 wire-less
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 card + an-
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 18720.11 for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+[]|\T5/cmr/m/n/10.95 Linux-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 Open-WRT
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+\T5/cmr/m/n/10.95 Back-fire
+ []
+
+
+Overfull \hbox (6.67493pt too wide) in paragraph at lines 801--801
+[]|\T5/cmr/m/n/10.95 [Asadpour
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 et al.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 802.11n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+[]|\T5/cmr/m/n/10.95 PHY
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 MAC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+[]|\T5/cmr/m/n/10.95 Long con-ver-
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 gence time and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 high rout-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 over-head (with
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 col for Net-work
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 put for 200m:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 5.95Mbit/s;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 Con-ver-gence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 28s; Rout-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 over-head (20-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+[]|\T5/cmr/m/n/10.95 Two Ar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 ducopter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 + GB +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--801
+\T5/cmr/m/n/10.95 802.11n +
+ []
+
+[55
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 802.11s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 mesh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 nodes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 for UAV
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 to UAV
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 802.11g
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 for UAV
+ []
+
+
+Overfull \hbox (1.05319pt too wide) in paragraph at lines 809--809
+[]|\T5/cmr/m/n/10.95 network
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 ing UAVs reach
+ []
+
+
+Underfull \hbox (badness 7344) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 higher through-
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 put than UAVs
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 in the ground.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 These re-sults
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 are per-formed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 based po-si-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 mode which
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 are lower than
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 those with the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 sig-nal strength
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 po-si-tion-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 mode. These
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 higher than in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+[]|\T5/cmr/m/n/10.95 Single hop
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 3-5m and AP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 AP = 75m)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 in lo-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 po-si-tion-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 mode; TCP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 through-put =
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 sig-nal strength
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 po-si-tion-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 mode: TCP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 through-put =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 quad-copters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 Pro-fes-sional
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 Mesh OM1P
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 + two note-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+[]|\T5/cmr/m/n/10.95 Linux
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 2.6.37.6
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 Ker-nel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 gen-er-ated
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 by ADAM
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 (em-bed-ded
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 Linux dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 tri-bu-tion)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
+\T5/cmr/m/n/10.95 + driver
+ []
+
+
+Overfull \hbox (3.2691pt too wide) in paragraph at lines 810--810
+[]|\T5/cmr/m/n/10.95 [Muzaffar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 Yan-maz,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+[]|\T5/cmr/m/n/10.95 PHY
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 MAC
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 810--810
+[]|\T5/cmr/m/n/10.95 Throughput de-
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 in-crease of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+[]|\T5/cmr/m/n/10.95 Range: up
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 to $\OT1/cmr/m/n/10.95 1000\OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95 ^^B
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 810--810
+\OT1/cmr/m/n/10.95 1000\OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95 ^^B \OT1/cmr/m/n/10.95 50\OML/cmm/m/it/10.95 m$\T5/cmr/m/n/10.95 ;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 Through-put:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 54Mbit/s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 (prac); FB:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+[]|\T5/cmr/m/n/10.95 Simulation:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 UAVs +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
+\T5/cmr/m/n/10.95 Groung
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [56
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T5/cmr/m/n/10.95 PHY
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 MAC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T5/cmr/m/n/10.95 Bidirectional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 trans-mis-sion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 match-ing fil-ter-
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 ing and tim-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 er-ror re-cov-ery
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 can in-crease
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 the com-mu-ni-ca-
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 tion range and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T5/cmr/m/it/10.95 One hop\T5/cmr/m/n/10.95 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 through-put:
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 loss ra-tio $\OT1/cmr/m/n/10.95 5%$\T5/cmr/m/n/10.95 ;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/it/10.95 Two hop:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 through-put
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 0.65kb/s,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T5/cmr/m/n/10.95 Embedded
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T5/cmr/m/n/10.95 BBB board
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 818--818
+[]|\T5/cmr/m/n/10.95 Linux Ker-
+ []
+
+[57
+
+
+]
+Overfull \hbox (5.46408pt too wide) in paragraph at lines 826--827
+[]\T5/cmr/m/n/10.95 Topology changes: Nodes move in the en-vi-ron-ment and gen-er-ate changes
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [58
+
+]
+<assets/4_3.png, id=974, 731.73375pt x 391.4625pt>
+File: assets/4_3.png Graphic file (type png)
+<use assets/4_3.png>
+Package pdftex.def Info: assets/4_3.png  used on input line 845.
+(pdftex.def)             Requested size: 219.52182pt x 117.43965pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
+<assets/4_4.png, id=984, 723.70375pt x 404.51125pt>
+File: assets/4_4.png Graphic file (type png)
+<use assets/4_4.png>
+Package pdftex.def Info: assets/4_4.png  used on input line 852.
+(pdftex.def)             Requested size: 289.47636pt x 161.80162pt.
+
+Overfull \hbox (1.35196pt too wide) in paragraph at lines 857--858
+\T5/cmr/m/n/10.95 The topol-ogy of the net-work de-fines the ge-o-met-ric prop-er-ties of nodes (robots
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [60 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_3.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 859--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--866
+
+ []
+
+
+Overfull \hbox (19.50674pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 61
+ []
+
+[61]
+<assets/4_5.png, id=1019, 482.80376pt x 436.63126pt>
+File: assets/4_5.png Graphic file (type png)
+<use assets/4_5.png>
+Package pdftex.def Info: assets/4_5.png  used on input line 872.
+(pdftex.def)             Requested size: 241.40129pt x 218.3151pt.
+
+Underfull \vbox (badness 1117) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [62]
+Underfull \hbox (badness 10000) in paragraph at lines 880--882
+
+ []
+
+
+Overfull \hbox (19.50674pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 63
+ []
+
+[63 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_5.png>]
+<assets/4_6.png, id=1035, 724.7075pt x 472.76625pt>
+File: assets/4_6.png Graphic file (type png)
+<use assets/4_6.png>
+Package pdftex.def Info: assets/4_6.png  used on input line 886.
+(pdftex.def)             Requested size: 289.87787pt x 189.10315pt.
+<assets/4_7_a.png, id=1037, 698.61pt x 332.24126pt>
+File: assets/4_7_a.png Graphic file (type png)
+<use assets/4_7_a.png>
+Package pdftex.def Info: assets/4_7_a.png  used on input line 896.
+(pdftex.def)             Requested size: 251.9989pt x 119.84502pt.
+File: assets/4_7_a.png Graphic file (type png)
+<use assets/4_7_a.png>
+Package pdftex.def Info: assets/4_7_a.png  used on input line 901.
+(pdftex.def)             Requested size: 251.9989pt x 119.84502pt.
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [64 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_6.png>]
+Overfull \hbox (1.63014pt too wide) in paragraph at lines 911--912
+\T5/cmr/m/n/10.95 multi-UAV on dif-fer-ent ma-chines, one ROS mas-ter/core can be adopted
+ []
+
+
+Overfull \hbox (19.50674pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 65
+ []
+
+[65 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_7_a.png>]
+<assets/4_8_a.png, id=1052, 425.59pt x 273.02pt>
+File: assets/4_8_a.png Graphic file (type png)
+<use assets/4_8_a.png>
+Package pdftex.def Info: assets/4_8_a.png  used on input line 919.
+(pdftex.def)             Requested size: 143.9978pt x 92.37564pt.
+File: assets/4_8_a.png Graphic file (type png)
+<use assets/4_8_a.png>
+Package pdftex.def Info: assets/4_8_a.png  used on input line 924.
+(pdftex.def)             Requested size: 143.9978pt x 92.37564pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 914--930
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--933
+
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [66 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_8_a.png>]
+<assets/4_9_a.png, id=1073, 687.56876pt x 321.2pt>
+File: assets/4_9_a.png Graphic file (type png)
+<use assets/4_9_a.png>
+Package pdftex.def Info: assets/4_9_a.png  used on input line 938.
+(pdftex.def)             Requested size: 288.0011pt x 134.54039pt.
+<assets/4_9_b.png, id=1074, 677.53125pt x 330.23375pt>
+File: assets/4_9_b.png Graphic file (type png)
+<use assets/4_9_b.png>
+Package pdftex.def Info: assets/4_9_b.png  used on input line 943.
+(pdftex.def)             Requested size: 288.0011pt x 140.37518pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (19.50674pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 67
+ []
+
+[67]
+
+LaTeX Warning: Reference `4.10' on page 68 undefined on input line 952.
+
+<assets/4_10.png, id=1089, 765.86125pt x 278.03876pt>
+File: assets/4_10.png Graphic file (type png)
+<use assets/4_10.png>
+Package pdftex.def Info: assets/4_10.png  used on input line 955.
+(pdftex.def)             Requested size: 306.33907pt x 111.21352pt.
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [68 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_9_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_9_b.png>]
+Underfull \hbox (badness 2671) in paragraph at lines 972--972
+\T5/cmr/bx/n/10 in \T5/cmr/bx/it/10 stage 1
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 972--972
+\T5/cmr/bx/n/10 in \T5/cmr/bx/it/10 stage 2
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 972--972
+\T5/cmr/bx/n/10 in \T5/cmr/bx/it/10 stage 3
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 972--972
+[]|\T5/cmr/bx/n/10 Time
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 972--972
+\T5/cmr/bx/n/10 for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 972--972
+\T5/cmr/bx/n/10 ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 972--972
+\T5/cmr/bx/n/10 plo-
+ []
+
+
+Overfull \hbox (1.67184pt too wide) in paragraph at lines 972--972
+\T5/cmr/bx/n/10 ration
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.76686pt too wide) in paragraph at lines 974--974
+\T5/cmr/bx/n/10 UAVs|  
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 974--974
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 974--974
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 136 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 974--974
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 139$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 974--974
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 022 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 974--974
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 017$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 975--975
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 975--975
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 065 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 975--975
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 068$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 975--975
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 026 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 975--975
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 008$| 
+ []
+
+
+Overfull \hbox (6.89714pt too wide) in paragraph at lines 976--976
+[]|\T5/cmr/bx/n/10 Three 
+ []
+
+
+Overfull \hbox (5.76686pt too wide) in paragraph at lines 976--976
+\T5/cmr/bx/n/10 UAVs|  
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 976--976
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 976--976
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 056 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 976--976
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 065$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 976--976
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 575 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 976--976
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 769$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 976--976
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 335 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 976--976
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 407$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 976--976
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 765 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 976--976
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 678$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 977--977
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 107 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 977--977
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 111$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 977--977
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 483 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 977--977
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 678$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 977--977
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 185 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 977--977
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 244$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 978--978
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 978--978
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 267 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 978--978
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 165$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 978--978
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 616 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 978--978
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 549$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 978--978
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 251 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 978--978
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 109$| 
+ []
+
+
+Overfull \hbox (39.58334pt too wide) in paragraph at lines 971--980
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (19.50674pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 69
+ []
+
+[69 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_10.png>]
+<assets/4_11_a.png, id=1106, 704.6325pt x 309.155pt>
+File: assets/4_11_a.png Graphic file (type png)
+<use assets/4_11_a.png>
+Package pdftex.def Info: assets/4_11_a.png  used on input line 988.
+(pdftex.def)             Requested size: 288.0011pt x 126.35811pt.
+<assets/4_11_b.png, id=1107, 671.50874pt x 303.1325pt>
+File: assets/4_11_b.png Graphic file (type png)
+<use assets/4_11_b.png>
+Package pdftex.def Info: assets/4_11_b.png  used on input line 993.
+(pdftex.def)             Requested size: 288.0011pt x 130.00677pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 982--999
+
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [70]
+<assets/4_12_a.png, id=1115, 317.185pt x 240.9pt>
+File: assets/4_12_a.png Graphic file (type png)
+<use assets/4_12_a.png>
+Package pdftex.def Info: assets/4_12_a.png  used on input line 1006.
+(pdftex.def)             Requested size: 108.0011pt x 82.02621pt.
+<assets/4_12_b.png, id=1116, 311.1625pt x 233.87375pt>
+File: assets/4_12_b.png Graphic file (type png)
+<use assets/4_12_b.png>
+Package pdftex.def Info: assets/4_12_b.png  used on input line 1011.
+(pdftex.def)             Requested size: 108.0011pt x 81.17542pt.
+<assets/4_12_c.png, id=1117, 314.17375pt x 237.88875pt>
+File: assets/4_12_c.png Graphic file (type png)
+<use assets/4_12_c.png>
+Package pdftex.def Info: assets/4_12_c.png  used on input line 1016.
+(pdftex.def)             Requested size: 108.0011pt x 81.77405pt.
+<assets/4_12_d.png, id=1118, 310.15875pt x 235.88126pt>
+File: assets/4_12_d.png Graphic file (type png)
+<use assets/4_12_d.png>
+Package pdftex.def Info: assets/4_12_d.png  used on input line 1021.
+(pdftex.def)             Requested size: 108.0011pt x 82.13496pt.
+<assets/4_12_e.png, id=1119, 306.14375pt x 230.8625pt>
+File: assets/4_12_e.png Graphic file (type png)
+<use assets/4_12_e.png>
+Package pdftex.def Info: assets/4_12_e.png  used on input line 1026.
+(pdftex.def)             Requested size: 108.0011pt x 81.44067pt.
+<assets/4_12_f.png, id=1120, 307.1475pt x 234.8775pt>
+File: assets/4_12_f.png Graphic file (type png)
+<use assets/4_12_f.png>
+Package pdftex.def Info: assets/4_12_f.png  used on input line 1031.
+(pdftex.def)             Requested size: 108.0011pt x 82.58824pt.
+<assets/4_12_g.png, id=1121, 310.15875pt x 233.87375pt>
+File: assets/4_12_g.png Graphic file (type png)
+<use assets/4_12_g.png>
+Package pdftex.def Info: assets/4_12_g.png  used on input line 1036.
+(pdftex.def)             Requested size: 108.0011pt x 81.43593pt.
+<assets/4_12_h.png, id=1122, 309.155pt x 234.8775pt>
+File: assets/4_12_h.png Graphic file (type png)
+<use assets/4_12_h.png>
+Package pdftex.def Info: assets/4_12_h.png  used on input line 1041.
+(pdftex.def)             Requested size: 108.0011pt x 82.05424pt.
+<assets/4_12_i.png, id=1123, 307.1475pt x 231.86626pt>
+File: assets/4_12_i.png Graphic file (type png)
+<use assets/4_12_i.png>
+Package pdftex.def Info: assets/4_12_i.png  used on input line 1046.
+(pdftex.def)             Requested size: 108.0011pt x 81.52942pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1052
+
+ []
+
+
+Underfull \vbox (badness 6978) has occurred while \output is active []
+
+
+Overfull \hbox (19.50674pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  NETWORK TOPOLOGY AND STRATEGY FOR MRS ROBUSTNESS \T5/cmr/m/n/10.95 71
+ []
+
+[71 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_b.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1057
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1057
+
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [72 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_c.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_d.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_e.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_f.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_g.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_h.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_i.png>] [73] [74]
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 1065.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 1065.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 1065.
+
+
+Overfull \hbox (9.33643pt too wide) in paragraph at lines 1065--1065
+\T5/cmr/m/n/10.95 com-mu-ni-ca-tion pour mini-drones civils''. PhD the-sis. Uni-ver-sit² Toulouse
+ []
+
+[75
+
+]
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [76]
+Overfull \hbox (4.78606pt too wide) in paragraph at lines 1065--1065
+\T5/cmr/m/n/10.95 layer with qos ca-pa-bil-i-ties for a multi-robot sys-tem''. In: \T5/cmr/m/it/10.95 Iberian Robotics
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [77]
+Overfull \hbox (9.58379pt too wide) in paragraph at lines 1065--1065
+\T5/cmr/m/it/10.95 2018 13th An-nual Con-fer-ence on Sys-tem of Sys-tems En-gi-neer-ing (SoSE)\T5/cmr/m/n/10.95 .
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [78]
+Overfull \hbox (4.96356pt too wide) in paragraph at lines 1065--1065
+\T5/cmr/m/n/10.95 plo-ration''. In: \T5/cmr/m/it/10.95 Robotics and Au-tonomous Sys-tems \T5/cmr/m/n/10.95 54.12 (2006), pp. 945^^U
+ []
+
+
+Overfull \hbox (40.4074pt too wide) in paragraph at lines 1065--1065
+\T5/cmr/m/n/10.95 for multi-robot sys-tems in dis-as-ter sce-nar-ios''. In: \T5/cmr/m/it/10.95 Pro-ceed-ings of IARP/EURON
+ []
+
+
+Overfull \hbox (0.7591pt too wide) in paragraph at lines 1065--1065
+\T5/cmr/m/it/10.95 work-shop on robotics for risky in-ter-ven-tions and en-vi-ron-men-tal surveil-
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [79]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1066.
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [80]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1066.
+ (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1066.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1066.
+Package rerunfilecheck Info: File `vietnamese.out' has not changed.
+(rerunfilecheck)             Checksum: DCAEB88F1847DF3A3398754E79E8483C;2535.
+
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'vietnamese.run.xml'.
+\openout1 = `vietnamese.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1066.
+ ) 
+Here is how much of TeX's memory you used:
+ 17876 strings out of 481239
+ 306140 string characters out of 5920378
+ 1159345 words of memory out of 5000000
+ 32405 multiletter control sequences out of 15000+600000
+ 567952 words of font info for 100 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 48i,11n,62p,1737b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt9.pfb>
+Output written on /home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.pdf (80 pages, 5651415 bytes).
+PDF statistics:
+ 1339 PDF objects out of 1440 (max. 8388607)
+ 1078 compressed objects within 11 object streams
+ 344 named destinations out of 1000 (max. 500000)
+ 636 words of extra memory for PDF output out of 10000 (max. 10000000)
+
