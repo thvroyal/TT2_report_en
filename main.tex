@@ -13,6 +13,9 @@
 \usepackage{tabularx}
 \usepackage{diagbox}
 \usepackage{slashbox}
+\usepackage{lscape}
+\usepackage{multirow}
+\usepackage{longtable}
 \title{Communicating Multi-UAV System for cooperative SLAM-based Exploration}
 
 \usepackage{pagenote}
@@ -735,4 +738,279 @@ Authors in [Hayat et al., 2015] present a performances comparison between the st
 To face issues of maintenance connectivity, collision avoidance, robustness to failure and area coverage improvement, authors in [Ghedini et al., 2018] propose a novel model that provides more eﬃcient network topologies.\\\\
 In [Harms et al., 2018], a new communication layer is proposed to deal with networks that requires a high bandwidth. For that, some mechanism are used to buﬀer messages, to compress data or to react to unexpected situations.\\\\
 Table \ref{tab:4.3} lists some standards used in multi-robot systems. For each standard, we detail the concerned layer in the OSI model, its characteristics, the resulting performances, and the hardware and software used for experiments.
+\begin{landscape}
+    \begin{table}[H]
+        \centering
+        \caption{Examples of some standards used in MRS.}
+        \label{tab:4.3}
+        \begin{tabular}{|p{1.5cm}|p{1.7cm}|p{1.3cm}|p{2.9cm}|p{2.7cm}|p{2.3cm}|p{2cm}|}\hline
+            \textbf{Work}                             & \textbf{Standard}            & \textbf{Layer}    & \textbf{Characteristics}                                                  & \textbf{Performances}                                                                    & \textbf{Hardware}                                                               & \textbf{Software}
+            \\\hline
+            [Scherer et al., 2015]                    & IEEE 802.11s mesh technology & Network layer     & Compatible with mesh mode and AP mode                                     & Range: 100m, communication delay: 5ms, Throughput: 10-20Mbit/s                           & Heterogeneous UAVs + laptop BS + wifi module                                    & Middleware Robot Operating System ROS       \\\hline
+            \multirow{2}{1.5cm}{[Hayat et al., 2015]} & IEEE 802.11n                 & PHY and MAC layer & High throughput in both mode (AP and mesh), acceptable degree of fairness & Outdoor + mesh mode + single hop; Range: 500m; TCP throughput: 35Mbit/s (50m); FB: 40Mhz & Two Pelican UAVs + laptop BS + Compex WLE300NX 802.11abgn mini PCIe modules     & Ubuntu Linux Kernel 3.2. with ath9k driver  \\\cline{2-7}
+                                                      & IEEE 802.11ac                & PHY and MAC layer & Do not support mesh mode                                                  & Outdoor + mesh mode + single hop; Range: 500m; TCP throughput: 10Mbit/s (50m); FB: 80Mhz & Two Pelican UAVs + laptop BS + Compex WLE900N518 802.11ac 5Ghz miniPCIe modules & Ubuntu Linux Kernel 3.2. with ath10k driver \\\hline
+        \end{tabular}
+    \end{table}
+\end{landscape}
+\begin{landscape}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|p{1.5cm}|p{1.7cm}|p{1.3cm}|p{2.9cm}|p{2.7cm}|p{2.3cm}|p{2cm}|}\hline
+            [Kuschnig et al., 2012] & IEEE 802.11a           & PHY and MAC layer & RSS and throughput decreases with the distance but still at an acceptable level          & Outdoor over compus 150m*150m; Range: 10m; Throughput: 54Mbit/s (theo) and 27Mbit/s (prac); FB: 5Ghz                        & AP: Netgear WNDR3700 + Atheros AR9280 based wireless cards + UAV with Intel Atom Processor + SparkLAN WPEA110N wireless card + antenna WIMO 18720.11 for UAV and AP & Linux-based OpenWRT Backfire 10.03.1RC5 \\\hline
+            [Asadpour et al., 2014] & IEEE 802.11n multi hop & PHY and MAC layer & Long convergence time and high routing overhead (with BATMAN protocol for Network Layer) & In-flight experiment; Throughput for 200m: 5.95Mbit/s; Convergence time (20-100m): 28s; Routing overhead (20-100m): 10msg/s & Two Arducopter + GB + WLAN IEEE 802.11n + XBEE-PRO                                                                                                                  &                                         \\\hline
+        \end{tabular}
+    \end{table}
+\end{landscape}
+\begin{landscape}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|p{1.5cm}|p{1.7cm}|p{1.3cm}|p{2.9cm}|p{2.7cm}|p{2.3cm}|p{2cm}|}\hline
+            [Morgen- thaler et al., 2012] & IEEE 802.11s mesh nodes for UAV to UAV and IEEE 802.11g for UAV to AP & network layer     & In single hop, ﬂying UAVs reach higher throughput than UAVs in the ground. These results are performed with the location based position mode which are lower than those with the signal strength positioning mode. These performances are higher than in multi-hop. & Single hop (1UAV altitude 3-5m and AP-AP = 75m) in location positioning mode; TCP throughput = 6.5Mbit/s + in signal strength positioning mode: TCP throughput = 8.1Mbit/s & One UAVNet quadcopters Professional Mesh OM1P + two notebooks & Linux 2.6.37.6 Kernel generated by ADAM (embedded Linux distribution) + driver ath5k \\\hline
+            [Muzaffar and Yanmaz, 2014]   & IEEE 802.11ab                                                         & PHY and MAC layer & Throughput decreases with the increase of the number of nodes                                                                                                                                                                                                       & Range: up to $1000m \times 1000m \times 50m$; Throughput: 54Mbit/s (prac); FB: 5Ghz                                                                                        & Simulation: UAVs + Groung Station                             & Omnet++                                                                              \\\hline
+        \end{tabular}
+    \end{table}
+\end{landscape}
+\begin{landscape}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|p{1.5cm}|p{1.7cm}|p{1.3cm}|p{2.9cm}|p{2.7cm}|p{2.3cm}|p{2cm}|}\hline
+            [Wang et al., 2014] & IEEE 802.15.7 & PHY and MAC layer & Bidirectional transmission, matching ﬁltering and timing error recovery can increase the communication range and stability & \textit{One hop}: throughput: 1.6kb/s, packet loss ratio $5\%$; \textit{Two hop:} throughput 0.65kb/s, packet loss ratio $15\%$ & Embedded BBB board + LED front end & Linux Kernel 3.8.13 \\\hline
+        \end{tabular}
+    \end{table}
+\end{landscape}
+\subsection{Network standards and protocols}
+Since the exchange of information is necessary for coordination, the network used for multi-UAV communication has to ensure that the information circulates properly throughout nodes. Consequently, we have to overcome some issues such as:
+\begin{itemize}
+    \item Node failure: When the link is broken or defected, the network must ﬁnd a path to reach the node.
+    \item Topology changes: Nodes move in the environment and generate changes in the topology that the network have to deal with rapidly.
+    \item Communication bandwidth: UAVs possess certain information to exchange with other and need some bandwidth that supports the data exchange.
+\end{itemize}
+Taking into account the above cited issues, and to ensure agood integration between the visual SLAM and the communication, the distributed and cooperative wireless mesh network seems to be the most adequate network typology. It allows to introduce the following advantages:
+\begin{itemize}
+    \item Improving the network reliability because infrastructureless network oﬀers several paths, so that information may reach the destination even if only one link is broken.
+    \item Allowing self scalability of the network by a quick adaptation to topology changes.
+    \item Enabling rapid deployment with lower cost back-haul.
+    \item Providing easily coverage in areas which have diﬃcult access.
+    \item Saving battery life due to its lower power consumption.
+    \item Enabling to face a growing number of UAVs in the ﬂeet.
+\end{itemize}
+Among the existing mesh network standards, the 802.11s amendment, related to the MAC layer, is interesting for MRS applications. It is an Extended Service Set network that supports broadcast, multicast and unicast communication. It contains the Hybrid Wireless Mesh Protocol (HWMP) as the default routing protocol. The HWMP is a hybrid routing protocol inspired by the AODV (Ad-hoc On-demand Distance Vector: an on demand and reactive portion) and the tree based protocol (a proactive portion). Thereby, it contains the advantages of the reactive protocol since it prepares the routing table when nodes change their position, and thus provides the safer path. On the other hand, it contains the advantages of the proactive protocol since the routing table is ready which allow to save time when needed. In addition to the default routing protocol HWMP, the 802.11s mesh network supports other protocols like Optimized Link State Routing (OLSR), Better Approach to Mobile Ad hoc Networking (BATMAN), Wireless Distribution System (WDS), Open Shortest Path First (OSPF) and BABEL. According to [Wang et al., 2010], BATMAN proved better performances than HWMP and OLSR. Thus, experiments using HWMP and BATMAN have been performed to point out the saved data.
+\paragraph{BATMAN protocol  definition}
+The BATMAN\footnote{Source: \url{https://www.open-mesh.org/projects/open-mesh/wiki}} is a proactive routing protocol inspired by AODV and OLSR. It is supported by multi-hop Ad Hoc mesh networks. It uses diﬀerent approaches to route selection node by periodically sending OriGinator Messages (OGM) to neighbors with node information to next hop and destination because the routing decisions are distributed on nodes. In this protocol, each node decides for the next hop and not for the whole route so nodes do not use or even know the topology of the network. In the case of detecting other nodes, BATMAN protocol ﬁnds the best route to them. It also keeps track of new nodes and informs its neighbors about their existence.
+\subsection{Result and discussion}
+For the evaluation of the networked system using BATMAN\footnote{The BATMAN-adv version used for the testbed is available since 2013} protocol, we use heteroge- neous nodes composed of three laptops: 2.40GHz dual core Linux machine, 2.27GHz i3 Linux machine, 2.50GHz i5 Linux machine and a Parrot AR-Drone 2.0 (See Figure \ref{fig:4.3}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{assets/4_3.png}
+    \caption{Mesh network illustration between three laptops and one drone.}
+    \label{fig:4.3}
+\end{figure}
+We simulate the broadcast of data between nodes in both Ad Hoc and mesh network with BATMAN protocol to underline the saved data. The drone was controlled from the laptop using a cross compilation. First, we perform an Ad Hoc network between endpoints and broadcast the data from node A to node B, C and D in the network. Then, we broadcast – in the same conditions – from node A to B, C and D with the BATMAN mesh network protocol. Results in Figure \ref{fig:4.4} show that the throughput achieved an average of 0.4 Mbits/s; whereas, the throughput evaluated in mesh network with BATMAN protocol, achieved an average of 0.65 Mbits/s. The BATMAN mesh network protocol improves by 1,5 times the throughput of the network compared to a basic Ad Hoc network.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/4_4.png}
+    \caption{Broadcast testbed throughput result in Ad Hoc and BATMAN mesh network protocol.}
+    \label{fig:4.4}
+\end{figure}
+\section{Network topology and strategy for MRS robustness}
+The topology of the network defines the geometric properties of nodes (robots in out case). The proposed strategy in this work represents the behavior adopted to face critical situations and to achieve a MRS robustness.
+\subsection{Related work}
+The challenge in MRS communication is to maintain reliable network during the mission in order to make the robots able to perform cooperative exploration [Rooker and Birk, 2007], [Gupta et al., 2016]. The strategy used for exploration affects the exchange of data among robots including type, destination and frequency.\\\\
+The information exchanged between a robot and a server may be key-frames and map points [Schmuck, 2017], or only features of selected key-frames and relative-pose estimates among robots and ground station [Froster et al., 2013b]. But mostly, robots exchange their local copies of the map and their poses [Fox et al., 2006], [Bresson et al., 2015], [Schuster et al., 2015].\\\\
+The amount of data exchanged may rapidly increase in size, which can cause network congestion and data loss. In order to reduce the bandwidth requirements, authors in [Mohanarajah et al., 2015] propose to send only compressed key-frames and updated key-frame poses. Also, authors in [Cunningham et al., 2010] propose a Decentralized Data Fusion-Smoothing And Mapping (DDF-SAM) approach, where each robot propagates towards other robots, its condensed local graph in order to achieve scalability and robustness to node failure.\\\\
+Most works deal with the problem of communication while assuming an ideal network or aim at keeping team members within range of one another in order to focus their attention on higher level problems [Schuster et al., 2015, Burgard et al., 2005].\\\\
+Considering communication loss and/or limited bandwidth helps to prevent from mission failure and to ensure a more realistic scenario. Indeed, in real scenarios, many issues can arise such as having a distance among robots that exceeds the communication range, losing major information in a broken communication link, losing precious time in sending information due to limited bandwidth, etc. The exploration strategy has to take into account the mentioned issues to avoid mission failure in real world scenario. Some works began to tackle the exploration problem while considering communication limitations [Couceiro et al., 2014, Schmuck, 2017].\\\\
+In [Dai et al., 2018], the aim is to sense a geometrically complex environment by assigning targets to robots when the spatial and temporal resolutions are satisﬁed. This approach uses a min-max energy path planning algorithm that obeys to a deadline time.\\\\
+In this work, we make the choice to let UAVs exchange with each other only frontier points, robot poses, and assigned targets. This exchange happens at each iteration while considering UAVs’ role, which are adapted according to the network topology. This adaptation allows also to cope with communication limitations.
+\subsection{Inter-robot communication approach}
+Interactions among members of the ﬂeet are important especially in the exploration missions in order to prevent UAVs to explore the same regions, and to allow them to cooperatively discover the unknown areas more rapidly and in an optimized manner. However, inter-UAV communication is a challenging issue that requires to answer some practical questions: Which kind of data nodes must exchange? How often data should be shared? Should we consider a multi-hop data exchange? If so, how to identify the endpoints of the data exchange? How to cope with communication limitations? These questions are addressed in the following subsections.
+\subsubsection{Multi-UAV interaction and data exchange}
+In the proposed cooperative exploration strategy, local frontier points $\mathbf{f}_{i,j} \in \mathcal{F}$, current pose $\mathbf{p}_i$ , and current target point $\mathbf{t}_m$ are exchanged instead of the whole copy of the local map. This is expected to produce a considerable reduction of exchanged data volume, and, consequently, memory consumption. The sequence diagram\footnote{This diagram uses Unified Modeling Language's sequence diagram notation.} in Figure \ref{fig:4.5} details (timing and information) the messages exchanged between two UAVs. UAV$_i$ , with $i \in [1..n_c]$ and UAV$_j$ with $j \in [2..n_c] (i<j)$ are robots in the cluster $\mathcal{C}$. They forward their respective id number and current poses $\mathbf{p}_i$ and $\mathbf{p}_j$. Since $i < j$, the explorer UAV$_j$ sends to the selected \textit{leader} UAV$_i$ its local frontier points $\mathbf{f}_{j,k}$ during the frontier processing (FP) step.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{assets/4_5.png}
+    \caption{Data ﬂow between two robots. The FP and GA stand, respectively, for frontier processing and goal assignment.}
+    \label{fig:4.5}
+\end{figure}
+Then, the \textit{leader} performs the goal assignment process (GA) and sends back to UAV$_j$ the selected target point $\mathbf{t}_m$ . The cited example represents two UAVs in the cluster $\mathcal{C}$. In case of multiple UAVs in $\mathcal{C}$, the same sequences will be performed among one \textit{leader} and multiple \textit{explorers}.
+\subsubsection{Exploration strategy to face communication loss}
+In the proposed system, considering the communication limitations is important to ensure the mission continuity. In case of losing contact with the \textit{leader} due to communication failure or UAV getting stuck, another \textit{leader} is self-selected in the next iteration so that the mission can continue. In Figure \ref{fig:4.6}, at $t=t_n$ , the ﬂeet is composed of one cluster where UAVs are able to communicate with each other. One \textit{leader} handles the decisions for others. At $t=t_{n+1}$, the communication link fails between UAV$_3$ and UAV$_4$ . The ﬂeet is divided into two clusters with one \textit{leader} each.
+\paragraph{Particular case}
+In case of losing contact with the \textit{leader} and before another one is selected, \textit{explorers} let a timer $\tau$ expires while waiting for target assignment. If no target is received, the \textit{explorer} selects its own target according to local information.\\\\
+Using this strategy, as long as – at least – one UAV exists in the ﬂeet, the mission will continue until all the bounded environment is explored (no candidate frontier points are left).
+\subsubsection{Data exchange strategy discussion}
+In the proposed strategy, data ﬂow exchange is repeated at each iteration while taking into account network topology changes to deﬁne clusters. The starting points and endpoints are deﬁned according to these roles. The UAV’s role also speciﬁes the type of exchanged data. In addition to the exchanged current pose $\mathbf{p}_i$ and $id$ number $i$, if the UAV$_i$ is an \textit{explorer}, it would passively share information about itself and its surrounding environment with the leader (frontier points $\mathbf{f}_{i,j} \in \mathcal{F}$); else, its role would be to send targets to visit to the \textit{explorers} (target points $\mathbf{t}_k \in \mathcal{G}$).
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/4_6.png}
+    \caption{Role evolution in limited communication range.}
+    \label{fig:4.6}
+\end{figure}
+The proposed strategy ensures a mission continuity in case of communication loss. Nevertheless, the UAV may explore regions already explored by other nodes, since no local maps are exchanged nor fused to keep track of visited areas. Thus, in case of communication loss, the mission accomplishment is favored over consumption minimization of resources, such as time and battery.
+\subsection{Results and discussion}
+As UAVs are equipped with IEEE 802.11b,g wireless card, we set up an infrastructureless network within the set of robots to quantify the data exchange among members of the ﬂeet, as well as, to determine the performance of the robot network. Runs with 2 and 3 UAVs were performed (See Figure \ref{fig:4.7}). The network was composed of two 2.60GHz i7 Linux machines and a 2.50GHz i7 Linux machine. The number of robots used for evaluation is limited to three, however, the proposed system architecture is not constrained to a ﬁxed number of robots.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_7_a.png}
+        \caption{{Two UAVs (Laptops)}}
+        \label{fig:4.7a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.7\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_7_a.png}
+        \caption{{Three UAVs (Laptops).}}
+        \label{fig:4.7b}
+    \end{subfigure}
+    \caption{Ad Hoc network illustration during exploration mission.}
+    \label{fig:4.7}
+\end{figure}
+\subsubsection{Network setting: From one to multiple machines}
+When running multiple UAVs on a single machine (like in previous simulations in chapter 3), one ROS master is responsible of managing the intra and inter-processes communication using publisher/subscriber. In case of multiple machines, two conﬁgurations are possible:
+\begin{itemize}
+    \item One ROS core for multiple machines (See Figure \ref{fig:4.8a}): Even with multi-UAV on diﬀerent machines, one ROS master/core can be adopted by specifying the machine running the ROS core. In this case, the SoS will manage inter-processes communication the same way as if they are on the same machine. The exception is that a real world communication is used instead of a shared memory for a multi-UAV running on a single machine.
+    \item Multiple ROS cores for multiple machines (See Figure \ref{fig:4.8b}): when running diﬀerent ROS cores on diﬀerent machines, each UAV manages its own master. In this multi- cores system – also called multi-master system –, a synchronization among these masters needs to be done.
+\end{itemize}
+Nonetheless for both cases, the virtual environment to be explored in \textit{Gazebo} has to be the same so that UAVs explore the same environment at the same time. Speciﬁcally, this means that the IP client of \textit{Gazebo} has to match the IP server of the machine running the \textit{Gazebo} world by setting $\textit{GAZEBO\_MASTER\_URI}$.\\\\
+When running a single ROS core for multiple UAVs, a reliable network is needed, else ROS processes would not work properly when the network connection is unstable. Also, running multi-master system is more realistic because in real world, each UAV has to be functional, independent and cooperative to achieve the mission objectives, which is, in this work, the exploration of an unknown environment. A multi-master system represents a distributed system conﬁguration, which has diﬀerent advantages such as scalability to fault tolerance.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_8_a.png}
+        \caption{{One ROS core for multiple machines.}}
+        \label{fig:4.8a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_8_a.png}
+        \caption{{Multiple ROS cores for multiple machines.}}
+        \label{fig:4.8b}
+    \end{subfigure}
+    \caption{{Two ROS conﬁgurations in multiple machines case. Image from [Andre et al., 2014].}}
+    \label{fig:4.8}
+\end{figure}
+Multi-master systems require synchronization. For this, diﬀerent packages exist such as the \textit{multi-master} fkie package\footnote{Source: \url{http://wiki.ros.org/multimaster_fkie}} which allows unicast as well as multicast transmissions using UDP protocol. The $\textit{wifi\_comm}$ package\footnote{Source: \url{http://wiki.ros.org/wifi_comm}} implements the Optimized Link State Routing (OLSR), but can be used with diﬀerent routing algorithms. The $\textit{recon\_multimaster}$ package\footnote{http://wiki.ros.org/rocon} is a centralized multi-master system that implements building blocks around the ROS communication layer but do not implement communication itself. Authors in [Andre et al., 2014] propose a distributed approach where each robot runs a master managing its local communication using the $\textit{Adhoc\_communication}$ package\footnote{Source: \url{http://wiki.ros.org/adhoc_communication}} where AODV protocol is implemented. Another multi-master package is the $\textit{Nimbro\_network}$ package\footnote{Source: \url{https://github.com/AIS-Bonn/nimbro_network}} which oﬀers a robust transport of ROS topics and services over unreliable networks. The above cited multi-master packages are not an exhaustive list and other synchronization packages exist.\\\\
+For simplicity and as a ﬁrst approach, the \textit{multi-master fkie} package\footnote{Source: \url{http://wiki.ros.org/multimaster_fkie}} is used to run the adopted multi-core system. This package allows us to both use and synchronize multiple cores using the default protocol UDP. For ROS topics data exchange, TCP protocol is used. For an eﬀective evaluation especially concerning the time, clock synchronization needs to be ensured. Network Time Protocol (NTP) is used to synchronize laptops within a few milliseconds of Coordinated Universal Time (UTC).
+\subsubsection{Exchanged data size evaluation}
+The ﬁrst evaluation aims at pointing out the amount of exchanged data by sharing local frontier points instead of local grid maps (See Figure \ref{fig:4.9}).
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.8\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_9_a.png}
+        \caption{{Evolution of the amount of exchanged data during the mission.}}
+        \label{fig:4.9a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.8\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_9_b.png}
+        \caption{{Average of the amount of exchanged data during the mission.}}
+        \label{fig:4.9b}
+    \end{subfigure}
+    \caption{{Data size when UAVs exchange a whole copy of their local grid map versus frontier points of it.}}
+    \label{fig:4.9}
+\end{figure}
+Figure \ref{fig:4.9a} shows that the size of grid maps increases consequently in time compared to the size of frontier points that is almost constant during the mission. According to results in Figure \ref{fig:4.9b}, the size of data saved, when exchanging frontier points instead of grip maps, is almost divided by 10.
+\subsubsection{Exchanged data average time evaluation}
+Depending on the size and frequency of the exchanged data, the time allocated for communication may increase with the increasing number of robots. Thus, evaluations of time behavior and its potential impact on the exploration performances have been conducted. Figure \ref{4.10} shows the network topology evolution during data exchange.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{assets/4_10.png}
+    \caption{Network topology evolution during a loop with three cooperative UAVs.}
+    \label{fig:4.10}
+\end{figure}
+The information is exchanged in three stages and thay are the following:
+\begin{itemize}
+    \item Stage 1: The $id$ number and current poses $\mathbf{p}_i$ with $i \in [1..n_c].$
+    \item Stage 2: The frontier points $\mathbf{f}_{i,j}$ with $i \in [1..n_c]$ and $j \in [1..n_i]$.
+    \item Stage 3: The target points assignment $\theta(UAV_i,\mathbf{t}_k)$ with $i \in [1..n_c]$ and $k \in [1..n_c]$.
+\end{itemize}
+Table \ref{tab:4.4} shows the average time spent in data exchange during exploration. A slight increase in the computed average time occurs when increasing the number of robots. The time spent in communication is relatively negligible compared to the total time of exploration.
+\begin{table}[H]
+    \centering
+    \small
+    \caption{Communication module timings.}
+    \label{tab:4.4}
+    \begin{tabular}{|p{0.8cm}|p{0.7cm}|p{0.7cm}|p{0.7cm}|p{0.7cm}|p{0.7cm}|p{0.7cm}|p{0.7cm}|p{0.7cm}|p{0.7cm}|p{0.7cm}|p{1cm}|}\hline
+        \multicolumn{2}{|l|}{\multirow{2}{1cm}{\textbf{UAVs}}} & \multicolumn{3}{|p{2.1cm}|}{\textbf{Time spent in \textit{stage 1} (s)}} & \multicolumn{3}{|p{2.1cm}|}{\textbf{Time spent in \textit{stage 2} (s)}} & \multicolumn{3}{|p{2.1cm}|}{\textbf{Time spent in \textit{stage 3} (s)}} & \textbf{Time for exploration (s)}                                                                                                                      \\\cline{3-11}
+        \multicolumn{2}{|l|}{}                                 & UAV$_1$                                                                  & UAV$_2$                                                                  & UAV$_3$                                                                  & UAV$_1$                           & UAV$_2$           & UAV$_3$  & UAV$_1$  & UAV$_2$  & UAV$_3$           &                                           \\\hline
+        \multirow{2}{0.8cm}{\textbf{Two UAVs}}                 & UAV$_1$                                                                  & $\theta$                                                                 & $0.136\pm 0.139$                                                         &                                   & $\theta$          & $\theta$ &          & $\theta$ & $0.022 \pm 0.017$ &                   & $120,1$               \\\cline{2-11}
+                                                               & UAV$_2$                                                                  & $0.065 \pm 0.068$                                                        & $\theta$                                                                 &                                   & $0.026 \pm 0.008$ & $\theta$ &          & $\theta$ & $\theta$          &                   &                       \\\hline
+        \multirow{3}{0.8cm}{\textbf{Three UAVs}}               & UAV$_1$                                                                  & $\theta$                                                                 & $0.056 \pm 0.065$                                                        & $0.575 \pm 0.769$                 & $\theta$          & $\theta$ & $\theta$ & $\theta$ & $0.335 \pm 0.407$ & $0.765 \pm 0.678$ & \multirow{3}{1cm}{86} \\\cline{2-11}
+                                                               & UAV$_2$                                                                  & $0.107 \pm 0.111$                                                        & $\theta$                                                                 & $0.483 \pm 0.678$                 & $0.185 \pm 0.244$ & $\theta$ & $\theta$ & $\theta$ & $\theta$          & $\theta$          &                       \\\cline{2-11}
+                                                               & UAV$_3$                                                                  & $0.267 \pm 0.165$                                                        & $0.616 \pm 0.549$                                                        & $\theta$                          & $0.251 \pm 0.109$ & $\theta$ & $\theta$ & $\theta$ & $\theta$          & $\theta$          &                       \\\hline
+    \end{tabular}
+\end{table}
+\subsubsection{Network interruption evaluation}
+To evaluate the system behavior during communication failure, the network connectivity has been voluntarily interrupted during the exploration. Figure \ref{fig:4.11} shows the robot’s role and the exploration rate performance when the network connectivity is interrupted and then recovered.\\\\
+The system performs neighbor discovering, role selection and target assignment at each loop of $t_{t+1}=t_i+i.r$ with $t_0=0s$ and $r=20s$. In Figure \ref{fig:4.11a}, at $t=t_0$ , both robots begin with a \textit{leader} role. When discovering each other (at $t=t_1$ ), UAV$_1$ selects itself as leader and UAV$_2$ becomes explorer. Consequently, UAV$_1$ assigns a target to UAV$_2$ . UAV$_2$ receives the target and attempts to reach it. At $t=t_2+\delta $, the connectivity is voluntarily interrupted, just after the role selection but before the target information is assigned to UAV$_2$ . After a time period $\tau $ , UAV$_2$ selects a target taking into account its own local data. In the next loop (at $t=t_3$), since the connectivity is still interrupted, UAV$_2$ ﬁnds no neighbors and selects itself as a \textit{leader}. Both robots perform exploration independently, that is, without cooperation. Shortly after $t=t_3$, the connectivity is re-established. Thus, robots are able to cooperate again and UAV$_2$ takes over the role of \textit{explorer}.\\
+In Figure \ref{fig:4.11b}, even after the network connectivity is interrupted, the exploration continues to be performed by both UAVs. When the connectivity is re-established, the \textit{leader} collects the frontier points and performs frontier processing where it ﬁnds that no candidates targets are remaining, that is, all the environment is now explored. Therefore, the mission is accomplished.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.8\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_11_a.png}
+        \caption{{UAV’s role along with network connectivity.}}
+        \label{fig:4.11a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.8\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_11_b.png}
+        \caption{{Exploration rate along with network connectivity.}}
+        \label{fig:4.11b}
+    \end{subfigure}
+    \caption{{Two cooperative robots exploration along with network connectivity.}}
+    \label{fig:4.11}
+\end{figure}
+\subsubsection{Global map evaluation}
+The exploration mission aims at creating a global map of the environment, in an efficient manner. Hence, we eant to evaluate the obtained global map during a cooperative mission running with infrastructureless network.\\\\
+Figure \ref{fig:4.12} illustrates the growth of the reconstructed global 2D occupancy grid map during the exploration mission.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_12_a.png}
+        \caption{{0 s.}}
+        \label{fig:4.12a}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_12_b.png}
+        \caption{{15 s.}}
+        \label{fig:4.12b}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_12_c.png}
+        \caption{{27 s.}}
+        \label{fig:4.12c}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_12_d.png}
+        \caption{{42 s.}}
+        \label{fig:4.12d}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_12_e.png}
+        \caption{{48 s.}}
+        \label{fig:4.12e}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_12_f.png}
+        \caption{{58 s.}}
+        \label{fig:4.12f}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_12_g.png}
+        \caption{{64 s.}}
+        \label{fig:4.12g}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_12_h.png}
+        \caption{{71 s.}}
+        \label{fig:4.12h}
+    \end{subfigure}
+    \begin{subfigure}[H]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{assets/4_12_i.png}
+        \caption{{73 s.}}
+        \label{fig:4.12i}
+    \end{subfigure}
+    \caption{{Global reconstructed 2D occupancy grid map during exploration mission with two cooperative UAVs.}}
+    \label{fig:4.12}
+\end{figure}
+\section{Conclusion}
+In this chapter, we addressed two subproblems of the MRS network. The first one deals with the network typology that is the characteristics that should be ensured by the network; whereas, the second one points out to the geographic distribution of nodes in the network, called topology. We also propose to face critical situations.\\\\
+The typology of the proposed network is based on adopting a mesh network along with BATMAN protocol. Results of broadcasting data performed in testbed with heterogeneous nodes including three laptops and one AR-Drone show that BATMAN mesh network protocol improves the throughput by 1.5 times compared to basic Ad Hoc network.\\\\
+In a limited communication range, the topology of the network varies during the mission. Consequently, the UAVs’ behaviors are adapted by always updating their roles to leader or \textit{explorer} during the mission. Even with an \textit{explorer} role, the UAV is able to continue its mission if the network experiences some issues. Furthermore, we propose to exchange the frontier points of the local map instead of the whole copy of it, which allows to reduce the shared data volume, and consequently memory consumption. The results of the testbed performed with three UAVs, show that the proposed communication module is able to cope with network limitations. They also show that the proposed strategy uses 10 times less data than a strategy that makes the robots exchange the whole local map.
 \end{document}
