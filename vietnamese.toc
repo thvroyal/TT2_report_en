@@ -118,8 +118,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Đánh giá bản đồ toàn cầu}{71}{section*.73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Conclusion}{72}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Kết luận}{72}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusion}{74}{section.2.5}%
+\contentsline {chapter}{Kết luận}{74}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Tài liệu tham khảo}{75}{chapter*.75}%

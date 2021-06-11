@@ -1,6 +1,6 @@
-main.aux
-main.ent
-main.fdb_latexmk
-main.fls
-main.log
-main.synctex.gz
+*.aux
+*.ent
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
