@@ -2,76 +2,76 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Proposed exploration process pipeline.\relax }}{13}{figure.caption.4}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Đề xuất quá trình thăm dò đường ống.\relax }}{13}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Map structure evolution during the exploration process: From 2D cells $\mathcal {L}$ to 2D frontier cells $\mathcal {F}$ to candidate frontier cells/points $\mathcal {G}$ (candidate targets) to 2D target cells/points $\mathcal {T}$.\relax }}{14}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Tiến hóa cấu trúc bản đồ trong quá trình thăm dò: Từ các ô 2D $\mathcal {L}$ đến ô biên giới 2D. $\mathcal {F}$ để cử ứng viên biên giới / điểm $\mathcal {G}$ (mục tiêu ứng viên) đến 2D ô mục tiêu / điểm $\mathcal {T}$.\relax }}{14}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Frontier cells/points selection of a 2D occupancy grid map.\relax }}{15}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Các tế bào biên giới / điểm lựa chọn bản đồ lưới của phòng chiếm 2D.\relax }}{15}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces The information gain computation of a frontier point x (in red). The hatched cells represent the 48 surrounding cells of the frontier point \textbf {x}. The information gain of \textbf {x} is: $\mathbf {I}(x)=25$.\relax }}{16}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Tính toán information gain của một điểm biên x (ô đỏ). Các tế bào nở đại diện cho 48 tế bào xung quanh của điểm biên \textbf {x}. Information gain của \textbf {x} là: $\mathbf {I}(x)=25$.\relax }}{16}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Frontier points processing example: (a) and (b) represent the frontier points of UAV$_1$ and UAV$_2$, respectively. (c) represent the candidate targets. The process consists in removing frontier points that belong to overlapped areas, and those that are adjacent to obstacles.\relax }}{18}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Ví dụ xử lý điểm biên giới: (a) và (b) đại diện cho các điểm biên giới của UAV$_1$ và UAV$_2$, tương ứng. (c) đại diện cho các mục tiêu ứng cử viên. Quá trình này bao gồm loại bỏ các điểm biên giới thuộc về các khu vực chồng chéo, và những điểm nằm liền kề với các chướng ngại vật.\relax }}{18}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Frontier points processing wile assuming two convex map shapes in the first line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (final shape).\relax }}{20}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Xử lý điểm biên giới trong khi giả định hai hình dạng bản đồ lồi ở dòng đầu tiên và hình thứ ba trong dòng thứ hai. (a) và (d) đại diện cho hai và ba hình dạng bản đồ lồi, tương ứng, tương ứng; (b) và (e) đại diện cho các điểm biên giới chồng chéo (giao lộ); và (c) và (f) đại diện cho các điểm biên giới thu được sau khi xử lý (hình cuối cùng).\relax }}{20}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Frontier points processing wile assuming two concave map shapes in the first line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (final shape).\relax }}{22}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Xử lý điểm biên giới trong khi giả định hai hình dạng bản đồ lồi ở dòng đầu tiên và hình thứ ba trong dòng thứ hai. (a) và (d) đại diện cho hai và ba hình dạng bản đồ lồi, tương ứng, tương ứng; (b) và (e) đại diện cho các điểm biên giới chồng chéo (giao lộ); và (c) và (f) đại diện cho các điểm biên giới thu được sau khi xử lý (hình cuối cùng).\relax }}{22}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.8}{\ignorespaces {Utility function behavior: $\mathbf {I}(t_j)=25, n_c=3, d_{tot} = \DOTSB \sum@ \slimits@ _{k=1, k\neq i}^{n_c}(dmin(\mathbf {P}_k,\mathbf {t}_j))$. The average distance of other UAVs $d_{tot}$ has a minimum value different from zero since $n_c$ is different from zero too.}\relax }}{24}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces {Hàm tiện ích thực hiện: $\mathbf {I}(t_j)=25, n_c=3, d_{tot} = \DOTSB \sum@ \slimits@ _{k=1, k\neq i}^{n_c}(dmin(\mathbf {P}_k,\mathbf {t}_j))$. Khoảng cách trung bình $d_{tot}$ giữa các UAV có giá trị tối thiểu khác 0 khi $n_c$ cũng khác 0.}\relax }}{24}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Example of the shape function to schedule the information gain($\mathbf {I}(\mathbf {t}_k)_{t-1}=29,(\mathbf {t}_g(x),\mathbf {t}_g(y))=(1.25,-0.275), \sigma _x=\sigma _y=3$).\relax }}{27}{figure.caption.18}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Ví dụ về hình dạng của hàm lên kế hoạch information gain($\mathbf {I}(\mathbf {t}_k)_{t-1}=29,(\mathbf {t}_g(x),\mathbf {t}_g(y))=(1.25,-0.275), \sigma _x=\sigma _y=3$).\relax }}{27}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.10}{\ignorespaces From 2D (left) to 3D (right) navigation stack. The \textit {navigation} z is a ROS process developed to provide a control command on the z axis.\relax }}{28}{figure.caption.19}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Từ ngăn xếp điều hướng 2D (trái) sang 3D (phải). \textit {Navigation} $z$ là một quá trình ROS được phát triển để cung cấp một lệnh điều khiển trên trục $z$.\relax }}{28}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.11}{\ignorespaces The impact of varying the trade off parameter $\lambda $ over exploration itme.\relax }}{29}{figure.caption.21}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Ảnh hưởng của việc thay đổi tham số trade-off $\lambda $ qua thời gian thăm dò.\relax }}{30}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Exploration time while varying the loop rate $r$.\relax }}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Thời gian khám phá trong khi thay đổi tỷ lệ vòng lặp $r$.\relax }}{30}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Ratio of explored space during time for one UAV.\relax }}{33}{figure.caption.29}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Tỷ lệ không gian khám phá trong thời gian cho một UAV.\relax }}{33}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Coordinated exploration using two robots. Columns 1, 2 and 3 show the evolution of the local map of the UAV$_1$, the UAV$_2$ and the global map over time, respectively.\relax }}{34}{figure.caption.30}%
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Phối hợp thăm dò bằng hai robot. Cột 1, 2 và 3 cho thấy sự phát triển của bản đồ địa phương của UAV$_1$, các UAV$_2$ và bản đồ toàn cầu theo thời gian, tương ứng.\relax }}{34}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.15}{\ignorespaces The evolution of candidate and final frontier points numbers during cooperative exploration.\relax }}{35}{figure.caption.31}%
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Sự phát triển của ứng cử viên và số điểm biên giới cuối cùng trong quá trình thăm dò hợp tác.\relax }}{35}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.16}{\ignorespaces Projected 2D map in a coordinated exploration with a team of one, two and three UAVs. Green, blue and red markers and arrows define, respectively, the initial position and the trajectory of UAV1, UAV2 and UAV3.\relax }}{36}{figure.caption.32}%
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Dự kiến bản đồ 2D trong một cuộc thám hiểm phối hợp với một nhóm một, hai và ba UAV. Các dấu hiệu và mũi tên màu xanh lá cây, xanh dương và đỏ xác định, tương ứng, vị trí ban đầu và quỹ đạo của UAV1, UAV2 và UAV3.\relax }}{36}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.17}{\ignorespaces Goal assignment: After assigning a target to UAV$_1$ , a target is assigned in a sequential manner to UAV$_2$ . (a) represents the candidate frontier points with their respective information gain. (b), (c), and (d) represent, respectively, the targets assignment when: No further process is performed for the remaining candidate targets; UAV$_1$ ’s target is removed from the remaining candidate targets and; the information gain of the remained candidate targets are scheduled.\relax }}{38}{figure.caption.34}%
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Nhiệm vụ mục tiêu: Sau khi chỉ định một mục tiêu để UAV$_1$ , một mục tiêu được chỉ định theo cách liên tiếp để UAV$_2$ . (a) đại diện cho các điểm biên giới ứng cử viên với mức tăng thông tin tương ứng của họ.(b), (c) và (d) đại diện, tương ứng, nhập mục tiêu khi: Không có quy trình nào khác được thực hiện cho các mục tiêu ứng cử viên còn lại; mục tiêu của UAV$_1$ được loại bỏ khỏi các mục tiêu ứng cử viên còn lại và; việc đạt được thông tin của các mục tiêu ứng cử viên còn lại được lên lịch.\relax }}{38}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.18}{\ignorespaces Explored and overlapped area rate using two cooperative UAVs.\relax }}{39}{figure.caption.37}%
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Tỷ lệ khu vực được khám phá và chồng chéo bằng cách sử dụng hai UAV hợp tác.\relax }}{40}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.19}{\ignorespaces Explored space rate with one, two and three UAVs.\relax }}{40}{figure.caption.39}%
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Khám phá tỷ lệ không gian với một, hai và ba UAV.\relax }}{41}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.20}{\ignorespaces Traveled distance by each UAV with one, two and three cooperative UAVs.\relax }}{41}{figure.caption.40}%
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Khoảng cách di chuyển của mỗi UAV với một, hai và ba UAV hợp tác.\relax }}{42}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.21}{\ignorespaces Traveled distance evaluation.\relax }}{42}{figure.caption.41}%
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Đánh giá khoảng cách di chuyển được.\relax }}{43}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.22}{\ignorespaces Average exploration time.\relax }}{42}{figure.caption.43}%
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Thời gian thăm dò trung bình.\relax }}{43}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.23}{\ignorespaces Two UAVs navigation using ORB-SLAM2. Rviz image (left) shows, for each UAV, the constructed 2D occupancy grid map, its estimated trajectory and the corresponding ground truth. The point cloud (middle) represent the sparse reconstruction of the environment made by each UAV. And, the green markers (right) represent the features computed by each UAV to perform localization.\relax }}{43}{figure.caption.44}%
+\contentsline {figure}{\numberline {1.23}{\ignorespaces Hai điều hướng UAV bằng ORB-SLAM2.Hình ảnh Rviz (trái) hiển thị, đối với mỗi UAV, bản đồ lưới chiếm dụng 2D được xây dựng, quỹ đạo ước tính và sự thật tương ứng.Đám mây điểm (giữa) đại diện cho việc tái thiết thưa thớt môi trường được thực hiện bởi mỗi UAV.Và, các điểm đánh dấu màu xanh lá cây (phải) đại diện cho các tính năng được tính bằng mỗi UAV để thực hiện bản địa hóa.\relax }}{44}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.24}{\ignorespaces Explored area rate evolution during exploration mission with one and two UAVs while performing ORB-SLAM2 by each UAV.\relax }}{44}{figure.caption.45}%
+\contentsline {figure}{\numberline {1.24}{\ignorespaces Khám phá sự tiến hóa tỷ lệ khu vực trong nhiệm vụ thăm dò với 1 và 2 UAV trong khi thực hiện ORB-SLAM2 bởi mỗi UAV.\relax }}{45}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Chế độ hạ tầng (trái) và chế độ không có hạ tầng (phải).\relax }}{47}{figure.caption.46}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Chế độ hạ tầng (trái) và chế độ không có hạ tầng (phải).\relax }}{48}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Mạng tập trung (trái), phi tập trung (giữa) và mạng phân tán (phải).\relax }}{50}{figure.caption.49}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Mạng tập trung (trái), phi tập trung (giữa) và mạng phân tán (phải).\relax }}{51}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Mạng lưới minh họa giữa ba máy tính xách tay và một máy bay không người lái.\relax }}{60}{figure.caption.55}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Mạng lưới minh họa giữa ba máy tính xách tay và một máy bay không người lái.\relax }}{61}{figure.caption.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Phát sóng thông lượng được phát sóng trong giao thức mạng Ad Hoc và BATMAN.\relax }}{60}{figure.caption.56}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Phát sóng thông lượng được phát sóng trong giao thức mạng Ad Hoc và BATMAN.\relax }}{61}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Luồng dữ liệu giữa hai robot. FP và GA đứng tương ứng, để xử lý biên giới và phân công mục tiêu.\relax }}{63}{figure.caption.58}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Luồng dữ liệu giữa hai robot. FP và GA đứng tương ứng, để xử lý biên giới và phân công mục tiêu.\relax }}{64}{figure.caption.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Sự tiến hóa vai trò trong phạm vi giao tiếp hạn chế.\relax }}{64}{figure.caption.62}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Sự tiến hóa vai trò trong phạm vi giao tiếp hạn chế.\relax }}{65}{figure.caption.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Minh họa mạng Ad Hoc trong nhiệm vụ thăm dò.\relax }}{65}{figure.caption.63}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Minh họa mạng Ad Hoc trong nhiệm vụ thăm dò.\relax }}{66}{figure.caption.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces {Hai cấu hình ROS trong trường hợp nhiều máy. Ảnh từ \cite {andre2014coordinated}.}\relax }}{66}{figure.caption.65}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces {Hai cấu hình ROS trong trường hợp nhiều máy. Ảnh từ \cite {andre2014coordinated}.}\relax }}{67}{figure.caption.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces {Kích thước dữ liệu khi UAV trao đổi toàn bộ bản sao lưới cục bộ của họ so với các điểm biên giới của nó.}\relax }}{68}{figure.caption.67}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces {Kích thước dữ liệu khi UAV trao đổi toàn bộ bản sao lưới cục bộ của họ so với các điểm biên giới của nó.}\relax }}{69}{figure.caption.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Tiến hóa cấu trúc liên kết mạng trong một vòng lặp với ba UAV hợp tác.\relax }}{69}{figure.caption.69}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Tiến hóa cấu trúc liên kết mạng trong một vòng lặp với ba UAV hợp tác.\relax }}{70}{figure.caption.69}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces {Hai robot hợp tác thăm dò cùng với kết nối mạng.}\relax }}{71}{figure.caption.72}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces {Hai robot hợp tác thăm dò cùng với kết nối mạng.}\relax }}{72}{figure.caption.72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces {Bản đồ lưới chiếm dụng 2D toàn cầu trong nhiệm vụ thăm dò với hai UAV hợp tác.}\relax }}{72}{figure.caption.74}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces {Bản đồ lưới chiếm dụng 2D toàn cầu trong nhiệm vụ thăm dò với hai UAV hợp tác.}\relax }}{73}{figure.caption.74}%

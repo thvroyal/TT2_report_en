@@ -84,42 +84,46 @@
 \listoftables
 \newpage
 \thispagestyle{plain}
-\addcontentsline{toc}{chapter}{Introduction}
+\addcontentsline{toc}{chapter}{Mở đầu}
 \begin{center}
     \Huge
-    \textbf{Introduction}
+    \textbf{Mở đầu}
+    \vspace{1cm}
 \end{center}
 % TODO: add introduction here
-\chapter{Coordinated exploration}
-\section{Introduction}
-The exploration and mapping of large areas is an active field of research in aerial robotics. It consists in constructing a 3D model representation of the workspace as robots progress within it. Recently, the key subject in the exploration problem is the cooperative deployment of ﬂeet of robots that promise enhanced performances compared to single robot exploration.\\\\
-In this chapter, we address the problem of cooperative exploration strategies with no a- priori knowledge of the environment. We will try to answer the question: Where should each robot move next?
-\section{Related work}
-Recently, several works have proposed solutions for exploration using multi-robot teams to reduce the mission time and to increase the scalability \cite{bautin2012strategie}, \cite{jensen2013rolling}, \cite{yan2014team}. Hence, the challenge is to have an eﬃcient cooperation among the agents in the ﬂeet while maintaining communication \cite{rooker2007multi}. For that, existing approaches can be centralized, that is, one robot in the ﬂeet is responsible for assigning targets \cite{burgard2000collaborative}. In \cite{schmuck2017multi}, a central server with increased computational resources is adopted to receive, treat, optimize and send back information to other robots. Other works, such as \cite{yuan2010cooperative},\cite{sheng2006distributed}, use distributed approaches where each robot chooses its own target. Another trend is to switch from individual to cooperative exploration behavior when robots are not able to converge to a local minimum at a satisfying rate \cite{wu2012robust}. In \cite{konolige2003map}, authors propose to consider four possibilities taking into account robots’ interactions in order to construct a distributed map. The situations involved are: no interaction (robots are not within each others’ communication range), hypothesis generation (there is an interaction between the robots but they do not know their respective location), hypothesis verification (there is an interaction between the robots and they propose an hypothesis about their location), and coordinated exploration (there is an interaction between robots and they do share their maps).
-\subsection{Robot-to-target assignment}
-The mapping algorithm is performed while a robot attempts to reach a target. So, for an effective environment mapping, the target should be chosen carefully. There is a wide variety of goal assignment strategies to affect one robot to a target. The majority of them are centralized and use a cost function to compute the utility of reaching a target.\\\\
-In the greedy assignment \cite{yamauchi1998frontier}, each robot chooses a target depending on its cost function without coordinating with other robots. Hence, one target can be visited by different robots. To solve this issue, already chosen targets can be discarded before being considered for assignment by others using Broadcast of Local Eligibility (BLE) \cite{werger2000broadcast} also called Iterative Assignment. But, this method does not necessarily produce the optimal solution since it depends on the order of robots.\\\\
-The K-means method \cite{solanas2004coordinated} consists in dividing the environment to explore into regions of the same number of robots, then, assigning one robot to the closest region where it will choose a target from the frontiers depending on a cost function.\\\\
-The Hungarian method \cite{deb1999multi} proposed by \cite{kuhn2005hungarian}, solves the worker- task assignment written in the form of $n \times n$ matrix $C$ where $c_{i,j}$ is the cost of the task $j$ assigned to the worker $i$. The optimal assignment is found with time complexity $O(n^3)$. This algorithm requires that the number of workers is equal to the number of tasks which cannot be guaranteed. Else, imaginary robots or targets can be added to satisfy the assumption, and skipped later in the selection.\\\\
-Authors in \cite{nanjanath2006dynamic} present an auction-based method to assign tasks to a group of robots. The distribution of tasks is accomplished by means of a first-price reverse auction which means that the auctioneer is the buyer. One task is auctioned one at a time by priority. Then, the auctioneer selects the best bid and assigns the task to the corresponding bidder. The algorithm is well adapted to dynamic environments, where unexpected obstacles might prevent a robot from reaching its target.\\\\
-In \cite{zhao1996genetic}, \cite{leigh2007using}, a genetic algorithm is used to optimally assign robot to tasks. It is an NP-hard problem since it is considered as a generalized two- dimensional multi-type bin packing problem.\\\\
-Authors in \cite{faigl2012goal} present a new approach called Multiple Traveling Salesman Problem (MTSP) for robot-to-target assignment in multi-robot exploration problem. It consists in clustering an environment, determining the cost of TSP distance for each pair of robot cluster, assigning goals from non empty cluster, and finally fixing goals for empty clusters. This approach was compared with greedy, iterative and Hungarian method. The MTSP presents competitive results regarding the total computational requirements and the increasing number of robots.\\\\
-In \cite{kulich2015comparison}, a comparison of some assignment strategy used for multi- robot system is done. The compared strategies include Hungarian method, Greedy, BLE method and K-means clustering. Results show that Hungarian method outperforms other approaches in majority of cases. Unlike the Hungarian method, the iterative assignment can be implemented in a distributed environment. Also the Hungarian methods are computationally heavy compared with the simple greedy algorithm which is preferred in applicable scenario.
-\subsection{Utility function}
-Most of the robot-to-target assignments are based on an utility function that defines the benefits that a robot have to reach this target, taking into account the mission’s aim \cite{burgard2000collaborative}. The work proposed in \cite{benavides2016multi} presents a new utility function that takes into account the traveling cost to the target and the connectivity utility. This allows a trade off between minimizing the amount of exploration time and the connectivity. To speed up velocity, authors in \cite{cieslewski2017rapid} propose a rapid frontier selection technique to select goals from the robot’s field of view. This approach minimizes the overall mission time by minimizing the change in velocity of the robot. Nonetheless, this approach increases the total path length traveled. In \cite{heng2015efficient}, maximizing the reconstructed model is favored over the mission time. Furthermore, the proposed approach solves simultaneously exploration and coverage problems in order to maximize the completeness of the reconstructed model. Whereas in \cite{simmons2000coordination}, the aim is the maximization of the utility of targets that minimizes the potential for overlap in information gain amongst members of the ﬂeet. The utility of reaching a target depends basically on the aim of the mission while taking into account some additional constraints such as time, completeness of the map, limited sensor and communication range, or number of robots.
-\section{Proposed exploration strategy}
-\subsection{Overview}
-In a Multi-UAV system, the exploration strategy needs to be cooperative to maximize the eﬃciency. The main objective proposed here, is to cooperatively choose specific regions to be simultaneously explored using a frontier-based approach. Commonly, this is done by selecting candidate targets and assigning them to each robot in an optimized manner. Figure \ref{fig:3.1} shows the proposed pipeline exploration process performed by each UAV.
+Tài liệu này được dịch lại từ bài báo "\textbf{Communicating Multi-UAV System for cooperative SLAM-based Exploration}", chương \textbf{3} và \textbf{4}.\\\\
+Trong báo cáo này, chúng tôi sẽ đề xuất một chiến lược phối hợp khám phá nhiều robot để thăm dò và lập bản đồ các khu vực rộng lớn, từ đó xây dựng mô hình 3D cho không gian. Chiến lược được sử dụng để chỉ định robot đến mục tiêu và một hàm tiện ích được áp dụng để ước tính mức độ quan tâm của việc tiếp cận mục tiêu đó. Sau đó, một chiến lược dựa trên vai trò \textit{leader} sẽ phân công robot thực hiện mục tiêu.\\\\
+Ngoài ra, chúng tôi cũng giải quyết vấn đề con của mạng MRS. Đầu tiên liên quan đến cấu trúc mạng là các đặc điểm cần được đảm bảo, trong khi đó, vấn đề thứ hai là chỉ ra sự phân phối địa lý của các nút mạng hay còn gọi là cấu trúc liên kết. Cấu trúc mạng đề xuất dựa trên việc áp dụng mạng lưới cùng với giao thức BATMAN. Kết quả đạt được rất khả quan, cải thiện hơn so với mạng Ad Hoc cơ bản.
+\chapter{Khám phá phối hợp}
+\section{Giới thiệu}
+Việc thăm dò và lập bản đồ các khu vực rộng lớn là một lĩnh vực nghiên cứu tích cực trong lĩnh vực robot trên không. Nó bao gồm việc xây dựng mô hình 3D đại diện cho không gian làm việc khi rô bốt tiến triển bên trong nó. Gần đây, chủ đề quan trọng trong vấn đề thăm dò là việc triển khai hợp tác nhiều robot hứa hẹn nâng cao hiệu suất so với thăm dò bằng robot đơn lẻ.\\\\
+Trong chương này, chúng tôi giải quyết vấn đề của các chiến lược thăm dò hợp tác mà không có kiến thức ưu tiên về môi trường. Chúng tôi sẽ cố gắng trả lời câu hỏi: Tiếp theo mỗi robot nên di chuyển đến đâu?
+\section{Công việc có liên quan}
+Gần đây, một số công trình đã đề xuất các giải pháp thăm dò bằng cách sử dụng các đội nhiều robot để giảm thời gian nhiệm vụ và tăng khả năng mở rộng \cite{bautin2012strategie}, \cite{jensen2013rolling}, \cite{yan2014team}. Do đó, thách thức là phải có sự hợp tác chặt chẽ giữa các đại lý trong hệ thống trong khi duy trì liên lạc \cite{rooker2007multi}. Vì vậy, các phương pháp tiếp cận hiện có có thể được tập trung hóa, nghĩa là, một robot trong thiết bị chịu trách nhiệm giao các mục tiêu \cite{burgard2000collaborative}. Trong \cite{schmuck2017multi}, một máy chủ trung tâm với nhiều tài nguyên tính toán được sử dụng để nhận, xử lý, tối ưu hóa và gửi lại thông tin cho các rô bốt khác. Các tác phẩm khác, chẳng hạn như \cite{yuan2010cooperative},\cite{sheng2006distributed}, sử dụng các phương pháp tiếp cận phân tán trong đó mỗi robot chọn mục tiêu của riêng mình. Một xu hướng khác là chuyển từ hành vi khám phá cá nhân sang hành vi hợp tác khi rô bốt không thể hội tụ đến mức tối thiểu cục bộ với tỷ lệ đáp ứng \cite{wu2012robust}. Trong \cite{konolige2003map}, các tác giả đề xuất xem xét bốn khả năng có tính đến tương tác của rô bốt để xây dựng bản đồ phân tán. Các tình huống liên quan là: không tương tác (các robot không nằm trong phạm vi giao tiếp của nhau), tạo giả thuyết (có sự tương tác giữa các robot nhưng chúng không biết vị trí tương ứng của mình), giả thuyết xác minh (có sự tương tác giữa các robot và họ đề xuất giả thuyết về vị trí của mình) và khám phá phối hợp (có sự tương tác giữa các robot và chúng chia sẻ bản đồ của mình).
+\subsection{Phân công robot đến mục tiêu}
+Thuật toán ánh xạ được thực hiện trong khi rô bốt cố gắng tiếp cận mục tiêu. Vì vậy, để lập bản đồ môi trường điện tử, mục tiêu cần được lựa chọn cẩn thận. Có rất nhiều chiến lược gán mục tiêu cho một robot tới một mục tiêu. Phần lớn chúng tập trung và sử dụng hàm chi phí để tính toán tiện ích của việc đạt được mục tiêu.\\\\
+Trong nhiệm vụ Greedy \cite{yamauchi1998frontier}, mỗi robot chọn một mục tiêu tùy thuộc vào chức năng chi phí của nó mà không cần phối hợp với các robot khác. Do đó, một mục tiêu có thể được truy cập bởi các robot khác nhau. Để giải quyết vấn đề này, có thể loại bỏ các mục tiêu đã chọn trước khi được người khác xem xét chuyển nhượng bằng cách sử dụng tính năng Phát sóng về tính đủ điều kiện tại địa phương (BLE) \cite{werger2000broadcast} còn được gọi là Phép gán lặp lại. Tuy nhiên, phương pháp này không nhất thiết tạo ra giải pháp tối ưu vì nó phụ thuộc vào thứ tự của robot.\\\\
+Phương pháp K-means \cite{solanas2004coordinated} bao gồm việc phân chia môi trường để khám phá thành các khu vực có cùng số lượng rô bốt, sau đó, chỉ định một rô bốt đến khu vực gần nhất nơi nó sẽ chọn mục tiêu từ các biên giới tùy thuộc vào hàm chi phí.\\\\
+Phương pháp Hungarian \cite{deb1999multi} đề nghị bởi \cite{kuhn2005hungarian}, giải quyết công việc giao nhiệm vụ được viết dưới dạng $n \times n$ ma trận $C$ ở $c_{i,j}$ là chi phí của nhiệm vụ $j$ giao cho công nhân $i$. Bài tập tối ưu được tìm thấy với độ phức tạp về thời gian $O(n^3)$. Thuật toán này yêu cầu số lượng công nhân bằng số lượng nhiệm vụ không thể được đảm bảo. Ngoài ra, các rô bốt hoặc mục tiêu tưởng tượng có thể được thêm vào để đáp ứng giả định và được bỏ qua sau đó trong lựa chọn.\\\\
+Các tác giả trong \cite{nanjanath2006dynamic} trình bày một phương pháp dựa trên đấu giá để giao nhiệm vụ cho một nhóm robot. Việc phân phối các nhiệm vụ được thực hiện bằng hình thức đấu giá ngược giá lần đầu có nghĩa là người bán đấu giá là người mua. Mỗi nhiệm vụ được bán đấu giá theo mức độ ưu tiên. Sau đó, đấu giá viên lựa chọn người trả giá tốt nhất và giao nhiệm vụ cho người trả giá tương ứng. Thuật toán này thích nghi tốt với các môi trường động, nơi các chướng ngại vật bất ngờ có thể ngăn cản rô-bốt tiếp cận mục tiêu.\\\\
+Trong \cite{zhao1996genetic}, \cite{leigh2007using}, một thuật toán di truyền được sử dụng để giao nhiệm vụ cho robot một cách tối ưu. Đây là một bài toán khó NP vì nó được coi là một bài toán đóng gói thùng đa loại hai chiều tổng quát.\\\\
+Các tác giả trong \cite{faigl2012goal} phản đối một cách tiếp cận mới được gọi là Bài toán nhân viên bán hàng đi du lịch nhiều nơi (MTSP) để phân công robot với mục tiêu trong bài toán khám phá nhiều robot. Nó bao gồm việc phân cụm một môi trường, xác định chi phí khoảng cách TSP cho mỗi cặp cụm robot, chỉ định mục tiêu từ cụm không trống và xác định mục tiêu cuối cùng cho các cụm trống. Cách tiếp cận này được so sánh với phương pháp tham lam, lặp đi lặp lại và phương pháp Hungarian. MTSP đưa ra các kết quả cạnh tranh về tổng số yêu cầu tính toán và số lượng robot ngày càng tăng.\\\\
+Trong \cite{kulich2015comparison}, việc so sánh một số chiến lược phân công được sử dụng cho hệ thống nhiều robot được thực hiện. Các chiến lược được so sánh bao gồm phương pháp Hungarian, Greedy, phương pháp BLE và phân cụm K-means. Kết quả cho thấy rằng phương pháp Hungarian tốt hơn các phương pháp khác trong phần lớn các trường hợp. Không giống như phương pháp Hungarian, phép gán lặp đi lặp lại có thể được thực hiện trong một môi trường phân tán. Ngoài ra, các phương pháp Hungary nặng về mặt tính toán so với thuật toán Greedy đơn giản được ưu tiên trong kịch bản áp dụng.
+\subsection{Hàm tiện ích}
+Hầu hết việc robot đạt đến mục tiêu được dựa trên một hàm tiện ích được định nghĩa là các lợi ích mà robot phải đạt được, tính đến cả mục tiêu của nhiệm vụ đề ra\cite{burgard2000collaborative}. Công việc đề xuất trong \cite{benavides2016multi} trình bày một chức năng tiện ích mới có tính đến chi phí di chuyển đến mục tiêu và tiện ích kết nối. Điều này cho phép giao dịch giữa việc giảm thiểu số lượng thời gian thăm dò và kết nối. Để tăng tốc độ vận tốc, các tác giả trong \cite{cieslewski2017rapid} đề xuất một kỹ thuật lựa chọn biên giới nhanh chóng để chọn mục tiêu từ thực địa của robot. Cách tiếp cận này giảm thiểu thời gian nhiệm vụ tổng thể bằng cách giảm thiểu sự thay đổi vận tốc của robot. Tuy nhiên, cách tiếp cận này làm tăng tổng chiều dài đường dẫn đi. Trong \cite{heng2015efficient}, tối đa hóa mô hình tái tạo được ưa chuộng trong thời gian nhiệm vụ. Hơn nữa, cách tiếp cận được đề xuất giải quyết đồng thời các vấn đề thăm dò và bảo hiểm để tối đa hóa tính đầy đủ của mô hình tái tạo. Trong khi ở \cite{simmons2000coordination}, mục đích là tối đa hóa tiện ích của các mục tiêu giảm thiểu khả năng chồng chéo trong việc tăng thông tin giữa các thành viên của đội tàu. Tiện ích đạt được mục tiêu phụ thuộc về cơ bản về mục đích của nhiệm vụ trong khi tính đến một số ràng buộc bổ sung như thời gian, tính đầy đủ của bản đồ, cảm biến hạn chế và phạm vi giao tiếp, hoặc số lượng robot.
+\section{Đề xuất chiến lược thăm dò}
+\subsection{Tổng quát}
+Trong một hệ thống nhiều UAV, chiến lược thăm dò cần phải hợp tác để tối đa hóa hiệu quả. Mục tiêu chính được đề xuất ở đây, là hợp tác lựa chọn các khu vực cụ thể để được khám phá đồng thời bằng cách tiếp cận dựa trên biên giới. Thông thường, điều này được thực hiện bằng cách chọn mục tiêu ứng viên và gán chúng cho mỗi robot một cách được tối ưu hóa. Hình \ref{fig:3.1} cho thấy quá trình thăm dò đường ống được đề xuất được thực hiện bởi mỗi UAV.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{assets/3_1.png}
-    \caption{Proposed exploration process pipeline.}
+    \caption{Đề xuất quá trình thăm dò đường ống.}
     \label{fig:3.1}
 \end{figure}
-Each UAV selects the frontier points of its constructed local map during the SLAM step. Then, it computes the corresponding information gain of these points. If the UAV’s role is an \textit{explorer}, it would passively wait until receiving instructions; else, if it acts as a \textit{leader}, it would process the collected frontier points, and would assign a target to each robot in the group. Given a target, UAVs will plan a specific path to reach it.\\\\
-During these steps, the map structure evolves from a projected 2D grid map obtained from the localization and mapping module, through frontier points during the frontier selection process, then candidate targets during the frontier processing step, to a final set of selected targets to reach. The evolution of the map structure is illustrated in Figure \ref{fig:3.2}. Algorithm \ref{alg:3.1} describes the main steps performed during the exploration.
+Mỗi UAV chọn các điểm biên giới của bản đồ cục bộ được xây dựng trong bước SLAM.Sau đó, nó tính toán thông tin tương ứng của các điểm này.Nếu vai trò của UAV là một \textit{explorer}, nó sẽ thụ động chờ cho đến khi nhận được hướng dẫn; khác, nếu nó hoạt động như một \textit{leader}, nó sẽ xử lý các điểm biên giới được thu thập, và sẽ chỉ định một mục tiêu cho mỗi robot trong nhóm. Đưa ra một mục tiêu, UAV sẽ lên kế hoạch cho một đường dẫn cụ thể để đạt được nó.\\\\
+Trong các bước này, cấu trúc bản đồ phát triển từ bản đồ lưới 2D dự kiến thu được từ mô-đun bản đồ và nội địa hóa, thông qua các điểm biên giới trong quá trình lựa chọn biên giới, sau đó các mục tiêu ứng cử viên trong bước xử lý biên giới, đến một tập các mục tiêu được chọn để đạt được. Sự phát triển của cấu trúc bản đồ được minh họa trong hình \ref{fig:3.2}. Thuật toán \ref{alg:3.1} mô tả các bước chính được thực hiện trong quá trình thăm dò.
 \begin{algorithm}
-    \caption{Exploration strategy for coordinated Multi-UAV}
+    \caption{Chiến lược khám phá để phối hợp đa UAV}
     \label{alg:3.1}
     \begin{algorithmic}[1]
         \STATE From cell $\mathbf{l}_l \in \mathcal{L}$, select frontier points $\mathbf{f}_{i,j} \in \mathcal{F}$ and compute their respective information gain $\mathit{\mathbf{I}}(\mathbf{f}_{i,j})$.
@@ -131,39 +135,39 @@ During these steps, the map structure evolves from a projected 2D grid map obtai
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_2.png}
-    \caption{Map structure evolution during the exploration process: From 2D cells $\mathcal{L}$ to 2D frontier cells $\mathcal{F}$ to candidate frontier cells/points $\mathcal{G}$ (candidate targets) to 2D target cells/points $\mathcal{T}$.}
+    \caption{Tiến hóa cấu trúc bản đồ trong quá trình thăm dò: Từ các ô 2D $\mathcal{L}$ đến ô biên giới 2D. $\mathcal{F}$ để  cử  ứng viên biên giới / điểm $\mathcal{G}$ (mục tiêu ứng viên) đến 2D ô mục tiêu / điểm $\mathcal{T}$.}
     \label{fig:3.2}
 \end{figure}
-\subsection{Frontier points selection}
-The frontier selection process is used to define the frontiers of regions bounded by obstacles or unknown spaces (See Figure \ref{fig:3.3}).
+\subsection{Lựa chọn điểm biên giới}
+Quá trình lựa chọn biên giới được sử dụng để định nghĩa biên giới của các vùng bị giới hạn bởi các chướng ngại vật hoặc không gian không xác định (Xem Hình \ref{fig:3.3}).
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_3.png}
-    \caption{Frontier cells/points selection of a 2D occupancy grid map.}
+    \caption{Các tế bào biên giới / điểm lựa chọn bản đồ lưới của phòng chiếm 2D.}
     \label{fig:3.3}
 \end{figure}
-The frontier cells $\mathbf{f}_{i,j} \in \mathcal{F}$ are selected from the set of cells $\mathcal{L}(\mathcal{F}\subset \mathcal{L})$ such that they are either:
+Các tế bào biên giới $\mathbf{f}_{i,j} \in \mathcal{F}$ được chọn từ tập hợp các ô $\mathcal{L}(\mathcal{F}\subset \mathcal{L})$ sao cho chúng là:
 \begin{itemize}
-    \item Free $\mathbf{l}_f$ and adjacent to unknown.
-    \item Labeled as occupied $\mathbf{l}_o$ . The Occupied cells $\mathbf{l}_o$ are considered as frontier cells to be able to perform frontier processing in the next step. They could not be chosen as target and will be discarded later.
+    \item Tự do $\mathbf{l}_f$ và liền kề với một unknown.
+    \item Được dán nhãn là đã bị chiếm $\mathbf{l}_o$. Các ô bị chiếm $\mathbf{l}_o$ được coi là các tế bào biên giới để có thể thực hiện xử lý biên giới trong bước tiếp theo. Chúng không thể được chọn làm mục tiêu và sẽ bị loại bỏ sau.
 \end{itemize}
-In Figure \ref{fig:3.2}, the frontier cells are: $\mathbf{l}_f(2,1)$,$\mathbf{l}_f(2,2)$ , $\mathbf{l}_f(2,3)$, and $\mathbf{l}_f(3,3)$. Thus, for a cluster $\mathcal{C}$ containing UAV$_i$ , the frontiers are:
+Tại hình \ref{fig:3.2}, Các ô biên giới là: $\mathbf{l}_f(2,1)$,$\mathbf{l}_f(2,2)$ , $\mathbf{l}_f(2,3)$, và $\mathbf{l}_f(3,3)$. Vì vậy, đối với một cụm $\mathcal{C}$ chứa UAV$_i$, các biên giới là:
 \begin{equation} \label{eq:3.1}
     \mathcal{F}=\{\mathbf{f}_{i,1}(2,1),\mathbf{f}_{i,2}(2,2),\mathbf{f}_{i,3}(2,3),\mathbf{f}_{i,4}(3,3)\}
 \end{equation}
-\subsection{Information gain computation}
-In frontier-based exploration approaches, only cells adjacent to unknown ones may be defined as candidate frontier points and are likely to be chosen as targets. Thereby, the information gain is associated to each of them in order to estimate the utility of reaching each frontier. This corresponding information gain can be defined in different manners depending on the mission purpose. Authors in \cite{burgard2005coordinated} propose to use a probability function to reduce an assigned constant value taking into account the relative distance to the UAV’s pose. This strategy is general and does not take into account the updated explored cells. The approach proposed in \cite{heng2015efficient} affects, to the information gain, the number of unknown and not occluded cells in the view frustum of the target. This method depends on the real estimate of information gained when visiting the considered pose. However, it requires more computation.\\\\
-In the proposed strategy, the information gain is allocated so that it defines the amount of unknown cells surrounding the target (See Figure \ref{fig:3.4}). It is a non-metric value that counts the number of cells labeled as unknown l u from the 48 cells around the frontier point.
+\subsection{Tính toán Infomation gain}
+Trong các phương pháp khám phá dựa trên biên giới, chỉ các tế bào liền kề với những tế bào không xác định có thể được định nghĩa là các điểm biên giới ứng cử viên và có khả năng được chọn làm mục tiêu. Qua đó, mức tăng thông tin được liên kết với từng người trong số chúng để ước tính tiện ích tiếp cận từng biên giới. Việc tăng thông tin tương ứng này có thể được định nghĩa trong các cách cư xử khác nhau tùy thuộc vào mục đích nhiệm vụ. Tác giả trong \cite{burgard2005coordinated} đề xuất sử dụng chức năng xác suất để giảm giá trị không đổi được chỉ định có tính đến khoảng cách tương đối với tư thế của UAV. Chiến lược này là chung và không tính đến các ô được cập nhật được cập nhật. Hướng tiếp cận được đề xuất trong \cite{heng2015efficient} ảnh hưởng đến information gain về số lượng các ô không xác định và không bị chặn trong chế độ xem FrusM của mục tiêu. Phương pháp này phụ thuộc vào ước tính thực tế của thông tin đạt được khi đến thăm tư thế được coi là. Tuy nhiên, nó đòi hỏi nhiều tính toán hơn.\\\\
+Trong chiến lược đề xuất, information gain được phân bổ để nó xác định lượng các ô không xác định xung quanh mục tiêu (Xem Hình \ref{fig:3.4}). Nó là một giá trị đếm số lượng các ô được dán nhãn là không xác định $\mathbf{l}_u$ từ 48 ô xung quanh điểm biên giới.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_4.png}
-    \caption{The information gain computation of a frontier point x (in red). The hatched cells represent the 48 surrounding cells of the frontier point \textbf{x}. The information gain of \textbf{x} is: $\mathbf{I}(x)=25$.}
+    \caption{Tính toán information gain của một điểm biên x (ô đỏ). Các tế bào nở đại diện cho 48 tế bào xung quanh của điểm biên \textbf{x}. Information gain của \textbf{x} là: $\mathbf{I}(x)=25$.}
     \label{fig:3.4}
 \end{figure}
-\subsection{Frontier points processing}
-All frontier points $\mathbf{f}_{i,j} \in \mathcal{F}$ of UAV$_i$ in the cluster $\mathcal{C}$ with $i \in [1..n_c]$, are collected. Points in $\mathcal{F}$ are then processed using Algorithm \ref{alg:3.2} to get candidate frontier points considered as candidate targets $\mathbf{t}_k \in \mathcal{G}$ with $k \in [1..n_g]$ (See Figure \ref{fig:3.2})
+\subsection{Xử lý điểm biên giới}
+Tất cả các điểm biên giới $\mathbf{f}_{i,j} \in \mathcal{F}$ của UAV$_i$ Trong cụm $\mathcal{C}$ với $i \in [1..n_c]$, được thu thập. Điểm trong $\mathcal{F}$ sau đó được xử lý bằng thuật toán \ref{alg:3.2} để có được các điểm biên giới ứng cử viên được coi là mục tiêu ứng cử viên $\mathbf{t}_k \in \mathcal{G}$ với $k \in [1..n_g]$ (Xem Hình \ref{fig:3.2})
 \begin{algorithm}[H]
-    \caption{Frontier processing algorithm.}
+    \caption{Thuật toán xử lý biên giới.}
     \label{alg:3.2}
     \hspace*{\algorithmicindent} \textbf{Input:} Frontier points $\mathbf{f}_{i,j} \in \mathcal{F}$ of UAV$_i$ with $i \in [1..n_c]$. \\
     \hspace*{\algorithmicindent} \textbf{Output:} Candidate targets $\mathcal{G}$
@@ -175,38 +179,38 @@ All frontier points $\mathbf{f}_{i,j} \in \mathcal{F}$ of UAV$_i$ in the cluster
         \RETURN $\mathcal{G}$.
     \end{algorithmic}
 \end{algorithm}
-Figure \ref{fig:3.5} shows an example of frontier processing with two UAVs’ map to get the candidate targets. The obstacle frontier points $\mathbf{f}_{i,j}(x,y)=\mathbf{l}_o(x,y)$ – labeled as occupied – are only kept to compute the intersection of frontier points. Only the free frontier cells $\mathbf{l}_f$ can be considered as candidate target.\\\\
-When using local frontier points instead of local maps, the frontier process replaces the map matching process where the aim is to clear overlapping areas. Hence, in the frontier processing step, the frontier points that belong to overlapping areas are cleared. Therefore, using frontier points allows important memory saving. To compute the frontier points that belong to the overlapped areas (Steps 1, 2 and 3 in Algorithm \ref{alg:3.2}), we propose two approaches with convex shapes and concave shapes assumptions.
-\subsubsection{First approach: Convex shape map}
-In this approach, map shapes are considered convex, which simplifies the intersection computation in Algorithm \ref{alg:3.3}. Figure \ref{fig:3.6} shows two examples of applying frontier processing algorithm while assuming convex shapes with two and three UAVs’ map.\\\\
-This algorithm is relatively easy to apply, but results show that it does not perform well. The convex assumption leads to some false overlapped frontier points. Consequently, some unknown areas will not be visited since their corresponding points are removed and, thus, will not be assigned as a target.
-\subsubsection{Second approach: Concave shape map}
-In the second approach, we make the assumption of concave shapes for the UAVs’ map to compute their intersection in Algorithm \ref{alg:3.4}. Figure \ref{fig:3.7} shows two examples of applying frontier processing algorithm while assuming convex shapes with two and three UAVs’ map.
+Hình \ref{fig:3.5} hiển thị một ví dụ về xử lý biên giới với hai bản đồ của UAV để có được các mục tiêu ứng cử viên. Các điểm biên giới của chướng ngại vật $\mathbf{f}_{i,j}(x,y)=\mathbf{l}_o(x,y)$ – được dán nhãn là chiếm đóng (Occupied) - chỉ được giữ để tính toán giao điểm của các điểm biên. Chỉ các ô biên trống $\mathbf{l}_f$ có thể được coi là mục tiêu cho ứng cử viên.\\\\
+Khi sử dụng điểm biên giới cục bộ thay vì bản đồ cục bộ, quy trình biên giới thay thế quy trình khớp bản đồ trong đó mục tiêu là để xóa các khu vực chồng chéo. Do đó, trong bước xử lý biên giới, các điểm biên giới thuộc các khu vực chồng chéo bị xóa.Do đó, sử dụng điểm biên giới cho phép tiết kiệm bộ nhớ quan trọng. Để tính các điểm biên giới thuộc về các khu vực chồng chéo (các bước 1, 2 và 3 trong thuật toán \ref{alg:3.2}), chúng tôi đề xuất hai cách tiếp cận với các hình dạng lồi và các giả định hình dạng lõm.
+\subsubsection{Cách tiếp cận đầu tiên: Bản đồ dạng lồi}
+Trong cách tiếp cận này, các hình dạng bản đồ được coi là convex, đơn giản hóa tính toán giao nhau trong thuật toán \ref{alg:3.3}. Hình \ref{fig:3.6} Hiển thị hai ví dụ về việc áp dụng thuật toán xử lý biên giới trong khi giả sử các hình lồi với hai và ba bản đồ của UAV.\\\\
+Thuật toán này tương đối dễ dàng để áp dụng, nhưng kết quả cho thấy rằng nó không hoạt động tốt.Giả định lồi dẫn đến một số điểm biên giới chồng chéo sai.Do đó, một số khu vực chưa biết sẽ không được truy cập vì các điểm tương ứng của chúng được gỡ bỏ và do đó, sẽ không được chỉ định là mục tiêu.
+\subsubsection{Cách tiếp cận thứ hai: Bản đồ hình dạng lõm}
+Trong cách tiếp cận thứ hai, chúng tôi đưa ra giả định về các hình dạng lõm cho bản đồ của UAV để tính toán giao điểm của chúng trong thuật toán \ref{alg:3.4}. Hình \ref{fig:3.7} Hiển thị hai ví dụ về việc áp dụng thuật toán xử lý biên giới trong khi giả sử các hình lồi với hai và ba bản đồ của UAV.
 \begin{figure}[H]
     \centering
     \begin{subfigure}[H]{0.6\linewidth}
         \centering
         \includegraphics[width=\linewidth]{assets/3_5_a.png}
-        \caption{{Frontiers $\mathbf{f}_{1,j}$ of UAV$_1$}}
+        \caption{{Các biên $\mathbf{f}_{1,j}$ của UAV$_1$}}
         \label{fig:3.5a}
     \end{subfigure}
     \begin{subfigure}[H]{0.6\linewidth}
         \centering
         \includegraphics[width=\linewidth]{assets/3_5_b.png}
-        \caption{{Frontiers $\mathbf{f}_{2,j}$ of UAV$_2$}}
+        \caption{{Các biên $\mathbf{f}_{2,j}$ của UAV$_2$}}
         \label{fig:3.5b}
     \end{subfigure}
     \begin{subfigure}[H]{0.6\linewidth}
         \centering
         \includegraphics[width=\linewidth]{assets/3_5_c.png}
-        \caption{{Candidate targets $\mathcal{G}$}}
+        \caption{{Mục tiêu đề cử $\mathcal{G}$}}
         \label{fig:3.5c}
     \end{subfigure}
-    \caption{Frontier points processing example: (a) and (b) represent the frontier points of UAV$_1$ and UAV$_2$, respectively. (c) represent the candidate targets. The process consists in removing frontier points that belong to overlapped areas, and those that are adjacent to obstacles.}
+    \caption{Ví dụ xử lý điểm biên giới: (a) và (b) đại diện cho các điểm biên giới của UAV$_1$ và UAV$_2$, tương ứng. (c) đại diện cho các mục tiêu ứng cử viên. Quá trình này bao gồm loại bỏ các điểm biên giới thuộc về các khu vực chồng chéo, và những điểm nằm liền kề với các chướng ngại vật.}
     \label{fig:3.5}
 \end{figure}
 \begin{algorithm}[H]
-    \caption{Intersection computation algorithm with convex shapes assumption.}
+    \caption{Thuật toán tính toán giao nhau với giả định hình dạng lồi.}
     \label{alg:3.3}
     \hspace*{\algorithmicindent} \textbf{Input:} $Vect1, Vect2$ \\
     \hspace*{\algorithmicindent} \textbf{Output:} $Vect\_Final$
@@ -242,11 +246,11 @@ In the second approach, we make the assumption of concave shapes for the UAVs’
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_6.png}
-    \caption{Frontier points processing wile assuming two convex map shapes in the first line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (final shape).}
+    \caption{Xử lý điểm biên giới trong khi giả định hai hình dạng bản đồ lồi ở dòng đầu tiên và hình thứ ba trong dòng thứ hai. (a) và (d) đại diện cho hai và ba hình dạng bản đồ lồi, tương ứng, tương ứng; (b) và (e) đại diện cho các điểm biên giới chồng chéo (giao lộ); và (c) và (f) đại diện cho các điểm biên giới thu được sau khi xử lý (hình cuối cùng).}
     \label{fig:3.6}
 \end{figure}
 \begin{algorithm}[H]
-    \caption{Intersection computation algorithm with convex shapes assumption.}
+    \caption{Thuật toán tính toán giao nhau với giả định hình dạng lồi.}
     \label{alg:3.4}
     \hspace*{\algorithmicindent} \textbf{Input:} $Vect1, Vect2$ \\
     \hspace*{\algorithmicindent} \textbf{Output:} $Vect\_Final$
@@ -288,23 +292,23 @@ In the second approach, we make the assumption of concave shapes for the UAVs’
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_7.png}
-    \caption{Frontier points processing wile assuming two concave map shapes in the first line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (final shape).}
+    \caption{Xử lý điểm biên giới trong khi giả định hai hình dạng bản đồ lồi ở dòng đầu tiên và hình thứ ba trong dòng thứ hai. (a) và (d) đại diện cho hai và ba hình dạng bản đồ lồi, tương ứng, tương ứng; (b) và (e) đại diện cho các điểm biên giới chồng chéo (giao lộ); và (c) và (f) đại diện cho các điểm biên giới thu được sau khi xử lý (hình cuối cùng).}
     \label{fig:3.7}
 \end{figure}
-Results show that only the frontier points within overlapping areas are removed. Even if some ambiguous frontier points are located within/inside the global shape – which can be confusing –, they are not deleted. This algorithm, assuming concave shapes, performs better than the previous one that assumes convex shapes. Hence, for the frontier processing, the shape of local maps are assumed concave.
-\subsubsection{Utility function}
-The proposed utility function in Eq. \ref{eq:3.2} aims to simultaneously increase the explored area rate and to reduce the distance of each UAV to its corresponding target. The function also considers the average of distances between each robot in the group and this target in order to maximize distances among robots.
+Kết quả cho thấy chỉ các điểm biên giới trong các khu vực chồng chéo được loại bỏ.Ngay cả khi một số điểm biên giới mơ hồ được đặt trong / bên trong hình dạng toàn cầu - có thể gây nhầm lẫn -, chúng không bị xóa.Thuật toán này, giả sử các hình dạng lõm, thực hiện tốt hơn so với trước đó giả định hình dạng lồi.Do đó, đối với chế biến biên giới, hình dạng của bản đồ địa phương được giả định lõm.
+\subsubsection{Hàm tiện ích}
+Hàm tiện ích được đề xuất trong công thức \ref{eq:3.2} nhằm mục đích tăng đồng thời tỷ lệ khu vực được khám phá và để giảm khoảng cách của từng UAV đến mục tiêu tương ứng. Hàm này cũng xem xét trung bình khoảng cách giữa mỗi robot trong nhóm và mục tiêu này để tối đa hóa khoảng cách giữa các robot.
 \begin{equation}
     \mathbf{U}(UAV_i,t_j)=\mathbf{I}(t_j)exp(-\lambda.(dmin(\mathbf{P}_i,\mathbf{t}_j)+\frac{n_c-1}{d_{tot}})),
 \end{equation}
-where UAV i is the considered robot, $\mathbf{t}_j \in \mathcal{G}$ and $\mathbf{I}(\mathbf{t}_j)$ are respectively the candidate target and its corresponding information gain, $\lambda \in [0,1]$ is a trade-off parameter, $n_c$ is the number of UAVs in the cluster $\mathcal{C}$, and $d_{tot} = \sum_{k=1, k\neq i}^{n_c}(dmin(\mathbf{P}_k),\mathbf{t}_j) $ is the sum of the minimum distance from UAV$_k$'s pose $\mathbf{P}_k$ to the candidate target $j$. The proposed utility function is inspired from \cite{heng2015efficient} and it has been presented in our works \cite{mahdoui2017cooperative},\cite{mahdoui2018cooperative}. This function performs a trade-off between rapid exploration and a precise filling the map using a tuning parameter $\lambda$. From Figure \ref{fig:3.8}, we can notice that the larger $\lambda$, the less important the distance $d_{tot}$. Thus, a precise filling is favored over rapid exploration and vice versa.\\\\
-Regarding the Multi-UAV case, the utility function is based on the average of neighbors distances. As shown in Figure \ref{fig:3.8}, with an information gain of $\mathbf{I}(\mathbf{t}_j)=25$ and three UAVs in the cluster $(n_c=3)$; an increasing distance of UAV to the target will reduce the utility function. Whereas, the larger the average distance from other UAVs w.r.t. to the target, the more the utility. So the function tends to choose the closest target to the considered UAV; but at the same time, the farthest one from the others.\\\\
-In the case of a single UAV, the utility function (See Eq. \ref{fig:3.3}) tends to choose the closest target with the maximum of information gain:
+trong đó UAV$_i$ được coi là robot, $\mathbf{t}_j \in \mathcal{G}$ và $\mathbf{I}(\mathbf{t}_j)$ tương ứng là mục tiêu ứng viên và mức tăng thông tin tương ứng của nó, $\lambda \in [0,1]$ là một tham số giao dịch, $n_c$ là số lượng UAV trong cụm $\mathcal{C}$, và $d_{tot} = \sum_{k=1, k\neq i}^{n_c}(dmin(\mathbf{P}_k),\mathbf{t}_j) $ là tổng của khoảng cách tối thiểu từ pose của UAV$_k$ $\mathbf{P}_k$ đến mục tiêu ứng viên $j$. Hàm tiện ích đề xuất được truyền cảm hứng từ \cite{heng2015efficient} và nó đã được trình bày trong các công việc của chúng tôi \cite{mahdoui2017cooperative},\cite{mahdoui2018cooperative}. Hàm này thực hiện sự đánh đổi giữa khám phá nhanh chóng với một bản đồ chính xác bằng cách sử dụng tham số điều chỉnh $\lambda$. Từ hình \ref{fig:3.8}, chúng ta có thể nhận thấy rằng với $\lambda$ lớn hơn, khoảng cách $d_{tot}$ ít quan trọng hơn. Do đó, việc thăm dò nhanh chóng một cách chính xác sẽ được ưu tiên hơn và ngược lại.\\\\
+Về trường hợp đa UAV, hàm tiện ích dựa trên trung bình khoảng cách hàng xóm. Như thể hiện trong hình \ref{fig:3.8}, với information gain $\mathbf{I}(\mathbf{t}_j)=25$ và ba UAV trong cụm $(n_c=3)$; Một khoảng cách ngày càng tăng của UAV đến mục tiêu sẽ làm giảm hàm tiện ích. Trong khi đó, khoảng cách trung bình lớn hơn so với các UAV khác w.r.t. đến mục tiêu, tiện ích càng nhiều. Vì vậy, hàm có xu hướng chọn mục tiêu được coi là gần nhất với UAV ; Nhưng đồng thời, xa nhất từ những người khác.\\\\
+Trong trường hợp một UAV duy nhất, chức năng tiện ích (xem công thức \ref{fig:3.3}) Có xu hướng chọn mục tiêu gần nhất với mức tăng tối đa thông tin:
 \begin{equation}
     \mathbf{U}(UAV_i,\mathbf{t}_j)=\mathbf{I}(\mathbf{t}_j)exp(-\lambda.(dmin(\mathbf{P}_j,\mathbf{t}_j))),
 \end{equation}
-The parameter $d_{tot} = \sum_{k=1, k\neq i}^{n_c}(dmin(\mathbf{P}_k,\mathbf{t}_j)) $ represents the sum of the minimum distance between the target $\mathbf{t}_j$ and the neighbors’ poses $\mathbf{P}_k$ with $k \in [1..n_c]\setminus i$. So, if $\mathbf{t}_j$ has neighboring UAVs that are too far, the utility function will increase, so t j is more likely to be chosen.\\\\
-The aim in the utility function is to maximize $d_{tot}$ . We distinguish two cases where $d_{tot}$ can be too close to zero or equal to it:
+Tham số $d_{tot} = \sum_{k=1, k\neq i}^{n_c}(dmin(\mathbf{P}_k,\mathbf{t}_j)) $ đại diện cho tổng khoảng cách tối thiểu giữa mục tiêu $\mathbf{t}_j$ và các pose của hangf xóm $\mathbf{P}_k$ với $k \in [1..n_c]\setminus i$. Vì thế, nếu $\mathbf{t}_j$ có UAV lân cận quá xa, hàm tiện ích sẽ tăng lên, vì vậy $\mathcal{T}_j$ có nhiều khả năng được chọn.\\\\
+Mục tiêu của hàm tiện ích là tìm max của $d_{tot}$. Chúng tôi phân biệt hai trường hợp là $d_{tot}$ có thể quá gần bằng 0 hoặc bằng nó:
 \begin{figure}[H]
     \centering
     \begin{subfigure}[H]{0.4\linewidth}
@@ -331,24 +335,24 @@ The aim in the utility function is to maximize $d_{tot}$ . We distinguish two ca
         \caption{{$\lambda=0.8$}}
         \label{fig:3.8d}
     \end{subfigure}
-    \caption{{Utility function behavior: $\mathbf{I}(t_j)=25, n_c=3, d_{tot} = \sum_{k=1, k\neq i}^{n_c}(dmin(\mathbf{P}_k,\mathbf{t}_j))$. The average distance of other UAVs $d_{tot}$ has a minimum value different from zero since $n_c$ is different from zero too.}}
+    \caption{{Hàm tiện ích thực hiện: $\mathbf{I}(t_j)=25, n_c=3, d_{tot} = \sum_{k=1, k\neq i}^{n_c}(dmin(\mathbf{P}_k,\mathbf{t}_j))$. Khoảng cách trung bình $d_{tot}$ giữa các UAV có giá trị tối thiểu khác 0 khi $n_c$ cũng khác 0.}}
     \label{fig:3.8}
 \end{figure}
 \begin{itemize}
-    \item There are no neighbors. In this case, there is one UAV in the ﬂeet: $n_c=1$. The utility function in Eq. \ref{eq:3.3} is used.
-    \item The candidate target $\mathbf{t}_j$ and the neighbors’ poses $\mathbf{P}_k$ with $k \in [1..n_c]\setminus i$ are almost confused (too close to each others). In this case $\mathbf{t}_j$ is less likely to be chosen.
+    \item Không có hàng xóm. Trong trường hợp này, có một UAV trong hạm đội: $n_c=1$. Hàm tiện ích trong công thức \ref{eq:3.3} được sử dụng.
+    \item Mục tiêu đề ra $\mathbf{t}_j$ và các pose của lân cận $\mathbf{P}_k$ với $k \in [1..n_c]\setminus i$ quá gần nhau. Trong trường hợp này $\mathbf{t}_j$ ít có khả năng được chọn.
 \end{itemize}
-Yet, this parameter $d_{tot}$ could have a high value when:
+Tuy nhiên, tham số $d_{tot}$ có thể có giá trị cao khi:
 \begin{itemize}
-    \item There is one UAV too far from $\mathbf{t}_j$.
-    \item There are several UAVs with relatively short distance from $\mathbf{t}_j$.
+    \item Có một UAV quá xa $\mathbf{t}_j$.
+    \item Có một số UAV với khoảng cách tương đối ngắn từ $\mathbf{t}_j$.
 \end{itemize}
-So, in order to avoid these ambiguous situations, the average of $d_{tot}$ is considered by using $\frac{n_c}{d_{tot}}$.
-\subsection{Goal assignment process}
-In order to make appropriate UAV-to-target assignment, the utility of reaching each candidate frontier is considered. The goal assignment process is described in Algo. \ref{alg:3.5}.\\\\
-For each UAV$_i$ , the utilities of reaching all the candidate targets are computed. The target $\mathbf{t}_g$ that maximizes the utility is computed and, the assignment $\theta(UAV_i,\mathbf{t}_g)$ is performed. Then, the remaining candidate targets $\mathcal{G}\setminus \mathcal{T}$ are scheduled in order to avoid to select a target too close to $\mathbf{t}_g$ , in the next iteration. Also, $\mathbf{t}_g$ is removed from $\mathcal{G}$ to prevent from assigning the same target to different robots. This assignment process is performed for the available UAVs in $\mathcal{C}$ in a sequential manner until getting all assigned targets $\mathbf{t}_g \in \mathcal{T}$ with $g \in [1..n_t]$ (See Figure \ref{fig:3.2})
+Vì vậy, để tránh những tình huống mơ hồ này, giá trị trung bình của $d_{tot}$ được tính toán bằng $\frac{n_c}{d_{tot}}$.
+\subsection{Quy trình phân công mục tiêu}
+Để thực hiện phân công UAV đến mục tiêu thích hợp, tiện ích tiếp cận từng biên giới tiềm năng được xem xét. Quá trình phân công mục tiêu được mô tả trong thuật toán \ref{alg:3.5}.\\\\
+Với mỗi UAV$_i$ , các tiện ích để đạt được tất cả các mục tiêu tiềm năng được tính toán. Mục tiêu $\mathbf{t}_g$ được tính từ hàm tối đa hóa tiện ích và phân công $\theta(UAV_i,\mathbf{t}_g)$ được đưa ra. Sau đó, các mục tiêu ứng cử viên còn lại $\mathcal{G}\setminus \mathcal{T}$ được lên kế hoạch để tránh chọn một mục tiêu quá gần $\mathbf{t}_g$ , ở vòng lặp tiếp theo. Cũng thế, $\mathbf{t}_g$ bị xóa bỏ từ $\mathcal{G}$ để tránh việc gán cùng một mục tiêu cho các robot khác nhau. Quá trình chuyển nhượng này được thực hiện cho các UAV có sẵn trong $\mathcal{C}$ theo cách tuần tự cho đến khi nhận được tất cả các mục tiêu được chỉ định $\mathbf{t}_g \in \mathcal{T}$ với $g \in [1..n_t]$ (Xem Hình \ref{fig:3.2})
 \begin{algorithm}[H]
-    \caption{Goal assignment algorithm.}
+    \caption{Thuật toán gán mục tiêu.}
     \label{alg:3.5}
     \hspace*{\algorithmicindent} \textbf{Input:} {Candidate targets $\mathbf{t}_k \in \mathcal{G}, k \in [1..n_g]$ and their respective information gain $\mathbf{U}(\mathbf{t}_k)$, poses $\mathbf{P}_i$ of all robots in the considered cluster $\mathcal{C}$.}\\
     \hspace*{\algorithmicindent} \textbf{Output:} {$\theta(UAV_i,\mathbf{t}_g)$ assignment of UAV$_i$ with target $g$.}
@@ -363,63 +367,63 @@ For each UAV$_i$ , the utilities of reaching all the candidate targets are compu
         \RETURN $\theta(UAV_i, \mathbf{t}_g)$ assignment.
     \end{algorithmic}
 \end{algorithm}
-\subsubsection{Stop condition}
-The goal selection process is realized by each cluster/group-\textit{leader} (if $n>n-c$ ) or the Fleet- \textit{leader} (if $n=n_c$). This assignment aims to, cooperatively, distribute the robots in the environment to explore simultaneously different unknown regions. As long as candidate frontier points are still available, the \textit{leader} continues to assign targets to \textit{explorers} and they attempt to reach their assigned goals. When the \textit{leader} notices that no candidate targets are left, that means that all the environment has been explored successfully and the mission is accomplished. Thus, it has to send back to the \textit{explorers} an acknowledgment to prevent them assuming a communication loss.
-\subsubsection{Loop rate}
-The target assignment process is performed at each loop. The frequency of assigning targets impacts the duration and the eﬃciency of the mission. In a distributed approach, as soon as the UAV reaches its current target, it selects a new one without consulting the others. In a centralized approach, the first UAV to reach its current target has to wait until the others reach their respective targets. This can be a problem as soon as one of them fails or leaves the mission. Another possibility is to begin to assign targets once one UAV reaches its target. But this may generate incomplete tasks. In the proposed strategy, the frequency of assignment or loop rate $r$ is predefined depending on the average of time to reach a target (See Eq. \ref{eq:3.4}).
+\subsubsection{Điều kiện dừng}
+Quá trình lựa chọn mục tiêu được thực hiện bởi mỗi cluster/group-\textit{leader} (nếu $n>n_c$ ) hoặc là fleet-\textit{leader} (nếu $n=n_c$). Nhiệm vụ này nhằm mục đích, hợp tác, phân phối robot trong môi trường để khám phá đồng thời các khu vực không xác định khác nhau. Miễn là các điểm biên giới tiềm năng vẫn có sẵn, \textit{leader} tiếp tục gán mục tiêu cho \textit{explorers} và họ cố gắng đạt được mục tiêu được giao. Khi \textit{leader} thông báo rằng không có mục tiêu ứng cử viên nào còn lại, điều đó có nghĩa là tất cả các môi trường đã được khám phá thành công và nhiệm vụ được thực hiện. Vì vậy, nó phải gửi lại cho \textit{explorers} một sự thừa nhận để ngăn chặn giả định tắc nghẽn.
+\subsubsection{Tỉ lệ lặp}
+Quá trình phân công mục tiêu được thực hiện tại mỗi vòng lặp. Tần suất gán các mục tiêu ảnh hưởng đến thời gian và hiệu quả của nhiệm vụ. Trong một cách tiếp cận phân tán, ngay khi UAV đạt được mục tiêu hiện tại, nó sẽ chọn một mục tiêu mới mà không cần tham khảo ý kiến người khác. Trong một cách tiếp cận tập trung, UAV đầu tiên đạt được mục tiêu hiện tại phải đợi cho đến khi những người khác đạt được mục tiêu tương ứng của họ. Đây có thể là một vấn đề ngay khi một trong số họ thất bại hoặc rời khỏi nhiệm vụ. Một khả năng khác là bắt đầu gán các mục tiêu sau khi UAV đạt được mục tiêu. Nhưng điều này có thể tạo ra các nhiệm vụ không đầy đủ. Trong chiến lược đề xuất, tần suất phân công hoặc tỷ lệ vòng lặp $r$ được xác định trước tùy thuộc vào trung bình thời gian để đạt được mục tiêu (Xem công thức \ref{eq:3.4}).
 \begin{equation} \label{eq:3.4}
     r \in [\frac{s}{v_{i,max}},\frac{s}{v_{i,min}}]
 \end{equation}
-where $s$ is the maximum sensor range and $v_i$ is the UAV's velocity.
-\subsubsection{Scheduling the information gain}
-The information gain of each remaining candidate target $\mathbf{I}(\mathbf{t}_k)_{t-1}$ at time $t-1$ with $\mathbf{t}_k \in \mathcal{G} \setminus \{t_g\}$, that belongs to the threshold range $[r_{min} , r_{max} ]$, is scheduled at time $t$ depending on its distance w.r.t. the target $t_g$ , using Eq. \ref{eq:3.5}. Figure \ref{fig:3.9} represents an example of the function shape used to schedule the information gain. The example shows a Gaussian function with an amplitude that corresponds to the information gain maximum value; a center that corresponds to the target position $(\mathbf{t}_g(x), \mathbf{t}_g(y))$; and $\sigma_x$ and $\sigma_y$ that spread the blob in $x$ and $y$ axis, respectively.
+trong đó $s$ là phạm vi cảm biến tối đa vaf $v_i$ là vận tốc của UAV.
+\subsubsection{Lên lịch với information gain}
+Tăng thông tin của từng mục tiêu ứng cử viên còn lại $\mathbf{I}(\mathbf{t}_k)_{t-1}$ tại thời điểm $t-1$ với $\mathbf{t}_k \in \mathcal{G} \setminus \{t_g\}$, thuộc về phạm vi ngưỡng $[r_{min} , r_{max} ]$, được lên kế hoạch tại thời điểm $ t $ tùy theo khoảng cách của nó w.r.t. mục tiêu $t_g$ , sử dụng công thức \ref{eq:3.5}. Hình \ref{fig:3.9} đại diện cho một ví dụ về hình dạng chức năng được sử dụng để lên lịch để đạt được thông tin.Ví dụ cho thấy một hàm Gaussian với biên độ tương ứng với giá trị tối đa thông tin; một trung tâm tương ứng với vị trí mục tiêu $(\mathbf{t}_g(x), \mathbf{t}_g(y))$; và $\sigma_x$ và $\sigma_y$ nó lan rộng blob trong trục $x$ và $y$, tương ứng.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{assets/3_9.png}
-    \caption{Example of the shape function to schedule the information gain($\mathbf{I}(\mathbf{t}_k)_{t-1}=29,(\mathbf{t}_g(x),\mathbf{t}_g(y))=(1.25,-0.275), \sigma_x=\sigma_y=3$).}
+    \caption{Ví dụ về hình dạng của hàm lên kế hoạch information gain($\mathbf{I}(\mathbf{t}_k)_{t-1}=29,(\mathbf{t}_g(x),\mathbf{t}_g(y))=(1.25,-0.275), \sigma_x=\sigma_y=3$).}
     \label{fig:3.9}
 \end{figure}
 \begin{equation}\label{eq:3.5}
     \mathbf{I}(\mathbf{t}_k)_t=\mathbf{I}(\mathbf{t}_k)_{t-1}(1-exp(-(\frac{(\mathbf{t}_k(x)-\mathbf{t}_g(x))^2}{2.\sigma_x^2}+\frac{(\mathbf{t}_k(y)-\mathbf{t}_g(y))^2}{2.\sigma_y^2}))),
 \end{equation}
-where $\mathbf{t}_k(x)$ and $\mathbf{t}_k(y)$ are the remaining candidate target coordinates; $\mathbf{t}_g(x)$ and $\mathbf{t}_g(y)$ are the target coordinates; and $\sigma_x$ and $\sigma_y$ are the spreads of the blob. The smaller the distance of the frontier point $\mathbf{t}_k$ w.r.t. the target $\mathbf{t}_g$, the smaller the information gain. When reducing the information gain, the candidate targets are less likely to be chosen and thus, robots ensure a certain distance among their future targets.
-\subsection{Path planning and control}
-As explained in Section 5.2 of Chapter 1, UAVs are assumed to navigate in a simplified 2D environment with a fixed $z$ value. Block \textbf{6} in Figure 1.6 is responsible for planning a path to the selected target and attempting to reach it. These tasks are ensured by the \textit{move} base\footnote{Source: \url{http://wiki.ros.org/move_base}} package.\\\\
-For the navigation task, each UAV maintains a local and a global planner along with a local and a global costmap, respectively. The costmap is a 2D cell grid $\mathcal{L}$ with additional inﬂation that consists in propagating cost values out from occupied cells and decreasing them with distance. The global costmap has the size of the UAV’s map whereas, the local costmap has a fixed size moving window. Given a starting point – the current pose – and an endpoint – the assigned target – in the global costmap, the global planner produces a plan using a navigation function computed with Dijkstra algorithm \cite{dijkstra1959note}. It consists in following the adjacent free cells until reaching the goal. Then taking into account the local costmap, the local planner generates velocity commands for the UAV’s mobile base. A recovery rotational behavior is also performed when needed in order to clear the robot’s field of view.\\\\
-The target assigned by the \textit{leader} is ensured to belong to an unknown area using the exploration strategy. The trajectory planning process is performed locally on each robot. And since the UAVs do not exchange their local maps nor fuse them, they are likely to revisit already explored areas while following the planned path. To minimize these overlapped regions during navigation, a priority is given to frontier points $\mathbf{f}_{i,j}$ to be a target for UAV$_i$ over UAV$_k$ with $k \neq i$. This helps the UAV to maintain the same direction during exploration. The \textit{move} base package is a 2D navigation stack. However, to avoid drifting on the $z$ axis, a control command is added to keep a static $z$ altitude (See Figure \ref{fig:3.10}).
+trong đó $\mathbf{t}_k(x)$ và $\mathbf{t}_k(y)$ là tọa độ mục tiêu ứng cử viên còn lại; $\mathbf{t}_g(x)$ và $\mathbf{t}_g(y)$ là tọa độ mục tiêu; và $\sigma_x$ và $\sigma_y$ là sự lây lan của blob. Khoảng cách của điểm biên giới nhỏ hơn $\mathbf{t}_k$ w.r.t. mục tiêu $\mathbf{t}_g$, information gain càng nhỏ. Khi giảm information gain, các mục tiêu ứng cử viên ít có khả năng được chọn và do đó, robot đảm bảo một khoảng cách nhất định trong số các mục tiêu trong tương lai của họ.
+\subsection{Lên kế hoạch và kiểm soát đường dẫn}
+Như được giải thích trong Phần 5.2 của Chương 1, UAV được giả định để điều hướng trong môi trường 2D đơn giản hóa với một giá trị $z$ cố định. Khối \textbf{6} trong Hình 1.6 chịu trách nhiệm lên kế hoạch cho một đường dẫn đến mục tiêu đã chọn và cố gắng tiếp cận nó. Những nhiệm vụ này được đảm bảo bởi gói \textit{move} cơ bản\footnote{Nguồn: \url{http://wiki.ros.org/move_base}}.\\\\
+Đối với nhiệm vụ điều hướng, mỗi UAV duy trì một công cụ lập kế hoạch địa phương và toàn cầu cùng với một costmap địa phương và toàn cầu. Costmap là một lưới ô 2D $\mathcal{L}$ với bổ sung trong lạm phát bao gồm việc truyền các giá trị chi phí từ các tế bào bị chiếm đóng và giảm chúng bằng khoảng cách.CostMap toàn cầu có kích thước của bản đồ của UAV trong khi đó, costmap địa phương có một cửa sổ di chuyển kích thước cố định. Đưa ra một điểm khởi đầu - tư thế hiện tại - và điểm cuối - mục tiêu được chỉ định - trong costmap toàn cầu, công cụ lập kế hoạch toàn cầu tạo ra một kế hoạch sử dụng chức năng điều hướng được tính bằng thuật toán Dijkstra \cite{dijkstra1959note}. Nó bao gồm sau các tế bào tự do liền kề cho đến khi đạt được mục tiêu. Sau đó tính đến chi phí địa phương, công cụ lập kế hoạch cục bộ tạo ra các lệnh vận tốc cho căn cứ di động của UAV. Một hành vi quay trở lại cũng được thực hiện khi cần thiết để xóa chế độ xem của robot.\\\\
+Mục tiêu được chỉ định bởi \textit{leader} được đảm bảo là thuộc về một khu vực không xác định bằng cách sử dụng chiến lược thăm dò. Quá trình lập kế hoạch quỹ đạo được thực hiện tại địa phương trên mỗi robot. Và vì UAV không trao đổi bản đồ địa phương của họ cũng như hợp nhất chúng, họ có khả năng xem lại các khu vực đã khám phá trong khi theo đường dẫn theo kế hoạch. Để giảm thiểu các vùng chồng chéo này trong quá trình điều hướng, ưu tiên được đưa ra cho các điểm biên giới $\mathbf{f}_{i,j}$ là một mục tiêu cho UAV$_i$ ngoài UAV$_k$ với $k \neq i$. Điều này giúp UAV duy trì cùng một hướng trong quá trình thăm dò. Các \textit{move} Gói cơ sở là một ngăn xếp điều hướng 2D. Tuy nhiên, để tránh trôi dạt trên trục $z$, một lệnh điều khiển được thêm vào để giữ cố định độ lớn $z$ (Xem hình \ref{fig:3.10}).
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_10.png}
-    \caption{From 2D (left) to 3D (right) navigation stack. The \textit{navigation} z is a ROS process developed to provide a control command on the z axis.}
+    \caption{Từ ngăn xếp điều hướng 2D (trái) sang 3D (phải). \textit{Navigation} $z$ là một quá trình ROS được phát triển để cung cấp một lệnh điều khiển trên trục $z$.}
     \label{fig:3.10}
 \end{figure}
-\section{Result and discussions}
-Simulations have been performed to evaluate the proposed exploration strategy. Additional tests while using relative localization have been done to measure the system performances. The simulations are performed using Robot Operating System (ROS) running on a 2.60GHz i7 Linux machine. For the quad-rotor simulation, the AR-drone model\footnote{Source: \url{http://wiki.ros.org/ardrone_autonomy}} equipped with an RGB-D camera in a forward-looking configuration, is used. A bounded unknown environment is generated using \textit{Gazebo} simulator. The number of robots used for evaluation is limited to three, however, the proposed system architecture is not constrained to a fixed number of robots.
-\subsection{Parameters tuning}
-For an effective evaluation of the exploration strategy, we run some tests to set the most adequate parameters configuration.
-\subsubsection{Trade-off parameter $\lambda$}
-The utility function (See Eq. \ref{eq:3.2}) used in the exploration strategy can be tuned, using a trade off parameter $\lambda$, between fast exploration and filling in details the map.\\\\
-Figure \ref{fig:3.11} shows different runs while varying this parameter. By increasing $\lambda$, the information gained when reaching the goal is favored over the distance and thus, the cost to it, and vice versa. So, when $\lambda$ is small, the traveled distance is small and so the exploration time. Though, some times during the mission, high values of $\lambda$ are noticed to reach higher exploration rate than smaller ones.
+\section{Kết quả và thảo luận}
+Mô phỏng đã được thực hiện để đánh giá chiến lược thăm dò được đề xuất. Các thử nghiệm bổ sung trong khi sử dụng bản địa hóa tương đối đã được thực hiện để đo lường hiệu suất hệ thống. Các mô phỏng được thực hiện bởi Robot Operating System (ROS) chạy trên thiết bị 2.60GHz i7 Linux. Đối với mô phỏng bốn cánh quạt, mô hình AR-Drone\footnote{Source: \url{http://wiki.ros.org/ardrone_autonomy}} được trang bị máy ảnh RGB-D theo cấu hình tìm hướng chuyển tiếp, được sử dụng. Một môi trường không xác định được tạo ra bằng cách sử dụng mô phỏng \textit{Gazebo}. Số lượng robot được sử dụng để đánh giá được giới hạn ở ba, tuy nhiên, kiến trúc hệ thống được đề xuất không bị hạn chế với một số robot cố định.
+\subsection{Điều chỉnh thông số}
+Để đánh giá hiệu quả về chiến lược thăm dò, chúng tôi sẽ chạy một số thử nghiệm để đặt cấu hình tham số đầy đủ nhất.
+\subsubsection{Tham số trade-off $\lambda$}
+Hàm tiện ích (Xem công thức \ref{eq:3.2}) được sử dụng trong chiến lược thăm dò có thể được điều chỉnh, sử dụng tham số trade-off $\lambda$, giữa khám phá nhanh chóng và một bản đồ chi tiết.\\\\
+Hình \ref{fig:3.11} hiển thị các kết quả khác nhau trong khi thay đổi tham số này. Bằng cách tăng $\lambda$, thông tin thu được khi đạt được mục tiêu ưu tiên về khoảng cách và do đó, chi phí cho nó tăng lên và ngược lại. Vì thế, khi $\lambda$ nhỏ, khoảng cách di chuyển là nhỏ và vì vậy thời gian thăm dò nhỏ. Mặc dù, một số lần trong nhiệm vụ, giá trị $\lambda$ cao cho thấy tỷ lệ thăm dò cao hơn so với những giá trị nhỏ hơn.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{assets/3_11.png}
-    \caption{The impact of varying the trade off parameter $\lambda$ over exploration itme.}
+    \caption{Ảnh hưởng của việc thay đổi tham số trade-off $\lambda$ qua thời gian thăm dò.}
     \label{fig:3.11}
 \end{figure}
-\subsubsection{Loop rate $r$}
-The frequency or loop rate $r$ of target assignment may also affect exploration time performance. The values of $r$ vary to take into account the robot velocity $\mathbf{v}_i$ and the sensor’s maximum range $s$. The impact of varying the loop rate is evaluated in Figure \ref{fig:3.12}.
+\subsubsection{Tỉ lệ vòng lặp $r$}
+Tỷ lệ tần số hoặc vòng lặp $r$ của nhiệm vụ mục tiêu cũng có thể ảnh hưởng đến hiệu suất thời gian thăm dò. Giá trị $r$ thay đổi để tính đến vận tốc robot $\mathbf{v}_i$ và phạm vi tối đa của cảm biến $s$. Tác động của việc thay đổi tỷ lệ vòng lặp được đánh giá trong Hình \ref{fig:3.12}.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{assets/3_12.png}
-    \caption{Exploration time while varying the loop rate $r$.}
+    \caption{Thời gian khám phá trong khi thay đổi tỷ lệ vòng lặp $r$.}
     \label{fig:3.12}
 \end{figure}
-Given a robot velocity $\mathbf{v}_i=\{0.1,0.3\}m.s^{-1}$ and a maximum sensor range $s=4m$, the loop rate variates in $r \in [10,40]$. This parameter should not be too small to allow the robot to reach its target; nor too big to prevent long waiting times for the next goal assignment.
-\subsubsection{Common parameters}
-Depending on results in Figure \ref{fig:3.11} and Figure \ref{fig:3.12}, respectively, $\lambda$ is set to $0.2$ and $r$ to $20s$ in order to maximize the explored area rate while minimizing the mission time. The simulation parameters are summarized in Table \ref{tab:3.1}.
+Cho vận tốc robot $\mathbf{v}_i=\{0.1,0.3\}m.s^{-1}$ và phạm vi cảm biến tối đa $s=4m$, tỉ lệ vòng lặp thay đổi trong $r \in [10,40]$. Tham số này không nên quá nhỏ để cho phép robot đạt được mục tiêu; cũng không quá lớn để ngăn chặn thời gian chờ đợi dài cho nhiệm vụ cần đạt tiếp theo.
+\subsubsection{Thông số chung}
+Dựa vào kết quả ở Hình \ref{fig:3.11} và Hình \ref{fig:3.12}, tương ứng, $\lambda$ cho bằng $0.2$ vaf $r$ là $20s$ để tối đa hóa tỷ lệ khu vực được khám phá trong khi giảm thiểu thời gian nhiệm vụ. Các tham số mô phỏng được tóm tắt trong Bảng \ref{tab:3.1}.
 \begin{table}[H]
     \centering
-    \caption{Common parameters.}
+    \caption{Thông số chung.}
     \label{tab:3.1}
     \begin{tabular}{|l|l|}\hline
         \makebox[5em]{\textbf{Parameter}}                  & \makebox[5em]{\textbf{Value}}
@@ -436,15 +440,15 @@ Depending on results in Figure \ref{fig:3.11} and Figure \ref{fig:3.12}, respect
         Angular velocity $w_i (rad.s^{-1})$                & $[0.1,0.3]$                   \\\hline
     \end{tabular}
 \end{table}
-\subsection{Exploration strategy performances}
-The proposed exploration strategy has been evaluated in terms of distribution of the robots in the environment, overlap rate, exploration time, and total traveled distance by each robot.
-\subsubsection{Maps evolution during the mission}
-While reaching their respective assigned goals, each robot is in charge of creating a detailed grid map of the visited area in order to get a global map of the environment. Figure \ref{fig:3.13} illustrates the growth of the reconstructed 3D occupancy grid map at different times during the mission. Note that to reach $99\%$ of coverage, a lot of time is spent.\\\\
-Figure \ref{fig:3.14} shows the evolution of the respective projected 2D local grid map of two robots during a cooperative exploration mission. The global projected 2D grid map is also created and represented for evaluation (the occupancy grid matching process introduced in Algorithm 2.1 in Chapter 2 is used). The robots’ initial positions are $(1,0,0)$ for UAV$_1$ and $(1,-3,0)$ for UAV$_2$. Despite a relatively close initial position, the proposed strategy effectively spreads the robots so that UAV$_1$ is in charge of the left side of the environment and UAV$_2$ of the right one.
-\subsubsection{Frontier points evolution during the mission}
-The target is chosen from the candidate frontier points that define the edges of an environment not previously explored. These candidates are selected from the final frontier points of each UAV in the ﬂeet (See Figure \ref{fig:3.15}). During the exploration mission, the local map size increases, which leads to an increasing number of local frontier points. At the beginning of the exploration, the number of candidate frontier points increases, but as soon as the exploration evolves in time, their number decreases. At the end of the mission, when all the environment is explored, no candidate frontier points should be left.
-\subsubsection{UAV's trajectories during the mission}
-Figure \ref{fig:3.16} shows the explored map with the trajectories using one, two and three UAVs. The UAVs try to explore the full environment while avoiding already explored areas. In a cooperative way, each UAV is in charge of visiting an area by reaching a target that belongs to a non-explored environment. These targets are assigned by the \textit{Leader} which, even if the initial poses of the UAVs are relatively close, effectively spreads them into unknown areas. The global map is composed of the superposition of all UAVs’ local maps.
+\subsection{Trình bày chiến lược khám phá}
+Chiến lược thăm dò được đề xuất đã được đánh giá về mặt phân phối robot trong môi trường, tỷ lệ chồng chéo, thời gian thăm dò và toàn bộ khoảng cách di chuyển của mỗi robot.
+\subsubsection{Bản đồ tiến hóa trong nhiệm vụ}
+Trong khi đạt được mục tiêu được giao nhiệm vụ tương ứng, mỗi robot phụ trách việc tạo bản đồ lưới chi tiết của khu vực đã truy cập để có được bản đồ toàn cầu về môi trường. Hình \ref{fig:3.13} minh họa sự phát triển của bản đồ lưới chiếm dụng 3D được xây dựng lại vào các thời điểm khác nhau trong nhiệm vụ. Lưu ý rằng khi độ phủ sóng đạt $99\%$ sẽ tốn rất nhiều thời gian.\\\\
+Hình \ref{fig:3.14} hiển thị sự phát triển của bản đồ lưới địa phương 2D dự kiến tương ứng của hai robot trong một nhiệm vụ thăm dò hợp tác xã. Bản đồ lưới 2D dự kiến toàn cầu cũng được tạo và đại diện để đánh giá (quy trình khớp lưới chiếm dụng được giới thiệu trong thuật toán 2.1 trong Chương 2 được sử dụng). Vị trí ban đầu của robot UAV$_1$ là $(1,0,0)$ và của UAV$_2$ là $(1,-3,0)$. Mặc dù có một vị trí ban đầu tương đối chặt chẽ, chiến lược đề xuất đã lan rộng hiệu quả robot để UAV$_1$ chịu trách nhiệm về phía bên trái của môi trường và UAV$_2$ bên phải.
+\subsubsection{Sự tiến hóa điểm biên trong nhiệm vụ}
+Mục tiêu được chọn từ các điểm biên giới ứng cử viên xác định các cạnh của môi trường không được khám phá trước đó. Những ứng cử viên này được chọn từ các điểm biên giới cuối cùng của mỗi UAV trong hạm đội (Xem Hình \ref{fig:3.15}). Trong nhiệm vụ thăm dò, kích thước bản đồ địa phương tăng lên, dẫn đến số lượng điểm biên giới cục bộ ngày càng tăng. Khi bắt đầu thăm dò, số lượng điểm biên giới tiềm năng tăng lên, nhưng ngay khi thăm dò tiến hóa kịp thời, số lượng của chúng giảm. Vào cuối nhiệm vụ, khi tất cả các môi trường được khám phá, không nên để lại điểm biên giới tiềm năng.
+\subsubsection{Quỹ đạo của UAV trong nhiệm vụ}
+Hình \ref{fig:3.16} hiển thị bản đồ được khám phá với các quỹ đạo bằng cách sử dụng một, hai và ba UAV. UAV cố gắng khám phá môi trường đầy đủ trong khi tránh các khu vực đã khám phá. Một cách hợp tác, mỗi UAV phụ trách truy cập một khu vực bằng cách đạt được mục tiêu thuộc về một môi trường không khám phá. Những mục tiêu này được chỉ định bởi \textit{Leader}, ngay cả khi các pose ban đầu của UAV tương đối gần, trải rộng hiệu quả của chúng vào các khu vực chưa biết. Bản đồ toàn cầu bao gồm sự chồng chất của tất cả các bản đồ địa phương của tất cả các UAV.
 \begin{figure}[H]
     \centering
     \begin{subfigure}[H]{0.3\linewidth}
@@ -506,64 +510,64 @@ Figure \ref{fig:3.16} shows the explored map with the trajectories using one, tw
         \caption{{$99\%$ rate $(202s).$}}
         \label{fig:3.13j}
     \end{subfigure}
-    \caption{Ratio of explored space during time for one UAV.}
+    \caption{Tỷ lệ không gian khám phá trong thời gian cho một UAV.}
     \label{fig:3.13}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{assets/3_14.png}
-    \caption{Coordinated exploration using two robots. Columns 1, 2 and 3 show the evolution of the local map of the UAV$_1$, the UAV$_2$ and the global map over time, respectively.}
+    \caption{Phối hợp thăm dò bằng hai robot. Cột 1, 2 và 3 cho thấy sự phát triển của bản đồ địa phương của UAV$_1$, các UAV$_2$ và bản đồ toàn cầu theo thời gian, tương ứng.}
     \label{fig:3.14}
 \end{figure}
 \begin{figure}[H]
     \centering
     \begin{subfigure}[H]{0.7\linewidth}
         \includegraphics[width=\linewidth]{assets/3_15_a.png}
-        \caption{{One UAV.}}
+        \caption{{Một UAV.}}
         \label{fig:3.15a}
     \end{subfigure}
     \begin{subfigure}[H]{0.7\linewidth}
         \includegraphics[width=\linewidth]{assets/3_15_b.png}
-        \caption{{Two cooperative UAVs.}}
+        \caption{{Hai UAV kết hợp.}}
         \label{fig:3.15b}
     \end{subfigure}
     \begin{subfigure}[H]{0.7\linewidth}
         \includegraphics[width=\linewidth]{assets/3_15_c.png}
-        \caption{{Three cooperative UAVs}}
+        \caption{{Ba UAV kết hợp.}}
         \label{fig:3.15c}
     \end{subfigure}
-    \caption{The evolution of candidate and final frontier points numbers during cooperative exploration.}
+    \caption{Sự phát triển của ứng cử viên và số điểm biên giới cuối cùng trong quá trình thăm dò hợp tác.}
     \label{fig:3.15}
 \end{figure}
 \begin{figure}[H]
     \centering
     \begin{subfigure}[H]{0.5\linewidth}
         \includegraphics[width=\linewidth]{assets/3_16_a.png}
-        \caption{{One UAV.}}
+        \caption{{Một UAV.}}
         \label{fig:3.16a}
     \end{subfigure}
     \begin{subfigure}[H]{0.5\linewidth}
         \includegraphics[width=\linewidth]{assets/3_16_b.png}
-        \caption{{Two cooperative UAVs.}}
+        \caption{{Hai UAV kết hợp.}}
         \label{fig:3.16b}
     \end{subfigure}
     \begin{subfigure}[H]{0.5\linewidth}
         \includegraphics[width=\linewidth]{assets/3_16_c.png}
-        \caption{{Three cooperative UAVs}}
+        \caption{{Ba UAV kết hợp.}}
         \label{fig:3.16c}
     \end{subfigure}
-    \caption{Projected 2D map in a coordinated exploration with a team of one, two and three UAVs. Green, blue and red markers and arrows define, respectively, the initial position and the trajectory of UAV1, UAV2 and UAV3.}
+    \caption{Dự kiến bản đồ 2D trong một cuộc thám hiểm phối hợp với một nhóm một, hai và ba UAV. Các dấu hiệu và mũi tên màu xanh lá cây, xanh dương và đỏ xác định, tương ứng, vị trí ban đầu và quỹ đạo của UAV1, UAV2 và UAV3.}
     \label{fig:3.16}
 \end{figure}
-\subsubsection{Goal assignment evaluation: Distribution of the robots in the environment}
-The goal assignment process is performed according to the algorithm described in Section 3.6. Nevertheless, after assigning a target to the first robot in the list, the same target or another one close to it may be assigned to the second robot in the list. To overcome these issues, the information gains of the remaining candidate targets are scheduled. This allows to discard an already assigned target and keep a certain distance between the new target and the previous one assigned.\\\\
-Suppose that a target is assigned to the first robot in the cluster list. Figure \ref{fig:3.17} shows the goal selected for the second robot when a sequential assignment is performed:
+\subsubsection{Đánh giá nhiệm vụ mục tiêu: Phân phối robot trong môi trường}
+Quá trình phân công mục tiêu được thực hiện theo thuật toán được mô tả trong Phần 3.6. Tuy nhiên, sau khi chỉ định mục tiêu cho robot đầu tiên trong danh sách, cùng một mục tiêu hoặc một mục tiêu khác gần với nó có thể được gán cho robot thứ hai trong danh sách. Để khắc phục những vấn đề này, mức tăng thông tin của các mục tiêu ứng cử viên còn lại được lên lịch. Điều này cho phép loại bỏ một mục tiêu đã được chỉ định và giữ một khoảng cách nhất định giữa mục tiêu mới và phần trước được chỉ định.\\\\
+Giả sử rằng một mục tiêu được gán cho robot đầu tiên trong danh sách cụm. Hình \ref{fig:3.17} hiển thị mục tiêu được chọn cho robot thứ hai khi một bài tập tuần tự được thực hiện:
 \begin{itemize}
-    \item Without further frontier points processing (See Figure \ref{fig:3.17b}). Consequently, the same target is assigned to two different robots.
-    \item While removing the assigned target from the remaining candidate frontier points (See Figure \ref{fig:3.17c}). Consequently, the second target is relatively close to the first one assigned.
-    \item While scheduling the information gain after each target assignment (See Figure \ref{fig:3.17d}). Consequently, the assigned targets are spaced out into the environment. The information gain is scheduled following Eq. \ref{eq:3.5}. The information gain value increases with distance to the candidate target $\mathbf{t}_g$.
+    \item Không cần xử lý điểm biên giới nữa (Xem Hình \ref{fig:3.17b}). Do đó, mục tiêu tương tự được gán cho hai robot khác nhau.
+    \item Trong khi loại bỏ mục tiêu được gán từ các điểm biên giới ứng cử viên còn lại (Xem Hình \ref{fig:3.17c}). Do đó, mục tiêu thứ hai tương đối gần với chỉ định đầu tiên.
+    \item Trong khi lên lịch trình thông tin tăng sau mỗi lần gán mục tiêu (Xem Hình \ref{fig:3.17d}). Do đó, các mục tiêu được chỉ định được cách nhau vào môi trường.Lợi ích thông tin được lên lịch theo lịch trình Eq. \ref{eq:3.5}. Giá trị thông tin tăng lên với khoảng cách đến mục tiêu ứng viên $\mathbf{t}_g$.
 \end{itemize}
-The goal assignment process may sometimes be not optimal since it depends on the robots’ order in the list. For example, suppose that robots UAV$_i$ and UAV$_j$ have the same best target assignment t k such that it offers the maximum utility over candidate frontier points where Eq.\ref{eq:3.6} and Eq. \ref{eq:3.7} are verified.
+Quá trình phân công mục tiêu đôi khi có thể không tối ưu vì nó phụ thuộc vào thứ tự của robot trong danh sách.Ví dụ, giả sử robot UAV$_i$ và UAV$_j$ có cùng một nhiệm vụ mục tiêu tốt nhất t k sao cho nó đạt được tiện ích tối đa so với các điểm biên giới ứng viên, nơi Eq.\ref{eq:3.6} và Eq. \ref{eq:3.7} được xác minh.
 \begin{equation}\label{eq:3.6}
     \mathbf{t}_k=argmax_{t_m}\mathbf{U}(UAV_i,\mathbf{t}_m)
 \end{equation}
@@ -581,121 +585,121 @@ UAV$_i$ have another candidate frontier point $\mathbf{t}_l$ with:
     \centering
     \begin{subfigure}[H]{0.6\linewidth}
         \includegraphics[width=\linewidth]{assets/3_17_a.png}
-        \caption{{Candidate targets.}}
+        \caption{{Mục tiêu ứng viên.}}
         \label{fig:3.17a}
     \end{subfigure}
     \begin{subfigure}[H]{0.6\linewidth}
         \includegraphics[width=\linewidth]{assets/3_17_b.png}
-        \caption{{Case 1.}}
+        \caption{{Trường hợp 1.}}
         \label{fig:3.17b}
     \end{subfigure}
     \begin{subfigure}[H]{0.6\linewidth}
         \includegraphics[width=\linewidth]{assets/3_17_c.png}
-        \caption{{Case 2.}}
+        \caption{{Trường hợp 2.}}
         \label{fig:3.17c}
     \end{subfigure}
     \begin{subfigure}[H]{0.6\linewidth}
         \includegraphics[width=\linewidth]{assets/3_17_c.png}
-        \caption{{Case 3.}}
+        \caption{{Trường hợp 3.}}
         \label{fig:3.17d}
     \end{subfigure}
-    \caption{Goal assignment: After assigning a target to UAV$_1$ , a target is assigned in a sequential manner to UAV$_2$ . (a) represents the candidate frontier points with their respective information gain. (b), (c), and (d) represent, respectively, the targets assignment when: No further process is performed for the remaining candidate targets; UAV$_1$ ’s target is removed from the remaining candidate targets and; the information gain of the remained candidate targets are scheduled.}
+    \caption{Nhiệm vụ mục tiêu: Sau khi chỉ định một mục tiêu để UAV$_1$ , một mục tiêu được chỉ định theo cách liên tiếp để UAV$_2$ . (a) đại diện cho các điểm biên giới ứng cử viên với mức tăng thông tin tương ứng của họ.(b), (c) và (d) đại diện, tương ứng, nhập mục tiêu khi: Không có quy trình nào khác được thực hiện cho các mục tiêu ứng cử viên còn lại; mục tiêu của UAV$_1$ được loại bỏ khỏi các mục tiêu ứng cử viên còn lại và; việc đạt được thông tin của các mục tiêu ứng cử viên còn lại được lên lịch.}
     \label{fig:3.17}
 \end{figure}
-So the optimal solution would be to assign $\mathbf{t}_l$ to UAV$_i$ and $\mathbf{t}_k$ to UAV$_j$ . But, if UAV$_i$ is the first in the list, $\mathbf{t}_k$ is assigned to it and another candidate frontier point with less utility than $\mathbf{t}_k$, is assigned to UAV$_j$. Thus, the solution with sequential goal assignment is not always optimal.\\\\
-To overcome this problem, all the numbers of possible combination $\frac{n_g!}{n_g!(n_g-n_c)!}$ with $n_g$ the number of candidate targets and $n_c$ the number of robots, need to be considered. This increases considerably the computation time by increasing the number of robots. Therefore, in the proposed algorithm, sequential assignment is favored over computing all possible permutations.
-\subsubsection{Explored space rate evaluation}
-This evaluation aims at quantifying the amount of explored spaces during the mission. Figure \ref{fig:3.18} shows the explored space rate performed by each UAV in the ﬂeet. The more UAVs in the environment, the less the exploration rate demanded by each one. A robot has no need to continue exploring an area if it has already been explored by another one. Thus, the mission time is considerably reduced.
-\subsubsection{Overlap rate evaluation}
-The use of an effective goal assignment process should limit the generated overlap. In Figure \ref{fig:3.19}, the time evolution of overlap is evaluated using two cooperative robots. The overlap undergoes a significant increase at the end of the exploration to reach $33\%$. This is explained by the closeness of the local maps at the end of the mission to precisely fill the global grid map.
+Vì vậy, giải pháp tối ưu sẽ là gán $\mathbf{t}_l$ cho UAV$_i$ và $\mathbf{t}_k$ cho UAV$_j$ . Nhưng nếu UAV$_i$ là đầu tiên trong danh sách, $\mathbf{t}_k$ được gán cho nó và một điểm biên lai khác với ít tiện ích hơn $\mathbf{t}_k$, được chỉ định cho UAV$_j$. Do đó, giải pháp với việc phân công mục tiêu tuần tự không phải lúc nào cũng tối ưu.\\\\
+Để khắc phục vấn đề này, tất cả các số kết hợp có thể xảy ra $\frac{n_g!}{n_g!(n_g-n_c)!}$ với $n_g$ số lượng mục tiêu ứng cử viên và $n_c$ số lượng robot, cần phải được xem xét. Điều này tăng đáng kể thời gian tính toán bằng cách tăng số lượng robot. Do đó, trong thuật toán được đề xuất, nhiệm vụ tuần tự được ưa chuộng về việc tính toán tất cả các hoán vị có thể.
+\subsubsection{Khám phá đánh giá tỷ lệ không gian}
+Đánh giá này nhằm định lượng lượng không gian khám phá trong nhiệm vụ. Hình \ref{fig:3.18} cho thấy tỷ lệ không gian được khám phá được thực hiện bởi mỗi UAV trong FL EET.Càng nhiều UAV trong môi trường, tỷ lệ thăm dò càng ít yêu cầu.Một robot không cần phải tiếp tục khám phá một khu vực nếu nó đã được khám phá bởi một khu vực khác.Do đó, thời gian nhiệm vụ giảm đáng kể.
+\subsubsection{Đánh giá tỷ lệ chồng chéo}
+Việc sử dụng một quy trình phân công mục tiêu hiệu quả sẽ giới hạn sự chồng chéo được tạo. Trong Hình \ref{fig:3.19}, thời gian phát triển của sự chồng chéo được đánh giá bằng hai robot hợp tác. Sự chồng chéo trải qua một sự gia tăng đáng kể vào cuối cuộc thăm dò để đạt được $33\%$. Điều này được giải thích bởi sự gần gũi của các bản đồ địa phương vào cuối nhiệm vụ để điền chính xác bản đồ lưới toàn cầu.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_19.png}
-    \caption{Explored and overlapped area rate using two cooperative UAVs.}
+    \caption{Tỷ lệ khu vực được khám phá và chồng chéo bằng cách sử dụng hai UAV hợp tác.}
     \label{fig:3.19}
 \end{figure}
-\subsubsection{Traveled distance evaluation}
-To effectively evaluate the exploration strategy performance in terms of distance traveled by each UAV, different runs with one, two and three UAVs have been conducted where explored area rate reaches almost $99\%$. Figure \ref{fig:3.20} shows the distance traveled by each UAV in the ﬂeet during the mission.
+\subsubsection{Đánh giá khoảng cách di chuyển}
+Để đánh giá hiệu quả hiệu suất chiến lược thăm dò về khoảng cách di chuyển của mỗi UAV, các lần chạy khác nhau với một, hai và ba UAV đã được thực hiện khi tỷ lệ khu vực được khám phá đạt gần như $99\%$. Hình \ref{fig:3.20} cho thấy khoảng cách di chuyển của mỗi UAV trong hạm đội trong nhiệm vụ.
 \begin{figure}[H]
     \centering
     \begin{subfigure}[H]{0.7\linewidth}
         \includegraphics[width=\linewidth]{assets/3_18_a.png}
-        \caption{{One UAV.}}
+        \caption{{Một UAV.}}
         \label{fig:3.18a}
     \end{subfigure}
     \begin{subfigure}[H]{0.7\linewidth}
         \includegraphics[width=\linewidth]{assets/3_18_b.png}
-        \caption{{Two cooperative UAVs.}}
+        \caption{{Hai UAV hợp tác.}}
         \label{fig:3.18b}
     \end{subfigure}
     \begin{subfigure}[H]{0.7\linewidth}
         \includegraphics[width=\linewidth]{assets/3_18_c.png}
-        \caption{{Three cooperative UAVs}}
+        \caption{{Ba UAV hợp tác.}}
         \label{fig:3.18c}
     \end{subfigure}
-    \caption{Explored space rate with one, two and three UAVs.}
+    \caption{Khám phá tỷ lệ không gian với một, hai và ba UAV.}
     \label{fig:3.18}
 \end{figure}
 \begin{figure}[H]
     \centering
     \begin{subfigure}[H]{0.7\linewidth}
         \includegraphics[width=\linewidth]{assets/3_20_a.png}
-        \caption{{One UAV.}}
+        \caption{{Một UAV.}}
         \label{fig:3.20a}
     \end{subfigure}
     \begin{subfigure}[H]{0.7\linewidth}
         \includegraphics[width=\linewidth]{assets/3_20_b.png}
-        \caption{{Two cooperative UAVs.}}
+        \caption{{Hai UAV hợp tác.}}
         \label{fig:3.20b}
     \end{subfigure}
     \begin{subfigure}[H]{0.7\linewidth}
         \includegraphics[width=\linewidth]{assets/3_20_c.png}
-        \caption{{Three cooperative UAVs}}
+        \caption{{Ba UAV hợp tác.}}
         \label{fig:3.20c}
     \end{subfigure}
-    \caption{Traveled distance by each UAV with one, two and three cooperative UAVs.}
+    \caption{Khoảng cách di chuyển của mỗi UAV với một, hai và ba UAV hợp tác.}
     \label{fig:3.20}
 \end{figure}
-The distances traveled by each UAV using one, two and three UAVs in the ﬂeet are compared in Figure \ref{fig:3.21}. This distance decreases with the number of UAVs. The average distance traveled by each UAV is reduced by $55\%$ for 2 UAVs and by $62\%$ for 3 UAVs. The error of the traveled distance is slightly reduced from one to two and three UAVs.
+Các khoảng cách được di chuyển bởi mỗi UAV bằng một, hai và ba UAV trong hạm đội được so sánh trong Hình \ref{fig:3.21}. Khoảng cách này giảm với số lượng UAV. Khoảng cách trung bình được di chuyển bởi mỗi UAV bị giảm bởi $55\%$ với 2 UAV và $62\%$ với 3 UAV. Lỗi của khoảng cách di chuyển được giảm nhẹ theo thứ tự từ một đến hai và ba UAV.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_21.png}
-    \caption{Traveled distance evaluation.}
+    \caption{Đánh giá khoảng cách di chuyển được.}
     \label{fig:3.21}
 \end{figure}
-\subsubsection{Exploration time evaluation}
-For the exploration time evaluation, different runs have been performed using 1, 2 and 3 UAVs. Figure \ref{fig:3.22} shows that the average of exploration time decreases when the number of robots in the ﬂeet increases. The computed error decreases as well. The time is reduced by $25\%$ for 2 UAVs and by $30\%$ for 3 UAVs. The exploration time and distance are not divided by 2 or 3 when multiplying by 2 or 3 the number of robots, respectively. During these simulations, the robots’ initial positions are: $(1,0,0)$ for one UAV; $(1,0,0)$ and $(1,-3,0)$ for two UAVs; and $(1,1,0)$, $(1,-1,0)$ and $(1,-3,0)$ for three UAVs.
+\subsubsection{Đánh giá thời gian khám phá}
+Đối với đánh giá thời gian thăm dò, các lần chạy khác nhau đã được thực hiện bằng cách sử dụng 1, 2 và 3 UAV. Hình \ref{fig:3.22} cho thấy rằng trung bình của thời gian thăm dò giảm khi số lượng robot trong hạm đội tăng lên. Lỗi tính toán cũng giảm. Thời gian bị giảm đạt $25\%$ với 2 UAV và đạt $30\%$ với 3 UAV. Thời gian và khoảng cách thăm dò không được chia cho 2 hoặc 3 khi nhân với 2 hoặc 3 số lượng robot, tương ứng. Trong các mô phỏng này, vị trí ban đầu của robot là: $(1,0,0)$ cho một UAV; $(1,0,0)$ và $(1,-3,0)$ cho 2 UAV; và $(1,1,0)$, $(1,-1,0)$ và $(1,-3,0)$ cho 3 UAV.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_22.png}
-    \caption{Average exploration time.}
+    \caption{Thời gian thăm dò trung bình.}
     \label{fig:3.22}
 \end{figure}
-The results presented in Section 4.2 were evaluated without a relative localization. So, for a more challenging realistic scenario, runs with relative localization algorithm have been performed to evaluate system performances using SLAM.
-\subsection{Exploration mission using relative localization algorithm}
-Toward a more realistic scenario, the ORB-SLAM2 approach (introduced in Section 5 of Chapter 2) has been implemented to perform relative localization (See Figure \ref{fig:3.23}).
+Các kết quả được trình bày trong Phần 4.2 được đánh giá mà không có bản địa hóa tương đối. Vì vậy, để có một kịch bản thực tế khó khăn hơn, chạy với thuật toán bản địa hóa tương đối đã được thực hiện để đánh giá các màn trình diễn hệ thống bằng SLAM.
+\subsection{Nhiệm vụ khám phá bằng thuật toán bản địa hóa tương đối}
+THướng tới một kịch bản thực tế hơn, cách tiếp cận ORB-SLAM2 (được giới thiệu trong Phần 5 của Chương 2) đã được triển khai để thực hiện bản địa hóa tương đối (Xem Hình \ref{fig:3.23}).
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.3]{assets/3_23.png}
-    \caption{Two UAVs navigation using ORB-SLAM2. Rviz image (left) shows, for each UAV, the constructed 2D occupancy grid map, its estimated trajectory and the corresponding ground truth. The point cloud (middle) represent the sparse reconstruction of the environment made by each UAV. And, the green markers (right) represent the features computed by each UAV to perform localization.}
+    \caption{Hai điều hướng UAV bằng ORB-SLAM2.Hình ảnh Rviz (trái) hiển thị, đối với mỗi UAV, bản đồ lưới chiếm dụng 2D được xây dựng, quỹ đạo ước tính và sự thật tương ứng.Đám mây điểm (giữa) đại diện cho việc tái thiết thưa thớt môi trường được thực hiện bởi mỗi UAV.Và, các điểm đánh dấu màu xanh lá cây (phải) đại diện cho các tính năng được tính bằng mỗi UAV để thực hiện bản địa hóa.}
     \label{fig:3.23}
 \end{figure}
-Each robot performs SLAM where it constructs its map in its local reference frame $^WF_i$ , and estimates its relative pose $\mathbf{p}_i$ within it. Then, the ﬂeet performs cooperative explo- ration using some specific information exchanged among UAVs. But, these information have to be in a common reference frame. Therefore, information such as the pose $\mathbf{p}_i$ and the frontier points $\mathbf{f}_{i,j}$ are necessarily transformed into the global reference frame $^0W$ before being exchanged. Hence, the \textit{leader} makes all the needed computation and sends back to the \textit{explorers} the targets in $^0W$. When a robot receives its assigned goal, it transforms it into $^WF_i$ to plan a path to it.\\\\
-To perform a transformation from local reference $^WF_i$ to global one $^0W$, the robot has to know – at least – its initial pose w.r.t. $^0W$. As explained in Section 5.2 of Chapter 1, the global reference frame of the environment is initialized such that it coincides with the local reference frame of the first group-\textit{leader} in the ﬂeet which is UAV$_1$ in the considered example of Equation \ref{eq:3.9}.
+Mỗi robot thực hiện SLAM nơi nó xây dựng bản đồ của nó trong khung tham chiếu cục bộ của nó $^WF_i$ , và ước tính tư thế tương đối của nó $\mathbf{p}_i$ bên trong nó. Sau đó, thiết bị thực hiện khám phá hợp tác bằng cách sử dụng một số thông tin cụ thể được trao đổi giữa các UAV. Tuy nhiên, những thông tin này phải nằm trong một hệ quy chiếu chung. Do đó, những thông tin như tư thế $\mathbf{p}_i$ và các điểm biên cương $\mathbf{f}_{i,j}$ nhất thiết phải biến thành khung tham chiếu toàn cầu $^0W$ trước khi được trao đổi.Vì thế \textit{leader} làm cho tất cả các tính toán cần thiết và gửi lại cho \textit{explorers} các mục tiêu trong $^0W$. Khi robot nhận được mục tiêu được giao, nó sẽ biến nó thành $^WF_i$ để lên kế hoạch cho một con đường đến nó.\\\\
+Để thực hiện một phép chuyển đổi từ tham chiếu cục bộ $^WF_i$ đến toàn cầu một. $^0W$, Robot phải biết - ít nhất là - pose ban đầu của nó w.r.t. $^0W$. Như được giải thích trong Phần 5.2 của Chương 1, khung tham chiếu toàn cầu của môi trường được khởi tạo sao cho nó trùng với khung tham chiếu cục bộ của nhóm RST-\textit{leader} trong đội đó là UAV$_1$ Trong ví dụ được coi là phương trình \ref{eq:3.9}.
 \begin{equation}\label{eq:3.9}
     ^0W\equiv ^WF_1,
 \end{equation}
-Then, by detecting this robot using tags mounted on it, the other robots are able to estimate their respective transform to it $^{F_j}\begin{bmatrix}\mathbf{R} & \mathbf{t}\end{bmatrix}_{F_1}, j \in [2..n_c]$. For simulation evaluations, the information of transform – computed while detecting the tag – are assumed to be known. Figure \ref{fig:3.24} shows the exploration rate evolution during the exploration mission while using ORB-SLAM2 as the relative localization approach. The mission time using ORB-SLAM2 is reduced by $43\%$ for 2 UAVs instead of 1 UAV.
+Sau đó, bằng cách phát hiện robot này bằng các thẻ được gắn trên đó, các robot khác có thể ước tính biến đổi tương ứng của chúng thành $^{F_j}\begin{bmatrix}\mathbf{R} & \mathbf{t}\end{bmatrix}_{F_1}, j \in [2..n_c]$. Để đánh giá mô phỏng, thông tin về biến đổi - được tính toán trong khi phát hiện thẻ - được giả định sẽ được biết đến. Hình \ref{fig:3.24} cho thấy sự phát triển tỷ lệ thăm dò trong nhiệm vụ thăm dò trong khi sử dụng ORB-SLAM2 làm phương pháp nội địa hóa tương đối.Thời gian truyền bá sử dụng ORB-SLAM2 bị giảm đi $43\%$ đối với 2 UAV thay vì 1 UAV.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{assets/3_24.png}
-    \caption{Explored area rate evolution during exploration mission with one and two UAVs while performing ORB-SLAM2 by each UAV.}
+    \caption{Khám phá sự tiến hóa tỷ lệ khu vực trong nhiệm vụ thăm dò với 1 và 2 UAV trong khi thực hiện ORB-SLAM2 bởi mỗi UAV.}
     \label{fig:3.24}
 \end{figure}
-The exploration time when using a relative localization (See Figure \ref{fig:3.24}) is relatively important compared to the exploration without SLAM (See Figure \ref{fig:3.18}) since the velocity has been considerably reduced.
-\section{Conclusion}
-In this chapter, we presented a state of the art of multi-robot exploration mission including the strategy used to assign a robot to a target and an utility function adopted to estimate the interest of reaching it. Then, we introduced an exploration strategy based on the group-\textit{leader} decision making. The robot-to-target assignment is performed using a novel utility function. This function makes a trade-off between fast exploration and getting a detailed grid map, and also takes into account the distance of each robot in the group from the unexplored set of targets. Also, we propose to schedule the information gain in order to eﬃciently spread the UAVs into the environment. Moreover, the strategy adopted exchanges the frontier points instead of a whole copy of the local map.\\\\
-Results show that the proposed cooperative exploration strategy minimizes the global exploration time by $25\%$ for 2 UAVs and by $30\%$ for 3 UAVs, while minimizing the average traveled distance by each UAV by $55\%$ for 2 UAVs and by $62\%$ for 3 UAVs. Furthermore, the strategy was evaluated using a relative localization algorithm where the exploration time was reduced by $43\%$ for 2 UAVs instead of 1 UAV.
+Thời gian thăm dò khi sử dụng bản địa hóa tương đối (xem hình \ref{fig:3.24}) tương đối quan trọng so với việc khám phá mà không có slam (xem hình \ref{fig:3.18}) Vì vận tốc đã giảm đáng kể.
+\section{Kết luận}
+Trong chương này, chúng tôi đã trình bày một trạng thái của nhiệm vụ thăm dò đa robot bao gồm chiến lược được sử dụng để chỉ định robot cho mục tiêu và một chức năng tiện ích được áp dụng để ước tính sự quan tâm của việc tiếp cận nó. Sau đó, chúng tôi đã giới thiệu một chiến lược thăm dò dựa trên nhóm-\textit{leader} quyết định. Phân công robot - mục tiêu được thực hiện bằng cách sử dụng hàm tiện ích mới lạ. Hàm này tạo ra một giao dịch giao dịch giữa khám phá nhanh và nhận bản đồ lưới chi tiết, và cũng có tính đến khoảng cách của mỗi robot trong nhóm từ bộ mục tiêu chưa được khám phá. Ngoài ra, chúng tôi đề xuất để lên lịch để đạt được thông tin để truyền bá hiệu quả các UAV vào môi trường.Hơn nữa, chiến lược được thông qua trao đổi các điểm biên giới thay vì toàn bộ bản đồ địa phương.\\\\
+Kết quả cho thấy chiến lược thăm dò hợp tác đề xuất giảm thiểu thời gian thăm dò toàn cầu theo $25\%$ cho 2 UAV và bởi $30\%$ cho 3 UAV, đồng thời giảm thiểu khoảng cách trung bình di chuyển của mỗi UAV bởi $55\%$ cho 2 UAV và bởi $62\%$ cho 3 UAV. Hơn nữa, chiến lược được đánh giá bằng thuật toán nội địa hóa tương đối nơi giảm thời gian thăm dò $43\%$ đối với 2 UAV thay vì 1 UAV.
 %------------------CHAPTER 4------------------------------------------------%
 \chapter{Giao tiếp giữa các robot}
 \section{Giới thiệu}
@@ -1054,14 +1058,6 @@ Hình \ref{fig:4.12} minh họa sự phát triển của bản đồ lưới chi
 Trong chương này, chúng tôi đã giải quyết hai vấn đề con của mạng MRS. Điều đầu tiên liên quan đến cấu trúc mạng là các đặc điểm cần được đảm bảo bởi mạng; trong khi đó, vấn đề thứ hai chỉ ra sự phân phối địa lý của các nút trong mạng, được gọi là cấu trúc liên kết. Chúng tôi cũng đề nghị đối mặt với các tình huống quan trọng.\\\\
 Cấu trúc mạng được đề xuất dựa trên việc áp dụng mạng lưới cùng với giao thức BATMAN. Kết quả của dữ liệu phát sóng được thực hiện trong thử nghiệm với các nút không đồng nhất bao gồm ba máy tính xách tay và một AR-Drone cho thấy giao thức mạng lưới BATMAN cải thiện thông lượng gấp 1,5 lần so với mạng Ad Hoc cơ bản.\\\\
 Trong một phạm vi giao tiếp hạn chế, cấu trúc liên kết của mạng khác nhau trong nhiệm vụ. Kết quả là, Các hành vi của UAV được điều chỉnh bởi luôn cập nhật vai trò của họ thành \textit{leader} hoặc \textit{explorer} trong quá trình thực hiện nhiệm vụ. Ngay cả với một vai trò \textit{explorer}, UAV có thể tiếp tục nhiệm vụ nếu mạng có kinh nghiệm ở một số vấn đề. Hơn nữa, chúng tôi đề xuất trao đổi các điểm biên giới của bản đồ địa phương thay vì toàn bộ bản sao của nó, cho phép giảm khối lượng dữ liệu dùng chung và do đó giảm tiêu thụ bộ nhớ. Kết quả của thử nghiệm được thực hiện với ba UAV, cho thấy module giao tiếp được đề xuất có thể đối phó với các giới hạn mạng. Họ cũng cho thấy rằng chiến lược được đề xuất sử dụng dữ liệu ít hơn gấp 10 lần so với chiến lược khiến robot trao đổi toàn bộ bản đồ địa phương.
-\newpage
-\thispagestyle{plain}
-\addcontentsline{toc}{chapter}{Kết luận}
-\begin{center}
-    \Huge
-    \textbf{Kết luận}
-\end{center}
 
-%TODO: add conclusion here
 \printbibliography[heading=bibintoc,title=Tài liệu tham khảo]
 \end{document}

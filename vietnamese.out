@@ -1,21 +1,21 @@
-\BOOKMARK [0][-]{chapter*.3}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Coordinated exploration}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Related work}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.2.1}{Robot-to-target assignment}{section.1.2}% 5
-\BOOKMARK [2][-]{subsection.1.2.2}{Utility function}{section.1.2}% 6
-\BOOKMARK [1][-]{section.1.3}{Proposed exploration strategy}{chapter.1}% 7
-\BOOKMARK [2][-]{subsection.1.3.1}{Overview}{section.1.3}% 8
-\BOOKMARK [2][-]{subsection.1.3.2}{Frontier points selection}{section.1.3}% 9
-\BOOKMARK [2][-]{subsection.1.3.3}{Information gain computation}{section.1.3}% 10
-\BOOKMARK [2][-]{subsection.1.3.4}{Frontier points processing}{section.1.3}% 11
-\BOOKMARK [2][-]{subsection.1.3.5}{Goal assignment process}{section.1.3}% 12
-\BOOKMARK [2][-]{subsection.1.3.6}{Path planning and control}{section.1.3}% 13
-\BOOKMARK [1][-]{section.1.4}{Result and discussions}{chapter.1}% 14
-\BOOKMARK [2][-]{subsection.1.4.1}{Parameters tuning}{section.1.4}% 15
-\BOOKMARK [2][-]{subsection.1.4.2}{Exploration strategy performances}{section.1.4}% 16
-\BOOKMARK [2][-]{subsection.1.4.3}{Exploration mission using relative localization algorithm}{section.1.4}% 17
-\BOOKMARK [1][-]{section.1.5}{Conclusion}{chapter.1}% 18
+\BOOKMARK [0][-]{chapter*.3}{M u}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Kh\341m ph\341 phi hp}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Gii thiu}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{C\364ng vic c\363 li\352n quan}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.2.1}{Ph\342n c\364ng robot n muc ti\352u}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.2}{H\340m tin \355ch}{section.1.2}% 6
+\BOOKMARK [1][-]{section.1.3}{\320 xut chin lc tham d\362}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.3.1}{Tng qu\341t}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.2}{La chon im bi\352n gii}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.3}{T\355nh to\341n Infomation gain}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.4}{X l\375 im bi\352n gii}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.5}{Quy tr\354nh ph\342n c\364ng muc ti\352u}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.6}{L\352n k hoach v\340 kim so\341t ng dn}{section.1.3}% 13
+\BOOKMARK [1][-]{section.1.4}{Kt qua v\340 thao lun}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.4.1}{\320iu chinh th\364ng s}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.2}{Tr\354nh b\340y chin lc kh\341m ph\341}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.3}{Nhim vu kh\341m ph\341 bng thut to\341n ban ia h\363a tng i}{section.1.4}% 17
+\BOOKMARK [1][-]{section.1.5}{Kt lun}{chapter.1}% 18
 \BOOKMARK [0][-]{chapter.2}{Giao tip gia c\341c robot}{}% 19
 \BOOKMARK [1][-]{section.2.1}{Gii thiu}{chapter.2}% 20
 \BOOKMARK [1][-]{section.2.2}{Ph\342n loai mang}{chapter.2}% 21
@@ -31,5 +31,4 @@
 \BOOKMARK [2][-]{subsection.2.4.2}{Phng ph\341p giao tip gia c\341c robot}{section.2.4}% 31
 \BOOKMARK [2][-]{subsection.2.4.3}{Kt qua v\340 thao lun}{section.2.4}% 32
 \BOOKMARK [1][-]{section.2.5}{Kt lun}{chapter.2}% 33
-\BOOKMARK [0][-]{section.2.5}{Kt lun}{}% 34
-\BOOKMARK [0][-]{chapter*.75}{T\340i liu tham khao}{}% 35
+\BOOKMARK [0][-]{chapter*.75}{T\340i liu tham khao}{}% 34

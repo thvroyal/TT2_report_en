@@ -1,125 +1,123 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Introduction}{8}{chapter*.3}%
+\contentsline {chapter}{Mở đầu}{8}{chapter*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Coordinated exploration}{9}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Khám phá phối hợp}{9}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Introduction}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Giới thiệu}{9}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Related work}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Công việc có liên quan}{9}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Robot-to-target assignment}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.1}Phân công robot đến mục tiêu}{10}{subsection.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Utility function}{11}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.2}Hàm tiện ích}{11}{subsection.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Proposed exploration strategy}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Đề xuất chiến lược thăm dò}{12}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Overview}{12}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.1}Tổng quát}{12}{subsection.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Frontier points selection}{14}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.2}Lựa chọn điểm biên giới}{14}{subsection.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Information gain computation}{15}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.3}Tính toán Infomation gain}{15}{subsection.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.4}Frontier points processing}{16}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.4}Xử lý điểm biên giới}{16}{subsection.1.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{First approach: Convex shape map}{17}{section*.8}%
+\contentsline {subsubsection}{Cách tiếp cận đầu tiên: Bản đồ dạng lồi}{17}{section*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Second approach: Concave shape map}{17}{section*.9}%
+\contentsline {subsubsection}{Cách tiếp cận thứ hai: Bản đồ hình dạng lõm}{17}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Utility function}{22}{section*.13}%
+\contentsline {subsubsection}{Hàm tiện ích}{22}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.5}Goal assignment process}{24}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.5}Quy trình phân công mục tiêu}{24}{subsection.1.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Stop condition}{25}{section*.15}%
+\contentsline {subsubsection}{Điều kiện dừng}{25}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Loop rate}{26}{section*.16}%
+\contentsline {subsubsection}{Tỉ lệ lặp}{25}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Scheduling the information gain}{26}{section*.17}%
+\contentsline {subsubsection}{Lên lịch với information gain}{26}{section*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.6}Path planning and control}{27}{subsection.1.3.6}%
+\contentsline {subsection}{\numberline {1.3.6}Lên kế hoạch và kiểm soát đường dẫn}{27}{subsection.1.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Result and discussions}{28}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Kết quả và thảo luận}{29}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Parameters tuning}{29}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.1}Điều chỉnh thông số}{29}{subsection.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Trade-off parameter $\lambda $}{29}{section*.20}%
+\contentsline {subsubsection}{Tham số trade-off $\lambda $}{29}{section*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Loop rate $r$}{30}{section*.22}%
+\contentsline {subsubsection}{Tỉ lệ vòng lặp $r$}{30}{section*.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Common parameters}{30}{section*.24}%
+\contentsline {subsubsection}{Thông số chung}{31}{section*.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Exploration strategy performances}{31}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.2}Trình bày chiến lược khám phá}{31}{subsection.1.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Maps evolution during the mission}{31}{section*.26}%
+\contentsline {subsubsection}{Bản đồ tiến hóa trong nhiệm vụ}{31}{section*.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Frontier points evolution during the mission}{32}{section*.27}%
+\contentsline {subsubsection}{Sự tiến hóa điểm biên trong nhiệm vụ}{32}{section*.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{UAV's trajectories during the mission}{32}{section*.28}%
+\contentsline {subsubsection}{Quỹ đạo của UAV trong nhiệm vụ}{32}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Goal assignment evaluation: Distribution of the robots in the environment}{37}{section*.33}%
+\contentsline {subsubsection}{Đánh giá nhiệm vụ mục tiêu: Phân phối robot trong môi trường}{37}{section*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Explored space rate evaluation}{39}{section*.35}%
+\contentsline {subsubsection}{Khám phá đánh giá tỷ lệ không gian}{39}{section*.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Overlap rate evaluation}{39}{section*.36}%
+\contentsline {subsubsection}{Đánh giá tỷ lệ chồng chéo}{39}{section*.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Traveled distance evaluation}{40}{section*.38}%
+\contentsline {subsubsection}{Đánh giá khoảng cách di chuyển}{40}{section*.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Exploration time evaluation}{42}{section*.42}%
+\contentsline {subsubsection}{Đánh giá thời gian khám phá}{43}{section*.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Exploration mission using relative localization algorithm}{43}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.3}Nhiệm vụ khám phá bằng thuật toán bản địa hóa tương đối}{44}{subsection.1.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Conclusion}{44}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Kết luận}{45}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Giao tiếp giữa các robot}{46}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Giao tiếp giữa các robot}{47}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Giới thiệu}{46}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Giới thiệu}{47}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Phân loại mạng}{46}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Phân loại mạng}{47}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Chế độ cơ sở hạ tầng so với chế độ không có cơ sở hạ tầng}{46}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Chế độ cơ sở hạ tầng so với chế độ không có cơ sở hạ tầng}{47}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Phân loại mạng Ad Hoc}{48}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Phân loại mạng Ad Hoc}{49}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Phân loại cấu trúc liên kết mạng}{50}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Phân loại cấu trúc liên kết mạng}{51}{subsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Cấu trúc mạng}{51}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Cấu trúc mạng}{52}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Công việc liên quan}{51}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Công việc liên quan}{52}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Các tiêu chuẩn và giao thức mạng}{58}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Các tiêu chuẩn và giao thức mạng}{59}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Định nghĩa giao thức BATMAN}{59}{section*.54}%
+\contentsline {paragraph}{Định nghĩa giao thức BATMAN}{60}{section*.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Kết quả và thảo luận}{59}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}Kết quả và thảo luận}{60}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Cấu trúc liên kết và chiến lược mạng cho MRS robustness}{61}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Cấu trúc liên kết và chiến lược mạng cho MRS robustness}{62}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Công việc liên quan}{61}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Công việc liên quan}{62}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Phương pháp giao tiếp giữa các robot}{62}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}Phương pháp giao tiếp giữa các robot}{63}{subsection.2.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Tương tác đa UAV và trao đổi dữ liệu}{62}{section*.57}%
+\contentsline {subsubsection}{Tương tác đa UAV và trao đổi dữ liệu}{63}{section*.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Chiến lược exploration để đối mặt với mất giao tiếp}{63}{section*.59}%
+\contentsline {subsubsection}{Chiến lược exploration để đối mặt với mất giao tiếp}{64}{section*.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Trường hợp đặc biệt}{63}{section*.60}%
+\contentsline {paragraph}{Trường hợp đặc biệt}{64}{section*.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Thảo luận chiến lược trao đổi dữ liệu}{64}{section*.61}%
+\contentsline {subsubsection}{Thảo luận chiến lược trao đổi dữ liệu}{65}{section*.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}Kết quả và thảo luận}{65}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.3}Kết quả và thảo luận}{66}{subsection.2.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cài đặt mạng: Từ một đến nhiều máy}{65}{section*.64}%
+\contentsline {subsubsection}{Cài đặt mạng: Từ một đến nhiều máy}{66}{section*.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sự đánh giá kích thước dữ liệu được trao đổi}{67}{section*.66}%
+\contentsline {subsubsection}{Sự đánh giá kích thước dữ liệu được trao đổi}{68}{section*.66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Đánh giá thời gian trung bình của dữ liệu được trao đổi}{68}{section*.68}%
+\contentsline {subsubsection}{Đánh giá thời gian trung bình của dữ liệu được trao đổi}{69}{section*.68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Đánh giá gián đoạn mạng}{70}{section*.71}%
+\contentsline {subsubsection}{Đánh giá gián đoạn mạng}{71}{section*.71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Đánh giá bản đồ toàn cầu}{71}{section*.73}%
+\contentsline {subsubsection}{Đánh giá bản đồ toàn cầu}{72}{section*.73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Kết luận}{72}{section.2.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Kết luận}{74}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Kết luận}{73}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Tài liệu tham khảo}{75}{chapter*.75}%

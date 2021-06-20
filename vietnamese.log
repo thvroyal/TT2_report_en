@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.3)  12 JUN 2021 01:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.3)  13 JUN 2021 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -865,7 +865,7 @@ Package biblatex Warning: The following entry could not be found
 )
 Package biblatex Info: Reference section=0 on input line 50.
 Package biblatex Info: Reference segment=0 on input line 50.
-<assets/logo.png, id=143, 289.08pt x 426.393pt>
+<assets/logo.png, id=140, 289.08pt x 426.393pt>
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
 Package pdftex.def Info: assets/logo.png  used on input line 59.
@@ -887,18 +887,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout6 = `vietnamese.toc'.
 
  [3] (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.lof
-Overfull \hbox (11.93007pt too wide) in paragraph at lines 7--7
- \T5/cmr/m/n/10.95 2D cells $\OMS/cmsy/m/n/10.95 L$ \T5/cmr/m/n/10.95 to 2D fron-tier cells $\OMS/cmsy/m/n/10.95 F$ \T5/cmr/m/n/10.95 to can-di-date fron-tier cells/points 
+Overfull \hbox (57.32246pt too wide) in paragraph at lines 19--19
+ [][] [][]\T5/cmr/m/n/10.95 H m ti»n ½ch thüc hi»n: $\OT1/cmr/bx/n/10.95 I\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]\OT1/cmr/m/n/10.95 ) = 25\OML/cmm/m/it/10.95 ; n[] \OT1/cmr/m/n/10.95 = 3\OML/cmm/m/it/10.95 ; d[] \OT1/cmr/m/n/10.95 = [][](\OML/cmm/m/it/10.95 dmin\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 P[]\OML/cmm/m/it/10.95 ; \OT1/cmr/bx/n/10.95 t[]\OT1/cmr/m/n/10.95 ))$\T5/cmr/m/n/10.95 . 
  []
 
 
-Overfull \hbox (67.99602pt too wide) in paragraph at lines 19--19
- [][] [][]\T5/cmr/m/n/10.95 Utility func-tion be-hav-ior: $\OT1/cmr/bx/n/10.95 I\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]\OT1/cmr/m/n/10.95 ) = 25\OML/cmm/m/it/10.95 ; n[] \OT1/cmr/m/n/10.95 = 3\OML/cmm/m/it/10.95 ; d[] \OT1/cmr/m/n/10.95 = [][](\OML/cmm/m/it/10.95 dmin\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 P[]\OML/cmm/m/it/10.95 ; \OT1/cmr/bx/n/10.95 t[]\OT1/cmr/m/n/10.95 ))$\T5/cmr/m/n/10.95 . 
+Overfull \hbox (32.84958pt too wide) in paragraph at lines 21--21
+ [][] [][]\T5/cmr/m/n/10.95 V½ dö v· h¼nh d¤ng cõa h m l¶n k¸ ho¤ch in-for-ma-tion gain($\OT1/cmr/bx/n/10.95 I\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 t[]\OT1/cmr/m/n/10.95 )[] = 
  []
 
 [4
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [5])
@@ -914,492 +917,1008 @@ Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [7
 
-] [8]
-Ch\uhorn \ohorn ng 1.
+]
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 87.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 87.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 87.
+
+
+Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 87.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 87.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
+
+ []
+
+[8]
+Ch\uhorn \ohorn ng 1.
+
+Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 97.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ocircumflex' on input line 97.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 97.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 97.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 98.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 98.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 98.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 98.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+
+ []
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 101.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 101.
 
 [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 103.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 103.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 103.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 103.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
+Underfull \hbox (badness 10000) in paragraph at lines 104--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
+Underfull \hbox (badness 10000) in paragraph at lines 104--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
+Underfull \hbox (badness 10000) in paragraph at lines 104--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
+Underfull \hbox (badness 10000) in paragraph at lines 104--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
+Underfull \hbox (badness 10000) in paragraph at lines 104--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
+Underfull \hbox (badness 10000) in paragraph at lines 104--112
 
  []
 
-[10] [11]
-<assets/3_1.png, id=434, 426.59375pt x 605.26125pt>
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [10]
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 112.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 112.
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [11]
+
+Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 114.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 114.
+
+
+Package hyperref Warning: Composite letter `\textacute+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 114.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 114.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 114.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 114.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 114.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 114.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 114.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\u' on input line 114.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 115.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ocircumflex' on input line 115.
+
+<assets/3_1.png, id=432, 426.59375pt x 605.26125pt>
 File: assets/3_1.png Graphic file (type png)
 <use assets/3_1.png>
-Package pdftex.def Info: assets/3_1.png  used on input line 115.
+Package pdftex.def Info: assets/3_1.png  used on input line 119.
 (pdftex.def)             Requested size: 255.95822pt x 363.15953pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [12]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 122.
-<assets/3_2.png, id=445, 722.7pt x 372.39125pt>
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 126.
+<assets/3_2.png, id=443, 722.7pt x 372.39125pt>
 File: assets/3_2.png Graphic file (type png)
 <use assets/3_2.png>
-Package pdftex.def Info: assets/3_2.png  used on input line 133.
+Package pdftex.def Info: assets/3_2.png  used on input line 137.
 (pdftex.def)             Requested size: 289.07487pt x 148.95386pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--136
+Underfull \hbox (badness 10000) in paragraph at lines 123--140
 
  []
 
 
 Underfull \vbox (badness 1014) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [13 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_1.png>]
-<assets/3_3.png, id=453, 696.6025pt x 340.27126pt>
+
+Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 141.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 141.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+o'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 141.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 141.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 141.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 141.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 141.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 141.
+
+<assets/3_3.png, id=451, 696.6025pt x 340.27126pt>
 File: assets/3_3.png Graphic file (type png)
 <use assets/3_3.png>
-Package pdftex.def Info: assets/3_3.png  used on input line 141.
+Package pdftex.def Info: assets/3_3.png  used on input line 145.
 (pdftex.def)             Requested size: 278.63606pt x 136.10608pt.
-
-Overfull \hbox (3.69347pt too wide) in paragraph at lines 138--144
-\T5/cmr/m/n/10.95 The fron-tier se-lec-tion pro-cess is used to de-fine the fron-tiers of re-gions bounded
- []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [14 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_2.png>]
-<assets/3_4.png, id=470, 461.725pt x 399.4925pt>
+<assets/3_4.png, id=468, 461.725pt x 399.4925pt>
 File: assets/3_4.png Graphic file (type png)
 <use assets/3_4.png>
-Package pdftex.def Info: assets/3_4.png  used on input line 159.
+Package pdftex.def Info: assets/3_4.png  used on input line 163.
 (pdftex.def)             Requested size: 184.68672pt x 159.79416pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--162
+Underfull \hbox (badness 10000) in paragraph at lines 159--166
 
  []
 
-[15 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [15 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_3.png>]
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 167.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 167.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 167.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 167.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 167.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 167.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 167.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
-[16 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [16 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-<assets/3_5_a.png, id=498, 439.6425pt x 294.09875pt>
+<assets/3_5_a.png, id=496, 439.6425pt x 294.09875pt>
 File: assets/3_5_a.png Graphic file (type png)
 <use assets/3_5_a.png>
-Package pdftex.def Info: assets/3_5_a.png  used on input line 189.
+Package pdftex.def Info: assets/3_5_a.png  used on input line 193.
 (pdftex.def)             Requested size: 216.0022pt x 144.49109pt.
-<assets/3_5_b.png, id=499, 432.61626pt x 289.08pt>
+<assets/3_5_b.png, id=497, 432.61626pt x 289.08pt>
 File: assets/3_5_b.png Graphic file (type png)
 <use assets/3_5_b.png>
-Package pdftex.def Info: assets/3_5_b.png  used on input line 195.
+Package pdftex.def Info: assets/3_5_b.png  used on input line 199.
 (pdftex.def)             Requested size: 216.0022pt x 144.33673pt.
-<assets/3_5_c.png, id=500, 431.6125pt x 298.11375pt>
+<assets/3_5_c.png, id=498, 431.6125pt x 298.11375pt>
 File: assets/3_5_c.png Graphic file (type png)
 <use assets/3_5_c.png>
-Package pdftex.def Info: assets/3_5_c.png  used on input line 201.
+Package pdftex.def Info: assets/3_5_c.png  used on input line 205.
 (pdftex.def)             Requested size: 216.0022pt x 149.18842pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [17]
-Overfull \vbox (17.1586pt too high) has occurred while \output is active []
+Overfull \vbox (18.43146pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [18 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_5_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_5_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_5_c.png>]
-<assets/3_6.png, id=518, 873.2625pt x 706.64pt>
+<assets/3_6.png, id=516, 873.2625pt x 706.64pt>
 File: assets/3_6.png Graphic file (type png)
 <use assets/3_6.png>
-Package pdftex.def Info: assets/3_6.png  used on input line 244.
+Package pdftex.def Info: assets/3_6.png  used on input line 248.
 (pdftex.def)             Requested size: 349.29881pt x 282.65099pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [19]
-<assets/3_7.png, id=550, 846.16125pt x 694.595pt>
+<assets/3_7.png, id=548, 846.16125pt x 694.595pt>
 File: assets/3_7.png Graphic file (type png)
 <use assets/3_7.png>
-Package pdftex.def Info: assets/3_7.png  used on input line 290.
+Package pdftex.def Info: assets/3_7.png  used on input line 294.
 (pdftex.def)             Requested size: 338.45851pt x 277.83307pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [20 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_6.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [21]
 
-LaTeX Warning: Reference `eq:3.2' on page 22 undefined on input line 296.
-
-[22 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_7.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 299--303
-
- []
+LaTeX Warning: Reference `eq:3.2' on page 22 undefined on input line 300.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--303
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [22 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_7.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 303--307
 
  []
 
-<assets/3_8_a.png, id=605, 387.4475pt x 211.79124pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--307
+
+ []
+
+<assets/3_8_a.png, id=603, 387.4475pt x 211.79124pt>
 File: assets/3_8_a.png Graphic file (type png)
 <use assets/3_8_a.png>
-Package pdftex.def Info: assets/3_8_a.png  used on input line 312.
+Package pdftex.def Info: assets/3_8_a.png  used on input line 316.
 (pdftex.def)             Requested size: 143.9978pt x 78.71378pt.
-<assets/3_8_b.png, id=606, 387.4475pt x 213.79875pt>
+<assets/3_8_b.png, id=604, 387.4475pt x 213.79875pt>
 File: assets/3_8_b.png Graphic file (type png)
 <use assets/3_8_b.png>
-Package pdftex.def Info: assets/3_8_b.png  used on input line 318.
+Package pdftex.def Info: assets/3_8_b.png  used on input line 322.
 (pdftex.def)             Requested size: 143.9978pt x 79.45988pt.
-<assets/3_8_c.png, id=607, 402.50375pt x 209.78375pt>
+<assets/3_8_c.png, id=605, 402.50375pt x 209.78375pt>
 File: assets/3_8_c.png Graphic file (type png)
 <use assets/3_8_c.png>
-Package pdftex.def Info: assets/3_8_c.png  used on input line 324.
+Package pdftex.def Info: assets/3_8_c.png  used on input line 328.
 (pdftex.def)             Requested size: 143.9978pt x 75.05153pt.
-<assets/3_8_d.png, id=608, 389.455pt x 210.7875pt>
+<assets/3_8_d.png, id=606, 389.455pt x 210.7875pt>
 File: assets/3_8_d.png Graphic file (type png)
 <use assets/3_8_d.png>
-Package pdftex.def Info: assets/3_8_d.png  used on input line 330.
+Package pdftex.def Info: assets/3_8_d.png  used on input line 334.
 (pdftex.def)             Requested size: 143.9978pt x 77.93547pt.
 
-Underfull \hbox (badness 2469) in paragraph at lines 334--334
-[]\T5/cmr/m/n/10.95 H¼nh 1.8: |Util-ity func-tion be-hav-ior: $\OT1/cmr/bx/n/10.95 I\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]\OT1/cmr/m/n/10.95 ) = 25\OML/cmm/m/it/10.95 ; n[] \OT1/cmr/m/n/10.95 = 3\OML/cmm/m/it/10.95 ; d[] \OT1/cmr/m/n/10.95 =
+Underfull \hbox (badness 2253) in paragraph at lines 338--338
+[]\T5/cmr/m/n/10.95 H¼nh 1.8: |H m ti»n ½ch thüc hi»n: $\OT1/cmr/bx/n/10.95 I\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]\OT1/cmr/m/n/10.95 ) = 25\OML/cmm/m/it/10.95 ; n[] \OT1/cmr/m/n/10.95 = 3\OML/cmm/m/it/10.95 ; d[] \OT1/cmr/m/n/10.95 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--336
+Underfull \hbox (badness 10000) in paragraph at lines 309--340
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [23]
 
-LaTeX Warning: Reference `eq:3.3' on page 24 undefined on input line 338.
+LaTeX Warning: Reference `eq:3.3' on page 24 undefined on input line 342.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--355
+Package hyperref Warning: Composite letter `\textdotbelow+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 351.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--359
 |  \T5/cmr/bx/n/10.95 Out-put: $\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 UAV[]; \OT1/cmr/bx/n/10.95 t[]\OT1/cmr/m/n/10.95 )$ \T5/cmr/m/n/10.95 as-sign-ment of UAV$[]$ with tar-get
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--365
+Underfull \hbox (badness 10000) in paragraph at lines 352--369
 
  []
 
-[24 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_c.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_d.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [24 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_c.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_8_d.png>]
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [25]
-<assets/3_9.png, id=645, 583.17876pt x 303.1325pt>
+<assets/3_9.png, id=644, 583.17876pt x 303.1325pt>
 File: assets/3_9.png Graphic file (type png)
 <use assets/3_9.png>
-Package pdftex.def Info: assets/3_9.png  used on input line 378.
+Package pdftex.def Info: assets/3_9.png  used on input line 382.
 (pdftex.def)             Requested size: 349.90996pt x 181.8809pt.
 
+Underfull \hbox (badness 1400) in paragraph at lines 383--383
+[]\T5/cmr/m/n/10.95 H¼nh 1.9: |V½ dö v· h¼nh d¤ng cõa h m l¶n k¸ ho¤ch in-for-ma-tion
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [26]
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 387.
- (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmtt.fd
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 390.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 390.
+
+
+Package hyperref Warning: Composite letter `\textasciigrave+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 390.
+
+
+Package hyperref Warning: Composite letter `\texttilde+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\texttilde' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 390.
+
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 391.
+(/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<assets/3_10.png, id=658, 713.66624pt x 299.1175pt>
+<assets/3_10.png, id=656, 713.66624pt x 299.1175pt>
 File: assets/3_10.png Graphic file (type png)
 <use assets/3_10.png>
-Package pdftex.def Info: assets/3_10.png  used on input line 392.
+Package pdftex.def Info: assets/3_10.png  used on input line 396.
 (pdftex.def)             Requested size: 285.46143pt x 119.64487pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--395
+Underfull \hbox (badness 10000) in paragraph at lines 391--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--395
+Underfull \hbox (badness 10000) in paragraph at lines 391--399
 
  []
 
-[27 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_9.png>] [28 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_10.png>]
 
-LaTeX Warning: Reference `eq:3.2' on page 29 undefined on input line 401.
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
-<assets/3_11.png, id=677, 637.38126pt x 310.15875pt>
-File: assets/3_11.png Graphic file (type png)
-<use assets/3_11.png>
-Package pdftex.def Info: assets/3_11.png  used on input line 405.
-(pdftex.def)             Requested size: 318.68985pt x 155.079pt.
+ [27 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_9.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--408
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 400.
 
- []
 
-<assets/3_12.png, id=679, 643.40375pt x 312.16624pt>
-File: assets/3_12.png Graphic file (type png)
-<use assets/3_12.png>
-Package pdftex.def Info: assets/3_12.png  used on input line 413.
-(pdftex.def)             Requested size: 321.70108pt x 156.08273pt.
-[29 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_11.png>]
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 400.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 400.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 400.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 400.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 400.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_12.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 442--444
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [28 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_10.png>]
+
+Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 402.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 402.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 402.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 402.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ocircumflex' on input line 402.
+
+
+LaTeX Warning: Reference `eq:3.2' on page 29 undefined on input line 405.
+
+<assets/3_11.png, id=675, 637.38126pt x 310.15875pt>
+File: assets/3_11.png Graphic file (type png)
+<use assets/3_11.png>
+Package pdftex.def Info: assets/3_11.png  used on input line 409.
+(pdftex.def)             Requested size: 318.68985pt x 155.079pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--412
 
  []
 
 
-Underfull \vbox (badness 5908) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [29]
+<assets/3_12.png, id=683, 643.40375pt x 312.16624pt>
+File: assets/3_12.png Graphic file (type png)
+<use assets/3_12.png>
+Package pdftex.def Info: assets/3_12.png  used on input line 417.
+(pdftex.def)             Requested size: 321.70108pt x 156.08273pt.
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [30 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_11.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_12.png>]
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 443.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 443.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 443.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 443.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 443.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--448
+
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [31]
-<assets/3_13_a.png, id=707, 309.155pt x 265.99374pt>
+<assets/3_13_a.png, id=705, 309.155pt x 265.99374pt>
 File: assets/3_13_a.png Graphic file (type png)
 <use assets/3_13_a.png>
-Package pdftex.def Info: assets/3_13_a.png  used on input line 452.
+Package pdftex.def Info: assets/3_13_a.png  used on input line 456.
 (pdftex.def)             Requested size: 108.0011pt x 92.92467pt.
-<assets/3_13_b.png, id=708, 332.24126pt x 305.14pt>
+<assets/3_13_b.png, id=706, 332.24126pt x 305.14pt>
 File: assets/3_13_b.png Graphic file (type png)
 <use assets/3_13_b.png>
-Package pdftex.def Info: assets/3_13_b.png  used on input line 458.
+Package pdftex.def Info: assets/3_13_b.png  used on input line 462.
 (pdftex.def)             Requested size: 108.0011pt x 99.1926pt.
-<assets/3_13_c.png, id=709, 304.13625pt x 275.0275pt>
+<assets/3_13_c.png, id=707, 304.13625pt x 275.0275pt>
 File: assets/3_13_c.png Graphic file (type png)
 <use assets/3_13_c.png>
-Package pdftex.def Info: assets/3_13_c.png  used on input line 464.
+Package pdftex.def Info: assets/3_13_c.png  used on input line 468.
 (pdftex.def)             Requested size: 108.0011pt x 97.66272pt.
-<assets/3_13_d.png, id=710, 309.155pt x 285.065pt>
+<assets/3_13_d.png, id=708, 309.155pt x 285.065pt>
 File: assets/3_13_d.png Graphic file (type png)
 <use assets/3_13_d.png>
-Package pdftex.def Info: assets/3_13_d.png  used on input line 470.
+Package pdftex.def Info: assets/3_13_d.png  used on input line 474.
 (pdftex.def)             Requested size: 108.0011pt x 99.5872pt.
-<assets/3_13_e.png, id=711, 327.2225pt x 288.07625pt>
+<assets/3_13_e.png, id=709, 327.2225pt x 288.07625pt>
 File: assets/3_13_e.png Graphic file (type png)
 <use assets/3_13_e.png>
-Package pdftex.def Info: assets/3_13_e.png  used on input line 476.
+Package pdftex.def Info: assets/3_13_e.png  used on input line 480.
 (pdftex.def)             Requested size: 108.0011pt x 95.07863pt.
-<assets/3_13_f.png, id=712, 314.17375pt x 273.02pt>
+<assets/3_13_f.png, id=710, 314.17375pt x 273.02pt>
 File: assets/3_13_f.png Graphic file (type png)
 <use assets/3_13_f.png>
-Package pdftex.def Info: assets/3_13_f.png  used on input line 482.
+Package pdftex.def Info: assets/3_13_f.png  used on input line 486.
 (pdftex.def)             Requested size: 108.0011pt x 93.85039pt.
-<assets/3_13_g.png, id=713, 327.2225pt x 286.06876pt>
+<assets/3_13_g.png, id=711, 327.2225pt x 286.06876pt>
 File: assets/3_13_g.png Graphic file (type png)
 <use assets/3_13_g.png>
-Package pdftex.def Info: assets/3_13_g.png  used on input line 488.
+Package pdftex.def Info: assets/3_13_g.png  used on input line 492.
 (pdftex.def)             Requested size: 108.0011pt x 94.41608pt.
-<assets/3_13_h.png, id=714, 359.3425pt x 272.01625pt>
+<assets/3_13_h.png, id=712, 359.3425pt x 272.01625pt>
 File: assets/3_13_h.png Graphic file (type png)
 <use assets/3_13_h.png>
-Package pdftex.def Info: assets/3_13_h.png  used on input line 494.
+Package pdftex.def Info: assets/3_13_h.png  used on input line 498.
 (pdftex.def)             Requested size: 108.0011pt x 81.75491pt.
-<assets/3_13_i.png, id=715, 334.24875pt x 286.06876pt>
+<assets/3_13_i.png, id=713, 334.24875pt x 286.06876pt>
 File: assets/3_13_i.png Graphic file (type png)
 <use assets/3_13_i.png>
-Package pdftex.def Info: assets/3_13_i.png  used on input line 500.
+Package pdftex.def Info: assets/3_13_i.png  used on input line 504.
 (pdftex.def)             Requested size: 108.0011pt x 92.43434pt.
-<assets/3_13_j.png, id=716, 353.32pt x 281.05pt>
+<assets/3_13_j.png, id=714, 353.32pt x 281.05pt>
 File: assets/3_13_j.png Graphic file (type png)
 <use assets/3_13_j.png>
-Package pdftex.def Info: assets/3_13_j.png  used on input line 505.
+Package pdftex.def Info: assets/3_13_j.png  used on input line 509.
 (pdftex.def)             Requested size: 108.0011pt x 85.91095pt.
-<assets/3_14.png, id=717, 599.23875pt x 890.32625pt>
+<assets/3_14.png, id=715, 599.23875pt x 890.32625pt>
 File: assets/3_14.png Graphic file (type png)
 <use assets/3_14.png>
-Package pdftex.def Info: assets/3_14.png  used on input line 514.
+Package pdftex.def Info: assets/3_14.png  used on input line 518.
 (pdftex.def)             Requested size: 299.61864pt x 445.16203pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [32]
-<assets/3_15_a.png, id=725, 928.46875pt x 463.7325pt>
+<assets/3_15_a.png, id=722, 928.46875pt x 463.7325pt>
 File: assets/3_15_a.png Graphic file (type png)
 <use assets/3_15_a.png>
-Package pdftex.def Info: assets/3_15_a.png  used on input line 521.
+Package pdftex.def Info: assets/3_15_a.png  used on input line 525.
 (pdftex.def)             Requested size: 251.9989pt x 125.86043pt.
-<assets/3_15_b.png, id=726, 912.40875pt x 435.6275pt>
+<assets/3_15_b.png, id=723, 912.40875pt x 435.6275pt>
 File: assets/3_15_b.png Graphic file (type png)
 <use assets/3_15_b.png>
-Package pdftex.def Info: assets/3_15_b.png  used on input line 526.
+Package pdftex.def Info: assets/3_15_b.png  used on input line 530.
 (pdftex.def)             Requested size: 251.9989pt x 120.31308pt.
-<assets/3_15_c.png, id=727, 912.40875pt x 437.635pt>
+<assets/3_15_c.png, id=724, 912.40875pt x 437.635pt>
 File: assets/3_15_c.png Graphic file (type png)
 <use assets/3_15_c.png>
-Package pdftex.def Info: assets/3_15_c.png  used on input line 531.
+Package pdftex.def Info: assets/3_15_c.png  used on input line 535.
 (pdftex.def)             Requested size: 251.9989pt x 120.86752pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [33 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_c.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_d.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_e.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_f.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_g.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_h.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_i.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_13_j.png>]
-<assets/3_16_a.png, id=742, 630.355pt x 570.13pt>
+<assets/3_16_a.png, id=740, 630.355pt x 570.13pt>
 File: assets/3_16_a.png Graphic file (type png)
 <use assets/3_16_a.png>
-Package pdftex.def Info: assets/3_16_a.png  used on input line 541.
+Package pdftex.def Info: assets/3_16_a.png  used on input line 545.
 (pdftex.def)             Requested size: 180.0pt x 162.80191pt.
-<assets/3_16_b.png, id=743, 623.32875pt x 577.15625pt>
+<assets/3_16_b.png, id=741, 623.32875pt x 577.15625pt>
 File: assets/3_16_b.png Graphic file (type png)
 <use assets/3_16_b.png>
-Package pdftex.def Info: assets/3_16_b.png  used on input line 546.
+Package pdftex.def Info: assets/3_16_b.png  used on input line 550.
 (pdftex.def)             Requested size: 180.0pt x 166.66649pt.
-<assets/3_16_c.png, id=744, 624.3325pt x 615.29875pt>
+<assets/3_16_c.png, id=742, 624.3325pt x 615.29875pt>
 File: assets/3_16_c.png Graphic file (type png)
 <use assets/3_16_c.png>
-Package pdftex.def Info: assets/3_16_c.png  used on input line 551.
+Package pdftex.def Info: assets/3_16_c.png  used on input line 555.
 (pdftex.def)             Requested size: 180.0pt x 177.38992pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [34 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_14.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
  [35 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_15_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_15_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_15_c.png>]
-Overfull \vbox (86.00069pt too high) has occurred while \output is active []
+Overfull \vbox (87.27354pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [36 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_16_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_16_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_16_c.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 559--561
+Underfull \hbox (badness 10000) in paragraph at lines 563--565
 
  []
 
-<assets/3_17_a.png, id=771, 721.69624pt x 306.14375pt>
+<assets/3_17_a.png, id=769, 721.69624pt x 306.14375pt>
 File: assets/3_17_a.png Graphic file (type png)
 <use assets/3_17_a.png>
-Package pdftex.def Info: assets/3_17_a.png  used on input line 583.
+Package pdftex.def Info: assets/3_17_a.png  used on input line 587.
 (pdftex.def)             Requested size: 216.0022pt x 91.62894pt.
-<assets/3_17_b.png, id=772, 659.46375pt x 320.19624pt>
+<assets/3_17_b.png, id=770, 659.46375pt x 320.19624pt>
 File: assets/3_17_b.png Graphic file (type png)
 <use assets/3_17_b.png>
-Package pdftex.def Info: assets/3_17_b.png  used on input line 588.
+Package pdftex.def Info: assets/3_17_b.png  used on input line 592.
 (pdftex.def)             Requested size: 216.0022pt x 104.87846pt.
-<assets/3_17_c.png, id=773, 645.41125pt x 322.20375pt>
+<assets/3_17_c.png, id=771, 645.41125pt x 322.20375pt>
 File: assets/3_17_c.png Graphic file (type png)
 <use assets/3_17_c.png>
-Package pdftex.def Info: assets/3_17_c.png  used on input line 593.
+Package pdftex.def Info: assets/3_17_c.png  used on input line 597.
 (pdftex.def)             Requested size: 216.0022pt x 107.83199pt.
 File: assets/3_17_c.png Graphic file (type png)
 <use assets/3_17_c.png>
-Package pdftex.def Info: assets/3_17_c.png  used on input line 598.
+Package pdftex.def Info: assets/3_17_c.png  used on input line 602.
 (pdftex.def)             Requested size: 216.0022pt x 107.83199pt.
-[37]
-Overfull \vbox (51.11375pt too high) has occurred while \output is active []
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [37]
+Overfull \vbox (52.8109pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [38 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_17_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_17_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_17_c.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 605--607
+Underfull \hbox (badness 10000) in paragraph at lines 609--611
 
  []
 
-
-Overfull \hbox (1.3361pt too wide) in paragraph at lines 605--607
-\T5/cmr/m/n/10.95 To over-come this prob-lem, all the num-bers of pos-si-ble com-bi-na-tion $[]$
- []
-
-<assets/3_19.png, id=793, 752.8125pt x 361.35pt>
+<assets/3_19.png, id=791, 752.8125pt x 361.35pt>
 File: assets/3_19.png Graphic file (type png)
 <use assets/3_19.png>
-Package pdftex.def Info: assets/3_19.png  used on input line 613.
+Package pdftex.def Info: assets/3_19.png  used on input line 617.
 (pdftex.def)             Requested size: 301.11966pt x 144.53743pt.
-<assets/3_18_a.png, id=795, 810.02625pt x 376.40625pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [39]
+<assets/3_18_a.png, id=799, 810.02625pt x 376.40625pt>
 File: assets/3_18_a.png Graphic file (type png)
 <use assets/3_18_a.png>
-Package pdftex.def Info: assets/3_18_a.png  used on input line 622.
+Package pdftex.def Info: assets/3_18_a.png  used on input line 626.
 (pdftex.def)             Requested size: 251.9989pt x 117.09825pt.
-<assets/3_18_b.png, id=796, 779.91376pt x 365.365pt>
+<assets/3_18_b.png, id=800, 779.91376pt x 365.365pt>
 File: assets/3_18_b.png Graphic file (type png)
 <use assets/3_18_b.png>
-Package pdftex.def Info: assets/3_18_b.png  used on input line 627.
+Package pdftex.def Info: assets/3_18_b.png  used on input line 631.
 (pdftex.def)             Requested size: 251.9989pt x 118.0509pt.
-<assets/3_18_c.png, id=797, 778.91pt x 366.36874pt>
+<assets/3_18_c.png, id=801, 778.91pt x 366.36874pt>
 File: assets/3_18_c.png Graphic file (type png)
 <use assets/3_18_c.png>
-Package pdftex.def Info: assets/3_18_c.png  used on input line 632.
+Package pdftex.def Info: assets/3_18_c.png  used on input line 636.
 (pdftex.def)             Requested size: 251.9989pt x 118.52617pt.
-[39 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_19.png>]
-<assets/3_20_a.png, id=805, 769.87625pt x 392.46625pt>
+<assets/3_20_a.png, id=802, 769.87625pt x 392.46625pt>
 File: assets/3_20_a.png Graphic file (type png)
 <use assets/3_20_a.png>
-Package pdftex.def Info: assets/3_20_a.png  used on input line 642.
+Package pdftex.def Info: assets/3_20_a.png  used on input line 646.
 (pdftex.def)             Requested size: 251.9989pt x 128.46027pt.
-<assets/3_20_b.png, id=806, 750.805pt x 360.34625pt>
+<assets/3_20_b.png, id=803, 750.805pt x 360.34625pt>
 File: assets/3_20_b.png Graphic file (type png)
 <use assets/3_20_b.png>
-Package pdftex.def Info: assets/3_20_b.png  used on input line 647.
+Package pdftex.def Info: assets/3_20_b.png  used on input line 651.
 (pdftex.def)             Requested size: 251.9989pt x 120.94354pt.
-<assets/3_20_c.png, id=807, 771.88374pt x 333.245pt>
+<assets/3_20_c.png, id=804, 771.88374pt x 333.245pt>
 File: assets/3_20_c.png Graphic file (type png)
 <use assets/3_20_c.png>
-Package pdftex.def Info: assets/3_20_c.png  used on input line 652.
+Package pdftex.def Info: assets/3_20_c.png  used on input line 656.
 (pdftex.def)             Requested size: 251.9989pt x 108.79149pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_c.png>]
-<assets/3_21.png, id=817, 776.9025pt x 370.38374pt>
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [40 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_19.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [41 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_18_c.png>]
+<assets/3_21.png, id=819, 776.9025pt x 370.38374pt>
 File: assets/3_21.png Graphic file (type png)
 <use assets/3_21.png>
-Package pdftex.def Info: assets/3_21.png  used on input line 662.
+Package pdftex.def Info: assets/3_21.png  used on input line 666.
 (pdftex.def)             Requested size: 310.7555pt x 148.15086pt.
 
-Underfull \vbox (badness 3547) has occurred while \output is active []
+Underfull \vbox (badness 2343) has occurred while \output is active []
 
- [41 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_c.png>]
-<assets/3_22.png, id=826, 762.85pt x 361.35pt>
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [42 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_20_c.png>]
+<assets/3_22.png, id=828, 762.85pt x 361.35pt>
 File: assets/3_22.png Graphic file (type png)
 <use assets/3_22.png>
-Package pdftex.def Info: assets/3_22.png  used on input line 670.
+Package pdftex.def Info: assets/3_22.png  used on input line 674.
 (pdftex.def)             Requested size: 305.1346pt x 144.53743pt.
- [42 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_21.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_22.png>]
-<assets/3_23.png, id=835, 1049.9225pt x 308.15125pt>
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [43 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_21.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_22.png>]
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 679.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 679.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 679.
+
+
+Package hyperref Warning: Composite letter `\textasciigrave+\abreve'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 679.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\abreve' on input line 679.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 679.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 679.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 679.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 679.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+i'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 679.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 679.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 679.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 679.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 679.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ocircumflex' on input line 679.
+
+<assets/3_23.png, id=838, 1049.9225pt x 308.15125pt>
 File: assets/3_23.png Graphic file (type png)
 <use assets/3_23.png>
-Package pdftex.def Info: assets/3_23.png  used on input line 679.
+Package pdftex.def Info: assets/3_23.png  used on input line 683.
 (pdftex.def)             Requested size: 314.97917pt x 92.44608pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--685
+Underfull \hbox (badness 10000) in paragraph at lines 687--689
 
  []
 
-[43 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_23.png>]
-<assets/3_24.png, id=844, 780.9175pt x 373.395pt>
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [44 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_23.png>]
+<assets/3_24.png, id=846, 780.9175pt x 373.395pt>
 File: assets/3_24.png Graphic file (type png)
 <use assets/3_24.png>
-Package pdftex.def Info: assets/3_24.png  used on input line 691.
+Package pdftex.def Info: assets/3_24.png  used on input line 695.
 (pdftex.def)             Requested size: 312.36147pt x 149.35535pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 697--700
-
+Overfull \hbox (10.78198pt too wide) in paragraph at lines 691--698
+\T5/cmr/m/n/10.95 robot kh¡c câ thº ÷îc t½nh bi¸n ^^_êi t÷ìng ùng cõa chóng th nh $[] [][] \OML/cmm/m/it/10.95 ; j \OMS/cmsy/m/n/10.95 2
  []
 
-[44 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_24.png>] [45]
-Ch\uhorn \ohorn ng 2.
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -1410,1235 +1929,996 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 700.
 
 
-Package hyperref Warning: Composite letter `\texttilde+\uhorn'
+Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 700.
+(hyperref)                removing `\textdotbelow' on input line 700.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 700.
+(hyperref)                removing `\acircumflex' on input line 700.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--704
+
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [45 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/3_24.png>]
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [46]
+Ch\uhorn \ohorn ng 2.
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 704.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 704.
+
+
+Package hyperref Warning: Composite letter `\texttilde+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\texttilde' on input line 704.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 704.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 701.
+(hyperref)                removing `\textacute' on input line 705.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 701.
+(hyperref)                removing `\ohorn' on input line 705.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 701.
+(hyperref)                removing `\textdotbelow' on input line 705.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 701.
+(hyperref)                removing `\ecircumflex' on input line 705.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--705
+Underfull \hbox (badness 10000) in paragraph at lines 706--709
 
  []
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 705.
+(hyperref)                removing `\textdotbelow' on input line 709.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 705.
+(hyperref)                removing `\textdotbelow' on input line 709.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 708.
+(hyperref)                removing `\textacute' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 708.
+(hyperref)                removing `\ecircumflex' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 708.
+(hyperref)                removing `\dj' on input line 712.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 708.
+(hyperref)                removing `\textdotbelow' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 708.
+(hyperref)                removing `\ocircumflex' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 708.
+(hyperref)                removing `\ohorn' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 708.
+(hyperref)                removing `\h' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 708.
+(hyperref)                removing `\ohorn' on input line 712.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 708.
+(hyperref)                removing `\textdotbelow' on input line 712.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 708.
+(hyperref)                removing `\textasciigrave' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 708.
+(hyperref)                removing `\acircumflex' on input line 712.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 708.
+(hyperref)                removing `\textacute' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 708.
+(hyperref)                removing `\ohorn' on input line 712.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 708.
+(hyperref)                removing `\textacute' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 708.
+(hyperref)                removing `\ecircumflex' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 708.
+(hyperref)                removing `\dj' on input line 712.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 708.
+(hyperref)                removing `\textdotbelow' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 708.
+(hyperref)                removing `\ocircumflex' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 708.
+(hyperref)                removing `\ohorn' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 708.
+(hyperref)                removing `\h' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 708.
+(hyperref)                removing `\ohorn' on input line 712.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 708.
+(hyperref)                removing `\textdotbelow' on input line 712.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 708.
+(hyperref)                removing `\textasciigrave' on input line 712.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 708.
+(hyperref)                removing `\acircumflex' on input line 712.
 
-<assets/4_1.png, id=861, 792.9625pt x 313.17pt>
+<assets/4_1.png, id=863, 792.9625pt x 313.17pt>
 File: assets/4_1.png Graphic file (type png)
 <use assets/4_1.png>
-Package pdftex.def Info: assets/4_1.png  used on input line 712.
+Package pdftex.def Info: assets/4_1.png  used on input line 716.
 (pdftex.def)             Requested size: 317.17938pt x 125.26576pt.
-[46
+[47
 
 ]
-Overfull \hbox (0.70425pt too wide) in paragraph at lines 720--727
+Overfull \hbox (0.70425pt too wide) in paragraph at lines 724--731
  [][] 
  []
 
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [47 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_1.png>]
+ [48 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_1.png>]
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 729.
+(hyperref)                removing `\textdotbelow' on input line 733.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 729.
+(hyperref)                removing `\textdotbelow' on input line 733.
 
 
-Overfull \hbox (5.67152pt too wide) in paragraph at lines 737--737
+Overfull \hbox (5.67152pt too wide) in paragraph at lines 741--741
 []|\T5/cmr/bx/n/10.95 MANET| 
  []
 
 
-Overfull \hbox (1.83995pt too wide) in paragraph at lines 737--737
+Overfull \hbox (1.83995pt too wide) in paragraph at lines 741--741
 []|\T5/cmr/bx/n/10.95 VANET| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--738
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
 \T5/cmr/bx/n/10.95 m¤ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--738
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
 \T5/cmr/bx/n/10.95 cõa
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 739--739
+Underfull \hbox (badness 2409) in paragraph at lines 743--743
 []|\T5/cmr/m/n/10.95 Ng÷íi ð
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T5/cmr/m/n/10.95 mët sè
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T5/cmr/m/n/10.95 nh§t
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T5/cmr/m/n/10.95 Ph÷ìng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T5/cmr/m/n/10.95 ti»n ð
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T5/cmr/m/n/10.95 M¡y bay
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T5/cmr/m/n/10.95 trong k¸
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 740--740
+Underfull \hbox (badness 10000) in paragraph at lines 744--744
 []|\T5/cmr/bx/n/10.95 Mùc ^^_ë di
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 []|\T5/cmr/bx/n/10.95 Ch¸ ^^_ë di
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 []|\T5/cmr/m/n/10.95 ^^^iºm
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 ng¨u
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 nhi¶n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 vîi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 h÷îng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 v  tèc
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 741--741
+Underfull \hbox (badness 1365) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 ^^_ë ng¨u
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 []|\T5/cmr/m/n/10.95 Câ kh£
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 n«ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 []|\T5/cmr/m/n/10.95 Khæng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 ^^_÷ñc x¡c
  []
 
 
-Underfull \hbox (badness 6725) in paragraph at lines 741--741
+Underfull \hbox (badness 6725) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 (mæ h¼nh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 chuyºn
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 741--741
+Underfull \hbox (badness 2042) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 nhi¶n cõa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 UAV,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 mæ h¼nh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 düa tr¶n
  []
 
 
-Overfull \hbox (5.3764pt too wide) in paragraph at lines 741--741
+Overfull \hbox (5.3764pt too wide) in paragraph at lines 745--745
 \T5/cmr/m/n/10.95 pheromone)| 
  []
 
 
-Underfull \hbox (badness 7759) in paragraph at lines 743--743
+Underfull \hbox (badness 7759) in paragraph at lines 747--747
 []|\T5/cmr/bx/n/10.95 Kho£ng c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 []|\T5/cmr/bx/n/10.95 Mæ h¼nh
  []
 
 
-Underfull \hbox (badness 5161) in paragraph at lines 745--745
+Underfull \hbox (badness 5161) in paragraph at lines 749--749
 []|\T5/cmr/m/n/10.95 Sü hi»n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 di»n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 hi¸m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 hoi cõa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 ^^_÷íng
  []
 
 
-Underfull \hbox (badness 5161) in paragraph at lines 745--745
+Underfull \hbox (badness 5161) in paragraph at lines 749--749
 []|\T5/cmr/m/n/10.95 Sü hi»n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 di»n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 hi¸m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 hoi cõa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 ^^_÷íng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 []|\T5/cmr/m/n/10.95 Sü hi»n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 di»n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 th÷íng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 ^^_÷íng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 []|\T5/cmr/m/n/10.95 Luæn câ
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 m°t cõa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
 \T5/cmr/m/n/10.95 ^^_÷íng
  []
 
 
-Underfull \hbox (badness 5022) in paragraph at lines 746--746
+Underfull \hbox (badness 5022) in paragraph at lines 750--750
 \T5/cmr/bx/n/10.95 thö v  cæng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
 []|\T5/cmr/m/n/10.95 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
 \T5/cmr/m/n/10.95 802.11,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
 \T5/cmr/m/n/10.95 802.15,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
 \T5/cmr/m/n/10.95 802.15.4,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
 \T5/cmr/m/n/10.95 802.16
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
 \T5/cmr/m/n/10.95 and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
 []|\T5/cmr/m/n/10.95 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
 []|\T5/cmr/m/n/10.95 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--749
+Underfull \hbox (badness 10000) in paragraph at lines 734--753
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (0.4298pt too high) has occurred while \output is active []
-
- [48]
-Overfull \vbox (103.28525pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [49]
+Overfull \vbox (103.28525pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [50]
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 751.
+(hyperref)                removing `\textdotbelow' on input line 755.
 
 
 Package hyperref Warning: Composite letter `\textacute+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 751.
+(hyperref)                removing `\textacute' on input line 755.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 751.
+(hyperref)                removing `\acircumflex' on input line 755.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 751.
+(hyperref)                removing `\textacute' on input line 755.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 751.
+(hyperref)                removing `\ecircumflex' on input line 755.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 751.
+(hyperref)                removing `\textdotbelow' on input line 755.
 
-<assets/4_2.png, id=891, 781.92125pt x 188.705pt>
+<assets/4_2.png, id=893, 781.92125pt x 188.705pt>
 File: assets/4_2.png Graphic file (type png)
 <use assets/4_2.png>
-Package pdftex.def Info: assets/4_2.png  used on input line 756.
+Package pdftex.def Info: assets/4_2.png  used on input line 760.
 (pdftex.def)             Requested size: 312.76295pt x 75.48065pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--759
+Underfull \hbox (badness 10000) in paragraph at lines 756--763
 
  []
 
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [50 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_2.png>]
+ [51 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_2.png>]
 
 Package hyperref Warning: Composite letter `\textacute+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 765.
+(hyperref)                removing `\textacute' on input line 769.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 765.
+(hyperref)                removing `\acircumflex' on input line 769.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 765.
+(hyperref)                removing `\textdotbelow' on input line 769.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 767.
+(hyperref)                removing `\textdotbelow' on input line 771.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 767.
+(hyperref)                removing `\ecircumflex' on input line 771.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Overfull \hbox (50.32004pt too wide) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
+
+ []
+
+
+Overfull \hbox (50.32004pt too wide) in paragraph at lines 772--786
 \T5/cmr/m/n/10.95 ti»n bay ^^_÷ñc nèi m¤ng düa tr¶n Linux ^^_÷ñc tr¼nh b y trong [[]]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--782
+Underfull \hbox (badness 10000) in paragraph at lines 772--786
 
  []
-
-
-Overfull \vbox (0.4298pt too high) has occurred while \output is active []
-
- [51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [53]
-Underfull \hbox (badness 10000) in paragraph at lines 788--788
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [54]
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 []|\T5/cmr/bx/n/10.95 Ti¶u
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 788--789
+Underfull \hbox (badness 10000) in paragraph at lines 792--793
 []|\T5/cmr/bx/n/10.95 Ph¦n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 []|\T5/cmr/m/n/10.95 [Scherer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 et al.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 []|\T5/cmr/m/n/10.95 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 802.11s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 mesh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 tech-nol-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 []|\T5/cmr/m/n/10.95 Lîp
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 Net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 []|\T5/cmr/m/n/10.95 Range: 100m,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 com-mu-ni-ca-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 de-lay: 5ms,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 Through-put:
  []
 
 
-Overfull \hbox (3.67859pt too wide) in paragraph at lines 790--790
+Overfull \hbox (3.67859pt too wide) in paragraph at lines 794--794
 []|\T5/cmr/m/n/10.95 Heterogeneous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 []|\T5/cmr/m/n/10.95 Middleware
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 Robot
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 Op-er-at-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 \T5/cmr/m/n/10.95 Sys-tem
  []
 
 
-Overfull \vbox (13.60002pt too high) detected at line 791
+Overfull \vbox (13.60002pt too high) detected at line 795
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 []|\T5/cmr/m/n/10.95 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 []|\T5/cmr/m/n/10.95 Lîp
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 PHY
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 v 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 (AP v  l÷îi),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 mùc ^^_ë cæng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 []|\T5/cmr/m/n/10.95 Outdoor +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 mesh mode
  []
 
 
-Underfull \hbox (badness 5064) in paragraph at lines 791--791
+Underfull \hbox (badness 5064) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 + sin-gle hop;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 Range: 500m;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 TCP through-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 put: 35Mbit/s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 (50m); FB:
  []
 
 
-Underfull \hbox (badness 6157) in paragraph at lines 791--791
+Underfull \hbox (badness 6157) in paragraph at lines 795--795
 []|\T5/cmr/m/n/10.95 Two Pel-i-can
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 UAVs +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 lap-top BS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 + Com-pex
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 WLE300NX
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 802.11abgn
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 mini PCIe
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 []|\T5/cmr/m/n/10.95 Ubuntu
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 791--791
+Underfull \hbox (badness 1418) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 Linux Ker-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 nel 3.2.
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 791--791
+Underfull \hbox (badness 1939) in paragraph at lines 795--795
 \T5/cmr/m/n/10.95 with ath9k
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 []|\T5/cmr/m/n/10.95 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 []|\T5/cmr/m/n/10.95 Lîp
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 PHY
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 v 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 []|\T5/cmr/m/n/10.95 Outdoor +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 mesh mode
  []
 
 
-Underfull \hbox (badness 5064) in paragraph at lines 792--792
+Underfull \hbox (badness 5064) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 + sin-gle hop;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 Range: 500m;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 TCP through-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 put: 10Mbit/s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 (50m); FB:
  []
 
 
-Underfull \hbox (badness 6157) in paragraph at lines 792--792
+Underfull \hbox (badness 6157) in paragraph at lines 796--796
 []|\T5/cmr/m/n/10.95 Two Pel-i-can
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 UAVs +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 lap-top BS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 + Com-pex
  []
 
 
-Overfull \hbox (1.15468pt too wide) in paragraph at lines 792--792
+Overfull \hbox (1.15468pt too wide) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 WLE900N518
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 802.11ac
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 792--792
+Underfull \hbox (badness 1394) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 5Ghz miniP-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 []|\T5/cmr/m/n/10.95 Ubuntu
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 792--792
+Underfull \hbox (badness 1418) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 Linux Ker-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
 \T5/cmr/m/n/10.95 nel 3.2.
- []
-
-
-Overfull \vbox (0.4298pt too high) has occurred while \output is active []
-
- [54
-
-]
-Overfull \hbox (4.51588pt too wide) in paragraph at lines 800--800
-[]|\T5/cmr/m/n/10.95 [Kuschnig
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 et al.,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-[]|\T5/cmr/m/n/10.95 IEEE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-[]|\T5/cmr/m/n/10.95 Lîp
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 PHY
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 v 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-[]|\T5/cmr/m/n/10.95 RSS v  thæng
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 l÷ñng gi£m d¦n
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-[]|\T5/cmr/m/n/10.95 Outdoor
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 over com-pus
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 150m*150m;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 Range: 10m;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 Through-put:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 and 27Mbit/s
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 (prac); FB:
- []
-
-
-Underfull \hbox (badness 2970) in paragraph at lines 800--800
-[]|\T5/cmr/m/n/10.95 AP: Net-gear
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 WNDR3700
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 + Atheros
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 AR9280
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 based wire-
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 less cards +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 UAV with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 In-tel Atom
- []
-
-
-Underfull \hbox (badness 7308) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 Pro-ces-sor +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 Spark-LAN
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 WPEA110N
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 wire-less
- []
-
-
-Underfull \hbox (badness 5302) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 card + an-
- []
-
-
-Underfull \hbox (badness 6477) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 18720.11 for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-[]|\T5/cmr/m/n/10.95 Linux-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 based
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 Open-WRT
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--800
-\T5/cmr/m/n/10.95 Back-fire
- []
-
-
-Overfull \hbox (6.67493pt too wide) in paragraph at lines 801--801
-[]|\T5/cmr/m/n/10.95 [Asadpour
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 et al.,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-[]|\T5/cmr/m/n/10.95 IEEE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 802.11n
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-[]|\T5/cmr/m/n/10.95 Lîp
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 PHY
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 v 
- []
-
-
-Underfull \hbox (badness 3229) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 l¥u v  chi ph½
- []
-
-
-Underfull \hbox (badness 3009) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 ^^_ành tuy¸n cao
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 (vîi giao thùc
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 BAT-MAN cho
- []
-
-
-Underfull \hbox (badness 3049) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 put for 200m:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 5.95Mbit/s;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 Con-ver-gence
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 28s; Rout-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 over-head (20-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-[]|\T5/cmr/m/n/10.95 Two Ar-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 ducopter
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 + GB +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-\T5/cmr/m/n/10.95 802.11n +
  []
 
 
@@ -2646,300 +2926,269 @@ Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [55
 
-
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
+Overfull \hbox (4.51588pt too wide) in paragraph at lines 804--804
+[]|\T5/cmr/m/n/10.95 [Kuschnig
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 et al.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
 []|\T5/cmr/m/n/10.95 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 802.11s
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 mesh
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 nodes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 for UAV
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 to UAV
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 802.11g
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 for UAV
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
 []|\T5/cmr/m/n/10.95 Lîp
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 Net-
- []
-
-
-Underfull \hbox (badness 3009) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 nh£y, c¡c UAV
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 ^^_¤t ^^_÷ñc thæng
- []
-
-
-Underfull \hbox (badness 5008) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 UAV tr¶n m°t
- []
-
-
-Underfull \hbox (badness 5741) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 n y ^^_÷ñc thüc
- []
-
-
-Underfull \hbox (badness 5417) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 so vîi ch¸ ^^_ë
- []
-
-
-Underfull \hbox (badness 2529) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 m n tr¼nh di¹n
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-[]|\T5/cmr/m/n/10.95 Single hop
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 3-5m and AP-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 AP = 75m)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 in lo-ca-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 po-si-tion-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 mode; TCP
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 through-put =
- []
-
-
-Underfull \hbox (badness 3769) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 sig-nal strength
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 po-si-tion-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 mode: TCP
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 through-put =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 quad-copters
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 Pro-fes-sional
- []
-
-
-Underfull \hbox (badness 2073) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 Mesh OM1P
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 + two note-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-[]|\T5/cmr/m/n/10.95 Linux
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 2.6.37.6
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 Ker-nel
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 gen-er-ated
- []
-
-
-Underfull \hbox (badness 6094) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 by ADAM
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 (em-bed-ded
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 Linux dis-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 tri-bu-tion)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-\T5/cmr/m/n/10.95 + driver
- []
-
-
-Overfull \hbox (3.2691pt too wide) in paragraph at lines 810--810
-[]|\T5/cmr/m/n/10.95 [Muzaffar
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 Yan-maz,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-[]|\T5/cmr/m/n/10.95 IEEE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-[]|\T5/cmr/m/n/10.95 Lîp
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
 \T5/cmr/m/n/10.95 PHY
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
 \T5/cmr/m/n/10.95 v 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-[]|\T5/cmr/m/n/10.95 Thæng l÷ñng
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+[]|\T5/cmr/m/n/10.95 RSS v  thæng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 gi£m khi sè
+Underfull \hbox (badness 1178) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 l÷ñng gi£m d¦n
  []
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 l÷ñng nót t«ng
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+[]|\T5/cmr/m/n/10.95 Outdoor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-[]|\T5/cmr/m/n/10.95 Range: up
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 over com-pus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 to $\OT1/cmr/m/n/10.95 1000\OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95 ^^B
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 150m*150m;
  []
 
 
-Underfull \hbox (badness 3989) in paragraph at lines 810--810
-\OT1/cmr/m/n/10.95 1000\OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95 ^^B \OT1/cmr/m/n/10.95 50\OML/cmm/m/it/10.95 m$\T5/cmr/m/n/10.95 ;
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 Range: 10m;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
 \T5/cmr/m/n/10.95 Through-put:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 54Mbit/s
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 and 27Mbit/s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
 \T5/cmr/m/n/10.95 (prac); FB:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-[]|\T5/cmr/m/n/10.95 Simulation:
+Underfull \hbox (badness 2970) in paragraph at lines 804--804
+[]|\T5/cmr/m/n/10.95 AP: Net-gear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 UAVs +
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 WNDR3700
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-\T5/cmr/m/n/10.95 Groung
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 + Atheros
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 AR9280
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 based wire-
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 less cards +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 UAV with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 In-tel Atom
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 Pro-ces-sor +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 Spark-LAN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 WPEA110N
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 wire-less
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 card + an-
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 18720.11 for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+[]|\T5/cmr/m/n/10.95 Linux-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 Open-WRT
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
+\T5/cmr/m/n/10.95 Back-fire
+ []
+
+
+Overfull \hbox (6.67493pt too wide) in paragraph at lines 805--805
+[]|\T5/cmr/m/n/10.95 [Asadpour
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 et al.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 802.11n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+[]|\T5/cmr/m/n/10.95 Lîp
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 PHY
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 v 
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 l¥u v  chi ph½
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 ^^_ành tuy¸n cao
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 (vîi giao thùc
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 BAT-MAN cho
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 put for 200m:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 5.95Mbit/s;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 Con-ver-gence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 28s; Rout-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 over-head (20-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+[]|\T5/cmr/m/n/10.95 Two Ar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 ducopter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 + GB +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
+\T5/cmr/m/n/10.95 802.11n +
  []
 
 
@@ -2949,73 +3198,298 @@ Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
 []|\T5/cmr/m/n/10.95 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 802.11s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 mesh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 nodes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 for UAV
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 to UAV
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 802.11g
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 for UAV
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
 []|\T5/cmr/m/n/10.95 Lîp
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 Net-
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 nh£y, c¡c UAV
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 ^^_¤t ^^_÷ñc thæng
+ []
+
+
+Underfull \hbox (badness 5008) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 UAV tr¶n m°t
+ []
+
+
+Underfull \hbox (badness 5741) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 n y ^^_÷ñc thüc
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 so vîi ch¸ ^^_ë
+ []
+
+
+Underfull \hbox (badness 2529) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 m n tr¼nh di¹n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+[]|\T5/cmr/m/n/10.95 Single hop
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 3-5m and AP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 AP = 75m)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 in lo-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 po-si-tion-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 mode; TCP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 through-put =
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 sig-nal strength
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 po-si-tion-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 mode: TCP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 through-put =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 quad-copters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 Pro-fes-sional
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 Mesh OM1P
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 + two note-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+[]|\T5/cmr/m/n/10.95 Linux
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 2.6.37.6
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 Ker-nel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 gen-er-ated
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 by ADAM
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 (em-bed-ded
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 Linux dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 tri-bu-tion)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+\T5/cmr/m/n/10.95 + driver
+ []
+
+
+Overfull \hbox (3.2691pt too wide) in paragraph at lines 814--814
+[]|\T5/cmr/m/n/10.95 [Muzaffar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 Yan-maz,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+[]|\T5/cmr/m/n/10.95 Lîp
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
 \T5/cmr/m/n/10.95 PHY
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
 \T5/cmr/m/n/10.95 v 
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 k¸t hñp låc v 
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+[]|\T5/cmr/m/n/10.95 Thæng l÷ñng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-[]|\T5/cmr/m/it/10.95 One hop\T5/cmr/m/n/10.95 :
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 gi£m khi sè
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 through-put:
+Underfull \hbox (badness 3250) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 l÷ñng nót t«ng
  []
 
 
-Underfull \hbox (badness 3724) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 loss ra-tio $\OT1/cmr/m/n/10.95 5%$\T5/cmr/m/n/10.95 ;
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+[]|\T5/cmr/m/n/10.95 Range: up
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/it/10.95 Two hop:
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 to $\OT1/cmr/m/n/10.95 1000\OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95 ^^B
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 through-put
+Underfull \hbox (badness 3989) in paragraph at lines 814--814
+\OT1/cmr/m/n/10.95 1000\OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95 ^^B \OT1/cmr/m/n/10.95 50\OML/cmm/m/it/10.95 m$\T5/cmr/m/n/10.95 ;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 0.65kb/s,
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 Through-put:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-[]|\T5/cmr/m/n/10.95 Embedded
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 54Mbit/s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\T5/cmr/m/n/10.95 BBB board
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 (prac); FB:
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 818--818
-[]|\T5/cmr/m/n/10.95 Linux Ker-
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+[]|\T5/cmr/m/n/10.95 Simulation:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 UAVs +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T5/cmr/m/n/10.95 Groung
  []
 
 
@@ -3025,64 +3499,140 @@ Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
 
 ]
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 822.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 822.
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+[]|\T5/cmr/m/n/10.95 IEEE
+ []
 
 
-Package hyperref Warning: Composite letter `\textacute+\uhorn'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 822.
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+[]|\T5/cmr/m/n/10.95 Lîp
+ []
 
 
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 822.
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T5/cmr/m/n/10.95 PHY
+ []
 
 
-Package hyperref Warning: Composite letter `\textdotbelow+a'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 822.
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T5/cmr/m/n/10.95 v 
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 822--822
+\T5/cmr/m/n/10.95 k¸t hñp låc v 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+[]|\T5/cmr/m/it/10.95 One hop\T5/cmr/m/n/10.95 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T5/cmr/m/n/10.95 through-put:
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 822--822
+\T5/cmr/m/n/10.95 loss ra-tio $\OT1/cmr/m/n/10.95 5%$\T5/cmr/m/n/10.95 ;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T5/cmr/m/it/10.95 Two hop:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T5/cmr/m/n/10.95 through-put
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T5/cmr/m/n/10.95 0.65kb/s,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+[]|\T5/cmr/m/n/10.95 Embedded
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T5/cmr/m/n/10.95 BBB board
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 822--822
+[]|\T5/cmr/m/n/10.95 Linux Ker-
+ []
 
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [58
 
+
+]
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 826.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 826.
+
+
+Package hyperref Warning: Composite letter `\textacute+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 826.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 826.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 826.
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [59
+
 ]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 841.
+(hyperref)                removing `\textacute' on input line 845.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 841.
+(hyperref)                removing `\ecircumflex' on input line 845.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 841.
+(hyperref)                removing `\h' on input line 845.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 841.
+(hyperref)                removing `\h' on input line 845.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 841.
+(hyperref)                removing `\textdotbelow' on input line 845.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 841.
+(hyperref)                removing `\acircumflex' on input line 845.
 
-<assets/4_3.png, id=973, 731.73375pt x 391.4625pt>
+<assets/4_3.png, id=975, 731.73375pt x 391.4625pt>
 File: assets/4_3.png Graphic file (type png)
 <use assets/4_3.png>
-Package pdftex.def Info: assets/4_3.png  used on input line 845.
+Package pdftex.def Info: assets/4_3.png  used on input line 849.
 (pdftex.def)             Requested size: 219.52182pt x 117.43965pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3090,149 +3640,136 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [59]
-<assets/4_4.png, id=983, 723.70375pt x 404.51125pt>
+ [60]
+<assets/4_4.png, id=985, 723.70375pt x 404.51125pt>
 File: assets/4_4.png Graphic file (type png)
 <use assets/4_4.png>
-Package pdftex.def Info: assets/4_4.png  used on input line 852.
+Package pdftex.def Info: assets/4_4.png  used on input line 856.
 (pdftex.def)             Requested size: 289.47636pt x 161.80162pt.
 
 
 Package hyperref Warning: Composite letter `\textacute+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 856.
+(hyperref)                removing `\textacute' on input line 860.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 856.
+(hyperref)                removing `\acircumflex' on input line 860.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 856.
+(hyperref)                removing `\textacute' on input line 860.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 856.
+(hyperref)                removing `\ecircumflex' on input line 860.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 856.
+(hyperref)                removing `\textacute' on input line 860.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 856.
+(hyperref)                removing `\ecircumflex' on input line 860.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 856.
+(hyperref)                removing `\uhorn' on input line 860.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 856.
+(hyperref)                removing `\textdotbelow' on input line 860.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 856.
+(hyperref)                removing `\ohorn' on input line 860.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 856.
+(hyperref)                removing `\textdotbelow' on input line 860.
 
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [60 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_3.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_4.png>]
+ [61 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_3.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_4.png>]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 858.
+(hyperref)                removing `\textdotbelow' on input line 862.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 858.
+(hyperref)                removing `\ecircumflex' on input line 862.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 859--866
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 859--866
+Underfull \hbox (badness 10000) in paragraph at lines 863--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 859--866
+Underfull \hbox (badness 10000) in paragraph at lines 863--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 859--866
+Underfull \hbox (badness 10000) in paragraph at lines 863--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 859--866
+Underfull \hbox (badness 10000) in paragraph at lines 863--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 859--866
+Underfull \hbox (badness 10000) in paragraph at lines 863--870
 
  []
 
 
-Overfull \hbox (43.60117pt too wide) has occurred while \output is active
-\T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 61
+Underfull \hbox (badness 10000) in paragraph at lines 863--870
+
  []
 
-
-Overfull \vbox (0.4298pt too high) has occurred while \output is active []
-
- [61]
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 866.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 866.
-
-
-Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 866.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 866.
-
-
-Package hyperref Warning: Composite letter `\texttilde+\uhorn'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 866.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 866.
-
-<assets/4_5.png, id=1016, 482.80376pt x 436.63126pt>
-File: assets/4_5.png Graphic file (type png)
-<use assets/4_5.png>
-Package pdftex.def Info: assets/4_5.png  used on input line 872.
-(pdftex.def)             Requested size: 241.40129pt x 218.3151pt.
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [62]
-Underfull \hbox (badness 10000) in paragraph at lines 880--882
 
- []
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 870.
 
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 870.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 870.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 870.
+
+
+Package hyperref Warning: Composite letter `\texttilde+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\texttilde' on input line 870.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 870.
+
+<assets/4_5.png, id=1019, 482.80376pt x 436.63126pt>
+File: assets/4_5.png Graphic file (type png)
+<use assets/4_5.png>
+Package pdftex.def Info: assets/4_5.png  used on input line 876.
+(pdftex.def)             Requested size: 241.40129pt x 218.3151pt.
 
 Overfull \hbox (43.60117pt too wide) has occurred while \output is active
 \T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 63
@@ -3241,53 +3778,58 @@ Overfull \hbox (43.60117pt too wide) has occurred while \output is active
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [63 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_5.png>]
-<assets/4_6.png, id=1034, 724.7075pt x 472.76625pt>
+ [63]
+Underfull \hbox (badness 10000) in paragraph at lines 884--886
+
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [64 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_5.png>]
+<assets/4_6.png, id=1036, 724.7075pt x 472.76625pt>
 File: assets/4_6.png Graphic file (type png)
 <use assets/4_6.png>
-Package pdftex.def Info: assets/4_6.png  used on input line 886.
+Package pdftex.def Info: assets/4_6.png  used on input line 890.
 (pdftex.def)             Requested size: 289.87787pt x 189.10315pt.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 891.
+(hyperref)                removing `\textacute' on input line 895.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 891.
+(hyperref)                removing `\ecircumflex' on input line 895.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 891.
+(hyperref)                removing `\h' on input line 895.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 891.
+(hyperref)                removing `\h' on input line 895.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 891.
+(hyperref)                removing `\textdotbelow' on input line 895.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 891.
+(hyperref)                removing `\acircumflex' on input line 895.
 
-<assets/4_7_a.png, id=1036, 698.61pt x 332.24126pt>
+<assets/4_7_a.png, id=1038, 698.61pt x 332.24126pt>
 File: assets/4_7_a.png Graphic file (type png)
 <use assets/4_7_a.png>
-Package pdftex.def Info: assets/4_7_a.png  used on input line 896.
+Package pdftex.def Info: assets/4_7_a.png  used on input line 900.
 (pdftex.def)             Requested size: 251.9989pt x 119.84502pt.
-<assets/4_7_b.png, id=1037, 694.595pt x 332.24126pt>
+<assets/4_7_b.png, id=1039, 694.595pt x 332.24126pt>
 File: assets/4_7_b.png Graphic file (type png)
 <use assets/4_7_b.png>
-Package pdftex.def Info: assets/4_7_b.png  used on input line 901.
+Package pdftex.def Info: assets/4_7_b.png  used on input line 905.
 (pdftex.def)             Requested size: 251.9989pt x 120.53955pt.
 
-Overfull \vbox (0.4298pt too high) has occurred while \output is active []
-
- [64 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_6.png>]
 Overfull \hbox (43.60117pt too wide) has occurred while \output is active
 \T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 65
  []
@@ -3295,43 +3837,29 @@ Overfull \hbox (43.60117pt too wide) has occurred while \output is active
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [65 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_7_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_7_b.png>]
-<assets/4_8_a.png, id=1053, 425.59pt x 273.02pt>
-File: assets/4_8_a.png Graphic file (type png)
-<use assets/4_8_a.png>
-Package pdftex.def Info: assets/4_8_a.png  used on input line 919.
-(pdftex.def)             Requested size: 143.9978pt x 92.37564pt.
-<assets/4_8_b.png, id=1054, 488.82625pt x 272.01625pt>
-File: assets/4_8_b.png Graphic file (type png)
-<use assets/4_8_b.png>
-Package pdftex.def Info: assets/4_8_b.png  used on input line 924.
-(pdftex.def)             Requested size: 143.9978pt x 80.13202pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 914--930
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 931--933
-
- []
-
-
+ [65 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_6.png>]
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [66 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_8_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_8_b.png>]
-<assets/4_9_a.png, id=1076, 687.56876pt x 321.2pt>
-File: assets/4_9_a.png Graphic file (type png)
-<use assets/4_9_a.png>
-Package pdftex.def Info: assets/4_9_a.png  used on input line 938.
-(pdftex.def)             Requested size: 288.0011pt x 134.54039pt.
-<assets/4_9_b.png, id=1077, 677.53125pt x 330.23375pt>
-File: assets/4_9_b.png Graphic file (type png)
-<use assets/4_9_b.png>
-Package pdftex.def Info: assets/4_9_b.png  used on input line 943.
-(pdftex.def)             Requested size: 288.0011pt x 140.37518pt.
+ [66 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_7_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_7_b.png>]
+<assets/4_8_a.png, id=1055, 425.59pt x 273.02pt>
+File: assets/4_8_a.png Graphic file (type png)
+<use assets/4_8_a.png>
+Package pdftex.def Info: assets/4_8_a.png  used on input line 923.
+(pdftex.def)             Requested size: 143.9978pt x 92.37564pt.
+<assets/4_8_b.png, id=1056, 488.82625pt x 272.01625pt>
+File: assets/4_8_b.png Graphic file (type png)
+<use assets/4_8_b.png>
+Package pdftex.def Info: assets/4_8_b.png  used on input line 928.
+(pdftex.def)             Requested size: 143.9978pt x 80.13202pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 918--934
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 935--937
+
+ []
 
 
 Overfull \hbox (43.60117pt too wide) has occurred while \output is active
@@ -3341,208 +3869,75 @@ Overfull \hbox (43.60117pt too wide) has occurred while \output is active
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [67]
-<assets/4_10.png, id=1093, 765.86125pt x 278.03876pt>
-File: assets/4_10.png Graphic file (type png)
-<use assets/4_10.png>
-Package pdftex.def Info: assets/4_10.png  used on input line 955.
-(pdftex.def)             Requested size: 306.33907pt x 111.21352pt.
+ [67 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_8_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_8_b.png>]
+<assets/4_9_a.png, id=1079, 687.56876pt x 321.2pt>
+File: assets/4_9_a.png Graphic file (type png)
+<use assets/4_9_a.png>
+Package pdftex.def Info: assets/4_9_a.png  used on input line 942.
+(pdftex.def)             Requested size: 288.0011pt x 134.54039pt.
+<assets/4_9_b.png, id=1080, 677.53125pt x 330.23375pt>
+File: assets/4_9_b.png Graphic file (type png)
+<use assets/4_9_b.png>
+Package pdftex.def Info: assets/4_9_b.png  used on input line 947.
+(pdftex.def)             Requested size: 288.0011pt x 140.37518pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [68 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_9_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_9_b.png>]
-Underfull \hbox (badness 2671) in paragraph at lines 972--972
+ [68]
+<assets/4_10.png, id=1095, 765.86125pt x 278.03876pt>
+File: assets/4_10.png Graphic file (type png)
+<use assets/4_10.png>
+Package pdftex.def Info: assets/4_10.png  used on input line 959.
+(pdftex.def)             Requested size: 306.33907pt x 111.21352pt.
+
+Overfull \hbox (43.60117pt too wide) has occurred while \output is active
+\T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 69
+ []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [69 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_9_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_9_b.png>]
+Underfull \hbox (badness 2671) in paragraph at lines 976--976
 \T5/cmr/bx/n/10 in \T5/cmr/bx/it/10 stage 1
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 972--972
+Underfull \hbox (badness 2671) in paragraph at lines 976--976
 \T5/cmr/bx/n/10 in \T5/cmr/bx/it/10 stage 2
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 972--972
+Underfull \hbox (badness 2671) in paragraph at lines 976--976
 \T5/cmr/bx/n/10 in \T5/cmr/bx/it/10 stage 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 972--972
+Underfull \hbox (badness 10000) in paragraph at lines 976--976
 []|\T5/cmr/bx/n/10 Time
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 972--972
+Underfull \hbox (badness 10000) in paragraph at lines 976--976
 \T5/cmr/bx/n/10 for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 972--972
+Underfull \hbox (badness 10000) in paragraph at lines 976--976
 \T5/cmr/bx/n/10 ex-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 972--972
+Underfull \hbox (badness 10000) in paragraph at lines 976--976
 \T5/cmr/bx/n/10 plo-
  []
 
 
-Overfull \hbox (1.67184pt too wide) in paragraph at lines 972--972
+Overfull \hbox (1.67184pt too wide) in paragraph at lines 976--976
 \T5/cmr/bx/n/10 ration
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 973--973
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (5.76686pt too wide) in paragraph at lines 974--974
-\T5/cmr/bx/n/10 UAVs|  
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 974--974
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 974--974
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 136 \OMS/cmsy/m/n/10 ^^F
- []
-
-
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 974--974
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 139$| 
- []
-
-
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 974--974
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 022 \OMS/cmsy/m/n/10 ^^F
- []
-
-
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 974--974
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 017$| 
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 975--975
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 975--975
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 065 \OMS/cmsy/m/n/10 ^^F
- []
-
-
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 975--975
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 068$| 
- []
-
-
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 975--975
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 026 \OMS/cmsy/m/n/10 ^^F
- []
-
-
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 975--975
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 008$| 
- []
-
-
-Overfull \hbox (6.89714pt too wide) in paragraph at lines 976--976
-[]|\T5/cmr/bx/n/10 Three 
- []
-
-
-Overfull \hbox (5.76686pt too wide) in paragraph at lines 976--976
-\T5/cmr/bx/n/10 UAVs|  
- []
-
-
-Overfull \hbox (5.95296pt too wide) in paragraph at lines 976--976
-[]|\T5/cmr/m/n/10 UAV$[]$| 
- []
-
-
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 976--976
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 056 \OMS/cmsy/m/n/10 ^^F
- []
-
-
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 976--976
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 065$| 
- []
-
-
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 976--976
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 575 \OMS/cmsy/m/n/10 ^^F
- []
-
-
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 976--976
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 769$| 
- []
-
-
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 976--976
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 335 \OMS/cmsy/m/n/10 ^^F
- []
-
-
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 976--976
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 407$| 
- []
-
-
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 976--976
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 765 \OMS/cmsy/m/n/10 ^^F
- []
-
-
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 976--976
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 678$| 
  []
 
 
@@ -3551,33 +3946,48 @@ Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
  []
 
 
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 977--977
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 107 \OMS/cmsy/m/n/10 ^^F
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
+[]|\T5/cmr/m/n/10 UAV$[]$| 
  []
 
 
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 977--977
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 111$| 
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
+[]|\T5/cmr/m/n/10 UAV$[]$| 
  []
 
 
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 977--977
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 483 \OMS/cmsy/m/n/10 ^^F
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
+[]|\T5/cmr/m/n/10 UAV$[]$| 
  []
 
 
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 977--977
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 678$| 
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
+[]|\T5/cmr/m/n/10 UAV$[]$| 
  []
 
 
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 977--977
-[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 185 \OMS/cmsy/m/n/10 ^^F
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
+[]|\T5/cmr/m/n/10 UAV$[]$| 
  []
 
 
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 977--977
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 244$| 
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 977--977
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (5.76686pt too wide) in paragraph at lines 978--978
+\T5/cmr/bx/n/10 UAVs|  
  []
 
 
@@ -3587,36 +3997,176 @@ Overfull \hbox (5.95296pt too wide) in paragraph at lines 978--978
 
 
 Overfull \hbox (10.63881pt too wide) in paragraph at lines 978--978
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 136 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 978--978
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 139$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 978--978
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 022 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 978--978
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 017$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 979--979
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 979--979
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 065 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 979--979
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 068$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 979--979
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 026 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 979--979
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 008$| 
+ []
+
+
+Overfull \hbox (6.89714pt too wide) in paragraph at lines 980--980
+[]|\T5/cmr/bx/n/10 Three 
+ []
+
+
+Overfull \hbox (5.76686pt too wide) in paragraph at lines 980--980
+\T5/cmr/bx/n/10 UAVs|  
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 980--980
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 980--980
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 056 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 980--980
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 065$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 980--980
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 575 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 980--980
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 769$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 980--980
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 335 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 980--980
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 407$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 980--980
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 765 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 980--980
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 678$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 981--981
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 981--981
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 107 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 981--981
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 111$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 981--981
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 483 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 981--981
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 678$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 981--981
+[]|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 185 \OMS/cmsy/m/n/10 ^^F
+ []
+
+
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 981--981
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 244$| 
+ []
+
+
+Overfull \hbox (5.95296pt too wide) in paragraph at lines 982--982
+[]|\T5/cmr/m/n/10 UAV$[]$| 
+ []
+
+
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 982--982
 []|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 267 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 978--978
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 982--982
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 165$| 
  []
 
 
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 978--978
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 982--982
 []|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 616 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 978--978
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 982--982
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 549$| 
  []
 
 
-Overfull \hbox (10.63881pt too wide) in paragraph at lines 978--978
+Overfull \hbox (10.63881pt too wide) in paragraph at lines 982--982
 []|$\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 251 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Overfull \hbox (2.86101pt too wide) in paragraph at lines 978--978
+Overfull \hbox (2.86101pt too wide) in paragraph at lines 982--982
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 109$| 
  []
 
 
-Overfull \hbox (39.58334pt too wide) in paragraph at lines 971--980
+Overfull \hbox (39.58334pt too wide) in paragraph at lines 975--984
  [][] 
  []
 
@@ -3624,85 +4174,23 @@ Overfull \hbox (39.58334pt too wide) in paragraph at lines 971--980
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (43.60117pt too wide) has occurred while \output is active
-\T5/cmr/m/sl/10.95 2.4.  C‡U TRÓC LI–N K˜T V€ CHI˜N L×ÑC M„NG CHO MRS ROBUSTNESS \T5/cmr/m/n/10.95 69
- []
-
-
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [69 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_10.png>]
-<assets/4_11_a.png, id=1110, 704.6325pt x 309.155pt>
+ [70 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_10.png>]
+<assets/4_11_a.png, id=1112, 704.6325pt x 309.155pt>
 File: assets/4_11_a.png Graphic file (type png)
 <use assets/4_11_a.png>
-Package pdftex.def Info: assets/4_11_a.png  used on input line 988.
+Package pdftex.def Info: assets/4_11_a.png  used on input line 992.
 (pdftex.def)             Requested size: 288.0011pt x 126.35811pt.
-<assets/4_11_b.png, id=1111, 671.50874pt x 303.1325pt>
+<assets/4_11_b.png, id=1113, 671.50874pt x 303.1325pt>
 File: assets/4_11_b.png Graphic file (type png)
 <use assets/4_11_b.png>
-Package pdftex.def Info: assets/4_11_b.png  used on input line 993.
+Package pdftex.def Info: assets/4_11_b.png  used on input line 997.
 (pdftex.def)             Requested size: 288.0011pt x 130.00677pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 982--999
+Underfull \hbox (badness 10000) in paragraph at lines 986--1003
 
  []
-
-
-Overfull \vbox (0.4298pt too high) has occurred while \output is active []
-
- [70]
-<assets/4_12_a.png, id=1119, 317.185pt x 240.9pt>
-File: assets/4_12_a.png Graphic file (type png)
-<use assets/4_12_a.png>
-Package pdftex.def Info: assets/4_12_a.png  used on input line 1006.
-(pdftex.def)             Requested size: 108.0011pt x 82.02621pt.
-<assets/4_12_b.png, id=1120, 311.1625pt x 233.87375pt>
-File: assets/4_12_b.png Graphic file (type png)
-<use assets/4_12_b.png>
-Package pdftex.def Info: assets/4_12_b.png  used on input line 1011.
-(pdftex.def)             Requested size: 108.0011pt x 81.17542pt.
-<assets/4_12_c.png, id=1121, 314.17375pt x 237.88875pt>
-File: assets/4_12_c.png Graphic file (type png)
-<use assets/4_12_c.png>
-Package pdftex.def Info: assets/4_12_c.png  used on input line 1016.
-(pdftex.def)             Requested size: 108.0011pt x 81.77405pt.
-<assets/4_12_d.png, id=1122, 310.15875pt x 235.88126pt>
-File: assets/4_12_d.png Graphic file (type png)
-<use assets/4_12_d.png>
-Package pdftex.def Info: assets/4_12_d.png  used on input line 1021.
-(pdftex.def)             Requested size: 108.0011pt x 82.13496pt.
-<assets/4_12_e.png, id=1123, 306.14375pt x 230.8625pt>
-File: assets/4_12_e.png Graphic file (type png)
-<use assets/4_12_e.png>
-Package pdftex.def Info: assets/4_12_e.png  used on input line 1026.
-(pdftex.def)             Requested size: 108.0011pt x 81.44067pt.
-<assets/4_12_f.png, id=1124, 307.1475pt x 234.8775pt>
-File: assets/4_12_f.png Graphic file (type png)
-<use assets/4_12_f.png>
-Package pdftex.def Info: assets/4_12_f.png  used on input line 1031.
-(pdftex.def)             Requested size: 108.0011pt x 82.58824pt.
-<assets/4_12_g.png, id=1125, 310.15875pt x 233.87375pt>
-File: assets/4_12_g.png Graphic file (type png)
-<use assets/4_12_g.png>
-Package pdftex.def Info: assets/4_12_g.png  used on input line 1036.
-(pdftex.def)             Requested size: 108.0011pt x 81.43593pt.
-<assets/4_12_h.png, id=1126, 309.155pt x 234.8775pt>
-File: assets/4_12_h.png Graphic file (type png)
-<use assets/4_12_h.png>
-Package pdftex.def Info: assets/4_12_h.png  used on input line 1041.
-(pdftex.def)             Requested size: 108.0011pt x 82.05424pt.
-<assets/4_12_i.png, id=1127, 307.1475pt x 231.86626pt>
-File: assets/4_12_i.png Graphic file (type png)
-<use assets/4_12_i.png>
-Package pdftex.def Info: assets/4_12_i.png  used on input line 1046.
-(pdftex.def)             Requested size: 108.0011pt x 81.52942pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1001--1052
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (43.60117pt too wide) has occurred while \output is active
@@ -3712,76 +4200,114 @@ Overfull \hbox (43.60117pt too wide) has occurred while \output is active
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [71 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_b.png>]
+ [71]
+<assets/4_12_a.png, id=1121, 317.185pt x 240.9pt>
+File: assets/4_12_a.png Graphic file (type png)
+<use assets/4_12_a.png>
+Package pdftex.def Info: assets/4_12_a.png  used on input line 1010.
+(pdftex.def)             Requested size: 108.0011pt x 82.02621pt.
+<assets/4_12_b.png, id=1122, 311.1625pt x 233.87375pt>
+File: assets/4_12_b.png Graphic file (type png)
+<use assets/4_12_b.png>
+Package pdftex.def Info: assets/4_12_b.png  used on input line 1015.
+(pdftex.def)             Requested size: 108.0011pt x 81.17542pt.
+<assets/4_12_c.png, id=1123, 314.17375pt x 237.88875pt>
+File: assets/4_12_c.png Graphic file (type png)
+<use assets/4_12_c.png>
+Package pdftex.def Info: assets/4_12_c.png  used on input line 1020.
+(pdftex.def)             Requested size: 108.0011pt x 81.77405pt.
+<assets/4_12_d.png, id=1124, 310.15875pt x 235.88126pt>
+File: assets/4_12_d.png Graphic file (type png)
+<use assets/4_12_d.png>
+Package pdftex.def Info: assets/4_12_d.png  used on input line 1025.
+(pdftex.def)             Requested size: 108.0011pt x 82.13496pt.
+<assets/4_12_e.png, id=1125, 306.14375pt x 230.8625pt>
+File: assets/4_12_e.png Graphic file (type png)
+<use assets/4_12_e.png>
+Package pdftex.def Info: assets/4_12_e.png  used on input line 1030.
+(pdftex.def)             Requested size: 108.0011pt x 81.44067pt.
+<assets/4_12_f.png, id=1126, 307.1475pt x 234.8775pt>
+File: assets/4_12_f.png Graphic file (type png)
+<use assets/4_12_f.png>
+Package pdftex.def Info: assets/4_12_f.png  used on input line 1035.
+(pdftex.def)             Requested size: 108.0011pt x 82.58824pt.
+<assets/4_12_g.png, id=1127, 310.15875pt x 233.87375pt>
+File: assets/4_12_g.png Graphic file (type png)
+<use assets/4_12_g.png>
+Package pdftex.def Info: assets/4_12_g.png  used on input line 1040.
+(pdftex.def)             Requested size: 108.0011pt x 81.43593pt.
+<assets/4_12_h.png, id=1128, 309.155pt x 234.8775pt>
+File: assets/4_12_h.png Graphic file (type png)
+<use assets/4_12_h.png>
+Package pdftex.def Info: assets/4_12_h.png  used on input line 1045.
+(pdftex.def)             Requested size: 108.0011pt x 82.05424pt.
+<assets/4_12_i.png, id=1129, 307.1475pt x 231.86626pt>
+File: assets/4_12_i.png Graphic file (type png)
+<use assets/4_12_i.png>
+Package pdftex.def Info: assets/4_12_i.png  used on input line 1050.
+(pdftex.def)             Requested size: 108.0011pt x 81.52942pt.
 
-Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1053.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1053.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1053.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 1053.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1054--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1056
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1054--1057
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.4298pt too high) has occurred while \output is active []
+
+ [72 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_11_b.png>]
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 1057.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 1057.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 1057.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 1057.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1061
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1061
 
  []
 
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [72 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_c.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_d.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_e.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_f.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_g.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_h.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_i.png>]
+ [73 </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_a.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_b.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_c.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_d.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_e.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_f.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_g.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_h.png> </home/thvroyal/Documents/Study/20202/TT2/english_ver2/assets/4_12_i.png>]
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
- [73]
-
-Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1059.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1059.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1059.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 1059.
-
-[74]
+ [74]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1066.
+(hyperref)                removing `\textdotbelow' on input line 1062.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1066.
+(hyperref)                removing `\ecircumflex' on input line 1062.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 1066.
+(hyperref)                removing `\h' on input line 1062.
 
 
-Overfull \hbox (9.33643pt too wide) in paragraph at lines 1066--1066
+Overfull \hbox (9.33643pt too wide) in paragraph at lines 1062--1062
 \T5/cmr/m/n/10.95 com-mu-ni-ca-tion pour mini-drones civils''. PhD the-sis. Uni-ver-sit² Toulouse
  []
 
@@ -3791,7 +4317,7 @@ Overfull \hbox (9.33643pt too wide) in paragraph at lines 1066--1066
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [76]
-Overfull \hbox (4.78606pt too wide) in paragraph at lines 1066--1066
+Overfull \hbox (4.78606pt too wide) in paragraph at lines 1062--1062
 \T5/cmr/m/n/10.95 layer with qos ca-pa-bil-i-ties for a multi-robot sys-tem''. In: \T5/cmr/m/it/10.95 Iberian Robotics
  []
 
@@ -3799,7 +4325,7 @@ Overfull \hbox (4.78606pt too wide) in paragraph at lines 1066--1066
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [77]
-Overfull \hbox (9.58379pt too wide) in paragraph at lines 1066--1066
+Overfull \hbox (9.58379pt too wide) in paragraph at lines 1062--1062
 \T5/cmr/m/it/10.95 2018 13th An-nual Con-fer-ence on Sys-tem of Sys-tems En-gi-neer-ing (SoSE)\T5/cmr/m/n/10.95 .
  []
 
@@ -3807,17 +4333,17 @@ Overfull \hbox (9.58379pt too wide) in paragraph at lines 1066--1066
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [78]
-Overfull \hbox (4.96356pt too wide) in paragraph at lines 1066--1066
+Overfull \hbox (4.96356pt too wide) in paragraph at lines 1062--1062
 \T5/cmr/m/n/10.95 plo-ration''. In: \T5/cmr/m/it/10.95 Robotics and Au-tonomous Sys-tems \T5/cmr/m/n/10.95 54.12 (2006), pp. 945^^U
  []
 
 
-Overfull \hbox (40.4074pt too wide) in paragraph at lines 1066--1066
+Overfull \hbox (40.4074pt too wide) in paragraph at lines 1062--1062
 \T5/cmr/m/n/10.95 for multi-robot sys-tems in dis-as-ter sce-nar-ios''. In: \T5/cmr/m/it/10.95 Pro-ceed-ings of IARP/EURON
  []
 
 
-Overfull \hbox (0.7591pt too wide) in paragraph at lines 1066--1066
+Overfull \hbox (0.7591pt too wide) in paragraph at lines 1062--1062
 \T5/cmr/m/it/10.95 work-shop on robotics for risky in-ter-ven-tions and en-vi-ron-men-tal surveil-
  []
 
@@ -3825,17 +4351,17 @@ Overfull \hbox (0.7591pt too wide) in paragraph at lines 1066--1066
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [79]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1067.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1063.
 
 Overfull \vbox (0.4298pt too high) has occurred while \output is active []
 
  [80]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1067.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1063.
  (/home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1067.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1067.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1063.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1063.
 Package rerunfilecheck Info: File `vietnamese.out' has not changed.
-(rerunfilecheck)             Checksum: F1B628CCE4203CF5C498F6B7B5D5D88E;2572.
+(rerunfilecheck)             Checksum: A6363C85D464C62E6848C8717A6B1A1F;2576.
 
 
 LaTeX Warning: There were undefined references.
@@ -3843,21 +4369,21 @@ LaTeX Warning: There were undefined references.
 Package logreq Info: Writing requests to 'vietnamese.run.xml'.
 \openout1 = `vietnamese.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1067.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1063.
  ) 
 Here is how much of TeX's memory you used:
- 17890 strings out of 481239
- 306395 string characters out of 5920378
- 1160584 words of memory out of 5000000
- 32417 multiletter control sequences out of 15000+600000
+ 17901 strings out of 481239
+ 306531 string characters out of 5920378
+ 1161901 words of memory out of 5000000
+ 32428 multiletter control sequences out of 15000+600000
  567952 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,11n,62p,1736b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,11n,62p,2108b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on /home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.pdf (80 pages, 6120631 bytes).
+Output written on /home/thvroyal/Documents/Study/20202/TT2/english_ver2/vietnamese.pdf (80 pages, 6131219 bytes).
 PDF statistics:
- 1343 PDF objects out of 1440 (max. 8388607)
- 1078 compressed objects within 11 object streams
+ 1341 PDF objects out of 1440 (max. 8388607)
+ 1076 compressed objects within 11 object streams
  344 named destinations out of 1000 (max. 500000)
- 646 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 638 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,77 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Proposed exploration process pipeline.\relax }}{13}{figure.caption.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Map structure evolution during the exploration process: From 2D cells $\mathcal {L}$ to 2D frontier cells $\mathcal {F}$ to candidate frontier cells/points $\mathcal {G}$ (candidate targets) to 2D target cells/points $\mathcal {T}$.\relax }}{14}{figure.caption.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Frontier cells/points selection of a 2D occupancy grid map.\relax }}{15}{figure.caption.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces The information gain computation of a frontier point x (in red). The hatched cells represent the 48 surrounding cells of the frontier point \textbf {x}. The information gain of \textbf {x} is: $\mathbf {I}(x)=25$.\relax }}{16}{figure.caption.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Frontier points processing example: (a) and (b) represent the frontier points of UAV$_1$ and UAV$_2$, respectively. (c) represent the candidate targets. The process consists in removing frontier points that belong to overlapped areas, and those that are adjacent to obstacles.\relax }}{18}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Frontier points processing wile assuming two convex map shapes in the ﬁrst line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (ﬁnal shape).\relax }}{20}{figure.caption.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Frontier points processing wile assuming two concave map shapes in the ﬁrst line and three in the second line. (a) and (d) represent two and three convex map shapes, respectively; (b) and (e) represent the frontier points in overlap (intersection); and (c) and (f) represent the obtained frontier points after processing (ﬁnal shape).\relax }}{22}{figure.caption.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.8}{\ignorespaces {Utility function behavior: $\mathbf {I}(t_j)=25, n_c=3, d_{tot} = \DOTSB \sum@ \slimits@ _{k=1, k\neq i}^{n_c}(dmin(\mathbf {P}_k,\mathbf {t}_j))$. The average distance of other UAVs $d_{tot}$ has a minimum value different from zero since $n_c$ is different from zero too.}\relax }}{24}{figure.caption.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Example of the shape function to schedule the information gain($\mathbf {I}(\mathbf {t}_k)_{t-1}=29,(\mathbf {t}_g(x),\mathbf {t}_g(y))=(1.25,-0.275), \sigma _x=\sigma _y=3$).\relax }}{27}{figure.caption.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.10}{\ignorespaces From 2D (left) to 3D (right) navigation stack. The \textit {navigation} z is a ROS process developed to provide a control command on the z axis.\relax }}{28}{figure.caption.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.11}{\ignorespaces The impact of varying the trade off parameter $\lambda $ over exploration itme.\relax }}{29}{figure.caption.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Exploration time while varying the loop rate $r$.\relax }}{30}{figure.caption.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Ratio of explored space during time for one UAV.\relax }}{33}{figure.caption.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Coordinated exploration using two robots. Columns 1, 2 and 3 show the evolution of the local map of the UAV$_1$, the UAV$_2$ and the global map over time, respectively.\relax }}{34}{figure.caption.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.15}{\ignorespaces The evolution of candidate and final frontier points numbers during cooperative exploration.\relax }}{35}{figure.caption.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Projected 2D map in a coordinated exploration with a team of one, two and three UAVs. Green, blue and red markers and arrows define, respectively, the initial position and the trajectory of UAV1, UAV2 and UAV3.\relax }}{36}{figure.caption.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Goal assignment: After assigning a target to UAV$_1$ , a target is assigned in a sequential manner to UAV$_2$ . (a) represents the candidate frontier points with their respective information gain. (b), (c), and (d) represent, respectively, the targets assignment when: No further process is performed for the remaining candidate targets; UAV$_1$ ’s target is removed from the remaining candidate targets and; the information gain of the remained candidate targets are scheduled.\relax }}{38}{figure.caption.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Explored and overlapped area rate using two cooperative UAVs.\relax }}{39}{figure.caption.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Explored space rate with one, two and three UAVs.\relax }}{40}{figure.caption.39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Traveled distance by each UAV with one, two and three cooperative UAVs.\relax }}{41}{figure.caption.40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Traveled distance evaluation.\relax }}{42}{figure.caption.41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Average exploration time.\relax }}{42}{figure.caption.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.23}{\ignorespaces Two UAVs navigation using ORB-SLAM2. Rviz image (left) shows, for each UAV, the constructed 2D occupancy grid map, its estimated trajectory and the corresponding ground truth. The point cloud (middle) represent the sparse reconstruction of the environment made by each UAV. And, the green markers (right) represent the features computed by each UAV to perform localization.\relax }}{43}{figure.caption.44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.24}{\ignorespaces Explored area rate evolution during exploration mission with one and two UAVs while performing ORB-SLAM2 by each UAV.\relax }}{44}{figure.caption.45}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Infrastructure (left) and infrastructureless (right) mode.\relax }}{47}{figure.caption.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Centralized (left), decentralized (middle) and distributed (right) networks.\relax }}{50}{figure.caption.49}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Mesh network illustration between three laptops and one drone.\relax }}{60}{figure.caption.55}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Broadcast testbed throughput result in Ad Hoc and BATMAN mesh network protocol.\relax }}{60}{figure.caption.56}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Data ﬂow between two robots. The FP and GA stand, respectively, for frontier processing and goal assignment.\relax }}{63}{figure.caption.58}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Role evolution in limited communication range.\relax }}{64}{figure.caption.62}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Ad Hoc network illustration during exploration mission.\relax }}{65}{figure.caption.63}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces {Two ROS conﬁgurations in multiple machines case. Image from \cite {andre2014coordinated}.}\relax }}{66}{figure.caption.65}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces {Data size when UAVs exchange a whole copy of their local grid map versus frontier points of it.}\relax }}{68}{figure.caption.67}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Network topology evolution during a loop with three cooperative UAVs.\relax }}{69}{figure.caption.69}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces {Two cooperative robots exploration along with network connectivity.}\relax }}{71}{figure.caption.72}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces {Global reconstructed 2D occupancy grid map during exploration mission with two cooperative UAVs.}\relax }}{72}{figure.caption.74}%
